@@ -43,7 +43,7 @@
 			<div class="lnb">
 				<h3><img src="/img/left/h3_join.gif" alt="회원가입" /></h3>
 				<ul class="lnb_join">
-					<li class="on"><a href="#" class="menu01"><span>통합회원가입</span></a></li>
+					<li class="on"><a href="/member/regist_step_01.html" class="menu01"><span>통합회원가입</span></a></li>
 					<li><a href="#" class="menu02"><span>아이디/비밀번호찾기</span></a></li>
 					<li><a href="#" class="menu03"><span>개인정보처리방침</span></a></li>
 					<li><a href="/member/terms.html" class="menu04"><span>이용약관</span></a></li>
@@ -63,15 +63,24 @@
 						</colgroup>
 						<tbody>
 							<tr>
+								<th><span class="must">아이디</span></th>
+								<td><input type="text" class="text"/> <a href="#"><img src="/img/member/btn_overlap.gif" alt="중복확인" /></a> <span class="tip">(4~10자 영문, 숫자만 가능합니다.)</span></td>
+							</tr>
+							<tr>
+								<th><span class="must">비밀번호</span></th>
+								<td><input type="password" class="text"/> <span class="tip">(비밀번호는 4~32자 영문+숫자 조합만 가능합니다.)</span></td>
+							</tr>
+							<tr>
+								<th><span class="must">비밀번호확인</span></th>
+								<td><input type="password" class="text" /></td>
+							</tr>
+							<tr>
 								<th><span class="must">이름</span></th>
 								<td><input type="text" class="text"/> </td>
 							</tr>
 							<tr>
-								<th><span class="must">성별</span></th>
-								<td>
-									<input type="radio" class="radio"><label class="mgr30">남</label>
-									<input type="radio" class="radio"><label>여</label>
-								</td>
+								<th><span class="must">닉네임</span></th>
+								<td><input type="text" class="text"/> </td>
 							</tr>
 							<tr>
 								<th><span class="must">생년월일</span></th>
@@ -91,16 +100,11 @@
 								</td>
 							</tr>
 							<tr>
-								<th><span class="must">아이디</span></th>
-								<td><input type="text" class="text"/> <a href="#"><img src="/img/member/btn_overlap.gif" alt="중복확인" /></a> <span class="tip">(4~10자 영문, 숫자만 가능합니다.)</span></td>
-							</tr>
-							<tr>
-								<th><span class="must">비밀번호</span></th>
-								<td><input type="password" class="text"/> <span class="tip">(비밀번호는 4~32자 영문+숫자 조합만 가능합니다.)</span></td>
-							</tr>
-							<tr>
-								<th><span class="must">비밀번호확인</span></th>
-								<td><input type="password" class="text" /></td>
+								<th><span class="must">성별</span></th>
+								<td>
+									<input type="radio" class="radio"><label class="mgr30">남</label>
+									<input type="radio" class="radio"><label>여</label>
+								</td>
 							</tr>
 							<tr>
 								<th><span class="must">e-mail주소</span></th>
@@ -126,6 +130,17 @@
 								</td>
 							</tr>
 							<tr>
+								<th><span class="must">휴대폰번호</span></th>
+								<td>
+									<select>
+										<option>010</option>
+									</select>
+									- <input type="text" class="phone"> - <input type="text" class="phone">
+									<p class="tip">※ 보호자(법정대리인)의 정보를 입력해 주세요</p>
+								</td>
+							</tr>
+							<!--
+							<tr>
 								<th><span class="must">집전화번호</span></th>
 								<td>
 									<select>
@@ -134,10 +149,11 @@
 									- <input type="text" class="phone"> - <input type="text" class="phone">
 								</td>
 							</tr>
+							-->
 							<tr>
 								<th><span class="must">주소</span></th>
 								<td>
-									<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="#"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
+									<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="/member/search_zip_pop.html"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
 									<p style="margin:5px 0;"><input type="text" class="address"></p>
 									<p><input type="text" class="address"></p>
 								</td>
@@ -151,14 +167,14 @@
 							<col width="*" />
 						</colgroup>
 						<tbody>
-							<tr>
+							<!-- <tr>
 								<th>최종학력</th>
 								<td>
 									<select>
 										<option>선택</option>
 									</select>
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>직업</th>
 								<td>
@@ -167,7 +183,7 @@
 									</select>
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th>가입경로</th>
 								<td>
 									<ul class="inflow">
@@ -178,10 +194,10 @@
 										<li class="col2"><input type="radio" class="radio"><label>기타</label></li>
 									</ul>
 								</td>
-							</tr>
+							</tr> -->
 						</tbody>
 					</table>
-					<h3 class="mgb30 interest"><img src="/img/member/h3_favorite.gif" alt="관심분야선택" /><span><img src="/img/member/icon_redStar.gif" alt="*" /> 중복선택 가능합니다.</span></h3>
+					<!-- <h3 class="mgb30 interest"><img src="/img/member/h3_favorite.gif" alt="관심분야선택" /><span><img src="/img/member/icon_redStar.gif" alt="*" /> 중복선택 가능합니다.</span></h3>
 					<p class="interest"><label><input type="checkbox" /> 공무원</label><label><input type="checkbox" /> 금융</label><label><input type="checkbox" /> 공인중개사</label></p>
 					<h4 class="mgb10"><img src="/img/member/h4_favorite01.gif" alt="공무원시험" /></h4>
 					<p class="referText"><img src="/img/member/icon_redStar.gif" alt="*" /> 관심있는 분야를 선택하시면, 맞춤관리를 받으실 수 있습니다.</p>
@@ -308,9 +324,9 @@
 								</td>
 							</tr>
 						</tbody>
-					</table>
+					</table> -->
 					<!-- 부동산 자격증 -->
-					<h4 class="mgb10"><img src="/img/member/h4_favorite03.gif" alt="부동산 자격증" /></h4>
+					<!-- <h4 class="mgb10"><img src="/img/member/h4_favorite03.gif" alt="부동산 자격증" /></h4>
 					<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
 						<colgroup>
 							<col width="136px" />
@@ -329,7 +345,7 @@
 								</td>
 							</tr>
 						</tbody>
-					</table>
+					</table> -->
 					<!-- // 부동산 자격증 끝 -->
 					<div class="btnC"><a href="#"><img src="/img/member/btn_join.gif" alt="가입하기"></a></div>
 			</div>

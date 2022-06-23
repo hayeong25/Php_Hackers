@@ -7,6 +7,7 @@
 <link rel="stylesheet"  type="text/css" href="/css/default.css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="/js/integrate.js"></script>
+<script type="text/javascript" src="/js/memberInfo.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -60,6 +61,11 @@
 							<div class="phoneBox mgb20">
 								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name"/></p>
 								<p>
+									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="성별"/></span>
+									<input type="radio" class="radio"><label style="margin-right:25px;">남</label>
+									<input type="radio" class="radio"><label>여</label>
+								</p>
+								<p>
 									<span><img src="/img/member/text_check02.gif" alt="생년월일"/></span>
 									<select>
 										<option>2012</option>
@@ -75,11 +81,6 @@
 									<label>일</label>
 								</p>
 								<p>
-									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="성별"/></span>
-									<input type="radio" class="radio"><label style="margin-right:25px;">남</label>
-									<input type="radio" class="radio"><label>여</label>
-								</p>
-								<p>
 									<span><img src="/img/member/text_check04.gif" alt="핸드폰번호"/></span>
 									<select>
 										<option>010</option>
@@ -91,11 +92,11 @@
 								<ul class="under_text">
 									<li>주민등록번호 입력 없이 핸드폰번호로 회원가입이 가능합니다.</li>
 									<li>이름, 생년월일, 성별은 <span class="red">추후 변경이 불가능</span>하므로,<br />정확하게 입력해 주시기 바랍니다. </li>
-									<!-- <li>메시지 수신 가능한 휴대폰으로 인증번호를 받으실 수 있으며, <br /><span class="red">동일번호로 1개 아이디만 가입 가능</span>합니다.</li> -->
+									<li>메시지 수신 가능한 휴대폰으로 인증번호를 받으실 수 있으며, <br /><span class="red">동일번호로 1개 아이디만 가입 가능</span>합니다.</li>
 								</ul>
-
+								
 							</div>
-							<div class="btnC"><a href="#"><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
+							<div class="btnC"><a href="/member/regist_step_04.html"><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
 						</div>
 						<div class="right">
 							<div class="ipinJoin_new mgb20"><p><img src="/img/member/text_check06.gif" alt="아이핀 인증을 통한 가입을 원하시면 아이핀 인증 버튼을 눌러 회원가입을 진행해 주세요."></p></div>

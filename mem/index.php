@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="/css/integrate.css" />
 <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/js/integrate.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript">
 function allPopClose(setName){ $("#"+setName).hide(); }
 $(function(){
@@ -483,7 +484,7 @@ $(function(){
 	<div class="under_menu">
 		<div class="copyright">
 			<div class="policy">
-				<a href="/?st=terms">이용약관</a>
+				<a href="/member/terms.html">이용약관</a>
 				<span class="bar" >|</span>
 				<a href="/?st=privacy"><strong>개인정보취급방침</strong></a>
 			</div>
