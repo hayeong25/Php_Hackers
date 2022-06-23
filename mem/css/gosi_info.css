@@ -1,0 +1,34 @@
+/*****************************
+제목 :  학원안내 CSS
+작성일 : 2012.06.09 정미례
+*****************************/
+
+
+
+
+
+
+
+/* 편의시설 안내 */
+.convenient {}
+.convenient .tab_menu {margin:21px 0 0;}
+.convenient .tab_menu li {float:left;}
+.convenient .tab_menu a {display:inline-block; width:157px; height:31px; margin:0 4px 0 0; background:url(/images/gosi_info/tab_convenient.gif) no-repeat;}
+.convenient .tab_menu a.menu_01 {width:156px; background-position:0 0;}
+.convenient .tab_menu li.on a.menu_01 {background-position:0 -31px;}
+.convenient .tab_menu a.menu_02 {width:156px; background-position:-159px 0;}
+.convenient .tab_menu li.on a.menu_02 {background-position:-159px -31px;}
+.convenient .tab_menu a.menu_03 {background-position:-318px 0;}
+.convenient .tab_menu li.on a.menu_03 {background-position:-318px -31px;}
+.convenient .tab_menu a.menu_04 {background-position:-478px 0;}
+.convenient .tab_menu li.on a.menu_04 {background-position:-478px -31px;}
+.convenient .tab_menu a.menu_05 {margin:0; background-position:-638px 0;}
+.convenient .tab_menu li.on a.menu_05 {background-position:-638px -31px;}
+.convenient .tab_menu a span {display:none}
+.convenient p.img {float:left; margin:51px 0 0}
+
+
+/* 오시는길 */
+.gosi_map .contents {}
+.gosi_map .contents .map_img {margin:30px auto;}
+

@@ -1,0 +1,175 @@
+/*****************************
+제목 : 공통 CSS
+작성자 : 해커스교육그룹 개발지원팀
+작성일 : 2012.08.08
+*****************************/
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,menu,section,article, a, select, input{margin:0; padding:0;}
+
+body {margin:0; padding:0; font:12px dotum; color:#666; /*background:url('../../img/integrate/bg_body2.gif') top repeat-x;*/ line-height:100%; overflow-x:hidden;}
+table {border-collapse: collapse;}
+fieldset, img {border:0;}
+img {margin-bottom:0; vertical-align:top; }
+li,dt,dd {list-style:none;}
+a {text-decoration:none; cursor:pointer;}
+button {cursor:pointer; border:none;}
+strong{ font-weight:bold;}
+em,address,var {font-style:normal;}
+legend, caption {display:none;}
+input, select {vertical-align:middle; outline:none;}
+
+
+#wrapper {position:relative; width:1000px; margin:0 auto; overflow:hidden; }
+#quick {position:absolute; top:118px; right:0px;}
+
+
+#header {height:100px; width:1000px; padding-bottom:12px; overflow:hidden; padding-top:0; background:none;}
+#header .logo {float:left; margin-top:0;}
+#header .topmenu {float:right; text-align:right; margin-top:24px;}
+#header .topmenu img {vertical-align:middle;}
+#header .topmenu .bar {margin:0 1px;}
+#header .topmenu .family_site{margin-left:9px;}
+#header .topmenu .family_link {border:1px #b2b2b2 solid; border-top:none; background:#fff; text-align:left; width:123px; position:absolute; margin-left:875px; padding-top:4px; display:none;}
+#header .topmenu .family_link li {padding-left:9px; margin-bottom:4px;}
+#header .topmenu .family_link a{color:#7f7f7f; font-size:11px;}
+#header .toplink {width:100%; height: 23px; overflow:hidden; margin:0; margin-bottom: 25px; background-color: black;}
+#header .toplink ul {float:right;}
+#header .toplink li {float:left;}
+
+	/*IE6수정
+	#header .toplink li {_margin-left:16px; _padding-right:16px;}
+#header .toplink li.end {background:none; padding-right:0;}
+#header .toplink li  a {display:block; height:15px;}
+#header .toplink li  a  span{display:none;}
+#header .toplink li  a.menu01 {background:url('../../img/integrate/top_link01.gif') no-repeat; width:66px;}
+#header .toplink li  a.menu02 {background:url('../../img/integrate/top_link02.gif') no-repeat; width:79px;}
+#header .toplink li  a.menu03 {background:url('../../img/integrate/top_link03.gif') no-repeat; width:63px;}
+#header .toplink li  a.menu04 {background:url('../../img/integrate/top_link04.gif') no-repeat; width:102px;}
+#header .toplink li a:hover {background-position:0 -15px;}
+#header .toplink img.bar {margin:0 15px;}
+*/
+
+div.mainMenu {width:1000px; margin-bottom:34px; overflow:hidden; background:url('../../img/integrate/main_menu_bg.gif') left bottom no-repeat; padding-bottom:10px;}
+div.mainMenu ul {width:100%; overflow:hidden;}
+div.mainMenu li {float:left; height:200px;}
+
+div.mainMenu ul.m_130612 li {position:relative; height:150px;}
+div.mainMenu ul.m_130612 li .layer_banner {position:absolute; left:0; bottom:0; }
+
+
+/*메인 배너 2013.11.19 수정*/
+div.mainMenu ul li {position:relative; height:150px;}
+div.mainMenu ul li .ad_banner {position:absolute; left:4px; bottom:4px; width:242px; height:80px;  text-align:center;}
+div.mainMenu ul li .ad_banner a {display:inline-block; *display:inline; *zoom:1; width:207px; height:35px; overflow:hidden; margin-top:25px; text-align:center; background:url('../../img/main/mainbanner/bg_layer_title.png') no-repeat;}
+div.mainMenu ul li .ad_banner a.btnRED {background-position:0 0;}
+div.mainMenu ul li .ad_banner a.btndarkBlue {background-position:0 -35px;}
+div.mainMenu ul li .ad_banner a.btnGREEN {background-position:0 -70px;}
+div.mainMenu ul li .ad_banner a.btnBROWN {background-position:0 -105px;}
+div.mainMenu ul li .ad_banner a.btnORANGE {background-position:0 -140px;}
+div.mainMenu ul li .ad_banner a.btnBLUE {background-position:0 -175px;}
+div.mainMenu ul li .ad_banner a.btnPUPLE {background-position:0 -210px;}
+
+div.mainMenu ul li .ad_banner a img {margin-top:8px;}
+div.mainMenu ul li .passicon {position:absolute; left:22px; bottom:22px;}
+div.mainMenu ul li .lasticon {left:33px; bottom:50px;}
+
+#container .content .clear {clear:both;}
+
+#container .content .pass_group{ height:366px; overflow:hidden; margin-bottom:37px; /* border:1px #333 dotted; */}
+#container .content .pass_group .official {float:left; margin-right:10px;}
+#container .content .pass_group .finance {float:left;}
+
+#container .content .board {margin-bottom:29px;}
+#container .content .board h3 {height:19px; padding-bottom:7px; border-bottom:2px solid #000; margin-bottom:12px;}
+#container .content .notice {float:left; width:494px}
+#container .content .notice ul {padding-top:2px; width:478px; overflow:hidden;}
+#container .content .notice ul li{height:12px;}
+#container .content .notice ul li p{float:left; line-height:20px;}
+#container .content .notice ul li p a {color:#737373;}
+#container .content .notice ul li p.type {width:44px; color:#b8b8b8;}
+#container .content .notice ul li p.subject {width:368px; color:#737373;}
+#container .content .notice ul li p.date {color:#737373; }
+
+#container .content .notice .notice_btn {width:478px; position:absolute; text-align:right; margin-top:-39px;}
+#container .content .notice .notice_btn span {cursor:pointer;}
+#container .content .notice .notice_btn span.info {display:inline-block; padding:2px 4px 0 0 ; color:#737373;}
+
+#container .content .issue {position:relative; float:left; width:1000px; margin-bottom:40px;}
+#container .content .issue {width:478px; overflow:hidden; ;}
+#container .content #issue_tab {position:absolute; top:5px;right:0;}
+#container .content #issue_tab li {float:left;}
+#container .content #issue_tab li a {margin-left:3px;}
+#container .content #issue_banner {position:relative; width:478px; height:160px; cursor:pointer; overflow:hidden;}
+#container .content #issue_banner li {position:absolute; top:0; left:0; z-index:2;}
+#container .content #issue_banner li a.left {margin-right:6px;}
+
+
+#container .content .book {position:relative; float:left; width:494px; margin-left:12px;}
+
+#container .content #book_tab {position:absolute; top:5px;right:0;}
+#container .content #book_tab li {float:left;}
+#container .content #book_tab li a {margin-left:3px;}
+
+#container .content #book_banner {position:relative; width:494px; height:160px; cursor:pointer; overflow:hidden;}
+#container .content #book_banner li {position:absolute; top:0; left:0; z-index:2;}
+
+
+
+#footer {border-top:3px #e5e5e5 solid; padding-top:22px; padding-bottom:20px; height:120x; overflow:hidden; /*position:relative;*/ width:1000px;}
+#footer .logo_footer {float:left; margin-right:20px; width:153px; height:85px;}
+#footer .logo_footer .emblem {display:inline-block; *display: inline; zoom: 1; margin-top:14px;}
+#footer .under_menu {width:825px; float:left; text-align:right;}http://recruit.hackers.com/
+#footer .under_menu  .copyright {text-align:left; float:left;}
+#footer .policy {margin-bottom:13px; }
+#footer .policy a {color:#9d9d9d;}
+#footer .policy .bar {margin:0 5px; color:#ccc;}
+#footer .policy strong {color:#585858;}
+
+#footer address {font-size:11px; color:#aaaaaa; line-height:16px;}
+#footer address a{font-size:11px; color:#838383; background:#f7f7f7; border:1px #c5c5c5 solid; padding:3px 4px 1px; letter-spacing:-1px;}
+#footer span.copy {display:block; padding-top:6px; font-family:Tahoma;color:#aaaaaa; font-size:10px;}
+
+
+#footer .hackers_link { width:125px; height:22px; z-index:20; position:absolute; margin-left:721px; *margin-left:-120px;  }
+
+#footer .site_link {cursor: pointer}
+#footer ul.site_url {display:none; width:125px; height:195px; background:url('../../img/integrate/bg_sitelink.gif') no-repeat; overflow:hidden;}
+#footer ul.site_url li {margin-bottom:6px; text-align:left; padding-left:10px;}
+#footer ul.site_url li a{display:block; height:11px; overflow:hidden;}
+#footer ul.site_url li a span {display:none;}
+#footer ul.site_url li a.site01 {background:url('../../img/integrate/sitelink01.gif') no-repeat; width:101px; margin-top:6px;}
+#footer ul.site_url li a.site02 {background:url('../../img/integrate/sitelink02.gif') no-repeat; width:102px;}
+#footer ul.site_url li a.site03 {background:url('../../img/integrate/sitelink03.gif') no-repeat; width:61px;}
+#footer ul.site_url li a.site04 {background:url('../../img/integrate/sitelink04.gif') no-repeat; width:100px;}
+#footer ul.site_url li a.site05 {background:url('../../img/integrate/sitelink05.gif') no-repeat; width:59px;}
+#footer ul.site_url li a.site06 {background:url('../../img/integrate/sitelink06.gif') no-repeat; width:51px;}
+#footer ul.site_url li a.site07 {background:url('../../img/integrate/sitelink07.gif') no-repeat; width:51px;}
+#footer ul.site_url li a.site08 {background:url('../../img/integrate/sitelink08.gif') no-repeat; width:51px;}
+#footer ul.site_url li a.site09 {background:url('../../img/integrate/sitelink09.gif') no-repeat; width:51px;}
+#footer ul.site_url li a.site10 {background:url('../../img/integrate/sitelink10.gif') no-repeat; width:40px;}
+#footer ul.site_url li a.site11 {background:url('../../img/integrate/sitelink11.gif') no-repeat; width:69px;}
+#footer ul.site_url li a:hover {background-position:0 -11px;}
+
+
+#mask { position:absolute; left:0; top:-4px; z-index:9000; background:#000 /*url('../../img/integrate/bg_main.png') repeat*/; display:none;}
+	@media screen and (-webkit-min-device-pixel-ratio:0){#mask {top:0;}}
+	@-moz-document url-prefix() {#mask {top:0;}}
+
+
+#boxes .window { position:absolute; left:50%; top:50%; margin-top:-120px; margin-left:-217px; width:434px; height:240px; display:none; z-index:9999; }
+#boxes #dialog { width:434px; height:240px; background:url('../../img/integrate/bg_login.png') no-repeat; }
+
+.popup_login {}
+.popup_login .btnClose {text-align:right; padding-right:20px; margin-top:20px;}
+.popup_login h2 {padding-left:58px; margin-bottom:20px;}
+.popup_login input.text {width:160px; height:22px; font-size:14px; /*font-weight:bold;*/ font-family:Tahoma; border:1px #969696 solid; line-height:24px; padding:0 4px; color:#4c4c4c;}
+.popup_login .loginBox {padding-left:58px;}
+.popup_login .loginBox .textInput{float:left; width:235px;}
+.popup_login .loginBox p {float:left; width:235px; margin-bottom:2px; *margin-bottom:0px; }
+.popup_login .loginBox label {float:left; width:60px; padding-top:6px;}
+.popup_login .loginBox .btnLogin {}
+.popup_login .loginText {padding-left:58px; margin-top:12px; }
+.popup_login .loginText .checkbox{*margin:-6px -3px -6px -6px;}
+.popup_login .loginText p.script {float:left; width:235px;}
+.popup_login .loginText label {margin-left:3px;}
+.popup_login .btnJoin {border-top:1px #c1c1c1 solid; width:350px; margin-left:42px; margin-top:18px; padding-top:8px; padding-left:16px;}
+.popup_login .btnJoin a {margin-right:17px;}

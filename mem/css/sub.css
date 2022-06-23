@@ -1,0 +1,214 @@
+/*****************************
+제목 :  sub 공통 CSS
+작성일 : 
+수정: 2012.06.07 정미례
+*****************************/
+body {margin:0; padding:0; font:12px dotum; color:#666; /*text-align:center*/;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,menu,section,article, a, select, input{margin:0; padding:0; font-size:12px; font-family:dotum; color:#666}
+table {border-collapse: collapse}
+img,fieldset {border:0;}
+img {margin-bottom:0;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ img {margin-bottom:-3px;}}
+/*@-moz-document url-prefix() {img {margin-bottom:-3px}}*/
+li,dt,dd {list-style:none;}
+a {color:#666; text-decoration:none; cursor:pointer;}
+button {cursor:pointer; border:none;}
+button span {display:none;}
+strong{ font-weight:bold;}
+em,address,var {font-style:normal;}
+var {padding:0 3px;}
+legend, caption {display:none;}
+input, select {vertical-align:middle;}
+
+#wrapper {width:1000px; margin:0 auto; padding-right:18px;}
+
+#header {width:100%;}
+
+.top_menu {position:relative; width:100%; height:19px; margin:18px 0 10px;}
+.top_menu li {float:left;}
+.top_menu ul.util_menu {position:absolute; right:0px;}
+.top_menu ul.util_menu li {margin-left:15px;}
+
+.sub_top {width:100%; height:110px; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1; background:url(../img/common/sub_top_bg.gif) repeat-x;}
+.sub_top h1 {float:left; width:190px; margin-top:17px;}
+.sub_top .gnb_wrap {float:left; width:px;height:85px;}
+.sub_top .sub_gnb {position:relative; float:left; margin-left:30px}
+.sub_top .sub_gnb li {display:inline; float:left;}
+.sub_top .sub_gnb a {float:left; display:block; height:85px; margin-right:0px; background:url(../img/common/sub_gnb.gif) no-repeat;}
+.sub_top .sub_gnb a span {display:none;}
+
+.sub_top .sub_gnb a.sub_gnb01 {width:100px; background-position:0 0;}
+.sub_top .sub_gnb a.sub_gnb01:hover {background-position:0 -85px;}
+.sub_top .sub_gnb a.sub_gnb01_on {width:100px; background-position:0 -85px;}
+.sub_top .sub_gnb a.sub_gnb02 {width:100px; background-position:-100px 0;}
+.sub_top .sub_gnb a.sub_gnb02:hover {background-position:-100px -85px;}
+.sub_top .sub_gnb a.sub_gnb02_on {width:100px; background-position:-100px -85px;}
+.sub_top .sub_gnb a.sub_gnb03 {width:110px; background-position:-200px 0;}
+.sub_top .sub_gnb a.sub_gnb03:hover {background-position:-200px -85px;}
+.sub_top .sub_gnb a.sub_gnb03_on {width:110px; background-position:-200px -85px;}
+.sub_top .sub_gnb a.sub_gnb04 {width:130px; background-position:-310px 0;}
+.sub_top .sub_gnb a.sub_gnb04:hover {background-position:-310px -85px;}
+.sub_top .sub_gnb a.sub_gnb04_on {width:130px; background-position:-310px -85px;}
+.sub_top .sub_gnb a.sub_gnb05 {width:110px; background-position:-440px 0;}
+.sub_top .sub_gnb a.sub_gnb05:hover {background-position:-440px -85px;}
+.sub_top .sub_gnb a.sub_gnb05_on {width:110px; background-position:-440px -85px;}
+.sub_top .sub_gnb a.sub_gnb06 {width:100px; background-position:-550px 0;}
+.sub_top .sub_gnb a.sub_gnb06:hover {background-position:-550px -85px;}
+.sub_top .sub_gnb a.sub_gnb06_on {width:100px; background-position:-550px -85px;}
+.sub_top .sub_gnb a.sub_gnb07 {width:110px; background-position:-650px 0;}
+.sub_top .sub_gnb a.sub_gnb07:hover {background-position:-650px -85px;}
+.sub_top .sub_gnb a.sub_gnb07_on {width:110px; background-position:-650px -85px;}
+
+.sub_top .sub_gnb li ul {position:absolute; top:85px; display:none;}
+.sub_top .sub_gnb li ul li {display:inline-block;}
+.sub_top .sub_gnb li ul a {display:inline-block; height:14px; margin:0 16px 0 0; background:url(../img/common/sub_gnb_menu.gif) no-repeat;}
+.sub_top .sub_gnb li ul.sub_menu01 {left:15px; width:500px;}
+.sub_top .sub_gnb li ul .sub_menu0101 {width:75px; background-position:0 0}
+.sub_top .sub_gnb li ul .sub_menu0101:hover {background-position:0 -15px}
+.sub_top .sub_gnb li ul .sub_menu0101_on {width:75px; background-position:0 -15px}
+.sub_top .sub_gnb li ul .sub_menu0102 {width:45px; background-position:-100px 0}
+.sub_top .sub_gnb li ul .sub_menu0102:hover {background-position:-100px -15px}
+.sub_top .sub_gnb li ul .sub_menu0102_on {width:45px; background-position:-100px -15px}
+.sub_top .sub_gnb li ul .sub_menu0103 {width:66px; background-position:-200px 0}
+.sub_top .sub_gnb li ul .sub_menu0103:hover {background-position:-200px -15px}
+.sub_top .sub_gnb li ul .sub_menu0103_on {width:66px; background-position:-200px -15px}
+.sub_top .sub_gnb li ul .sub_menu0104 {width:66px; background-position:-300px 0}
+.sub_top .sub_gnb li ul .sub_menu0104:hover {background-position:-300px -15px}
+.sub_top .sub_gnb li ul .sub_menu0104_on {width:66px; background-position:-300px -15px}
+.sub_top .sub_gnb li ul .sub_menu0105 {width:45px; background-position:-400px 0}
+.sub_top .sub_gnb li ul .sub_menu0105:hover {background-position:-400px -15px}
+.sub_top .sub_gnb li ul .sub_menu0105_on {width:45px; background-position:-400px -15px}
+.sub_top .sub_gnb li ul .sub_menu0106 {width:66px; background-position:-500px 0}
+.sub_top .sub_gnb li ul .sub_menu0106:hover {background-position:-500px -15px}
+.sub_top .sub_gnb li ul .sub_menu0106_on {width:66px; background-position:-500px -15px}
+
+.sub_top .sub_gnb li ul.sub_menu02 {left:40px; width:500px;}
+.sub_top .sub_gnb li ul .sub_menu0201 {width:55px; background-position:0 -30px;}
+.sub_top .sub_gnb li ul .sub_menu0201:hover {background-position:0 -45px;}
+.sub_top .sub_gnb li ul .sub_menu0201_on {width:55px; background-position:0 -45px;}
+.sub_top .sub_gnb li ul .sub_menu0202 {width:95px; background-position:-100px -30px;}
+.sub_top .sub_gnb li ul .sub_menu0202:hover {background-position:-100px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0202_on {width:95px; background-position:-100px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0203 {width:58px; background-position:-200px -30px;}
+.sub_top .sub_gnb li ul .sub_menu0203:hover {background-position:-200px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0203_on {width:58px; background-position:-200px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0204 {width:82px; background-position:-300px -30px;}
+.sub_top .sub_gnb li ul .sub_menu0204:hover {background-position:-300px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0204_on {width:82px; background-position:-300px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0205 {width:45px; background-position:-400px -30px;}
+.sub_top .sub_gnb li ul .sub_menu0205:hover {background-position:-400px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0205_on {width:45px; background-position:-400px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0206 {width:66px; background-position:-500px -30px;}
+.sub_top .sub_gnb li ul .sub_menu0206:hover {background-position:-500px -45px;}
+.sub_top .sub_gnb li ul .sub_menu0206_on {width:66px; background-position:-500px -45px;}
+
+
+.sub_top .sub_gnb li ul.sub_menu03 {left:140px; width:400px;}
+.sub_top .sub_gnb li ul .sub_menu0301 {width:70px; background-position:0 -60px;}
+.sub_top .sub_gnb li ul .sub_menu0301:hover {background-position:0 -75px;}
+.sub_top .sub_gnb li ul .sub_menu0301_on {width:70px; background-position:0 -75px;}
+.sub_top .sub_gnb li ul .sub_menu0302 {width:55px; background-position:-100px -60px;}
+.sub_top .sub_gnb li ul .sub_menu0302:hover {background-position:-100px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0302_on {width:55px; background-position:-100px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0303 {width:76px; background-position:-200px -60px;}
+.sub_top .sub_gnb li ul .sub_menu0303:hover {background-position:-200px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0303_on {width:76px; background-position:-200px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0304 {width:45px; background-position:-300px -60px;}
+.sub_top .sub_gnb li ul .sub_menu0304:hover {background-position:-300px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0304_on {width:45px; background-position:-300px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0305 {width:45px; background-position:-400px -60px;}
+.sub_top .sub_gnb li ul .sub_menu0305:hover {background-position:-400px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0305_on {width:45px; background-position:-400px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0306 {width:45px; background-position:-500px -60px;}
+.sub_top .sub_gnb li ul .sub_menu0306:hover {background-position:-500px -75px;}
+.sub_top .sub_gnb li ul .sub_menu0306_on {width:45px; background-position:-500px -75px;}
+
+.sub_top .sub_gnb li ul.sub_menu04 {left:200px; width:600px;}
+.sub_top .sub_gnb li ul .sub_menu0401 {width:53px; background-position:0 -90px;}
+.sub_top .sub_gnb li ul .sub_menu0401:hover {background-position:0 -105px;}
+.sub_top .sub_gnb li ul .sub_menu0401_on {width:53px; background-position:0 -105px;}
+.sub_top .sub_gnb li ul .sub_menu0402 {width:53px; background-position:-100px -90px;}
+.sub_top .sub_gnb li ul .sub_menu0402:hover {background-position:-100px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0402_on {width:53px; background-position:-100px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0403 {width:48px; background-position:-200px -90px;}
+.sub_top .sub_gnb li ul .sub_menu0403:hover {background-position:-200px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0403_on {width:48px; background-position:-200px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0404 {width:45px; background-position:-300px -90px;}
+.sub_top .sub_gnb li ul .sub_menu0404:hover {background-position:-300px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0404_on {width:45px; background-position:-300px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0405 {width:53px; background-position:-400px -90px;}
+.sub_top .sub_gnb li ul .sub_menu0405:hover {background-position:-400px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0405_on {width:53px; background-position:-400px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0406 {width:75px; background-position:-500px -90px;}
+.sub_top .sub_gnb li ul .sub_menu0406:hover {background-position:-500px -105px;}
+.sub_top .sub_gnb li ul .sub_menu0406_on {width:75px; background-position:-500px -105px;}
+
+.sub_top .sub_gnb li ul.sub_menu05 {left:350px; width:400px;}
+.sub_top .sub_gnb li ul .sub_menu0501 {width:82px; background-position:0 -120px;}
+.sub_top .sub_gnb li ul .sub_menu0501:hover {background-position:0 -135px;}
+.sub_top .sub_gnb li ul .sub_menu0501_on {width:82px; background-position:0 -135px;}
+.sub_top .sub_gnb li ul .sub_menu0502 {width:100px; background-position:-100px -120px;}
+.sub_top .sub_gnb li ul .sub_menu0502:hover {background-position:-100px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0502_on {width:100px; background-position:-100px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0503 {width:78px; background-position:-200px -120px;}
+.sub_top .sub_gnb li ul .sub_menu0503:hover {background-position:-200px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0503_on {width:78px; background-position:-200px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0504 {width:78px; background-position:-300px -120px;}
+.sub_top .sub_gnb li ul .sub_menu0504:hover {background-position:-300px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0504_on {width:78px; background-position:-300px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0505 {width:78px; background-position:-400px -120px;}
+.sub_top .sub_gnb li ul .sub_menu0505:hover {background-position:-400px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0505_on {width:78px; background-position:-400px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0506 {width:78px; background-position:-500px -120px;}
+.sub_top .sub_gnb li ul .sub_menu0506:hover {background-position:-500px -135px;}
+.sub_top .sub_gnb li ul .sub_menu0506_on {width:78px; background-position:-500px -135px;}
+
+
+.sub_top .sub_gnb li ul.sub_menu06 {left:450px; width:400px; }
+.sub_top .sub_gnb li ul .sub_menu0601 {width:82px; background-position:0 -150px;}
+.sub_top .sub_gnb li ul .sub_menu0601:hover {background-position:0 -165px;}
+.sub_top .sub_gnb li ul .sub_menu0601_on {width:82px; background-position:0 -165px;}
+.sub_top .sub_gnb li ul .sub_menu0602 {width:55px; background-position:-100px -150px;}
+.sub_top .sub_gnb li ul .sub_menu0602:hover {background-position:-100px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0602_on {width:55px; background-position:-100px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0603 {width:76px; background-position:-200px -150px;}
+.sub_top .sub_gnb li ul .sub_menu0603:hover {background-position:-200px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0603_on {width:76px; background-position:-200px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0604 {width:71px; background-position:-300px -150px;}
+.sub_top .sub_gnb li ul .sub_menu0604:hover {background-position:-300px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0604_on {width:71px; background-position:-300px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0605 {width:71px; background-position:-400px -150px;}
+.sub_top .sub_gnb li ul .sub_menu0605:hover {background-position:-400px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0605_on {width:71px; background-position:-400px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0606 {width:71px; background-position:-500px -150px;}
+.sub_top .sub_gnb li ul .sub_menu0606:hover {background-position:-500px -165px;}
+.sub_top .sub_gnb li ul .sub_menu0606_on {width:71px; background-position:-500px -165px;}
+
+
+/* 전체메뉴 */
+.fullmenu {display:none; position:absolute; top:32px; width:832px; padding:0 0 11px; background:url(../images/new_sub/fullmenu_boxBtm.gif) left bottom no-repeat;}
+.fullmenu p {position:relative; width:832px; padding:17px 0 0 0; background:url(../images/new_sub/fullmenu_boxTop.gif) left top no-repeat;}
+.fullmenu p img {position:absolute; top:20px; right:19px;}
+.fullmenu dl {float:left; width:120px; margin:0 0 0 15px; background:url(../images/new_sub/gnb_bar.gif) right top repeat-y;}
+.fullmenu dl.first {margin:0 0 0 32px}
+.fullmenu dl.last {background:none;}
+.fullmenu dl dt {margin:8px 0 7px; font-weight:bold; color:#cc0000;}
+.fullmenu dl dd {padding:0 0 4px;}
+
+
+/*footer 2012.04.03 박선희 추가*/
+
+#footer {width: 1000px; border-top: 2px solid #e8e8e8; margin:20px 0 52px; display:inline-block;}
+#footer  .fmenu {border-bottom: 1px solid #D0D0D0; margin-bottom: 26px; padding:0; width: 100%;}
+#footer  .fmenu li {float:left; padding:11px 17px 9px 0}
+#footer  .copyright {clear:both;}
+#footer  .copyright .logo {float:left; padding:0; margin-right:72px;}
+#footer  .copyright address {text-align:left}
+
+
+ul.fmenu {float:left; padding:12px 0 0; _position:relative /*height:35px; overflow:hidden;*/}
+ul.fmenu li {float:left; _height:14px;  margin:0 10px 0 0;}
+ul.fnaver{float:right; border-bottom:1px solid #d0d0d0; margin-bottom:26px;}
+ul.fnaver li {float:left; padding:4px 0 12px 5px;}
+p.logo {float:left;padding:10px 30px 20px 0; display:inline;}
+address {margin-bottom:6px;}

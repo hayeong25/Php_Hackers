@@ -1,0 +1,152 @@
+/*****************************
+제목 :  수강생공간 CSS
+작성일 : 2012.04.09
+수정 : 2012.06.09
+*****************************/
+
+.room_wrap {float:left; border:5px #f3f3f3 solid; padding:30px 30px; margin:15px 0 20px 0;}
+
+.room_wrap .mgb20{margin:0 0 20px 0;}
+.room_wrap .mgb60{margin:0 0 60px 0;}
+
+.room_wrap .btnC {text-align:center;}
+
+/*사물함 이용안내*/
+.room_wrap .locker_list {border:1px #dedede solid; padding:24px; color:#666;}
+.room_wrap .locker_list li {margin:0 0 10px 0; padding:0 0 0 18px; line-height:160%;}
+.room_wrap .locker_list li.no1 {background:url('../../images/room/num01.gif') left 3px no-repeat;}
+.room_wrap .locker_list li.no2 {background:url('../../images/room/num02.gif') left 3px no-repeat;}
+.room_wrap .locker_list li.no3 {background:url('../../images/room/num03.gif') left 3px no-repeat;}
+.room_wrap .locker_list li.no4 {background:url('../../images/room/num04.gif') left 3px no-repeat;}
+.room_wrap .locker_list li.no5 {background:url('../../images/room/num05.gif') left 3px no-repeat;}
+.room_wrap .locker_list li.no6 {background:url('../../images/room/num06.gif') left 3px no-repeat;}
+.room_wrap .locker_list li.no7 {background:url('../../images/room/num07.gif') left 3px no-repeat; margin:0;}
+
+/*사물함 신청절차*/
+.room_wrap .locker_step {}
+
+
+/*사물함 신청*/
+.room_wrap .locker_apply {width:100%; border-top:1px #9d9d9d solid;}
+.room_wrap .locker_apply th {background:#fff7f4; border-bottom:1px #dedede solid; border-right:1px #dedede solid; color:#363636;}
+.room_wrap .locker_apply td {border-bottom:1px #dedede solid; padding:10px 24px;}
+
+/*사물함 이용규정*/
+.room_wrap .locker_rule { border:1px #dedede solid; padding:3px;}
+.room_wrap .locker_rule ul {border:1px #dedede solid; padding:22px 22px 6px; }
+.room_wrap .locker_rule ul li{background:url('../../images/room/blit_bluearrow.gif') left 5px no-repeat; margin:0 0 12px 0;  padding:0 0 0 10px; line-height:160%; color:#636363;}
+
+.room_wrap .locker_agree {margin:10px 0 20px; text-align:right;}
+.room_wrap .locker_agree label {margin:0 0 0 3px; color:#818181;}
+
+
+/*사물함 위치*/
+.room_wrap .locker_script {text-align:right; position:absolute; margin:-18px 0 0 479px;}
+.room_wrap .locker_script span{font-size:11px; background:url('../../images/room/blit_search.gif') no-repeat; padding:2px 0 2px 16px;}
+
+.room_wrap .locker_location {border:1px #dedede solid;}
+.room_wrap .locker_location .locker_warning{background:#f9f9f9; padding:30px 20px}
+.room_wrap .locker_location .locker_warning li {padding:0 0 0 26px; margin:0 0 10px 0; color:#636363; font-weight:bold; height:19px; line-height:20px;}
+.room_wrap .locker_location .locker_warning li.num1 {background:url('../../images/room/icon_num01.gif') no-repeat;}
+.room_wrap .locker_location .locker_warning li.num2 {background:url('../../images/room/icon_num02.gif') no-repeat;}
+.room_wrap .locker_location .locker_warning li.num3 {background:url('../../images/room/icon_num03.gif') no-repeat; margin:0;}
+
+
+/*사물함 신청현황*/
+.room_wrap .locker_status .locker_check {position:absolute; margin:-38px 0 0 445px;}
+.room_wrap .locker_status .locker_check span {display:block; font-size:11px; background:url('../../images/room/icon_check.gif') no-repeat; padding:0 0 0 12px; margin:0 0 5px 0;}
+
+.room_wrap .locker_status table {border-top:1px #9d9d9d solid; width:100%;}
+.room_wrap .locker_status table td {text-align:center; border-bottom:1px #dedede solid; border-right:1px #dedede solid; padding:10px 0;}
+.room_wrap .locker_status table td.end{border-right:none;}
+.room_wrap .locker_status .pre_view {margin:10px 0 0; text-align:right;}
+
+.room_wrap .locker_status .locker_info {position:absolute; z-index:4; border:1px #9d9d9d solid; background:#fff; width:120px; margin:-15px 0 0 64px;}
+.room_wrap .locker_status .locker_info ul li {height:24px; line-height:24px; text-align:center;}
+.room_wrap .locker_status .locker_info ul li.underline {border-bottom:1px #dedede solid;}
+.room_wrap .locker_status .locker_info ul li span{float:left; width:60px; background:#fafafb; border-right:1px #dedede solid; padding:0; margin:0;}
+
+
+
+/*학사일정 - 2012.04.16 정정인 추가*/
+.room_wrap .btn_print {text-align:right; margin:0 0 10px 0;}
+.room_wrap .top_month {text-align:center;}
+.room_wrap .top_month .now {font-weight:bold; font-family:Tahoma, Arial, Verdana; font-size:34px; color:#444; letter-spacing:-0.05em; margin:0 15px;}
+.room_wrap .calendar {width:100%; margin:0 0 20px 0;}
+.room_wrap .calendar th {border:1px #d0d0d0 solid; padding:9px 0 5px; background:url('../../images/room/bg_calendar_th.gif') no-repeat; }
+.room_wrap .calendar td {border:1px #d0d0d0 solid; padding:12px 9px 8px; color:#393939; font-size:11px!important; height:100px; vertical-align:top; letter-spacing:-0.04em;}
+.room_wrap .calendar td p {font-size:11px; background:url('../../images/room/dot_black.gif') left 5px no-repeat; color:#393939; padding:0 0 0 4px; margin:0 0 5px 0; }
+.room_wrap .calendar td p.red {font-size:11px; background:url('../../images/room/dot_red.gif') left 5px no-repeat; color:#cb0000;  }
+.room_wrap .calendar td p.blue {font-size:11px; background:url('../../images/room/dot_blue.gif') left 5px no-repeat; color:#0073be;  }
+.room_wrap .calendar td span.day{font-weight:bold; text-indent:4px; display:block; margin:0 0 3px 0; }
+.room_wrap .calendar .sat {color:#6488e0; }
+.room_wrap .calendar .sun {color:#ce0000;}
+
+
+/*반별게시판 - 2012.04.17 정정인추가*/
+.room_tab { height:37px; margin:34px 0 15px 0; width:100%;}
+.room_tab li {float:left; height:37px;}
+.room_tab li a {display:block; height:37px;}
+.room_tab li a span {display:none;}
+.room_tab li a.menu01 {background:url('../../images/room/bg_tab_kn.gif') no-repeat; width:390px;}
+.room_tab li a.menu01:hover, .room_tab li.on a.menu01 {display:inline-block; width:390px; height:37px;background:url(../../images/room/bg_tab_kn.gif) no-repeat;background-position:0 -37px;}
+.room_tab li a.menu02 {background:url('../../images/room/bg_tab_jk.gif') no-repeat; width:389px;}
+.room_tab li a.menu02:hover, .room_tab li.on a.menu02 {display:inline-block; width:389px; height:37px;background:url(../../images/room/bg_tab_jk.gif) no-repeat;background-position:0 -37px;}
+
+
+
+
+
+.room_tab li a.choice_all01{background:url('../../images/room/bg_tab_all01.gif') no-repeat; width:99px;}
+.room_tab li a.choice_all02{background:url('../../images/room/bg_tab_all02.gif') no-repeat; width:97px;}
+.room_tab li a.choice_all03{background:url('../../images/room/bg_tab_all03.gif') no-repeat; width:97px;}
+.room_tab li a.choice_all04{background:url('../../images/room/bg_tab_all04.gif') no-repeat; width:97px;}
+.room_tab li a.choice_all05{background:url('../../images/room/bg_tab_all05.gif') no-repeat; width:97px;}
+.room_tab li a.choice_all06{background:url('../../images/room/bg_tab_all06.gif') no-repeat; width:97px;}
+.room_tab li a.choice_all07{background:url('../../images/room/bg_tab_all07.gif') no-repeat; width:97px;}
+.room_tab li a.choice_all08{background:url('../../images/room/bg_tab_all08.gif') no-repeat; width:98px;}
+
+.room_tab li a.choice_eng01{background:url('../../images/room/bg_tab_eng01.gif') no-repeat; width:112px;}
+.room_tab li a.choice_eng02{background:url('../../images/room/bg_tab_eng02.gif') no-repeat; width:111px;}
+.room_tab li a.choice_eng03{background:url('../../images/room/bg_tab_eng03.gif') no-repeat; width:111px;}
+.room_tab li a.choice_eng04{background:url('../../images/room/bg_tab_eng04.gif') no-repeat; width:111px;}
+.room_tab li a.choice_eng05{background:url('../../images/room/bg_tab_eng05.gif') no-repeat; width:111px;}
+.room_tab li a.choice_eng06{background:url('../../images/room/bg_tab_eng06.gif') no-repeat; width:111px;}
+.room_tab li a.choice_eng07{background:url('../../images/room/bg_tab_eng07.gif') no-repeat; width:112px;}
+
+
+.room_tab li a.choice_mat01{background:url('../../images/room/bg_tab_mat01.gif') no-repeat; width:195px;}
+.room_tab li a.choice_mat02{background:url('../../images/room/bg_tab_mat02.gif') no-repeat; width:195px;}
+.room_tab li a.choice_mat03{background:url('../../images/room/bg_tab_mat03.gif') no-repeat; width:195px;}
+.room_tab li a.choice_mat04{background:url('../../images/room/bg_tab_mat04.gif') no-repeat; width:194px;}
+
+.room_tab li a.after01 {background:url('../../images/room/bg_tab_after01.gif') no-repeat; width:260px;}
+.room_tab li a.after02 {background:url('../../images/room/bg_tab_after02.gif') no-repeat; width:260px;}
+.room_tab li a.after03 {background:url('../../images/room/bg_tab_after03.gif') no-repeat; width:259px;}
+
+.room_tab li.on a, .room_tab li a:hover {background-position:bottom;}
+
+.box .btn_studyCafe {text-align:right; margin:30px 0 -20px;}
+
+
+/*반별게시판 하단 문구추가 2012.05.15 박선희*/
+.addtxt {text-align:right; padding-top:10px; font-weight:bold}
+
+
+
+/* 반별게시판 카테고리 추가 2012.06.09 정미례 */
+.ban_category {margin:30px 0 10px;}
+.ban_category .category_list  {float:left; width:100%; }
+.ban_category .category_list  li {float:left; margin-right:5px; display:inline-block; }
+.ban_category .category_list  a {width:79px; display:inline-block; *zoom:-1; *display:inline; height:21px;}
+.ban_category .category_list  a span {display:none;}
+.ban_category .category_list  a.category_01 {background:url('../../images/button/ban_01.gif') no-repeat;}
+.ban_category .category_list  a.category_02 {background:url('../../images/button/ban_02.gif') no-repeat;}
+.ban_category .category_list  li.on a, .ban_category .category_list  a:hover {background-position:0 -21px;}
+
+.ban_category .category_lesson  {float:left; width:100%; margin:10px 0 20px;}
+.ban_category .category_lesson  li {float:left; display:inline-block; }
+.ban_category .category_lesson  a {margin:0 4px; font-weight:bold; display:inline-block; *zoom:-1; *display:inline;}
+.ban_category .category_lesson  li.on a, .ban_category .category_lesson  a:hover {color:#cc0000;}
+
+.guide {width:100%; margin:10px 0 20px; text-align:right; font-weight:bold; display:inline-block;}

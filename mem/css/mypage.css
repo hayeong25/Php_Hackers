@@ -1,0 +1,288 @@
+@charset "euc-kr";
+
+/*****************************
+제목 : 해커스공무원 공통 CSS
+작성자 : 해커스교육그룹 개발지원팀 정정인
+작성일 : 2012.04.10
+수정 : 정미례_2012.06.19
+*****************************/
+.mypage_wrap {}
+.mypage_wrap .box {margin:20px 0 30px;}
+.mypage_wrap .box_main {margin:0 0 30px; padding:40px 0;}
+.mypage_wrap .lecture_room {margin-top:20px;}
+
+.mypage_wrap .mgb10{margin-bottom:10px;}
+.mypage_wrap .mgb20{margin-bottom:20px;}
+.mypage_wrap .mgb30{margin-bottom:30px;}
+.mypage_wrap .mgb60{margin-bottom:60px;}
+
+.mypage_wrap .tab {float:left; width:100%; height:33px;  background:url('../../img/mypage/bg_tab_bar.gif') left bottom repeat-x;}
+.mypage_wrap .tab li {float:left;}
+.mypage_wrap .tab li a {float:left; padding:10px 30px 0; height:23px; background:url('../../img/mypage/bg_tab_off.gif') repeat-x; border-right:1px solid #d0d0d0;}
+.mypage_wrap .tab a.first {border-left:1px solid #d0d0d0;}
+.mypage_wrap .tab a:hover,
+.mypage_wrap .tab a.on {background:url('../../img/mypage/bg_tab_on.gif') repeat-x}
+
+.mypage_wrap .lecture_mylist {width:100%; border-collapse:collapse; border:none}
+.mypage_wrap .lecture_mylist thead th {border:1px #c9c9c9 solid; border-right:none; border-left:none;}
+.mypage_wrap .lecture_mylist .tbody_bg td {height:5px; padding:0; background:url('../../img/mypage/bg_tbody.gif') left top repeat-x;}
+.mypage_wrap .lecture_mylist th {background:url('../../img/mypage/bg_th_line.gif') right center no-repeat; padding:10px 0 10px;}
+.mypage_wrap .lecture_mylist th.first {background:none; border-left:1px #c9c9c9 solid; background:url('../../img/mypage/bg_th_line.gif') right center no-repeat;}
+.mypage_wrap .lecture_mylist th.end {background:none; border-right:1px #c9c9c9 solid;}
+.mypage_wrap .lecture_mylist td {color:#666; text-align:center; padding:20px 0; line-height:160%; }
+.mypage_wrap .lecture_mylist td.alignL {text-align:left;}
+.mypage_wrap .lecture_mylist td.alignR {text-align:right;}
+.mypage_wrap .lecture_mylist td.pl20 {padding:20px;}
+.mypage_wrap .lecture_mylist td a {color:#666;}
+.mypage_wrap .lecture_mylist td span.red , .mypage_wrap .lecture_mylist td strong.red {color:#cc0000; }
+.mypage_wrap .lecture_mylist td span.pause_end {color:#cc0000; font-size:11px; font-weight:bold;}
+.mypage_wrap .lecture_mylist td span.date{display:block; font-size:11px; letter-spacing:-1px;}
+.mypage_wrap .lecture_mylist tr.underline td {border-bottom:1px #eaeaea solid;}
+
+.mypage_wrap .lecture_mylist tr.waiting_top td {padding:15px 0 5px;}
+.mypage_wrap .lecture_mylist tr.waiting_bot td {padding:0 0 15px;}
+.mypage_wrap .lecture_mylist td.script {color:#a5a5a5; font-size:11px; text-align:left;}
+
+.mypage_wrap .lecture_mylist td.progress img {vertical-align:middle;}
+.mypage_wrap .lecture_mylist td.progress strong {display:block}
+
+.mypage_wrap .btn_pauseFAQ {text-align:right; margin:0 0 10px 0;}
+.mypage_wrap .lecture_mylist tr.pause_top td {padding:20px 0 10px;}
+.mypage_wrap .lecture_mylist tr.pause_bot td {padding:0 0 10px;}
+.mypage_wrap .lecture_mylist tr.pause_top td.alignL20 {text-align:left; padding:20px;}
+
+
+.mypage_wrap .pause_rule {}
+.mypage_wrap .pause_rule li{background:url('../../img/mypage/bg_pause_line.gif') 2px 8px no-repeat; padding:0 0 0 15px; line-height:160%; margin:0 0 7px 0;}
+
+.mypage_wrap table.pause_num { border-top:1px #9d9d9d solid; margin:20px 0 20px -15px}
+.mypage_wrap table.pause_num th { border-bottom:1px #dedede solid; color:#363636; height:28px; background:#f9f9f9;}
+.mypage_wrap table.pause_num td { border-bottom:1px #dedede solid; text-align:center; color:#363636; height:28px;}
+.mypage_wrap table.pause_num  .borderR { border-right:1px #dedede solid;}
+
+
+.mypage_wrap .lesson_mylist {width:100%; border-top:1px #9d9d9d solid;}
+.mypage_wrap .lesson_mylist tr:hover td {background:#fdf2f0;}
+.mypage_wrap .lesson_mylist th {color:#363636; border-bottom:1px #dedede solid; border-right:1px #dedede solid; background:#f9f9f9; padding:16px 0 12px;}
+.mypage_wrap .lesson_mylist td {color:#636363; border-bottom:1px #dedede solid; border-right:1px #dedede solid; font-size:11px; text-align:center; padding:16px 0 12px;}
+.mypage_wrap .lesson_mylist td.alignL {text-align:left; padding:16px;}
+.mypage_wrap .lesson_mylist .end {border-right:none;}
+
+/* 일시정지 페이지 추가 - 김남경 */
+.mypage_wrap table.pause {width:100%; border-top:1px solid #9d9d9d;}
+.mypage_wrap table.pause th, 
+.mypage_wrap table.pause td {text-align:center; border-bottom:1px solid #dedede; border-right:1px solid #dedede}
+.mypage_wrap table.pause .last {border-right:none;}
+.mypage_wrap table.pause th {padding:7px 0 2px; background:#fff7f4;}
+.mypage_wrap table.pause th span {font-size:11px;}
+.mypage_wrap table.pause td {padding-top:11px; padding-bottom:6px;}
+.mypage_wrap table.pause td em {color:#cc0000; font-weight:bold;}
+.mypage_wrap table.pause td.alignL em {color:#2a2a2a; font-weight:normal;}
+.mypage_wrap table.pause .alignL {text-align:left; padding-left:21px;}
+.mypage_wrap table.pause label {display:block; margin:0 0 3px;}
+.mypage_wrap table.pause input {position:relative; top:-2px; vertical-align:middle;}
+.mypage_wrap table.pause select {width:73px; font-size:12px; text-align:center;}
+
+.mypage_wrap .btn_qna {text-align:right; padding:0 0 5px 0;}
+
+.mypage_wrap h2.myLecture {background:#fdf2f0; text-align:center; font-size:14px; color:#333; padding:10px 0; letter-spacing:-1px; margin:0 0 8px 0;}
+.mypage_wrap h2.myLecture span{color:#597b97;}
+
+.mypage_wrap .myLectureBox {width:760px; *740px border:1px #eaeaea solid; background:#f9f9f9; padding:13px 10px; display:inline-block; }
+.mypage_wrap .myLectureBox li {float:left; display:inline-block; *zoom:-1; *display:inline; margin:0 6px;}
+.mypage_wrap .myLectureBox h4 {margin:0 0 6px 0;}
+.mypage_wrap .myLectureBox strong{display:block; margin:0 0 10px 0; color:#333;}
+.mypage_wrap .myLectureBox strong em {font-size:14px;}
+.mypage_wrap .myLectureBox .red{color:#cc0000;}
+.mypage_wrap .myLectureBox span.percent {color:#333; font-family:Arial; font-size:24px; font-weight:bold; letter-spacing:-2px; margin-right:6px;}
+.mypage_wrap .myLectureBox .date {background:url('../../img/mypage/bg_date.gif') no-repeat; width:173px; height:66px; overflow:hidden; padding:27px 0 0 64px;}
+.mypage_wrap .myLectureBox .progress {background:url('../../img/mypage/bg_progress.gif') no-repeat; width:165px; height:78px; overflow:hidden; padding:15px 0 0 72px;}
+.mypage_wrap .myLectureBox .progress strong {margin:5px 0 0 0;}
+.mypage_wrap .myLectureBox .target {background:url('../../img/mypage/bg_target.gif') no-repeat; width:173px; height:72px; overflow:hidden; padding:21px 0 0 64px; line-height:160%;}
+.mypage_wrap .myLectureBox .target span {display:inline-block; width:145px; letter-spacing:-1px}
+
+/*상담내역*/
+.mypage_counsel {float:none;}
+.mypage_counsel_tab {height:37px; margin:0 0 15px 0;}
+.mypage_counsel_tab li {float:left; height:37px;}
+.mypage_counsel_tab li a {display:block; height:37px; text-align:center;}
+.mypage_counsel_tab li a span {display:none;}
+.mypage_counsel_tab li a.menu01 {background:url('../../img/mypage/tab_counsel01.gif') no-repeat; width:157px;}
+.mypage_counsel_tab li a.menu02 {background:url('../../img/mypage/tab_counsel02.gif') no-repeat; width:155px;}
+.mypage_counsel_tab li a.menu03 {background:url('../../img/mypage/tab_counsel03.gif') no-repeat; width:155px;}
+.mypage_counsel_tab li a.menu04 {background:url('../../img/mypage/tab_counsel04.gif') no-repeat; width:155px;}
+.mypage_counsel_tab li a.menu05 {background:url('../../img/mypage/tab_counsel05.gif') no-repeat; width:157px;}
+.mypage_counsel_tab li a:hover , .mypage_counsel_tab li.on a {background-position:bottom;}
+
+.mypage_wrap .counsel_script {background:#f9f9f9; padding:20px; margin:0 0 30px 0;}
+.mypage_wrap .counsel_script strong {color:#333;}
+.mypage_wrap .counsel_script ul li {display:inline-block; *zoom:-1; *display:inline; margin:0 50px 0 0; background:url('../../img/mypage/blit_graydot.gif') left center no-repeat; padding:0 0 0 12px; }
+.mypage_wrap .counsel_script ul li span.red {font-weight:bold; color:#cc0000;}
+
+.mypage_wrap .onebyone_box {border:1px #dedede solid; padding:30px;}
+.mypage_wrap .onebyone_box .onebyone {width:100%; }
+.mypage_wrap .onebyone_box .onebyone th{ border:1px #eaeaea solid; background:#f7f7f7; text-align:left; padding:9px 0 9px 25px;}
+.mypage_wrap .onebyone_box .onebyone td{ border:1px #eaeaea solid; padding:9px 25px;}
+.mypage_wrap .onebyone_box .onebyone td span.red {color:#cc0000;}
+.mypage_wrap .onebyone_box .onebyone td input {border:1px #dedede solid; padding:0 3px; height:19px; line-height:20px;}
+.mypage_wrap .onebyone_box .onebyone td input.title {width:416px;}
+.mypage_wrap .onebyone_box .onebyone td input.mail {width:120px;}
+.mypage_wrap .onebyone_box .onebyone td input.phone {width:70px;}
+.mypage_wrap .onebyone_box .onebyone td textarea {width:416px; padding:3px; border:1px #dedede solid; height:140px;}
+
+.mypage_wrap .btn_bot {float:left; width:100%; margin-top:30px; text-align:center;}
+
+/* mypage 상담내역 팝업 - 정정인 추가*/
+.mypage_popupRe { width:490px; padding:30px; top:450px; left:50%; margin-left:-165px;}
+.mypage_popupRe h3 {background:url('../../img/mypage/blit_bluedot.gif') 6px 3px no-repeat; color:#363636; padding:0 0 10px 20px; margin:0 0 15px 0; border-bottom:1px #dedede solid; font-size:12px;}
+.mypage_popupRe .red {color:#cc0000;}
+.mypage_popupRe .reply_end{float:left; width:230px; margin:0 30px 0 0;}
+.mypage_popupRe .reply_wait{margin:0;}
+.mypage_popupRe .reply_end ul {padding:0 2px 14px;}
+.mypage_popupRe .reply_end ul li {background:url('../../img/mypage/blit_graydot.gif') left 7px no-repeat;  padding:0 0 0 10px; font-size:11px; margin:0 0 6px 0; }
+.mypage_popupRe .reply_end ul li span{display:inline-block; *zoom:-1; *display:inline; width:140px;}
+
+.mypage_popupRe p.total {clear:both; border-top:1px #9d9d9d solid; padding:12px 0 0 0;  text-align:center; font-weight:bold; color:#363636;}
+
+
+/*마이페이지 메인*/
+.mypage_wrap .mypage_nowing{width:340px; float:left; margin:0 29px 0 0;}
+.mypage_wrap .mypage_nowing ul{border:1px #ccc solid; padding:9px 15px 0; height:78px; overflow:hidden;}
+.mypage_wrap .mypage_nowing ul li {margin:7px 0;}
+
+.mypage_wrap .mypage_wish {width:340px; display:inline-block; *zoom:-1; *display:inline; }
+.mypage_wrap .mypage_wish ul{ padding: 9px 14px 0 ; border:1px #d0d0d0 solid; height:78px; overflow:hidden;}
+.mypage_wrap .mypage_wish ul li p.my_target {float:left; width:255px; height:20px; line-height:20px; margin:0 5px 0 0;}
+.mypage_wrap .mypage_wish ul li.bg_wisth {background:url('../../img/mypage/icon_wish.gif') no-repeat; height:31px; border-bottom:1px #f0f0f0 solid; padding:6px 0 3px 85px; margin:0 0 7px 0;}
+.mypage_wrap .mypage_wish ul li.bg_wisth p.my_target {width:172px; }
+.mypage_wrap .mypage_wish ul li.bg_wisth p.my_target strong {color:#597b97;}
+.mypage_wrap .mypage_wish ul li input {border:1px #ededed solid; height:18px; line-height:20px; width:100%;}
+
+
+.mypage_wrap .mypage_notice {width:340px;  float:left; height:220px; overflow:hidden; vertical-align:top; margin:0 29px 0 0;}
+.mypage_wrap .mypage_notice table{width:100%!important;}
+.mypage_wrap .mypage_notice .btn_more {position:absolute; margin:-30px 0 0 300px;}
+
+.mypage_wrap .mypage_news {width:340px;  float:left; height:220px; overflow:hidden; vertical-align:top;}
+.mypage_wrap .mypage_news table{width:100%!important;}
+.mypage_wrap .mypage_news .btn_more {position:absolute; margin:-30px 0 0 300px;}
+
+
+/*동영상 1:1 문의(팝업)*/
+.mypage_popup {padding:30px 43px; width:779px; background:#fff; }
+.mypage_popup h2 {border-bottom:2px #bcbcbc solid; padding:0 0 10px 0; margin:0 0 40px 0;}
+.mypage_popup .con {border:5px #f3f3f3 solid; padding:40px 30px;}
+.mypage_popup h3 {margin:0 0 12px 0;}
+.mypage_popup .mypage_mantoman {width:100%;}
+.mypage_popup .mypage_mantoman th {border:1px #eaeaea solid; background:#f7f7f7; text-align:left; padding:9px 27px 5px; color:#666;}
+.mypage_popup .mypage_mantoman td {border:1px #eaeaea solid; padding:9px 25px; color:#666;}
+.mypage_popup .mypage_mantoman td span.red{color:#cc0000;}
+.mypage_popup .mypage_mantoman td p.script {margin:8px 0 0 0;}
+.mypage_popup .mypage_mantoman td input {border:1px #dedede solid; height:18px; line-height:20px;}
+.mypage_popup .mypage_mantoman td input.phone {width:71px;}
+.mypage_popup .mypage_mantoman td input.mail {width:140px;}
+.mypage_popup .mypage_mantoman td input.title {width:463px;}
+.mypage_popup .mypage_mantoman td textarea {border:1px #dedede solid; width:463px; height:138px;}
+.mypage_popup .btn{margin:40px 0 0; text-align:center;}
+.mypage_popup .btn a {margin:0 10px;}
+
+
+/***************************** 마이페이지/결제관리_정미례 추가_2012.04.16 *****************************/
+/* 관심강의, 장바구니 */
+.favoriteLecture_wrap {}
+.favoriteLecture_wrap img,
+.favoriteLecture_wrap input {vertical-align:middle;}
+.favoriteLecture_wrap .box {padding-top:30px;}
+.favoriteLecture_wrap .box .board_wrap {width:100%; display:inline-block;}
+.favoriteLecture_wrap .box .board_list th {padding: 9px 0 25px; background-position:left top}
+.favoriteLecture_wrap .box .board_list td {padding: 20px 5px 20px;}
+.favoriteLecture_wrap .box .board_list th.first {background: url(../img/board/th_bg0102.gif) no-repeat}
+.favoriteLecture_wrap .box .board_list th.last {background: url(../img/board/th_bgX160.gif) right top no-repeat}
+
+.favoriteLecture_wrap .box .board_list tr.noline td {border:none; padding: 20px 5px 0;}
+.favoriteLecture_wrap .box .board_list tr.noline td input {border:none;}
+.favoriteLecture_wrap .box .payBtns_01 {text-align:right;}
+.favoriteLecture_wrap .box .payBtns_02 {float:left; text-align:left; width:50%; margin-top:13px; display:inline-block;}
+
+/* 총주문금액 */
+.favoriteLecture_wrap .box .all_sum {float:right; text-align:right; width:40%; margin-top:17px; display:inline-block; font-size:14px; font-weight:bold; color:#4b4b4b;}
+.favoriteLecture_wrap .box .all_sum span {float:left;}
+.favoriteLecture_wrap .box .all_sum span.sum_num {float:right; color:#cc0000;}
+
+.favoriteLecture_wrap .box .script_01 {width:100%; line-height:20px; margin-top:30px; display:inline-block;}
+.favoriteLecture_wrap .box .payBtns_03 {width:100%; text-align:center; margin:60px 0 40px;}
+.favoriteLecture_wrap .box .payBtns_03 a {margin:0 5px;}
+
+/* 주문결제배송 내역 */
+.orderList_wrap h3 {margin:10px 0 10px;  text-align:left;}
+.orderList_wrap .board_wrap {width:100%;}
+.orderList_wrap .orderList {width:100%; border-top:1px solid #9d9d9d; margin-bottom:50px;}
+.orderList_wrap .orderList th {padding:10px 0 7px; background-color:#f9f9f9; border-bottom:1px solid #dedede; border-left:1px solid #dedede; color:#373536}
+.orderList_wrap .orderList td {padding:8px 0 5px; border-bottom:1px solid #dedede; border-left:1px solid #dedede; text-align:center; font-size:11px; line-height:16px;}
+.orderList_wrap .orderList tr.attention  td {background-color:#fdf2f0;}
+.orderList_wrap .orderList .first {border-left:none;}
+.orderList_wrap .orderList td.first {text-align:left; padding-left:10px;}
+
+/* 포인트확인 */
+.point_wrap {text-align:left;}
+.point_wrap table {text-align:center;}
+.point_wrap img, 
+.point_wrap input {vertical-align:middle;}
+.point_wrap h3 {margin:20px 0 10px;}
+.point_wrap .scriptBox_01 {padding:15px 30px 12px; margin-bottom:15px; font-weight:bold; color:#333; background:#ffff; border:1px solid #eaeaea}
+.point_wrap .scriptBox_01 em {color:#c00;}
+.point_wrap .scriptBox_02 {padding:15px 25px;  margin-bottom:30px; background:#f7f7f7; border:1px solid #eaeaea; line-height:21px;}
+.point_wrap .scriptBox_02 h4 {color:#597b97}
+.point_wrap .scriptBox_02 h4.righNow {color:#333; margin-bottom:20px;}
+.point_wrap .scriptBox_02 img {margin:-4px 0 0 5px;;}
+
+.point_wrap .board_wrap {width:100%;}
+.point_wrap .pointList {width:100%; border-top:1px solid #9d9d9d; margin-bottom:50px;}
+.point_wrap .pointList th {padding:14px 0 11px; background-color:#f9f9f9; border-bottom:1px solid #dedede; border-left:1px solid #dedede; color:#373536}
+.point_wrap .pointList td {padding:14px 0 11px; border-bottom:1px solid #dedede; border-left:1px solid #dedede; text-align:center; font-size:11px; line-height:16px;}
+.point_wrap .pointList .first {border-left:none;}
+.point_wrap .pointList td.first {text-align:left; padding-left:20px;}
+.point_wrap .pointList .first img {margin:-3px 10px 0 0}
+.point_wrap .pointList tr.last td {border-top:2px solid #dedede; padding:10px 0 7px 67px;}
+.point_wrap .pointList tr.last td span {margin:3px 0;}
+.point_wrap .pointList tr.last .allPoint{width:348px; display:inline-block;}
+.point_wrap .pointList tr.last .allPoint_num {width:150px; display:inline-block; text-align:center;}
+.point_wrap .pointList .allPoint_num img {margin:-3px 5px 0 0}
+.point_wrap .pointList tr.all  td {font-weight:bold; font-size:14px; color:#333333; background-color:#fff7f4; padding:10px 0 7px 67px;}
+.point_wrap .pointList tr.all .allPoint_num {color:#cc0000; }
+
+/* 쿠폰확인 */
+.point_wrap .coupon_title {margin-bottom:10px; color:#333; font-size:12px;}
+.point_wrap .coupon_register {padding:13px 20px 10px; margin-bottom:15px; font-weight:bold; color:#597b97; background:#ffff; border:1px solid #eaeaea}
+.point_wrap .coupon_register img, 
+.point_wrap .coupon_register input {margin:-3px 0 0 5px;}
+.point_wrap .coupon_register input {width:305px; height:20px; line-height:20px; border:1px solid #dedede;}
+
+/* 환불요청게시판 */
+.refund_wrap .scriptBox_02 {padding:15px 15px; line-height:23px; margin-bottom:50px; }
+.refund_wrap h3.refund_title {position:relative; width:100%; margin-bottom:15px;}
+.refund_wrap h3.refund_title .title_right {position:absolute; top:-5px; right:0; font-size:12px;}
+.refund_wrap h3.refund_title .title_right label {margin-left:20px;  padding-top:10px; display:inline-block; }
+.refund_wrap h3.refund_title .title_right label input {margin-top:-2px;}
+
+.refund_wrap .board_wrap {padding:0;}
+.refund_wrap .pointList {margin-bottom:30px;}
+.refund_wrap .pointList th {padding:13px 0;}
+.refund_wrap .pointList td {padding:13px 0 10px;}
+.refund_wrap .pointList td.first {text-align:center; padding-left:10px;}
+.refund_wrap .pointList td.subject {text-align:left; padding-left:20px;}
+.refund_wrap .pointList input {height:20px; line-height:20px;}
+.refund_wrap .pointList input.name {width:150px;}
+.refund_wrap .pointList input.choiceLecture {width:300px;}
+.refund_wrap .pointList td.pay_lecture input,
+.refund_wrap .pointList td.refund_reason input {border:none;}
+.refund_wrap .pointList select.phone {width:60px; vertical-align:middle;}
+.refund_wrap .pointList input.phone {width:60px; height:18px}
+.refund_wrap .pointList td label {display:inline-block; margin:4px 20px 4px 0; }
+.refund_wrap .pointList td label.etc {margin-right:10px; display:block;}
+.refund_wrap .pointList td label.etc input.reason {width:400px; border:1px solid #dedede;}
+
+/* 환불요청게시판_환불요청작성 */
+.refund_wrap .refund_write td {font-size:12px; text-align:left; padding:8px 0 5px 20px;}
+.refund_wrap .btn {text-align:center; margin:30px 0;}
+#container .refund_wrap .btn img {margin:0 10px;}

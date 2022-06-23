@@ -1,0 +1,207 @@
+/*****************************
+	제목 :  회원가입 CSS
+	작성일 : 2012.08.20
+*****************************/
+
+/*가입하기*/
+#container #sub.content .join_wrap h3 span {font-size:11px; font-weight:normal; margin-left:5px;}
+#container #sub.content .join_wrap h3 span a{color:#666;}
+#container #sub.content .join_wrap p.sub_text {font-size:11px;}
+
+#container #sub.content .join_wrap .top_img {margin-bottom:50px;}
+
+#container #sub.content .join_wrap .privacyBox {border:1px #d0d0d2 solid; padding:25px; height:90px; overflow-x:hidden; overflow-y:auto;}
+#container #sub.content .join_wrap .text_agree {font-size:11px; margin-bottom:70px;}
+
+#container #sub.content .join_wrap .fixIDBox {background:url('../img/member/bg_fixID.gif') no-repeat; height:66px; text-align:center;}
+#container #sub.content .join_wrap .fixIDBox p {padding-top:25px;}
+#container #sub.content .join_wrap .fixIDBox strong.blue {color:#3e76c9; font-size:14px; padding:0 5px;}
+#container #sub.content .join_wrap .fixIDBox img {vertical-align:bottom;}
+
+/*본인확인*/
+#container #sub.content .join_wrap .idCheck_wrap {border:1px #d0d0d2 solid; padding:0px 24px;}
+#container #sub.content .join_wrap .idCheck_wrap .left {float:left; width:349px; background:url('../img/member/bg_line.gif') right 30px no-repeat; padding:26px 0 20px;}
+#container #sub.content .join_wrap .idCheck_wrap .right {float:left; width:330px; margin-left:20px; padding:26px 0 20px;}
+
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox {width:330px; height:300px; border-bottom:1px #e5e5e6 solid;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox p {margin-bottom:20px;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox p img{vertical-align:-6px;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox p span {float:left; width:67px; padding-top:3px;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox select{border:1px #bdbdbd solid;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox label {margin-right:7px;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox input.name {border:1px #bdbdbd solid; width:88px; height:16px; line-height:18px;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox input.phone {border:1px #bdbdbd solid; width:56px; height:16px; line-height:18px;}
+
+
+
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox .under_text {font-size:11px; padding-top:10px;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox .under_text li {padding-left:6px; background:url('../img/member/new2013/blit_dot.gif') left 4px no-repeat; margin-bottom:10px;}
+#container #sub.content .join_wrap .idCheck_wrap .phoneBox .under_text .red {color:#db5647;}
+
+#container #sub.content .join_wrap h4 label {margin-right:15px;}
+
+#container #sub.content .join_wrap .idCheck_wrap ul.phone_text {padding-top:20px;}
+#container #sub.content .join_wrap .idCheck_wrap ul.phone_text li {margin-bottom:5px; font-size:11px; color:#666; background:url('../img/member/blit_dot.gif') left 3px no-repeat; padding-left:7px;}
+
+#container #sub.content .join_wrap .socialNum {width:330px; border-bottom:1px #e5e5e6 solid; height:160px; overflow:hidden;}
+#container #sub.content .join_wrap .socialNum p {margin-bottom:12px;}
+#container #sub.content .join_wrap .socialNum p span {float:left; width:80px; padding-top:3px;}
+#container #sub.content .join_wrap .socialNum p input.name {border:1px #bdbdbd solid; width:88px; height:16px; line-height:18px;}
+#container #sub.content .join_wrap .socialNum p input.socialN {border:1px #bdbdbd solid; width:88px; height:16px; line-height:18px;}
+#container #sub.content .join_wrap .socialNum .under_text {font-size:11px; padding-top:10px;}
+#container #sub.content .join_wrap .socialNum .under_text li {margin-bottom:10px;}
+#container #sub.content .join_wrap .socialNum .red {color:#db5647;}
+
+#container #sub.content .join_wrap .ipinJoin_start{width:306px; height:160px; border-bottom:1px #e5e5e6 solid; overflow:hidden;}
+#container #sub.content .join_wrap .ipinJoin_start p {margin-top:50px; text-align:center;}
+
+#container #sub.content .join_wrap .ipinJoin_new {width:306px; height:300px; border-bottom:1px #e5e5e6 solid; overflow:hidden;}
+#container #sub.content .join_wrap .ipinJoin_new p {margin-top:93px; text-align:center;}
+
+
+/*아이디ㆍ비번 찾기*/
+#container #sub.content .join_wrap .ID_phone {width:330px; border-bottom:1px #e5e5e6 solid; height:105px; overflow:hidden}
+#container #sub.content .join_wrap .ID_phone p {margin-bottom:10px;}
+#container #sub.content .join_wrap .ID_phone p span {float:left; padding-top:3px; width:80px;}
+#container #sub.content .join_wrap .ID_phone p select{border:1px #bdbdbd solid;}
+#container #sub.content .join_wrap .ID_phone p input.name {border:1px #bdbdbd solid; width:88px; height:16px; line-height:18px;}
+#container #sub.content .join_wrap .ID_phone p input.phone {border:1px #bdbdbd solid; width:56px; height:16px; line-height:18px;}
+#container #sub.content .join_wrap .ID_phone p input.mail {border:1px #bdbdbd solid; width:90px; height:16px; line-height:18px;}
+
+#container #sub.content .join_wrap .PW_phone {width:330px; height:130px; border-bottom:1px #e5e5e6 solid; overflow:hidden}
+#container #sub.content .join_wrap .PW_phone p {margin-bottom:10px;}
+#container #sub.content .join_wrap .PW_phone p span {float:left; padding-top:3px; width:80px;}
+#container #sub.content .join_wrap .PW_phone p select{border:1px #bdbdbd solid;}
+#container #sub.content .join_wrap .PW_phone p input.name {border:1px #bdbdbd solid; width:88px; height:16px; line-height:18px;}
+#container #sub.content .join_wrap .PW_phone p input.phone {border:1px #bdbdbd solid; width:56px; height:16px; line-height:18px;}
+#container #sub.content .join_wrap .PW_phone p input.mail {border:1px #bdbdbd solid; width:90px; height:16px; line-height:18px;}
+
+#container #sub.content .join_wrap .ipinCheck {width:306px;border-bottom:1px #e5e5e6 solid; height:105px; overflow:hidden; text-align:center;}
+#container #sub.content .join_wrap .ipinCheck label.ipin {margin-right:10px;}
+#container #sub.content .join_wrap .ipinCheck label.ipin img {vertical-align:-2px;}
+#container #sub.content .join_wrap .ipinCheck input.ipin {border:1px #bdbdbd solid; width:88px; height:16px; line-height:18px;}
+
+#container #sub.content .join_wrap .ipinPW {height:130px;}
+#container #sub.content .join_wrap .ipinPW .ipin_img {padding-top:10px;}
+
+#container #sub.content .join_wrap .PW_usemail {background:url('../img/member/bg_mail.gif') 48px top no-repeat; width:330px; height:98px; border-bottom:1px #e5e5e6 solid; overflow:hidden}
+#container #sub.content .join_wrap .PW_usemail p {text-align:center; padding-left:100px;}
+#container #sub.content .join_wrap .PW_usemail p .red {color:#db5647;}
+#container #sub.content .join_wrap .PW_usephone {background:url('../img/member/bg_phone.gif') 40px top no-repeat; width:330px; height:98px; border-bottom:1px #e5e5e6 solid; overflow:hidden}
+#container #sub.content .join_wrap .PW_usephone p {text-align:center; padding-left:90px;}
+#container #sub.content .join_wrap .PW_usephone p .red {color:#db5647;}
+
+#container #sub.content .join_wrap .password_wrap {border:1px #e5e5e6 solid; padding:50px 0; text-align:center;}
+#container #sub.content .join_wrap .password_wrap img {vertical-align:middle;}
+#container #sub.content .join_wrap .password_wrap .red {color:#cc0000;}
+#container #sub.content .join_wrap .password_wrap ul {background:url('../img/member/bg_line2.gif') center top no-repeat; height:112px; overflow:hidden;}
+#container #sub.content .join_wrap .password_wrap ul li {margin-bottom:7px;}
+#container #sub.content .join_wrap .password_wrap ul li.top {margin-top:15px; }
+#container #sub.content .join_wrap .password_wrap ul a.btn img {}
+#container #sub.content .join_wrap .password_wrap ul li label {display:inline-block; zoom:1; *display:inline; width:96px; }
+#container #sub.content .join_wrap .password_wrap ul li input.phone {border:1px #bdbdbd solid; width:88px; height:16px; line-height:18px;}
+#container #sub.content .join_wrap .password_wrap ul li span.phone {display:inline-block; zoom:1; *display:inline; width:100px; text-align:left; padding-top:5px;}
+#container #sub.content .join_wrap .password_wrap ul li span.phone2 {display:inline-block; zoom:1; *display:inline; width:100px; text-align:left; vertical-align:-2px;}
+#container #sub.content .join_wrap .password_wrap ul li span.imsi_text {display:inline-block; zoom:1; *display:inline; width:178px;  text-align:left; padding-top:5px;}
+
+
+#container #sub.content .join_wrap .findID_wrap {border:1px #e5e5e6 solid; padding:50px 25px; text-align:right;}
+#container #sub.content .join_wrap .findID_wrap p {float:left;}
+#container #sub.content .join_wrap .findID_wrap p img {vertical-align:text-bottom;}
+#container #sub.content .join_wrap .findID_wrap p .blue {color:#3e76c9; font-size:14px;}
+
+/*개인정보*/
+#container #sub.content .basicType th .must {background:url('../img/member/icon_redStar.gif') left 2px no-repeat; padding-left:10px;}
+
+#container #sub.content .basicType td .tip {font-size:11px; margin-top:5px;}
+#container #sub.content .basicType td .icon_check {font-size:11px; margin-top:5px; background:url('../img/member/icon_check.gif') no-repeat; padding-left:15px;}
+#container #sub.content .basicType td input.text {border:1px #ccc solid; width:118px; height:18px; line-height:20px;}
+#container #sub.content .basicType td input.phone {border:1px #ccc solid; width:86px; height:18px; line-height:20px;}
+#container #sub.content .basicType td input.zipcode {border:1px #ccc solid; width:63px; height:18px; line-height:20px;}
+#container #sub.content .basicType td input.address {border:1px #ccc solid; width:370px; height:18px; line-height:20px;}
+
+#container #sub.content .referText {font-size:11px; text-align:right; width:750px; position:absolute; margin-top:-20px; letter-spacing:-1px;}
+
+#container #sub.content .inflow li {float:left; margin:3px 0;}
+#container #sub.content .inflow li.col1 {width:170px;}
+#container #sub.content .inflow li.col2 {width:310px;}
+#container #sub.content .inflow li.col3 {width:85px;}
+
+
+#container #sub.content .favor_type li{ float:left; width:120px; font-size:11px; margin:3px 0;}
+#container #sub.content .favor_type li.end{ float:left; width:85px; font-size:11px; margin:3px 0;}
+
+#container #sub.content .favor_area li{ float:left; width:98px; font-size:11px; margin:3px 0;}
+#container #sub.content .favor_area li.end{width:74px;}
+
+#container #sub.content .favor_subject li{ float:left; width:98px; font-size:11px; margin:3px 0;}
+#container #sub.content .favor_subject li.end{width:74px;}
+
+#container #sub.content .favor_license li{float:left; font-size:11px; margin:3px 0;}
+#container #sub.content .favor_license li.col1{width:198px;}
+#container #sub.content .favor_license li.col2{width:228px;}
+#container #sub.content .favor_license li.col3{width:138px;}
+#container #sub.content .favor_license li.col4{width:141px;}
+
+
+/*회원탈퇴*/
+.mOut_wrap .warningBox {border:1px #d0d0d2 solid; padding:24px;}
+.mOut_wrap .warningBox table {width:100%; border-top:1px #e9e9e9 solid;}
+.mOut_wrap .warningBox table th {background:#f9f9f9; border-bottom:1px #e9e9e9 solid; color:#666;}
+.mOut_wrap .warningBox table th.borderR {border-right:1px #e9e9e9 solid;}
+.mOut_wrap .warningBox table td {border-bottom:1px #e9e9e9 solid; padding:5px 10px;}
+.mOut_wrap .warningBox table td input.info {border:1px #ccc solid; width:116px; height:19px; line-height:21px;}
+.mOut_wrap .out_reason li {margin-bottom:15px;}
+.mOut_wrap .out_reason li label {margin-left:5px;}
+.mOut_wrap .etcText {background:#f9f9f9 url('../img/member/bg_out_etctext.gif') 50px center no-repeat; text-align:right;}
+.mOut_wrap .etcText textarea {width:568px; height:133px; border:1px #d0d0d2 solid;}
+
+
+/*이용약관*/
+.terms_wrap {line-height:140%;}
+.terms_wrap h3 {font-size:14px; color:#cc0000; margin-bottom:15px; }
+.terms_wrap h4 {font-size:12px; color:#333; margin-bottom:15px;}
+.terms_wrap a {color:#666;}
+.terms_wrap ul {margin-bottom:50px;}
+.terms_wrap ul li {margin-bottom:15px; word-break:break-all;word-wrap:break-word;}
+.terms_wrap ul li span {display:block; margin-left:1.35em;}
+.terms_wrap ul li ol {margin-left:35px; margin-top:15px;}
+.terms_wrap ul li ol li {list-style:decimal; }
+
+.terms_wrap ul li table {width:100%; margin-top:15px;}
+.terms_wrap ul li table th {border:1px #dedede solid; background:#fff7f4; color:#555; padding:10px 0 7px; text-align:center;}
+.terms_wrap ul li table td {border:1px #dedede solid; text-align:center; padding:10px 0 7px;}
+
+/*개인정보*/
+.pricacy_wrap {line-height:140%;}
+.pricacy_wrap .mgb15{margin-bottom:15px;}
+.pricacy_wrap h3 {margin-bottom:15px; color:#333;}
+.pricacy_wrap a{color:#666;}
+.pricacy_wrap ul {margin-bottom:50px;}
+.pricacy_wrap ul li {margin-bottom:15px;}
+.pricacy_wrap ul li em {display:block; margin-left:20px;}
+.pricacy_wrap ul li ul {margin:5px 0 0; margin-left:1.35em;}
+.pricacy_wrap ul li ul li{margin-bottom:5px;}
+.pricacy_wrap ul li ul li p {margin-left:20px;}
+.pricacy_wrap ul li ul li p.mgr11 {margin-left:11px;}
+
+.pricacy_wrap ul li strong{display:block; margin-bottom:5px;}
+
+.pricacy_wrap table { margin-left:20px; margin-top:10px; width:730px; border-top:1px #9d9d9d solid;}
+.pricacy_wrap table th {border-bottom:1px #dedede solid; border-right:1px #dedede solid; text-align:left; padding:5px 0 2px 20px;}
+.pricacy_wrap table td {border-bottom:1px #dedede solid; text-align:center;}
+.pricacy_wrap table td.borderR {border-right:1px #dedede solid;}
+
+/* 추가 (2012.11.26 김남경) */
+h3.interest span {display:inline-block; padding:7px 0 0 10px; font-size:11px; letter-spacing:-1px;}
+p.interest {margin:-5px 0 39px 9px;}
+p.interest label {margin:0 25px 0 0;}
+p.interest label input {vertical-align:middle; position:relative; top:-1px;}
+
+/*14세미만 회원가입 추가 - 2013.07.31*/
+.join_wrap .choiceAge{ border:1px #d0d0d2 solid; padding:30px 25px; font-family:Dotum;}
+.join_wrap .choiceAge li {text-align:right;}
+.join_wrap .choiceAge li strong.red{color:#ce0000; display:block;  font-size:14px;  margin-bottom:10px;}
+.join_wrap .choiceAge li p{float:left; text-align:left; color:#666; font-weight:normal; margin:0; padding:0; line-height:16px;}
+.join_wrap .choiceAge li.top {padding-bottom:24px; border-bottom:1px #e5e5e6 solid;}
+.join_wrap .choiceAge li.bot {padding-top:24px;}

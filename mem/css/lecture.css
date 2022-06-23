@@ -1,0 +1,167 @@
+/*****************************
+제목 : 종로편입학원 수강안내 CSS
+작성자 : 해커스교육그룹 개발지원팀 정미례
+작성일 : 2012.04.03
+*****************************/
+
+.lecture_wrap { margin:0;}
+.lecture_wrap .b {font-weight:bold;}
+.lecture_wrap img,
+.lecture_wrap input {vertical-align:middle;}
+
+.lecture_wrap .event_text {width:100%; margin-top:17px; margin-bottom:7px; padding:10px 0; background-color:#f6f8f9; border:1px solid #dae0e4}
+.lecture_wrap .event_text em {margin-left:20px; color:#597b97; font-weight:bold;}
+.lecture_wrap .event_text .more a {margin-left:20px; color:#7a8792; font-size:11px; text-decoration:underline;}
+.lecture_wrap .event_text .more a:hover {color:#555;}
+
+.lecture_wrap .step {padding:10px 0 0;}
+
+.lecture_wrap .step_btn {clear:both; width:100%; height:23px; padding:15px 0 0;}
+
+.lecture_wrap .{width:100%; display:inline-block;}
+.lecture_wrap .h4 {margin-bottom:7px; height:26px;}
+.lecture_wrap .lecture_stitle {float:left; margin-top:5px;}
+.lecture_wrap .lecture_list_btn {float:right; text-align:right;}
+.lecture_wrap table {width:100%; line-height:18px;}
+.lecture_wrap table th {padding:7px 0 8px; *padding:9px 0 12px;}
+.lecture_wrap table .step {vertical-align:top; font-weight:bold; color:#798790}
+.lecture_wrap table .subject {vertical-align:top}
+.lecture_wrap table .subject dt {font-weight:bold; margin-bottom:5px; margin-left:0px;}
+.lecture_wrap table .subject dt.lecture_new {font-weight:bold; margin-bottom:5px; margin-left:0; padding-left:25px; background:url(../img/bullet/new.gif) left 3px no-repeat;}
+.lecture_wrap table .subject dd {margin-left:0px; font-size:11px;}
+.lecture_wrap table .subject dd em {color:#cc0000; margin:0 3px:}
+.lecture_wrap .sum {text-align:right; padding-right:10px;}
+.lecture_wrap .apply input {border:none;}
+
+/* 아이콘이미지들 */
+.lecture_wrap .subject dt img {margin:-3px 5px 0 0;}
+.lecture_wrap .subject dd.book_info a {display:inline-block;}
+.lecture_wrap .subject dd.book_info img {margin:-3px 0 0 0;}
+.lecture_wrap .sum img {margin-top:-2px;}
+
+/* 강의소개 */
+.lecture_info {float:left; width: 750px; padding:12px 25px 9px; background-color:#f9f9f9}
+.lecture_info h3 {margin-bottom:19px; padding:6px 0 5px; border:3px solid #dae0e4; background-color:#fff; text-align:center; font-size:14px; color:#2a2a2a;}
+.lecture_info h3 em {color:#597b97;}
+
+/* 샘플보기 */
+.lecture_info dl {float:left; width:247px; border:1px solid #dbdbdb}
+.lecture_info dl dt {float:left;}
+.lecture_info dl dt img {float:left; width:247px; height:130px}
+.lecture_info dl dd {float:left; width:100%; height:27px; background:#fff url(../img/lecture/lecture_info_bg_01.gif) left top repeat-x; text-align:center; }
+.lecture_info dl dd a {font-weight:bold; margin-top:7px; font-size:11px; color:#cc0000; line-height:18px; display:inline-block;}
+.lecture_info dl dd a img {vertical-align:top;}
+
+/* 강의상세 */
+.lecture_info .info_detail {position:relative; float:right; width:458px;}
+.lecture_info .info_detail em {color:#cc0000}
+.lecture_info .info_detail th,
+.lecture_info .info_detail td {position:relative; font-weight:bold; text-align:left; padding:8px 0 7px; border-bottom:1px solid #e7e7e7; }
+.lecture_info .info_detail td.bookName {padding:8px 0;}
+.lecture_info .info_detail th {color:#597b97; letter-spacing:-1px;}
+.lecture_info .info_detail .click_price {width:146px; height:21px; line-height:23px; margin:0 8px; font-size:11px; color:#fff; background:#fff url(../img/lecture/lecture_info_bg_03.gif) left top no-repeat; text-align:center; display:inline-block;}
+.lecture_info .info_detail .detail {font-size:11px; color:#7a8792; text-decoration:underline;}
+
+
+/* 결제리스트 */
+.lecture_info .payList {float:left; width: 750px; margin-top:18px;  border:3px solid #e7ecf0}
+.lecture_info .payList li {float:left; width: 100%; height:30px; line-height:30px; background-color:#fff; border-bottom:1px solid #f0f0f0}
+.lecture_info .payList li.last {height:78px; background:#fff url(../img/lecture/lecture_info_bg_02.gif) left top repeat-x;}
+
+.lecture_info .payList .section {float:left; width:80px; *margin-top:5px; text-align:center; display:inline-block;}
+.lecture_info .payList .section img {margin-top:6px; *margin-top:0px;}
+.lecture_info .payList .title {float:left; color:#373737;}
+.lecture_info .payList .title em {color:#cc0000;}
+.lecture_info .payList .price,
+.lecture_info .payList .price_all {text-align:right; float:right; margin-right:22px; font-weight:bold; color:#cc0000}
+.lecture_info .payList .price_all {width:600px; height:35px; line-height:35px; margin-right:39px; display:block;}
+.lecture_info .payList .price_all em {color:#2a2a2a}
+.lecture_info .payList .cartList_btn {width:100%; text-align:center; display:inline-block;}
+
+.lecture_wrap .tab {float:left; width:100%; margin-top:28px; _margin-top:23px;  background:url(../img/lecture/tab_bg_ul.gif) left bottom repeat-x;}
+.lecture_wrap .tab li {float:left;}
+.lecture_wrap .tab a {float:left; padding:10px 40px 9px; background:url(../img/lecture/tab_bg.gif) repeat-x; border-right:1px solid #d0d0d0;}
+.lecture_wrap .tab a.first {border-left:1px solid #d0d0d0;}
+.lecture_wrap .tab a:hover,
+.lecture_wrap .tab a.on {background:url(../img/lecture/tab_bg_on.gif) repeat-x}
+
+.lecture_wrap .box {padding:30px 30px 20px; text-align:left;}
+.lecture_wrap h4 {margin-bottom:25px;}
+
+/* 강의정보 */
+.lecture_wrap .info_list {}
+.lecture_wrap .info_list dt,
+.lecture_wrap .info_list dd {float:left; margin-bottom:20px; line-height:20px;}
+.lecture_wrap .info_list dt {width:105px;}
+.lecture_wrap .info_list dd {width:580px; _width:550px; color:#858585}
+.lecture_wrap .box .btn_top {margin: 10px 0 10px; padding-bottom:10px;}
+
+/* 게시판들 */
+.lecture_wrap .board_list {text-align:center;}
+.lecture_wrap .board_list th {padding: 9px 0 25px;}
+.lecture_wrap .board_list .reply td.subject {padding-left:35px; background:url(../img/bullet/reply.gif) 18px 11px no-repeat;}
+.lecture_wrap .board_list .reply td.subject a {color:#778892;}
+
+/* 수강후기 */
+.lecture_wrap .review td {padding: 8px 0;}
+.lecture_wrap .review td.subject {padding-left:18px;}
+.review .notice td {font-weight:normal;}
+.review .notice td.subject {font-weight:bold;}
+.box h4 {position:relative;}
+.box h4 .btn_write {position:absolute; top:-3px; right:0;}
+
+/* 수강후기페이지 */
+.lecture_wrap .point_benefit {float:left; width: 744px; padding:15px 0 15px 35px; background-color:#f9f9f9}
+.lecture_wrap .point_benefit h3 {margin-bottom:15px}
+.lecture_wrap .point_benefit .banner {margin-bottom:12px}
+.lecture_wrap .point_benefit .banner img {margin-right:10px}
+
+/* 강의선택 */
+.review fieldset.search {margin:0 0 15px 0; text-align:left;}
+.review fieldset.search ul {margin:0}
+.review fieldset.search select {font-size:12px;}
+.review fieldset.search .select1 select {width:160px}
+.review fieldset.search .select2 select {width:160px}
+.review fieldset.search .select3 select {width:377px; margin:0;}2012-06-14
+
+.review td.list_view {text-align:left; padding:10px 20px 30px; line-height:20px;}
+
+.review. board_write  td {height:38px; padding:0}
+.review .board_write .notice td.className {font-weight:bold; padding:0 5px;}
+
+/* 수강후기페이지_쓰기 */
+.lecture_wrap .board_write fieldset.search {margin:0;}
+.lecture_wrap .board_write td {height:auto; padding:7px 0 5px 10px; text-align:left;}
+.lecture_wrap .board_write td.module {padding:0;}
+.lecture_wrap .board_write td.star select {color:#f7bd1b; font-weight:bold; letter-spacing:1px; }
+.lecture_wrap .board_write .writer {height:20px;}
+.review .box {margin-bottom:20px;}
+
+/* 교재소개팝업 */
+.book_info {position:relative;}
+.book_info_popup {position:absolute; top:18px; left:80px; width:400px;  padding:15px 20px 10px; border:3px solid #4e5684; background-color:#fff;}
+.book_info_popup h5 {position:relative; height:15px; margin-bottom:15px;}
+.book_info_popup h5 .book_info_close {position:absolute; top:0px; right:0px;}
+.book_info_popup .book_img {float:left; width:123px; height:118px; border:1px solid #dbdbdb; display:inline-block;text-align:center}
+.lecture_wrap .book_info .book_info_popup .book_img img {height:118px;}
+.lecture_wrap .subject dd.book_info .book_info_popup img {margin:0;}
+.book_info_popup table.book_detail {float:right; width:245px; display:inline-block; font-size:12px;}
+.book_info_popup table.book_detail th {background:none; padding:0; color:#597b97; font-weight:bold; border-bottom:1px solid #eaeaea;  text-align:left;}
+.book_info_popup table.book_detail td {height:auto; padding:6px 0 5px; text-align:left; font-weight:normal;}
+
+.lecture_wrap .book_info .book_info_popup .book_character {float:left; width:370px;  margin:10px 0; padding:10px 15px; background-color:#f9f9f9; font-size:12px; border:none;}
+.lecture_wrap .book_info .book_info_popup .book_character dt {margin:0;  color:#597b97; margin-bottom:3px;}
+.lecture_wrap .book_info .book_info_popup .book_character dd {margin:0; font-size:11px; text-align:left; line-height: 18px;}
+
+/* 교재소개팝업_강의상세페이지 */
+.info_detail .book_info_popup {top:30px; left:-93px; }
+.info_detail .book_info_popup .book_character dt {margin:0;  color:#597b97; margin-bottom:3px;}
+.info_detail .book_info_popup .book_character dd {height:auto; margin:0; font-weight:normal; font-size:11px; text-align:left; background:none;}
+.lecture_wrap .info_detail .book_info_popup .book_img img { height:118px; margin:0;}
+
+
+/* 할인된금액보기 */
+.discount_popup {position:absolute; top:28px; left:150px; width:210px;  padding:15px 0 10px 20px; border:3px solid #4e5684; background-color:#fff; z-index:10}
+.discount_popup p {font-weight:normal; line-height:16px; margin-bottom:10px; color:#717679}
+.discount_popup .joinJR {color:#577c97}
+.discount_popup .joinJR:hover {color:#92b0c3}

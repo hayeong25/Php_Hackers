@@ -1,0 +1,80 @@
+/*****************************
+제목 :  서브 템플릿 CSS
+작성일 : 2012.08.20
+*****************************/
+
+#wrapper {width:1000px; margin:0 auto;}
+
+#header {height:100px; overflow:hidden; padding-top:17px; background:url('../../img/integrate/bg_header.gif') repeat-x;}
+#header .logo {float:left; margin-top:10px;}
+#header .topmenu {text-align:right;}
+#header .topmenu img {vertical-align:middle;}
+#header .topmenu .bar {margin:0 1px;}
+#header .topmenu .family_site{margin-left:9px;}
+#header .topmenu .family_link {border:1px #b2b2b2 solid; border-top:none; background:#fff; text-align:left; width:123px; position:absolute; margin-left:875px; padding-top:4px; display:none;}
+#header .topmenu .family_link li {padding-left:9px; margin-bottom:4px;}
+#header .topmenu .family_link a{color:#7f7f7f; font-size:11px;}
+
+#header .toplink {text-align:right; margin-top:24px;}
+#header .toplink img.bar {margin:0 15px;}
+
+#container .content .clear {clear:both;}
+#container .content .alignC{text-align:center;}
+#container .content .btnC {text-align:center;}
+#container .content .checkbox {vertical-align:-2px; margin-right:3px;}
+#container .content .radio {vertical-align:-2px; margin-right:3px;}
+#container .content .mgb10 {margin-bottom:10px;}
+#container .content .mgb20 {margin-bottom:20px;}
+#container .content .mgb25 {margin-bottom:25px;}
+#container .content .mgb30 {margin-bottom:30px;}
+#container .content .mgb40 {margin-bottom:40px;}
+#container .content .mgb50 {margin-bottom:50px;}
+#container .content .mgr10 {margin-right:10px;}
+#container .content .mgr20 {margin-right:20px;}
+#container .content .mgr30 {margin-right:30px;}
+
+#wrapper .underBlank{clear:both; height:10px;}
+
+/*LNB*/
+#container .lnb {float:left; width:190px; }
+#container .lnb h3 {margin-top:37px; border-bottom:2px #666 solid; width:151px; margin-bottom:30px; padding-bottom:10px;}
+#container .lnb ul {width:151px;}
+#container .lnb ul li {margin-bottom:12px; padding-bottom:10px; border-bottom:1px #ccc solid;}
+#container .lnb ul li a {display:block; width:151px; height:14px;}
+#container .lnb ul li a span{display:none;}
+
+#container .lnb ul.lnb_join li a.menu01 {background:url('../img/left/menu_join01.gif') no-repeat; }
+#container .lnb ul.lnb_join li a.menu02 {background:url('../img/left/menu_join02.gif') no-repeat; }
+#container .lnb ul.lnb_join li a.menu03 {background:url('../img/left/menu_join03.gif') no-repeat; }
+#container .lnb ul.lnb_join li a.menu04 {background:url('../img/left/menu_join04.gif') no-repeat; }
+#container .lnb ul.lnb_join li.on a, #container .lnb ul.lnb_join li a:hover {background-position:0 -14px;}
+
+#container .lnb ul.lnb_info li a.menu01 {background:url('../img/left/menu_info01.gif') no-repeat; }
+#container .lnb ul.lnb_info li a.menu02 {background:url('../img/left/menu_info02.gif') no-repeat; }
+#container .lnb ul.lnb_info li.on a, #container .lnb ul.lnb_info li a:hover {background-position:0 -14px;}
+
+
+/*FOOTER*/
+#footer {border-top:3px #e5e5e5 solid; padding-top:22px; height:120x; overflow:hidden;}
+#footer .logo_footer {float:left; margin-right:20px; width:132px; height:85px;}
+#footer .under_menu {width:846px; float:left; text-align:right;}
+#footer .under_menu  .copyright {text-align:left; float:left;}
+#footer .policy {margin-bottom:13px;}
+#footer .policy .bar {margin:0 5px;}
+#footer .hackers_link { width:125px; height:22px; z-index:20; position:absolute; margin-left:721px; *margin-left:-120px;  }
+
+/*서브*/
+#container #sub.content {float:left; width:810px; color:#666;}
+#container #sub.content h2 { margin-top:31px; border-bottom:2px #666 solid; padding-bottom:10px;}
+#container #sub.content .depth {width:810px; text-align:right; font-size:11px; color:#818181; position:absolute; margin-top:-20px;}
+#container #sub.content .depth em {color:#cc0000; }
+#container #sub.content .con {padding:50px 30px;}
+
+
+/*기본table*/
+#container #sub.content .basicType {width:100%; border-top:1px #e9e9e9 solid;}
+#container #sub.content .basicType th {background:#f9f9f9; text-align:left; padding:10px 0 7px 20px; border-bottom:1px #e9e9e9 solid;}
+#container #sub.content .basicType td {padding:7px 20px 4px; border-bottom:1px #e9e9e9 solid; color:#636363;}
+
+/*mobile banner - 2013.04.26*/
+.mobile_topbanner {position:absolute; width:1000px; top:0; z-index:10; left:50%; margin-left:-500px;}

@@ -1,0 +1,24 @@
+/*****************************************
+제목 : 해커스패스 통합로그인 공통 CSS
+작성자 : 해커스교육그룹 개발지원팀 김남경
+작성일 : 2012.06.18
+******************************************/
+
+@import url("layout.css");
+@import url("member.css");
+@import url("popup.css");
+@import url("http://image.hackers.ac/pass/css/webfont.css");
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,menu,section,article, a, select, input{margin:0; padding:0;}
+
+body {margin:0; padding:0;  color:#666;  line-height:100%; overflow-x:hidden; -webkit-text-size-adjust:none; font-family:'Dotum';/*font-family: 'Nanum Gothic', sans-serif; font-weight:600;*/}
+table {border-collapse: collapse;}
+fieldset, img {border:0;}
+img {margin-bottom:0; vertical-align:top; }
+li,dt,dd {list-style:none;}
+a {text-decoration:none; cursor:pointer;}
+button {cursor:pointer; border:none;}
+strong{ font-weight:bold;}
+em,address,var {font-style:normal;}
+legend, caption {display:none;}
+input, select {vertical-align:middle; outline:none;}

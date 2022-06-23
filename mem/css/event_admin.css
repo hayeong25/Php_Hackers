@@ -1,0 +1,46 @@
+/*****************************
+제목 : 종로편입학원 이벤트 관리자 공통 CSS
+작성자 : 해커스교육그룹 개발팀 박준호
+작성일 : 2012.06.26
+*****************************/
+
+/* 기본 */
+body { margin: 0; padding: 20px; position: relative; font-size: 12px !important; line-height: 1.28; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; }
+input { font-size: 12px; }
+textarea { font-size: 12px; }
+img { border: 0 }
+
+
+
+/* 상단 버튼 */
+.top_menu { margin-bottom:10px; }
+
+/* 누적 매출 및 신청자 */
+.total_count { margin-bottom:10px; }
+.total_count .total_count_title { font-weight:bold; font-size:15px; color:#cc0000;}
+.total_count .total_count_detail { font-weight:bold; font-size:15px; margin-right:20px;}
+
+/* 매출 테이블 */
+.sales_list table { border-bottom: 1px solid #E0B2B2; border-top: 2px solid #E0B2B2; font-size:12px; }
+.sales_list th { border-bottom: 1px solid #E0B2B2; border-right: 1px solid #E0B2B2; padding:5px 5px 5px 5px; background-color:#EDD4D4;}
+.sales_list td { border-bottom: 1px solid #E0B2B2; border-right: 1px solid #E0B2B2; padding:5px 5px 5px 5px; }
+.sales_list .date { background-color:#FFF5F5; }
+.sales_list .daily { background-color:#FFF0B2; }
+.sales_list .total { background-color:#FFFFF0; }
+
+/* 참가자 검색 */
+.top_sort { margin-bottom:20px; }
+
+/* 참가자 테이블 */
+.entry_list table { border-bottom: 1px solid #E0B2B2; border-top: 2px solid #E0B2B2; font-size:12px; }
+.entry_list th { border-bottom: 1px solid #E0B2B2; border-right: 1px solid #E0B2B2; padding:5px 5px 5px 5px; background-color:#EDD4D4;}
+.entry_list td { border-bottom: 1px solid #E0B2B2; border-right: 1px solid #E0B2B2; padding:5px 5px 5px 5px; }
+.entry_list .paging_number { cursor:pointer; }
+
+/* 공통 */
+.txtc { text-align:center; }
+.txtl { text-align:left; }
+.txtr { text-align:right; }
+.tbl { border-left: 1px solid #E0B2B2; }
+.butt { margin-bottom:20px }
+.button input{ background:#DFEFFC; border:1px solid #C5DBEC; color:#2E6E9E; padding:3px; }

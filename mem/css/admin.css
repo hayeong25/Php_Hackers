@@ -1,0 +1,161 @@
+* {margin:0; padding:0;}
+
+html {
+
+	overflow-y:scroll;
+}
+
+body {
+
+	font-family: '±¼¸²', Gulim , 'µ¸¿ò', Dotum,  AppleGothic, Sans-serif;
+	font-size:12px;
+	color:#404040;
+	line-height:1.7;
+}
+
+table {
+
+	font-family: 'µ¸¿ò', Dotum, '±¼¸²', Gulim , AppleGothic, Sans-serif; 
+	font-size:11px; 
+	color:#404040;
+	border-collapse:collapse;
+	border:none;
+}
+
+h1,h2,h3,h4,h5,h6,fieldset,input,p,div,ul,li,ol,dl,dt,dd,img,table,tr,th,td,label,blockquote,form {margin:0; padding:0;}
+fieldset, img {border:0 none;}
+ul,ol,li,dd,dt {list-style:none}
+em {font-style:normal;}
+hr, legend, caption {display:none;}
+label.none {display:none !important;}
+h2.none {display:none;}
+table {border-collapse:collapse; border-spacing:0; width:100%;}
+p {text-align:justify;}
+img {vertical-align:top;}
+object {outline:none;}
+
+input, select, textarea	{
+	/* height:18px; */
+	vertical-align:middle;
+	font-family: '±¼¸²',gulim;
+	font-size:1em;
+	color:#5b5b5b;
+}
+.border {border:1px solid #d6d8d7; color:#646464;} /*padding:2px 0;*/
+
+button {border:none; cursor:pointer;}
+button span {position:relative; z-index:-1;}
+iframe {border:none; background:#fff;}
+a {text-decoration:none; filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+a span {display:none;}
+
+.left {text-align:left !important;}
+.right {text-align:right !important;}
+.center {text-align:center !important;}
+
+
+.vm{vertical-align:middle;}
+.vt{vertical-align:top;}
+.vb{vertical-align:bottom;}
+
+
+.mb_10 {margin-bottom:10px;}
+.mb_15 {margin-bottom:15px;}
+.mb_20 {margin-bottom:20px;}
+.mb_25 {margin-bottom:25px;}
+.mb_30 {margin-bottom:30px;}
+.mb_35 {margin-bottom:35px;}
+.mb_40 {margin-bottom:40px;}
+.mb_45 {margin-bottom:45px;}
+.mb_50 {margin-bottom:50px;}
+
+#body_Warap {}
+#header_wrap {padding-right:10px; background:url('http://image.champstudy.com/img/admin/gnb_bg.gif') repeat-x top;}
+#header {position:relative; width:100%; height:78px; z-index:1000;}
+#header h1 {position:absolute; left:15px; top:10px; width:112px;}
+#header #util {min-height:38px; padding-top:15px; width:100%; overflow:hidden;}
+* html #header #util {height:38px;}
+#header #util ul {float:right;}
+#header #util li {float:left;}
+#header #util li.txt {color:#fff; padding:2px 18px 0 0;}
+#header #util li.btn {padding-right:5px;}
+#header #gnb {width:100%; overflow:hidden;}
+#header #gnb li {float:left; padding:14px 27px 0 26px; background:url('http://image.champstudy.com/img/admin/gnb_line.gif') no-repeat right 17px; font-weight:bold; color:#333;}
+:root #header #gnb li {padding:0 27px 0 26px; background:url('http://image.champstudy.com/img/admin/gnb_line.gif') no-repeat right 3px;}
+#header #gnb li a:link,
+#header #gnb li a:visited,
+#header #gnb li a:active {color:#424242; text-decoration:none;}
+#header #gnb li a:hover {color:#0f46a1; text-decoration:none;}
+#header #gnb li.last {padding-right:0; background:none;}
+#header #gnb li.select {font-weight:bold; color:#0f46a1; letter-spacing:-1px;}
+#header #gnb li.select a:link,
+#header #gnb li.select a:visited,
+#header #gnb li.select a:active {color:#0f46a1; text-decoration:none;}
+#header #gnb li.select a:hover {color:#0f46a1; text-decoration:none;}
+
+#body {position:relative; width:100%; overflow:hidden;}
+#body #leftmenu {float:left; width:169px; border-right:1px solid #e0e0e0;}
+#body #leftmenu .left_M {position:relative;}
+#body #leftmenu .left_M p {padding:10px 0; border-bottom:1px solid #e0e0e0;}
+#body #leftmenu .left_M p span {color:#000; font-weight:bold; padding-left:12px; margin-left:12px; background:url('http://image.champstudy.com/img/admin/icon_leftmenu.gif') no-repeat left 1px;}
+#body #leftmenu .left_M .deth2 {padding:12px 23px; border-bottom:1px solid #e0e0e0;}
+#body #leftmenu .left_M .deth2 li {line-height:25px;}
+#body #leftmenu .left_M p span a:link,
+#body #leftmenu .left_M p span a:visited,
+#body #leftmenu .left_M p span a:active {color:#000; text-decoration:none;}
+#body #leftmenu .left_M p span a:hover {color:#ff6600; text-decoration:none;}
+#body #leftmenu .left_M .deth2 li a:link,
+#body #leftmenu .left_M .deth2 li a:visited,
+#body #leftmenu .left_M .deth2 li a:active {color:#000; text-decoration:none;}
+#body #leftmenu .left_M .deth2 li a:hover {color:#ff6600; font-weight:bold; text-decoration:none;}
+#body #leftmenu .left_M p span.select a:link {color:#ff6600; text-decoration:none;}
+
+#body #leftmenu .left_M_over {position:relative;}
+#body #leftmenu .left_M_over p {padding:10px 0; border-bottom:1px solid #e0e0e0; background:url('http://image.champstudy.com/img/admin/icon2.gif') no-repeat right 15px;}
+#body #leftmenu .left_M_over p span {color:#000; font-weight:bold; padding-left:12px; margin-left:12px; background:url('http://image.champstudy.com/img/admin/icon_leftmenu.gif') no-repeat left 1px;}
+#body #leftmenu .left_M_over .deth2 {padding:12px 23px; border-bottom:1px solid #e0e0e0;}
+#body #leftmenu .left_M_over .deth2 li {line-height:25px;}
+#body #leftmenu .left_M_over p span a:link,
+#body #leftmenu .left_M_over p span a:visited,
+#body #leftmenu .left_M_over p span a:active {color:#000; text-decoration:none;}
+#body #leftmenu .left_M_over p span a:hover {color:#ff6600; text-decoration:none;}
+#body #leftmenu .left_M_over .deth2 li a:link,
+#body #leftmenu .left_M_over .deth2 li a:visited,
+#body #leftmenu .left_M_over .deth2 li a:active {color:#000; text-decoration:none;}
+#body #leftmenu .left_M_over .deth2 li a:hover {color:#ff6600; font-weight:bold; text-decoration:none;}
+#body #leftmenu .left_M_over p span.select a:link {color:#ff6600; text-decoration:none;}
+
+#contents {padding:29px 20px 0 25px}
+#contents h2 {margin-bottom:17px; padding-left:10px; font-size:14px; color:#000; font-weight:bold; background:url('http://image.champstudy.com/img/admin/h2_bg.gif') no-repeat left 4px;}
+
+.t_warap .t_list {}
+.t_warap .t_list th {padding:8px 0 6px 0; border-top:2px solid #000; border-bottom:1px solid #ccc; background:#f9f9f9;}
+.t_warap .t_list td {padding:6px 0 4px 0;text-align:center; border-bottom:1px solid #eee;}
+:root .t_warap .t_list td {padding:8px 0 6px 0;}
+
+.t_warap .t_view {border-top:2px solid #000;}
+.t_warap .t_view th {background:#f9f9f9; padding:8px 0 6px 0; border-top:1px solid #eee; border-bottom:1px solid #eee;}
+.t_warap .t_view td {padding:8px 0 6px 10px; border-top:1px solid #eee; border-bottom:1px solid #eee;}
+
+.paging {width:100%; text-align:center;}
+.paging a {padding:0 9px; font-weight:bold; font-size:11px; color:#999;}
+.paging a:hover {color:#000;}
+.paging em {padding:0 6px; font-size:11px; color:#000; font-weight:bold;}
+.paging img {margin:0 -9px; vertical-align:middle;}
+
+.btn_common {padding:4px 1px 1px 1px; border:1px solid #ccc; background:#f0f0f0;}
+
+#footer {float:right; padding-right:18px;}
+#footer #flogo {float:left;}
+#footer #copyright {font-size:11px; color:#949494;}
+
+.fc_main { background: #ffffff; border: 1px solid #000000; font-family: Verdana; font-size: 10px; }
+.fc_date { font-family: tahoma; border: 1px solid #D9D9D9;  cursor:pointer; font-size: 8pt; text-align: center;}
+.fc_dateHover, TD.fc_date:hover { font-family: tahoma;cursor:pointer; border-top: 1px solid #FFFFFF; border-left: 1px solid #FFFFFF; border-right: 1px solid #999999; border-bottom: 1px solid #999999; background: #E7E7E7; font-size: 8pt; text-align: center; }
+.fc_wk {font-family: Verdana; font-size: 11px; text-align: center;}
+.fc_wknd { color: #FF0000; font-weight: bold; font-size: 11px; text-align: center;}
+.fc_wknd1 { color: blue; font-weight: bold; font-size: 11px; text-align: center;}
+.fc_head { background: #000066; color: #FFFFFF; font-weight:bold; text-align: left;  font-size: 11px; }
+
+tbody.tblscrl {height:500px; width:1500px; overflow-y:scroll;}
+tr.second th {display:none}

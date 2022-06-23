@@ -1,0 +1,105 @@
+/*****************************
+제목 :  학원안내 CSS
+
+작성일 : 2012.03.28
+*****************************/
+
+
+body img {border:0;}
+.community_wrap h3 { margin: 30px 0 20px;}
+.fl{float:left;}
+.fr{float:right;}
+.tar {text-align:right;}
+.tac {text-align:center;}
+
+.btnhome {margin:15px 0 5px 0; }
+.community .box {width:710px;overflow:hidden;}
+
+
+/* 합격자인터뷰 */
+
+.interview {float:left; width:166px; margin:0 11px 10px 0;}
+.interview dt img{border:1px solid #eaeaea;} 
+.interview dd {text-align:center; margin-top:10px; padding:0 5px;} 
+.flbtn {width:100%; float:left; border-top:1px solid #eaeaea; padding-top:20px; margin-top:20px;}
+
+
+
+/* JR포토영상 */
+
+.jrphoto {text-align:center; border:1px solid #eaeaea; margin:25px 0;}
+.jrphoto dt {background-color:#f7f7f7; padding:10px; border-bottom:1px solid #eaeaea;}
+.jrphoto dd {margin:20px;}
+.jrphoto dd span {padding-top:10px;display:block;}
+
+
+
+/*----------------------스터디카페----------------------*/
+
+* html .community_wrap .community .box {width:720px;}
+
+select.studycafe {float:right; margin:30px 0 15px; padding:2px;}
+
+.community_wrap fieldset.search {margin-bottom:30px;}
+
+
+/* 스터디카페 리스트 */
+.study_list  {width:710px; margin-bottom:30px;}
+.study_list td {border-bottom:1px solid #eaeaea; padding:10px 0;}
+.study_list td.bdt1 {border-top:1px solid #eaeaea;}
+.study_list td.img {text-align:center;}
+.listtxt table td {border:none; font-weight:normal;}
+.listtxt td{padding:2px 7px 0 12px; float:left; font-weight:bold; background: url("../../images/main/blit_graydot.gif") no-repeat scroll left 7px transparent; line-height:16px;}
+
+
+
+
+.scboard_wrap {float:left;display:inline-block;  width:345px; margin:25px 0 25px 0; }
+.scboard_wrap h3, .photo_wrap h3{margin:0;}
+.scboard_wrap a{color:#868585;}
+.scboard_wrap a:hover{color:#333;}
+
+.studycafeboard { border:1px #d0d0d0 solid; padding:15px 12px 9px; height:93px; overflow:hidden; width:320px; margin-top:8px;}
+.studycafeboard li{ background:url(../../images/main/blit_graydot.gif) left 4px no-repeat; padding-left:10px; margin-bottom:5px;}
+.studycafeboard li span {float:right;}
+*:first-child+html .board_list li{margin-bottom:7px;}
+
+.photo_wrap {width:100%; margin-bottom:25px;_borde:1px solid red;}
+.community .studycafephoto { border:1px #d0d0d0 solid; width:100%; text-align:center; margin-top:8px; height:200px;}
+.community .studycafephoto dl {display:inline; width:125px;background-color:#f7f7f7; padding:10px; margin:20px 24px 0 0; float:left;}
+.community .studycafephoto dt {margin-bottom:10px;}
+.community .studycafephoto dd span {display:block; font-weight:bold; line-height:20px;}
+
+
+
+/* 스터디카페 만들기 */
+.termsBox {width: 680px; padding: 15px; background-color:#f7f7f7; border:1px solid #eaeaea;}
+.termsBox .termTxt {height: 106px; overflow-x: hidden; overflow-y: scroll; padding: 10px; border:1px solid #eaeaea; margin:16px 0; background-color:#fff;}
+.i_check {width:13px;height:13px;margin:2px 5px 2px 0;padding:0;vertical-align:middle}  
+
+
+.form_transfer { margin-left:30px; width:647px;font-size:12px;font-family:Tahoma, Geneva, sans-serif; line-height:18px;}
+.form_transfer input,  .form_transfer textarea, .form_transfer select,
+.form_transfer02 input,  .form_transfer02 textarea, .form_transfer02 select {font-size:12px; border:1px solid #dedede; padding:2px;}  
+.form_transfer table{width:100%;border:0;border-top:1px solid #eaeaea;  text-align:left; margin-bottom:20px;}  
+.form_transfer th,  .form_transfer td{padding:8px 10px;border:0;vertical-align:middle;  padding-left:20px;}  
+.form_transfer tbody th{border-right:1px solid #eaeaea; border-bottom:1px solid #eaeaea; background:#fafafa;}  
+.form_transfer tbody td{border-bottom:1px solid #eaeaea; }   
+.form_transfer .i_check,  .form_transfer .i_radio, .form_transfer02 .i_check,  .form_transfer02 .i_radio{width:13px;height:13px;margin:2px 5px 2px 0;padding:0;vertical-align:middle; border:none;}  
+.form_transfer .i_text, .form_transfer02 .i_text{position:relative;margin:2px;padding:3px 4px;border:1px solid #b7b7b7;border-right-color:#e1e1e1;border-bottom-color:#e1e1e1;background:transparent}  
+.form_transfer  select, .form_transfer02  select{padding:2px; text-align:left;}  
+.form_transfer label, .form_transfer02 label {padding:0 20px 0 0;cursor:pointer}  
+.fcred {color:#cc0000;}
+.cbtn {text-align:center; margin:55px 0;}
+.w72 {width:72px;}
+.w124 {width:124px;}
+.formtrtxt {padding-top:7px; text-align:right;}
+.form_transfer textarea {border:1px solid #dedede; padding:2px;}
+.form_transfer .btn {vertical-align:middle; padding-left:10px;}
+.form_transfer p{letter-spacing:-0.4px;}
+
+.cafe_wrap .studyint {}
+.cafe_wrap .studyint dt {display:inline-block; }
+.cafe_wrap .studyint dd {display:inline-block; width:450px;}
+
+
