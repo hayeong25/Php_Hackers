@@ -13,110 +13,114 @@
 					<div class="top_img"><img src="/img/member/new2013/top_step04.gif" alt="" /></div>
 					<h3 class="mgb10"><img src="/img/member/h3_baseInfo.gif" alt="기본정보입력" /></h3>
 					<p class="referText"><img src="/img/member/icon_redStar.gif" alt="*" /> 표시 부분은 필수 입력사항입니다.</p>
-					<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
-						<colgroup>
-							<col width="136px" />
-							<col width="*" />
-						</colgroup>
-						<tbody>
-							<tr>
-								<th><span class="must">아이디</span></th>
-								<td><input type="text" class="text"/> <a href="#"><img src="/img/member/btn_overlap.gif" alt="중복확인"/></a> <span class="tip">(4~10자 영문, 숫자만 가능합니다.)</span></td>
-							</tr>
-							<tr>
-								<th><span class="must">비밀번호</span></th>
-								<td><input type="password" class="text"/> <span class="tip">(비밀번호는 4~32자 영문+숫자 조합만 가능합니다.)</span></td>
-							</tr>
-							<tr>
-								<th><span class="must">비밀번호확인</span></th>
-								<td><input type="password" class="text" /></td>
-							</tr>
-							<tr>
-								<th><span class="must">이름</span></th>
-								<td><input type="text" class="text"/> </td>
-							</tr>
-							<tr>
-								<th><span class="must">닉네임</span></th>
-								<td><input type="text" class="text"/> </td>
-							</tr>
-							<tr>
-								<th><span class="must">생년월일</span></th>
-								<td>
-									<select>
-										<option>2012</option>
-									</select>
-									<label class="mgr10">년</label>
-									<select>
-										<option>01</option>
-									</select>
-									<label class="mgr10">월</label>
-									<select>
-										<option>01</option>
-									</select>
-									<label>일</label>
-								</td>
-							</tr>
-							<tr>
-								<th><span class="must">성별</span></th>
-								<td>
-									<input type="radio" class="radio"><label class="mgr30">남</label>
-									<input type="radio" class="radio"><label>여</label>
-								</td>
-							</tr>
-							<tr>
-								<th><span class="must">e-mail주소</span></th>
-								<td>
-									<input type="text" class="text"/> @ <input type="text" class="text"/> 
-									<select style="margin-right:5px;">
-										<option>직접입력</option>
-									</select>
-									<input type="checkbox" class="checkbox" /><label>수신동의</label>
-									<p class="tip">*패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
-									<p class="icon_check">[직접입력]을 통해 메일 계정을 입력시 : 메일이 정상적으로 수신되지 않을 수 있습니다.</p>
-									<p class="icon_check">Hotmail, Gmail 이용시 : 메일이 도착하지 않으면 [스팸 편지함]을 확인 해 주시기 바랍니다.</p>
-								</td>
-							</tr>
-							<tr>
-								<th><span class="must">휴대폰번호</span></th>
-								<td>
-									<select>
-										<option>010</option>
-									</select>
-									- <input type="text" class="phone"> - <input type="text" class="phone">
-									<p class="tip">* 패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
-								</td>
-							</tr>
-							<tr>
-								<th><span class="must">휴대폰번호</span></th>
-								<td>
-									<select>
-										<option>010</option>
-									</select>
-									- <input type="text" class="phone"> - <input type="text" class="phone">
-									<p class="tip">※ 보호자(법정대리인)의 정보를 입력해 주세요</p>
-								</td>
-							</tr>
-							<!--
-							<tr>
-								<th><span class="must">집전화번호</span></th>
-								<td>
-									<select>
-										<option>010</option>
-									</select>
-									- <input type="text" class="phone"> - <input type="text" class="phone">
-								</td>
-							</tr>
-							-->
-							<tr>
-								<th><span class="must">주소</span></th>
-								<td>
-									<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="/member/search_zip_pop.html"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
-									<p style="margin:5px 0;"><input type="text" class="address"></p>
-									<p><input type="text" class="address"></p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+					<form action="">
+						<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
+							<colgroup>
+								<col width="136px" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><span class="must">아이디</span></th>
+									<td><input type="text" class="text"/> <a href="#"><img src="/img/member/btn_overlap.gif" alt="중복확인"/></a> <span class="tip">(4~10자 영문, 숫자만 가능합니다.)</span></td>
+								</tr>
+								<tr>
+									<th><span class="must">비밀번호</span></th>
+									<td><input type="password" class="text"/> <span class="tip">(비밀번호는 4~32자 영문+숫자 조합만 가능합니다.)</span></td>
+								</tr>
+								<tr>
+									<th><span class="must">비밀번호확인</span></th>
+									<td><input type="password" class="text" /></td>
+								</tr>
+								<tr>
+									<th><span class="must">이름</span></th>
+									<td><input type="text" class="text"/> </td>
+								</tr>
+								<tr>
+									<th><span class="must">닉네임</span></th>
+									<td><input type="text" class="text"/> </td>
+								</tr>
+								<tr>
+									<th><span class="must">생년월일</span></th>
+									<td>
+										<select>
+											<option>2012</option>
+										</select>
+										<label class="mgr10">년</label>
+										<select>
+											<option>01</option>
+										</select>
+										<label class="mgr10">월</label>
+										<select>
+											<option>01</option>
+										</select>
+										<label>일</label>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="must">성별</span></th>
+									<td>
+										<input type="radio" class="radio"><label class="mgr30">남</label>
+										<input type="radio" class="radio"><label>여</label>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="must">e-mail주소</span></th>
+									<td>
+										<input type="text" class="text"/> @ <input type="text" class="text"/> 
+										<select style="margin-right:5px;">
+											<option>직접입력</option>
+										</select>
+										<input type="checkbox" class="checkbox" /><label>수신동의</label>
+										<p class="tip">*패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
+										<p class="icon_check">[직접입력]을 통해 메일 계정을 입력시 : 메일이 정상적으로 수신되지 않을 수 있습니다.</p>
+										<p class="icon_check">Hotmail, Gmail 이용시 : 메일이 도착하지 않으면 [스팸 편지함]을 확인 해 주시기 바랍니다.</p>
+									</td>
+								</tr>
+								<tr>
+									<th><span class="must">휴대폰번호</span></th>
+									<td>
+										<select>
+											<option>010</option>
+										</select>
+										- <input type="text" class="phone"> - <input type="text" class="phone">
+										<p class="tip">* 패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
+									</td>
+								</tr>
+								
+								<tr>
+									<th><span class="must">보호자 휴대폰번호</span></th>
+									<td>
+										<select>
+											<option>010</option>
+										</select>
+										- <input type="text" class="phone"> - <input type="text" class="phone">
+										<p class="tip">※ 보호자(법정대리인)의 정보를 입력해 주세요</p>
+									</td>
+								</tr>
+								
+								<!--
+								<tr>
+									<th><span class="must">집전화번호</span></th>
+									<td>
+										<select>
+											<option>010</option>
+										</select>
+										- <input type="text" class="phone"> - <input type="text" class="phone">
+									</td>
+								</tr>
+								-->
+								<tr>
+									<th><span class="must">주소</span></th>
+									<td>
+										<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="/member/search_zip_pop.html"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
+										<p style="margin:5px 0;"><input type="text" class="address"></p>
+										<p><input type="text" class="address"></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
 					<h3 class="mgb10"><img src="/img/member/h3_choiceInfo.gif" alt="선택정보입력" /></h3>
 					<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
 						<colgroup>
