@@ -15,7 +15,7 @@
 					<div class="idCheck_wrap mgb50">
 						<div class="left">
 							<div class="phoneBox mgb20">
-								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name"/></p>
+								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" required/></p>
 								<p>
 									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="성별"/></span>
 									<input type="radio" class="radio"><label style="margin-right:25px;">남</label>
@@ -23,17 +23,11 @@
 								</p>
 								<p>
 									<span><img src="/img/member/text_check02.gif" alt="생년월일"/></span>
-									<select>
-										<option>2012</option>
-									</select>
+									<select id="year"></select>
 									<label>년</label>
-									<select>
-										<option>01</option>
-									</select>
+									<select id="month"></select>
 									<label>월</label>
-									<select>
-										<option>10</option>
-									</select>
+									<select id="day"></select>
 									<label>일</label>
 								</p>
 								<p>
@@ -42,7 +36,7 @@
 										<option>010</option>
 									</select>
 									- <input type="text" class="phone" /> - <input type="text" class="phone"/>
-									<!-- <a href="#"><img src="/img/member/btn_sendNum.gif" alt="인증번호받기" /></a><br /> -->
+									<a href="#"><img src="/img/member/btn_sendNum.gif" alt="인증번호받기" /></a><br />
 								</p>
 								<!-- <p>※ 보호자(법정대리인)의 정보를 입력해 주세요</p> -->
 								<ul class="under_text">

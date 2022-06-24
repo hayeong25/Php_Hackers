@@ -6,7 +6,7 @@ create table member (
     nick varchar(20) NOT NULL, -- 닉네임
     userid varchar(15) NOT NULL, -- 아이디
     pw varchar(20) NOT NULL, -- 비밀번호
-    birth varchar(8) NOT NULL, -- 생년월일 (1999-01-01)
+    birth date NOT NULL, -- 생년월일 (1999-01-01)
     gender char(2) NOT NULL, -- 성별 (남/여)
     phone varchar(15) NOT NULL, -- 연락처
     parent_phone varchar(15), -- 부모님 연락처 (어린이회원만)

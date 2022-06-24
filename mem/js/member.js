@@ -24,5 +24,19 @@ $(document).ready(function() {
                 $(this).attr("href", "/member/regist_step_03.html?" + user_type);
             }
         })
+
+        // regist_step_03
+        // 생년월일 select option 추가
+        for(var i = 1920 ; i <= new Date().getFullYear() ; i++) {
+            $("#year").append('<option value="' + i + '">' + i + '</option>');    
+        }
+        for(var i = 1; i <= 12; i++) {
+            var month = i > 9 ? i : "0"+i;
+            $('#month').append('<option value="' + month + '">' + month + '</option>');    
+        }
+        for(var i = 1; i <= 31; i++) {
+            var day = i > 9 ? i : "0"+i;            
+            $('#day').append('<option value="' + day + '">' + day+ '</option>');    
+        }
     })
 })
