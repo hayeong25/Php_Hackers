@@ -61,5 +61,12 @@ $(document).ready(function() {
 
             $(this).attr("href", "/member/regist_step_04.html?" + user_type);
         })
+
+        // regist_step_04
+
+        // regist_complete
+        $("#joinEnd").on("click", "a", function() {
+            $(this).attr("href", "/index.php");
+        })
     })
 })
