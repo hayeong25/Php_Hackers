@@ -56,6 +56,10 @@ $(document).ready(function() {
             $(this).attr("href", "/member/sms_auth_pop.html");
         })
 
-        // 
+        $("#ok").on("click", "a", function() {
+            // DB 회원 정보 조회 필요
+
+            $(this).attr("href", "/member/regist_step_04.html?" + user_type);
+        })
     })
 })
