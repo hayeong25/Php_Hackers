@@ -17,7 +17,7 @@ $(document).ready(function() {
         })
 
         // regist_step_02
-        $(".btnC").on("click", "a", function() {
+        $(".btnC").on("click", "a", function() { // 체크박스 체크유무 확인
             if($("[type='checkbox']").length != $("[type='checkbox']:checked").length) {
                 alert('모두 동의해야 다음 단계로 넘어갈 수 있습니다.');
             }else {
@@ -38,5 +38,24 @@ $(document).ready(function() {
             var day = i > 9 ? i : "0"+i;            
             $('#day').append('<option value="' + day + '">' + day+ '</option>');    
         }
+        
+        $("#send").click(function() { // 인증번호 확인 버튼 클릭시
+            if($("#name").val() == "") {
+                alert('이름을 입력해주세요.');
+                return;
+            }
+            if($("#year").val()=="" || $("#month").val()=="" || $("#day").val()==""){
+                alert("생년월일을 선택해주세요.");
+                return;
+            }
+            if($(".phone").val() == "") {
+                alert('휴대폰 번호를 입력해주세요.');
+                return;
+            }
+            
+            $(this).attr("href", "/member/sms_auth_pop.html");
+        })
+
+        // 
     })
 })

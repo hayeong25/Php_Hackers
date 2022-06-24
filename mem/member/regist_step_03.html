@@ -15,30 +15,38 @@
 					<div class="idCheck_wrap mgb50">
 						<div class="left">
 							<div class="phoneBox mgb20">
-								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" required/></p>
+								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" id="name" required/></p>
 								<p>
 									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="성별"/></span>
-									<input type="radio" class="radio"><label style="margin-right:25px;">남</label>
+									<input type="radio" class="radio" checked><label style="margin-right:25px;">남</label>
 									<input type="radio" class="radio"><label>여</label>
 								</p>
 								<p>
 									<span><img src="/img/member/text_check02.gif" alt="생년월일"/></span>
-									<select id="year"></select>
+									<select id="year">
+										<option value=""></option>
+									</select>
 									<label>년</label>
-									<select id="month"></select>
+									<select id="month">
+										<option value=""></option>
+									</select>
 									<label>월</label>
-									<select id="day"></select>
+									<select id="day">
+										<option value=""></option>
+									</select>
 									<label>일</label>
 								</p>
 								<p>
 									<span><img src="/img/member/text_check04.gif" alt="핸드폰번호"/></span>
 									<select>
-										<option>010</option>
+										<option value="010">010</option>
+										<option value="016">016</option>
+										<option value="017">017</option>
+										<option value="070">070</option>
 									</select>
 									- <input type="text" class="phone" /> - <input type="text" class="phone"/>
-									<a href="#"><img src="/img/member/btn_sendNum.gif" alt="인증번호받기" /></a><br />
+									<a href="" id="send"><img src="/img/member/btn_sendNum.gif" alt="인증번호받기" /></a><br />
 								</p>
-								<!-- <p>※ 보호자(법정대리인)의 정보를 입력해 주세요</p> -->
 								<ul class="under_text">
 									<li>주민등록번호 입력 없이 핸드폰번호로 회원가입이 가능합니다.</li>
 									<li>이름, 생년월일, 성별은 <span class="red">추후 변경이 불가능</span>하므로,<br />정확하게 입력해 주시기 바랍니다. </li>
