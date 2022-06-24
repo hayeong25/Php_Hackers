@@ -1,9 +1,9 @@
 $(document).ready(function() {
     // html include
-    $("header").load('/header.html');
-    $(".topmenu").load('/topmenu.html');
-    $(".lnb").load('/lnb.html');
-    $("footer").load('/footer.html');
+    $("header").load('/member/include/header.html');
+    $(".topmenu").load('/member/include/topmenu.html');
+    $(".lnb").load('/member/include/lnb.html');
+    $("footer").load('/member/include/footer.html');
 
     // 회원유형은 URL에서 ? 뒤에 붙어 따라감
     var user_type = location.href.split('?')[1];
