@@ -26,7 +26,7 @@
 								</tr>
 								<tr>
 									<th><span class="must">이름</span></th>
-									<td><input type="text" class="text" name="name"/> </td>
+									<td><input type="text" class="text" name="name"/><?=$name?></td>
 								</tr>
 								<tr>
 									<th><span class="must">닉네임</span></th>
@@ -82,7 +82,7 @@
 										<p class="tip">* 패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
 									</td>
 								</tr>
-								{%if user_type == 'child'%}
+								<?php if($user_type == 'child'):?>
 								<tr>
 									<th><span class="must">보호자 휴대폰번호</span></th>
 									<td>
@@ -93,18 +93,7 @@
 										<p class="tip">※ 보호자(법정대리인)의 정보를 입력해 주세요</p>
 									</td>
 								</tr>
-								{% end if %}
-								<!--
-								<tr>
-									<th><span class="must">집전화번호</span></th>
-									<td>
-										<select>
-											<option>010</option>
-										</select>
-										- <input type="text" class="phone"> - <input type="text" class="phone">
-									</td>
-								</tr>
-								-->
+								<?php endif; ?>
 								<tr>
 									<th><span class="must">주소</span></th>
 									<td>
@@ -126,7 +115,7 @@
 							<tr>
 								<th>최종학력</th>
 								<td>
-									<select>
+									<select name="school">
 										<option>선택</option>
 									</select>
 								</td>
@@ -134,8 +123,10 @@
 							<tr>
 								<th>직업</th>
 								<td>
-									<select>
-										<option>학생</option>
+									<select name="job">
+										<option value="student">학생</option>
+										<option value="teacher">교사</option>
+										<option value="parent">학부모</option>
 									</select>
 								</td>
 							</tr>
@@ -303,10 +294,13 @@
 						</tbody>
 					</table>
 					<!-- // 부동산 자격증 끝 -->
-					<div class="btnC"><a href="#"><img src="/img/member/btn_join.gif" alt="가입하기"></a></div>
+					<div class="btnC"><a href=""><img src="/img/member/btn_join.gif" alt="가입하기"></a></div>
 			</div>
 		</div>
 		<script src="/js/jquery-1.8.1.min.js"></script>
 		<script>
+			$(".btnC").on("click", "a", function() {
 				
+				$(this).attr("href", "/member/regist.php");
+			})
 		</script>

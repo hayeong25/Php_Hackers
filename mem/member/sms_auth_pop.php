@@ -24,7 +24,7 @@
 				<li>통신사 문의 전 차단설정, 메시지함 용량 초과 여부,<br />스팸문자함을 확인해 주세요.</li>
 			</ul>
 			<div class="btn">
-				<a href="#"><img src="/img/popup/btn_ok.gif" alt="확인" /></a>
+				<a href="javascript:window.close();"><img src="/img/popup/btn_ok.gif" alt="확인" /></a>
 				<a href="#"><img src="/img/popup/btn_re.gif" alt="재전송" /></a>
 			</div>
 		</div>

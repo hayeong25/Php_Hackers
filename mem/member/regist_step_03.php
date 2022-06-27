@@ -7,7 +7,7 @@
 					<div class="idCheck_wrap mgb50">
 						<div class="left">
 							<div class="phoneBox mgb20">
-								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" id="name" required/></p>
+								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" id="name" name="name" required/></p>
 								<p>
 									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="성별"/></span>
 									<input type="radio" class="radio" checked><label style="margin-right:25px;">남</label>
@@ -85,12 +85,16 @@
 					return;
 				}
 				
-				$(this).attr("href", "/member/sms_auth_pop.html");
+				pop();
+
+				function pop() {
+					window.open('/member/sms_auth_pop.php', 'sms_auth', 'top=50%, left=50%, width=400, height=400, resizable=no');
+				}
 			})
 
 			$("#ok").on("click", "a", function() {
 				// DB 회원 정보 조회 필요
 
-				$(this).attr("href", "/member/regist_step_04.html?" + user_type);
+				$(this).attr("href", "/member/regist_step_04.php?" + user_type);
 			})
 		</script>

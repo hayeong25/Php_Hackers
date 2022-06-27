@@ -11,20 +11,16 @@
     $parent_phone = $_POST['parent_phone1'] + $_POST['parent_phone2'] + $_POST['parent_phone3'];
     $address = $_POST['address1'] + $_POST['address2'];
 
-    $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql") or die ("Can't access DB");
-    $query = "insert into member (userid, pw, name, nick, birth, gender, email, sns, phone, parent_phone, address) values('".$userid."','".$pw."','".$name."','".$nick."','".$birth."','".$gender."','".$email."','".$sns."','".$phone."','".$parent_phone."','".$address."')";
-    $resut = mysqli_query($con,$query);
+    $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
 
-    if(!$result) {
-?>
-        <script>
-            confirm('회원가입 성공');
-            location.href = "/member/regist_complete.html";
-        </script> 
-<?php
-    } else {
-?>
-        <script> alert('회원가입에 실패했습니다.\n다시 시도해 주세요.'); location.href=".."; </script>
-<?php
-    }
+    // if (mysqli_connect_errno()) {
+    //     echo "MySQL 접속 실패". mysqli_connect_error();
+    //     exit;
+    // }else{
+    //     echo "MySQL 접속 성공";
+    // }
+
+    $sql = "insert into member (userid, pw, name, nick, birth, gender, email, sns, phone, parent_phone, address) values('".$userid."','".$pw."','".$name."','".$nick."','".$birth."','".$gender."','".$email."','".$sns."','".$phone."','".$parent_phone."','".$address."')";
+    $result = mysqli_query($con,$sql);
+    
 ?>
