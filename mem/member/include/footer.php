@@ -1,9 +1,10 @@
-<div class="underBlank"></div>
+</div>
+		<div class="underBlank"></div>
 		<div id="footer">
 			<p class="logo_footer"><img src="/img/integrate/logo_footer.gif" alt="해커스패스" /></p>
 			<div>
 				<p class="policy">
-					<a href="/member/terms.html"><img src="/img/integrate/footer_icon01.gif" alt="이용약관" /></a>
+					<a href="#"><img src="/img/integrate/footer_icon01.gif" alt="이용약관" /></a>
 					<img src="/img/integrate/footer_iconbar.gif" alt="" class="bar" />
 					<a href="#"><img src="/img/integrate/footer_icon02.gif" alt="개인정보취급방침" /></a>
 					<img src="/img/integrate/footer_iconbar.gif" alt="" class="bar" />

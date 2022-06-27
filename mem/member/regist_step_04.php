@@ -1,11 +1,3 @@
-<header></header>
-<body>
-	<div id="wrapper">
-		<div id="header">
-			<div class="topmenu"></div>
-		</div>
-		<div id="container">
-			<div class="lnb"></div>
 			<div id="sub" class="content">
 				<h2><img src="/img/member/h2_join_all.gif" alt="" /></h2>
 				<div class="depth"><span>Home &gt; 통합회원가입 &gt; <em>회원정보입력</em></span></div>
@@ -314,6 +306,3 @@
 					<div class="btnC"><a href="#"><img src="/img/member/btn_join.gif" alt="가입하기"></a></div>
 			</div>
 		</div>
-		<footer></footer>
-	<script src="/js/jquery-1.8.1.min.js"></script>
-	<script src="/js/member.js"></script>
