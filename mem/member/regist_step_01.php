@@ -17,6 +17,20 @@
 	 // 회원 유형 선택 시
 	$('.choiceAge li').on("click", "a", function() {
 		user_type = $(this).attr("id");
-		$(this).attr("href", "/member/regist_step_02.php?type=" + user_type);
+
+		$.ajax({
+			type: 'POST',
+			url: '/member/regist_step_02.php',
+			dataType : "html",
+    		contentType: "application/json; charset=utf-8",
+			data: {
+				user_type:user_type,
+				page:'regist_step_02',
+			},
+			success: function(data) {
+				console.log(data);
+				location.href = "/member/regist_step_02.php?type=" + user_type;
+			},
+		});
 	})
 </script>
