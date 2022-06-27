@@ -24,6 +24,11 @@
 				<area shape="rect" coords="599,315,711,340" href="http://www.champstudy.com/Champ_M/?go=biz&book_select=&middle=18&keywd=champbizmain_passgate_20130703&logger_kw=champbizmain_passgate_20130703&source=logger_kw" target="_blank" alt="해커스 챔프스터디 취업"/>
 			</map>
 		</div>
-
 	</div>
 </div>
+<script src="/js/jquery-1.8.1.min.js"></script>
+<script>
+	$("#joinEnd").on("click", "a", function() {
+		$(this).attr("href", "/index.php");
+	})		
+</script>

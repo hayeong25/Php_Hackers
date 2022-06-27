@@ -5,8 +5,10 @@
 		<div class="top_img"><img src="/img/member/new2013/top_step01.gif" alt="" /></div>
 		<p class="alignC mgb50"><img src="/img/member/new2013/text_joinAll.gif" alt="" /></p>
 		<ul class="choiceAge">
-			<li class="top"><p><strong class="red">일반회원</strong><strong>만 14세 이상의 일반 회원</strong></p><a href="/member/regist_step_02.php?type=adult"><img src="/img/member/new2013/btn_adult.gif" alt="일반회원가입" /></a></li>
-			<li class="bot"><p><strong class="red">어린이회원</strong><strong>만 14세 미만의 어린이 회원</strong><br />※ 만 14세 미만은 법률에 의거하여 보호자(법정대리인)의 동의가 필요합니다.</p><a href="/member/regist_step_02.php?type=child" id="child"><img src="/img/member/new2013/btn_child.gif" alt="14세 미만 회원가입" /></a></li>
+			<form action="" method="post">
+				<li class="top"><p><strong class="red">일반회원</strong><strong>만 14세 이상의 일반 회원</strong></p><a href="/member/regist_step_02.php?type=adult"><img src="/img/member/new2013/btn_adult.gif" alt="일반회원가입" /></a></li>
+				<li class="bot"><p><strong class="red">어린이회원</strong><strong>만 14세 미만의 어린이 회원</strong><br />※ 만 14세 미만은 법률에 의거하여 보호자(법정대리인)의 동의가 필요합니다.</p><a href="/member/regist_step_02.php?type=child" id="child"><img src="/img/member/new2013/btn_child.gif" alt="14세 미만 회원가입" /></a></li>
+			</form>
 		</ul>
 	</div>
 </div>

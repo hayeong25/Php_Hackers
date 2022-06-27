@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" type="text/css" href="/css/default.css" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="http://pass.com/js/integrate.js"></script>
+<script type="text/javascript" src="/js/integrate.js"></script>
 </head>
 <body>
 	<div id="wrapper">

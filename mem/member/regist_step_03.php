@@ -56,3 +56,41 @@
 					</div>
 				</div>
 			</div>
+		<script src="/js/jquery-1.8.1.min.js"></script>
+		<script>
+			// 생년월일 select option 추가
+			for(var i = 1920 ; i <= new Date().getFullYear() ; i++) {
+				$("#year").append('<option value="' + i + '">' + i + '</option>');    
+			}
+			for(var i = 1; i <= 12; i++) {
+				var month = i > 9 ? i : "0"+i;
+				$('#month').append('<option value="' + month + '">' + month + '</option>');    
+			}
+			for(var i = 1; i <= 31; i++) {
+				var day = i > 9 ? i : "0"+i;            
+				$('#day').append('<option value="' + day + '">' + day+ '</option>');    
+			}
+			
+			$("#send").click(function() { // 인증번호 확인 버튼 클릭시
+				if($("#name").val() == "") {
+					alert('이름을 입력해주세요.');
+					return;
+				}
+				if($("#year").val()=="" || $("#month").val()=="" || $("#day").val()==""){
+					alert("생년월일을 선택해주세요.");
+					return;
+				}
+				if($(".phone").val() == "") {
+					alert('휴대폰 번호를 입력해주세요.');
+					return;
+				}
+				
+				$(this).attr("href", "/member/sms_auth_pop.html");
+			})
+
+			$("#ok").on("click", "a", function() {
+				// DB 회원 정보 조회 필요
+
+				$(this).attr("href", "/member/regist_step_04.html?" + user_type);
+			})
+		</script>

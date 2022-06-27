@@ -306,3 +306,7 @@
 					<div class="btnC"><a href="#"><img src="/img/member/btn_join.gif" alt="가입하기"></a></div>
 			</div>
 		</div>
+		<script src="/js/jquery-1.8.1.min.js"></script>
+		<script>
+				
+		</script>

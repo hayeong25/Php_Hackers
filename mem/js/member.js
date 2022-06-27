@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // 회원유형은 URL에서 ? 뒤에 붙어 따라감
-    // var user_type = location.href.split('?')[1];
+    var user_type = location.href.split('?')[1];
 
     $(function() {
         // regist_step_01

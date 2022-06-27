@@ -635,4 +635,18 @@
 					<div class="text_agree"><input type="checkbox" class="checkbox" /><label>개인정보 처리업무 위탁에 대한 동의사항에 동의합니다.</label></div>
 					<div class="btnC"><a href=""><img src="/img/member/btn_join.gif" alt="가입하기"></a></div>
 				</div>
-			</div>
+		</div>
+<script src="/js/jquery-1.8.1.min.js"></script>
+<script>
+	var user_type = location.href.split('=')[1];
+
+	console.log(user_type);
+
+	$(".btnC").on("click", "a", function() { // 체크박스 체크유무 확인
+		if($("[type='checkbox']").length != $("[type='checkbox']:checked").length) {
+			alert('모두 동의해야 다음 단계로 넘어갈 수 있습니다.');
+		}else {
+			$(this).attr("href", "/member/regist_step_03.php?type=" + user_type);
+		}
+	})
+</script>
