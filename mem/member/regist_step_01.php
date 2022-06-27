@@ -25,11 +25,11 @@
     		contentType: "application/json; charset=utf-8",
 			data: {
 				user_type:user_type,
-				page:'regist_step_02',
+				page:"regist_step_02",
 			},
 			success: function(data) {
-				console.log(data);
-				location.href = "/member/regist_step_02.php?type=" + user_type;
+				location.href = "/member/" + data.page + ".php?type=" + user_type;
+				// location.href = "/member/regist_step_02.php?type=" + user_type;
 			},
 		});
 	})
