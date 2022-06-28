@@ -1,16 +1,14 @@
 <?php
     $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
 
-    $sql = "select phone from member where phone = ".$_POST['phone1'].$_POST['phone2'].$_POST['phone3'];
+    $phone = $_GET['phone'];
+
+    $sql = "select * from member where phone = '$phone'";
     $result = mysqli_query($con, $sql);
-    
-    echo "phone : ".$_POST['phone1'].$_POST['phone2'].$_POST['phone3'];
 
     if(mysqli_num_rows($result) > 0) {
-        echo "true";
+        echo json_encode('true');
     }else {
-        echo "false";
+        echo json_encode('false');
     }
-
-    mysqli_close($con);
 ?>
