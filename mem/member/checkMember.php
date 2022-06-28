@@ -7,8 +7,8 @@
     $result = mysqli_query($con, $sql);
 
     if(mysqli_num_rows($result) > 0) {
-        echo json_encode('true');
+        echo "1";
     }else {
-        echo json_encode('false');
+        echo "0";
     }
 ?>

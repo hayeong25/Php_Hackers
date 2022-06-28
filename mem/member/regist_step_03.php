@@ -117,24 +117,25 @@
 
 			$("#ok").on("click", "a", function() {
 				var phone = $("#phone1").val() + $("#phone2").val() + $("#phone3").val();
+				var user_type = location.href.split('=')[1];
 
 				// DB 회원 정보 조회
 				$.ajax({
 					type: 'get',
 					url: '/member/checkMember.php',
-					dataType : "json",
+					dataType : "html",
 					contentType: "application/json; charset=utf-8",
 					data:{
 						phone:phone,
 					},
 					success: function(data) {
-						console.log("결과 :" + data);
-						// if(data) {
-						// 	alert('이미 존재하는 회원입니다.');
-						// 	return;
-						// }else {
-						// 	$(this).attr("href", "/member/regist_step_04.php?" + user_type);
-						// }
+						console.log("결과 : " + data);
+						if(data == "0") {
+							location.href = "/member/regist_step_04.php?type=" + user_type;
+						}else {
+							alert('이미 존재하는 회원입니다.');
+							return;
+						}
 					},
 				});
 			})
