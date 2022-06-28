@@ -13,14 +13,6 @@
 
     $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
 
-    // if (mysqli_connect_errno()) {
-    //     echo "MySQL 立加 角菩". mysqli_connect_error();
-    //     exit;
-    // }else{
-    //     echo "MySQL 立加 己傍";
-    // }
-
     $sql = "insert into member (userid, pw, name, nick, birth, gender, email, sns, phone, parent_phone, address) values('".$userid."','".$pw."','".$name."','".$nick."','".$birth."','".$gender."','".$email."','".$sns."','".$phone."','".$parent_phone."','".$address."')";
     $result = mysqli_query($con,$sql);
-    
 ?>

@@ -10,8 +10,8 @@
 								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" id="name" name="name" required/></p>
 								<p>
 									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="성별"/></span>
-									<input type="radio" class="radio" checked><label style="margin-right:25px;">남</label>
-									<input type="radio" class="radio"><label>여</label>
+									<input type="radio" class="radio" name="gender" value="남" checked><label style="margin-right:25px;">남</label>
+									<input type="radio" class="radio" name="gender" value="여"><label>여</label>
 								</p>
 								<p>
 									<span><img src="/img/member/text_check02.gif" alt="생년월일"/></span>
@@ -30,13 +30,13 @@
 								</p>
 								<p>
 									<span><img src="/img/member/text_check04.gif" alt="핸드폰번호"/></span>
-									<select>
+									<select id="phone1">
 										<option value="010">010</option>
 										<option value="016">016</option>
 										<option value="017">017</option>
 										<option value="070">070</option>
 									</select>
-									- <input type="text" class="phone" /> - <input type="text" class="phone"/>
+									- <input type="text" class="phone" id="phone2"/> - <input type="text" class="phone" id="phone3"/>
 									<a href="" id="send"><img src="/img/member/btn_sendNum.gif" alt="인증번호받기" /></a><br />
 								</p>
 								<ul class="under_text">
@@ -70,8 +70,18 @@
 				var day = i > 9 ? i : "0"+i;            
 				$('#day').append('<option value="' + day + '">' + day+ '</option>');    
 			}
-			
+
 			$("#send").click(function() { // 인증번호 확인 버튼 클릭시
+				// 입력값 local Storage에 담기
+				localStorage.setItem('name', $("#name").val());
+				localStorage.setItem('gender', $("[type='radio']:checked").val());
+				localStorage.setItem('year', $("#year").val());
+				localStorage.setItem('month', $("#month").val());
+				localStorage.setItem('day', $("#day").val());
+				localStorage.setItem('phone1', $("#phone1").val());
+				localStorage.setItem('phone2', $("#phone2").val());
+				localStorage.setItem('phone3', $("#phone3").val());
+
 				if($("#name").val() == "") {
 					alert('이름을 입력해주세요.');
 					return;
@@ -80,11 +90,11 @@
 					alert("생년월일을 선택해주세요.");
 					return;
 				}
-				if($(".phone").val() == "") {
+				if($("#phone1").val() == "" || $("#phone2").val() == "" || $("#phone3").val() == "") {
 					alert('휴대폰 번호를 입력해주세요.');
 					return;
 				}
-				
+
 				pop();
 
 				function pop() {
@@ -92,9 +102,43 @@
 				}
 			})
 
-			$("#ok").on("click", "a", function() {
-				// DB 회원 정보 조회 필요
+			// return 시, local Storage에서 값 가져와 입력값 유지
+			document.addEventListener('DOMContentLoaded', function() {
+				$("#name").val(localStorage.getItem('name'));
+				$("[type='radio']").val(localStorage.getItem('gender'));
+				$("#year").val(localStorage.getItem('year'));
+				$("#month").val(localStorage.getItem('month'));
+				$("#day").val(localStorage.getItem('day'));
+				$("#phone1").val(localStorage.getItem('phone1'));
+				$("#phone2").val(localStorage.getItem('phone2'));
+				$("#phone3").val(localStorage.getItem('phone3'));
+				localStorage.clear();
+			})
 
-				$(this).attr("href", "/member/regist_step_04.php?" + user_type);
+			$("#ok").on("click", "a", function() {
+				// DB 회원 정보 조회
+				$.ajax({
+					type: 'POST',
+					url: '/member/checkMember.php',
+					dataType : "html",
+					contentType: "application/json; charset=utf-8",
+					data: {
+						phone1:$("#phone1").val(),
+						phone2:$("#phone2").val(),
+						phone3:$("#phone3").val(),
+					},
+					success: function(data) {
+						console.log("결과 :" + data);
+						if(data) {
+							alert('이미 존재하는 회원입니다.');
+							return;
+						}else {
+							$(this).attr("href", "/member/regist_step_04.php?" + user_type);
+						}
+					},
+					error:function(request,status,error) {
+						alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+					},
+				});
 			})
 		</script>

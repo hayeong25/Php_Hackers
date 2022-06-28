@@ -24,10 +24,21 @@
 				<li>통신사 문의 전 차단설정, 메시지함 용량 초과 여부,<br />스팸문자함을 확인해 주세요.</li>
 			</ul>
 			<div class="btn">
-				<a href="javascript:window.close();"><img src="/img/popup/btn_ok.gif" alt="확인" /></a>
+				<a href="" id="ok"><img src="/img/popup/btn_ok.gif" alt="확인" /></a>
 				<a href="#"><img src="/img/popup/btn_re.gif" alt="재전송" /></a>
 			</div>
 		</div>
 	</div>
+	<script src="/js/jquery-1.8.1.min.js"></script>
+	<script>
+		$("#ok").click(function() {
+			if($(".checkNum").val() == '1234') {
+				confirm('인증되었습니다.');
+				window.close();
+			}else {
+				alert('인증번호를 다시 확인해주세요.');
+			}
+		})
+	</script>
 </body>
 </html>
