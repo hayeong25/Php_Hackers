@@ -18,14 +18,5 @@
     $sql = "insert into member (type, userid, pw, name, nick, birth, gender, email, sns, phone, parent_phone, address, job) values('$type', '$userid', '$pw', '$name', '$nick', STR_TO_DATE('$birth', '%Y%m%d'), '$gender', '$email', '$sns', '$phone', '$parent_phone', '$address', '$job')";
     $result = mysqli_query($con,$sql);
 
-    ini_set('display_errors',1);
-    error_reporting(E_ALL);
-
     echo $result;
-
-    // if(mysqli_num_rows($result) > 0) {
-    //     echo '1';
-    // }else {
-    //     echo "0";
-    // }
 ?>

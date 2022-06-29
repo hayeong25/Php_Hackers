@@ -32,6 +32,7 @@
 	$("#userid").append(localStorage.getItem('userid'));
 
 	$("#joinEnd").on("click", "a", function() {
-		$(this).attr("href", "/index.php");
+		$(this).attr("href", "/");
+		localStorage.clear();
 	})		
 </script>

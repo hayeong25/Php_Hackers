@@ -78,7 +78,7 @@
 								<tr>
 									<th><span class="must">주소</span></th>
 									<td>
-										<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="/member/search_zip_pop.php"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
+										<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="" id="zip_pop"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
 										<p style="margin:5px 0;"><input type="text" class="address" name="address1"></p>
 										<p><input type="text" class="address" name="address2"></p>
 									</td>
@@ -284,9 +284,6 @@
 		</div>
 		<script src="/js/jquery-1.8.1.min.js"></script>
 		<script>
-			// 성별 값 넘어오는지 확인
-			console.log("성별 : " + localStorage.getItem('gender'));
-
 			// 회원유형 확인
 			var user_type = localStorage.getItem('user_type');
 
@@ -375,6 +372,15 @@
 				$("[name='email2']").val($(this).val());
 			})
 
+			// 우편번호 검색 팝업
+			$("#zip_pop").click(function() {
+				pop();
+
+				function pop() {
+					window.open('/member/search_zip_pop.php', 'zipcode', 'top=50%, left=50%, width=600, height=600, resizable=no');
+				}
+			})
+
 			// 새로고침 시, 3단계에서 넘어온 항목, 아이디, 닉네임은 default 세팅
 			document.addEventListener('DOMContentLoaded', function() {
 				if(localStorage.getItem('userid') != null) {
@@ -457,13 +463,12 @@
 						job:$("[name='job']").val(),
 					},
 					success: function(data) {
-						// if(data == '1') {
-						// 	confirm('회원가입 성공');
-						// 	location.href = "/member/regist_complete.php";
-						// }else {
-						// 	alert('회원가입에 실패했습니다. 다시 시도해주세요.');
-						// }
-						alert(data);
+						if(data == '1') {
+							confirm('회원가입 성공');
+							location.href = "/member/regist_complete.php";
+						}else {
+							alert('회원가입에 실패했습니다. 다시 시도해주세요.');
+						}
 					},
 				});
 			})
