@@ -30,7 +30,7 @@
 								</tr>
 								<tr>
 									<th><span class="must">닉네임</span></th>
-									<td><input type="text" class="text" name="nick"/><a href=""><img src="/img/member/btn_overlap.gif" alt="중복확인"/></a></td>
+									<td><input type="text" class="text" name="nick"/><a href="" id="nick"><img src="/img/member/btn_overlap.gif" alt="중복확인"/></a></td>
 								</tr>
 								<tr>
 									<th><span class="must">생년월일</span></th>
@@ -46,8 +46,8 @@
 								<tr>
 									<th><span class="must">성별</span></th>
 									<td>
-										<input type="radio" class="radio" name="gender" value="male"><label class="mgr30">남</label>
-										<input type="radio" class="radio" name="gender" value="female"><label>여</label>
+										<input type="radio" class="radio" name="gender" value="male" onclick="return false"><label class="mgr30">남</label>
+										<input type="radio" class="radio" name="gender" value="female" onclick="return false"><label>여</label>
 									</td>
 								</tr>
 								<tr>
@@ -289,7 +289,6 @@
 
 			// 회원유형 확인
 			var user_type = localStorage.getItem('user_type');
-			console.log(user_type);
 
 			// 어린이회원일 경우, 보호자 연락처 입력폼 보여주기
 			if(user_type == 'child') {
@@ -333,7 +332,6 @@
 						mode:'userid',
 					},
 					success: function(data) {
-						console.log("결과 : " + data);
 						if(data == "0") {
 							confirm('사용 가능한 아이디입니다.');
 							localStorage.setItem('userid', $("[name='userid']").val());
@@ -346,7 +344,7 @@
 			})
 
 			// 닉네임 중복체크
-			$("[name='nick']").on("click", "a", function() {
+			$("#nick").on("click", function() {
 				if($("[name='nick']").val() == "") {
 					alert("닉네임을 입력해주세요.");
 					return;
@@ -361,7 +359,6 @@
 						mode:'nick',
 					},
 					success: function(data) {
-						console.log("결과 : " + data);
 						if(data == "0") {
 							confirm('사용 가능한 닉네임입니다.');
 							localStorage.setItem('nick', $("[name='nick']").val());
@@ -387,7 +384,7 @@
 					$("[name='nick']").val(localStorage.getItem('nick'));
 				}
 				$("[name='name']").val(localStorage.getItem('name'));
-				$("[name='gender']:checked").val(localStorage.getItem('gender'));
+				$("input[name='gender']").val(localStorage.getItem('gender')).prop('checked', true);
 				$("#year").val(localStorage.getItem('year'));
 				$("#month").val(localStorage.getItem('month'));
 				$("#day").val(localStorage.getItem('day'));
@@ -433,5 +430,41 @@
 					alert("주소를 입력해주세요.");
 					return;
 				}
+
+				var sns = "N";
+				if($("[name='sns']").is(':checked') == true) {
+					sns = "Y";
+				}
+				
+				$.ajax({
+					type: 'post',
+					url: '/member/regist.php',
+					dataType : "html",
+					contentType: "application/json; charset=utf-8",
+					data:{
+						user_type:user_type,
+						userid:localStorage.getItem('userid'),
+						pw:$("[name='pw']").val(),
+						name:localStorage.getItem('name'),
+						nick:localStorage.getItem('nick'),
+						birth:localStorage.getItem('year') + "-" + localStorage.getItem('month') + "-" + localStorage.getItem('day'),
+						gender:localStorage.getItem('gender'),
+						email:$("[name='email1']").val() + "@" + $("[name='email2']").val(),
+						sns:sns,
+						phone:localStorage.getItem('phone1') + localStorage.getItem('phone2') + localStorage.getItem('phone3'),
+						parent_phone:$("[name='parent_phone1']").val() + $("[name='parent_phone2']").val() + $("[name='parent_phone3']").val(),
+						address:$("[name='address1']").val() + " " + $("[name='address2']").val(),
+						job:$("[name='job']").val(),
+					},
+					success: function(data) {
+						// if(data == '1') {
+						// 	confirm('회원가입 성공');
+						// 	location.href = "/member/regist_complete.php";
+						// }else {
+						// 	alert('회원가입에 실패했습니다. 다시 시도해주세요.');
+						// }
+						alert(data);
+					},
+				});
 			})
 		</script>
