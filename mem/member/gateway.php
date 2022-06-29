@@ -2,13 +2,13 @@
     include ("./include/header.php");
 
     // content 영역
-        $url = $_SERVER["PHP_SELF"]; // 현재 실행되고 있는 페이지 (매개변수 제외한 URL)
+        // $url = $_SERVER["PHP_SELF"]; // 현재 실행되고 있는 페이지 (매개변수 제외한 URL)
         
         // 전체 url에서 회원유형 가져오기
-        $user_type = $_POST['user_type'];
+        // $user_type = $_POST['user_type'];
 
         if(isset($_POST['page'])) {
-            include ($_POST['page'].".php");
+            include ("/member/".$_POST['page'].".php");
         }else {
             include ("regist_step_01.php");
         }

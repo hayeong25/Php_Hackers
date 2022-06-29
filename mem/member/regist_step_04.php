@@ -14,7 +14,7 @@
 							<tbody>
 								<tr>
 									<th><span class="must">아이디</span></th>
-									<td><input type="text" class="text" name="userid"/> <a href="#"><img src="/img/member/btn_overlap.gif" alt="중복확인"/></a> <span class="tip">(4~10자 영문, 숫자만 가능합니다.)</span></td>
+									<td><input type="text" class="text" name="userid"/><a href="" id="userid"><img src="/img/member/btn_overlap.gif" alt="중복확인"/></a> <span class="tip">(4~10자 영문, 숫자만 가능합니다.)</span></td>
 								</tr>
 								<tr>
 									<th><span class="must">비밀번호</span></th>
@@ -22,49 +22,43 @@
 								</tr>
 								<tr>
 									<th><span class="must">비밀번호확인</span></th>
-									<td><input type="password" class="text" name="pw" /></td>
+									<td><input type="password" class="text" name="pw_confirm" /></td>
 								</tr>
 								<tr>
 									<th><span class="must">이름</span></th>
-									<td><input type="text" class="text" name="name"/><?=$name?></td>
+									<td><input type="text" class="text" name="name" readonly/></td>
 								</tr>
 								<tr>
 									<th><span class="must">닉네임</span></th>
-									<td><input type="text" class="text" name="nick"/> </td>
+									<td><input type="text" class="text" name="nick"/><a href=""><img src="/img/member/btn_overlap.gif" alt="중복확인"/></a></td>
 								</tr>
 								<tr>
 									<th><span class="must">생년월일</span></th>
 									<td>
-										<select id="year" name="birth1">
-											<option value=""></option>
-										</select>
+										<input type="text" name="year" id="year" size="4" readonly>
 										<label>년</label>
-										<select id="month" name="birth2">
-											<option value=""></option>
-										</select>
+										<input type="text" name="month" id="month" size="4" readonly>
 										<label>월</label>
-										<select id="day" name="birth3">
-											<option value=""></option>
-										</select>
+										<input type="text" name="day" id="day" size="4" readonly>
 										<label>일</label>
 									</td>
 								</tr>
 								<tr>
 									<th><span class="must">성별</span></th>
 									<td>
-										<input type="radio" class="radio" name="gender"><label class="mgr30">남</label>
-										<input type="radio" class="radio" name="gender"><label>여</label>
+										<input type="radio" class="radio" name="gender" value="male"><label class="mgr30">남</label>
+										<input type="radio" class="radio" name="gender" value="female"><label>여</label>
 									</td>
 								</tr>
 								<tr>
 									<th><span class="must">e-mail주소</span></th>
 									<td>
 										<input type="text" class="text" name="email1"/> @ <input type="text" class="text" name="email2"/> 
-										<select style="margin-right:5px;">
-											<option>직접입력</option>
-											<option>gmail.com</option>
-											<option>hotmail.com</option>
-											<option>naver.com</option>
+										<select style="margin-right:5px;" name="email">
+											<option value="">직접입력</option>
+											<option value="gmail.com">gmail.com</option>
+											<option value="hotmail.com">hotmail.com</option>
+											<option value="naver.com">naver.com</option>
 										</select>
 										<input type="checkbox" class="checkbox" name="sns" /><label>수신동의</label>
 										<p class="tip">*패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
@@ -75,29 +69,16 @@
 								<tr>
 									<th><span class="must">휴대폰번호</span></th>
 									<td>
-										<select name="phone1">
-											<option>010</option>
-										</select>
-										- <input type="text" class="phone" name="phone2"> - <input type="text" class="phone" name="phone3">
+									<input type="text" class="phone" name="phone1" size="4" readonly>
+										- <input type="text" class="phone" name="phone2" size="4" readonly> - <input type="text" class="phone" name="phone3" size="4" readonly>
 										<p class="tip">* 패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
 									</td>
 								</tr>
-								<?php if($user_type == 'child'):?>
-								<tr>
-									<th><span class="must">보호자 휴대폰번호</span></th>
-									<td>
-										<select name="parent_phone1">
-											<option>010</option>
-										</select>
-										- <input type="text" class="phone" name="parent_phone1"> - <input type="text" class="phone" name="parent_phone1">
-										<p class="tip">※ 보호자(법정대리인)의 정보를 입력해 주세요</p>
-									</td>
-								</tr>
-								<?php endif; ?>
+								<tr class="parent"></tr>
 								<tr>
 									<th><span class="must">주소</span></th>
 									<td>
-										<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="/member/search_zip_pop.html"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
+										<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="/member/search_zip_pop.php"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
 										<p style="margin:5px 0;"><input type="text" class="address" name="address1"></p>
 										<p><input type="text" class="address" name="address2"></p>
 									</td>
@@ -116,7 +97,11 @@
 								<th>최종학력</th>
 								<td>
 									<select name="school">
-										<option>선택</option>
+										<option value="">선택</option>
+										<option value="middle">중학교 졸업</option>
+										<option value="high">고등학교 졸업</option>
+										<option value="col">전문대 졸업</option>
+										<option value="univ">4년제대학 졸업</option>
 									</select>
 								</td>
 							</tr>
@@ -299,8 +284,154 @@
 		</div>
 		<script src="/js/jquery-1.8.1.min.js"></script>
 		<script>
+			// 성별 값 넘어오는지 확인
+			console.log("성별 : " + localStorage.getItem('gender'));
+
+			// 회원유형 확인
+			var user_type = localStorage.getItem('user_type');
+			console.log(user_type);
+
+			// 어린이회원일 경우, 보호자 연락처 입력폼 보여주기
+			if(user_type == 'child') {
+				str = '<th><span class="must">보호자 휴대폰번호</span></th>';
+				str += '<td>';
+				str += '<select name="parent_phone1">';
+				str += '<option value="010">010</option>';
+				str += '<option value="016">016</option>';
+				str += '<option value="017">017</option>';
+				str += '<option value="070">070</option>';
+				str += '</select>';
+				str += '- <input type="text" class="phone" name="parent_phone2"> - <input type="text" class="phone" name="parent_phone3">';
+				str += '<p class="tip">※ 보호자(법정대리인)의 정보를 입력해 주세요</p>';
+				str += '</td>';
+				$(".parent").html(str);
+			}
+
+			// 아이디 중복체크
+			$("#userid").on("click", function() {
+				if($("[name='userid']").val() == "") {
+					alert("아이디를 입력해주세요.");
+					return;
+				}
+				if($("[name='userid']").val().match(/^[a-zA-Z0-9]*$/) == null) {
+					alert("아이디는 숫자와 영문만 입력할 수 있습니다.");
+					$("[name='userid']").val() = "";
+					return;
+				}
+				if($("[name='userid']").val().length < 4 || $("[name='userid']").val().length > 15){
+					alert("아이디는 4자 이상 15자 이하로 작성하셔야 합니다.");
+					$("[name='userid']").val() = "";
+					return;
+				}
+				$.ajax({
+					type: 'get',
+					url: '/member/checkMember.php',
+					dataType : "html",
+					contentType: "application/json; charset=utf-8",
+					data:{
+						userid:$("[name='userid']").val(),
+						mode:'userid',
+					},
+					success: function(data) {
+						console.log("결과 : " + data);
+						if(data == "0") {
+							confirm('사용 가능한 아이디입니다.');
+							localStorage.setItem('userid', $("[name='userid']").val());
+						}else {
+							alert('이미 존재하는 아이디입니다.');
+							$("[name='userid']").val() == "";
+						}
+					},
+				});
+			})
+
+			// 닉네임 중복체크
+			$("[name='nick']").on("click", "a", function() {
+				if($("[name='nick']").val() == "") {
+					alert("닉네임을 입력해주세요.");
+					return;
+				}
+				$.ajax({
+					type: 'get',
+					url: '/member/checkMember.php',
+					dataType : "html",
+					contentType: "application/json; charset=utf-8",
+					data:{
+						nick:$("[name='nick']").val(),
+						mode:'nick',
+					},
+					success: function(data) {
+						console.log("결과 : " + data);
+						if(data == "0") {
+							confirm('사용 가능한 닉네임입니다.');
+							localStorage.setItem('nick', $("[name='nick']").val());
+						}else {
+							alert('이미 존재하는 닉네임입니다.');
+							$("[name='nick']").val() == "";
+						}
+					},
+				});
+			})
+
+			// 이메일 선택 시, input에 자동 입력
+			$("[name='email']").on('change', function(){
+				$("[name='email2']").val($(this).val());
+			})
+
+			// 새로고침 시, 3단계에서 넘어온 항목, 아이디, 닉네임은 default 세팅
+			document.addEventListener('DOMContentLoaded', function() {
+				if(localStorage.getItem('userid') != null) {
+					$("[name='userid']").val(localStorage.getItem('userid'));
+				}
+				if(localStorage.getItem('nick') != null) {
+					$("[name='nick']").val(localStorage.getItem('nick'));
+				}
+				$("[name='name']").val(localStorage.getItem('name'));
+				$("[name='gender']:checked").val(localStorage.getItem('gender'));
+				$("#year").val(localStorage.getItem('year'));
+				$("#month").val(localStorage.getItem('month'));
+				$("#day").val(localStorage.getItem('day'));
+				$("[name='phone1']").val(localStorage.getItem('phone1'));
+				$("[name='phone2']").val(localStorage.getItem('phone2'));
+				$("[name='phone3']").val(localStorage.getItem('phone3'));
+			})
+
+			// 가입하기 버튼 클릭 시 유효성 검사
 			$(".btnC").on("click", "a", function() {
-				
-				$(this).attr("href", "/member/regist.php");
+				// 비밀번호
+				if($("[name='pw']").val() == "") {
+					alert('비밀번호를 입력해주세요.');
+					return;
+				}
+				if($("[name='pw']").val().match(/^[a-zA-Z0-9]*$/) == null) {
+					alert('비밀번호는 숫자와 영문만 입력할 수 있습니다.');
+					return;
+				}
+				if($("[name='pw']").val().length < 4 || $("[name='pw']").val().length > 32){
+					alert("비밀번호는 4자 이상 32자 이하로 작성하셔야 합니다.");
+					$("[name='userid']").val() = "";
+					return;
+				}
+				if($("[name='pw']").val() != $("[name='pw_confirm']").val()) {
+					alert('비밀번호가 일치하지 않습니다.');
+					return;
+				}
+				// 이메일
+				if($("[name='email1']").val() == "" || $("[name='email2']").val() == "") {
+					alert("이메일을 입력해주세요.");
+					return;
+				}
+				// 보호자 휴대폰번호
+				if(user_type == 'child') {
+					if($("[name='parent_phone2']").val() == "" || $("[name='parent_phone3']").val() == "") {
+						alert("보호자 연락처를 입력해주세요.");
+						return;
+					}
+				}
+				// 주소
+				if($("[name='address1']").val() == "" || $("[name='address1']").val() == "") {
+					alert("주소를 입력해주세요.");
+					return;
+				}
 			})
 		</script>

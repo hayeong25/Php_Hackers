@@ -638,15 +638,13 @@
 		</div>
 <script src="/js/jquery-1.8.1.min.js"></script>
 <script>
-	var user_type = location.href.split('=')[1];
-
-	console.log(user_type);
+	console.log("user_type : " + localStorage.getItem('user_type'));
 
 	$(".btnC").on("click", "a", function() { // 체크박스 체크유무 확인
 		if($("[type='checkbox']").length != $("[type='checkbox']:checked").length) {
 			alert('모두 동의해야 다음 단계로 넘어갈 수 있습니다.');
 		}else {
-			$(this).attr("href", "/member/regist_step_03.php?type=" + user_type);
+			$(this).attr("href", "/member/regist_step_03.php");
 		}
 	})
 </script>

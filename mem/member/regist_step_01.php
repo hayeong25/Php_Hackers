@@ -16,21 +16,21 @@
 <script>
 	 // 회원 유형 선택 시
 	$('.choiceAge li').on("click", "a", function() {
-		user_type = $(this).attr("id");
+		localStorage.setItem('user_type', $(this).attr("id")); // 회원유형 local Storage에 담기
+		
 		page = "regist_step_02";
 
 		$.ajax({
 			type: 'POST',
-			url: '/member/regist_step_02.php',
+			url: '/member/gateway.php',
 			dataType : "html",
     		contentType: "application/json; charset=utf-8",
 			data: {
-				user_type:user_type,
-				page:page,
+				page:"regist_step_02",
 			},
 			success: function(data) {
-				location.href = "/member/" + page + ".php?type=" + user_type;
-				// location.href = "/member/regist_step_02.php?type=" + user_type;
+				console.log("page : " + data.page);
+				location.href = "regist_step_02.php";
 			},
 		});
 	})

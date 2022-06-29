@@ -1,14 +1,45 @@
 <?php
     $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
 
-    $phone = $_GET['phone'];
+    $mode = $_GET['mode'];
 
-    $sql = "select * from member where phone = '$phone'";
-    $result = mysqli_query($con, $sql);
+    switch($mode) {
+        case 'phone':
+            $phone = $_GET['phone'];
 
-    if(mysqli_num_rows($result) > 0) {
-        echo "1";
-    }else {
-        echo "0";
+            $sql = "select * from member where phone = '$phone'";
+            $result = mysqli_query($con, $sql);
+
+            if(mysqli_num_rows($result) > 0) {
+                echo "1";
+            }else {
+                echo "0";
+            }
+            break;
+        case 'userid':
+            $userid = $_GET['userid'];
+
+            $sql = "select * from member where userid = '$userid'";
+            $result = mysqli_query($con, $sql);
+
+            if(mysqli_num_rows($result) > 0) {
+                echo "1";
+            }else {
+                echo "0";
+            }
+            break;
+        case 'nick':
+            $nick = $_GET['nick'];
+
+            $sql = "select * from member where nick = '$nick'";
+            $result = mysqli_query($con, $sql);
+
+            if(mysqli_num_rows($result) > 0) {
+                echo "1";
+            }else {
+                echo "0";
+            }
+            break;
     }
+    
 ?>

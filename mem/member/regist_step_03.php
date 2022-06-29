@@ -7,11 +7,12 @@
 					<div class="idCheck_wrap mgb50">
 						<div class="left">
 							<div class="phoneBox mgb20">
+								<form action="" method="post">
 								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" id="name" name="name" required/></p>
 								<p>
 									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="성별"/></span>
-									<input type="radio" class="radio" name="gender" value="남" checked><label style="margin-right:25px;">남</label>
-									<input type="radio" class="radio" name="gender" value="여"><label>여</label>
+									<input type="radio" class="radio" name="gender" value="male" checked><label style="margin-right:25px;">남</label>
+									<input type="radio" class="radio" name="gender" value="female"><label>여</label>
 								</p>
 								<p>
 									<span><img src="/img/member/text_check02.gif" alt="생년월일"/></span>
@@ -44,7 +45,7 @@
 									<li>이름, 생년월일, 성별은 <span class="red">추후 변경이 불가능</span>하므로,<br />정확하게 입력해 주시기 바랍니다. </li>
 									<li>메시지 수신 가능한 휴대폰으로 인증번호를 받으실 수 있으며, <br /><span class="red">동일번호로 1개 아이디만 가입 가능</span>합니다.</li>
 								</ul>
-								
+								</form>
 							</div>
 							<div class="btnC" id="ok"><a href=""><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
 						</div>
@@ -98,7 +99,7 @@
 				pop();
 
 				function pop() {
-					window.open('/member/sms_auth_pop.php', 'sms_auth', 'top=50%, left=50%, width=400, height=400, resizable=no');
+					window.open('/member/sms_auth_pop.php', 'sms_auth', 'top=50%, left=50%, width=500, height=400, resizable=no');
 				}
 			})
 
@@ -112,12 +113,10 @@
 				$("#phone1").val(localStorage.getItem('phone1'));
 				$("#phone2").val(localStorage.getItem('phone2'));
 				$("#phone3").val(localStorage.getItem('phone3'));
-				localStorage.clear();
 			})
 
 			$("#ok").on("click", "a", function() {
 				var phone = $("#phone1").val() + $("#phone2").val() + $("#phone3").val();
-				var user_type = location.href.split('=')[1];
 
 				// DB 회원 정보 조회
 				$.ajax({
@@ -127,11 +126,20 @@
 					contentType: "application/json; charset=utf-8",
 					data:{
 						phone:phone,
+						mode:'phone',
 					},
 					success: function(data) {
 						console.log("결과 : " + data);
 						if(data == "0") {
-							location.href = "/member/regist_step_04.php?type=" + user_type;
+							localStorage.setItem('name', $("#name").val());
+							localStorage.setItem('gender', $("[name='gender']").val());
+							localStorage.setItem('year', $("#year").val());
+							localStorage.setItem('month', $("#month").val());
+							localStorage.setItem('day', $("#day").val());
+							localStorage.setItem('phone1', $("#phone1").val());
+							localStorage.setItem('phone2', $("#phone2").val());
+							localStorage.setItem('phone3', $("#phone3").val());
+							location.href = "/member/regist_step_04.php";
 						}else {
 							alert('이미 존재하는 회원입니다.');
 							return;
