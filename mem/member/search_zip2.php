@@ -1,6 +1,6 @@
 <?php
-    $zipcode = isset($_POST['zipcode']) ? $_POST['zipcode'] : "";
-    $juso = isset($_POST['juso']) ? $_POST['juso'] : "";
+    $zipcode = isset($_GET['zipcode']) ? $_GET['zipcode'] : "";
+    $juso = isset($_GET['juso']) ? $_GET['juso'] : "";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,15 +19,26 @@
             <tr bgcolor=white>
                 <td align=center height=100%>
                 나머지 주소 부분을 입력 하신후 확인을 눌러 주십시오.<br><br>
-                <? 
-                    $juso = $_GET['juso'];
-                    echo $juso;
-                ?>
                 <br>
-            <input type=text name=juso2 class='input' size=40><input type='button' value='확 인' class='submit' name=p onclick=write2_close()>
-            <input type="hidden" name="zipcode" value="<? echo $zipcode ?>">
-            <input type="hidden" name="juso" value="<? echo $juso ?>">
+            <input type=text name=juso2 class='input' size=40><input type='button' value='확 인' class='submit' name=p>
+            <input type="hidden" name="zipcode" value="<?=$zipcode ?>">
+            <input type="hidden" name="juso" value="<?=$juso ?>">
+            <input type="hidden" name="juso2" value="">
         </form>
     </table>
+    <script src="/js/jquery-1.8.1.min.js"></script>
+    <script>
+        $(".submit").click(function() {
+            $("input[name='juso2']").val() == $(".input").val();
+
+            var zipcode = $("input[name='zipcode']").val();
+            var juso = $("input[name='juso']").val();
+            var juso2 = $("input[name='juso2']").val();
+
+            alert("zipcode : " + zipcode + "\njuso : " + encodeURIComponent(juso) + "\njuso2 : " + encodeURIComponent(juso2));
+            opener.jusoCallBack(zipcode, encodeURIComponent(juso), encodeURIComponent(juso2));
+		    window.close();
+        })
+    </script>
 </body>
 </html>

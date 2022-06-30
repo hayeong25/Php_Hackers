@@ -1,3 +1,8 @@
+<?php
+	$zipcode = isset($_GET['zipcode']) ? $_GET['zipcode'] : "";
+	$juso = isset($_GET['juso']) ? $_GET['juso'] : "";
+	$juso2 = isset($_GET['juso2']) ? $_GET['juso2'] : ""
+?>
 			<div id="sub" class="content">
 				<h2><img src="/img/member/h2_join_all.gif" alt="" /></h2>
 				<div class="depth"><span>Home &gt; 통합회원가입 &gt; <em>회원정보입력</em></span></div>
@@ -78,9 +83,9 @@
 								<tr>
 									<th><span class="must">주소</span></th>
 									<td>
-										<p><input type="text" class="zipcode"><a href="" id="zip_pop"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
-										<p style="margin:5px 0;"><input type="text" class="address" name="address1"></p>
-										<p><input type="text" class="address" name="address2"></p>
+										<p><input type="text" class="zipcode" name="zipcode" value="<?=$zipcode?>" readonly><a href="" id="zip_pop"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
+										<p style="margin:5px 0;"><input type="text" class="address" name="address1" value="<?=$juso?>" readonly></p>
+										<p><input type="text" class="address" name="address2" value="<?=$juso2?>" readonly></p>
 									</td>
 								</tr>
 							</tbody>
@@ -380,6 +385,17 @@
 					window.open('/member/search_zip_pop.php', 'zipcode', 'top=50%, left=50%, width=600, height=600, resizable=no');
 				}
 			})
+			
+			// 검색한 주소 정보 가져오기
+			function jusoCallBack(zipcode, juso, juso2) {
+				$("[name='zipcode']").val(zipcode);
+				$("[name='juso']").val(juso);
+				$("[name='juso2']").val(juso2);
+
+				localStorage.setItem('zipcode', $("[name='zipcode']").val());
+				localStorage.setItem('juso', $("[name='juso']").val());
+				localStorage.setItem('juso2', $("[name='juso2']").val());
+			}
 
 			// 새로고침 시, 3단계에서 넘어온 항목, 아이디, 닉네임은 default 세팅
 			document.addEventListener('DOMContentLoaded', function() {
@@ -397,6 +413,18 @@
 				$("[name='phone1']").val(localStorage.getItem('phone1'));
 				$("[name='phone2']").val(localStorage.getItem('phone2'));
 				$("[name='phone3']").val(localStorage.getItem('phone3'));
+
+				if(localStorage.getItem('zipcode') != null) {
+					$("[name='zipcode']").val(localStorage.getItem('zipcode'));
+				}
+				if(localStorage.getItem('juso') != null) {
+					$("[name='juso']").val(localStorage.getItem('juso'));
+				}
+				if(localStorage.getItem('juso2') != null) {
+					$("[name='juso2']").val(localStorage.getItem('juso2'));
+				}
+				
+				alert("zipcode : " + localStorage.getItem('zipcode') + "\njuso : " + localStorage.getItem('juso') + "\njuso2 : " + localStorage.getItem('juso2'));
 			})
 
 			// 가입하기 버튼 클릭 시 유효성 검사

@@ -18,23 +18,23 @@
             <td width=75%>주소</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">123-123</span></td>
+            <td bgcolor=white align=center height=25><span name="zipcode" data-value="123-123">123-123</span></td>
             <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 1</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">124-124</span></td>
+            <td bgcolor=white align=center height=25><span name="zipcode" data-value="124-124">124-124</span></td>
             <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 2</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">125-125</span></td>
+            <td bgcolor=white align=center height=25><span name="zipcode" data-value="125-125">125-125</span></td>
             <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 3</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">126-126</span></td>
+            <td bgcolor=white align=center height=25><span name="zipcode" data-value="126-126">126-126</span></td>
             <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 4</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">127-127</span></td>
+            <td bgcolor=white align=center height=25><span name="zipcode" data-value="127-127">127-127</span></td>
             <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 5</span>&nbsp;</td>
         </tr>
     </table>
@@ -44,13 +44,11 @@
     </div>
     <script src="/js/jquery-1.8.1.min.js"></script>
     <script>
-        $("td").on("click", "[name='juso']", function() {
-            var juso = encodeURIComponent($(this).text());
-            var zipcode = $(this).parent().find($("[name='zipcode']")).text();
-
-            // alert("zipcode : " + $(this).closest($("[name='zipcode']").text().toString()));
-            alert("juso : " + $(this).text() + "\nzipcode : " + JSON.stringify(zipcode));
-            location.href = "/member/search_zip2.php?zipcode=" + zipcode + "&juso=" + juso;
+        $("[name='juso']").click(function() {
+            var juso = $(this).text();
+            var zipcode = $(this).parent().prev().find($("[name='zipcode']")).data('value');
+            
+            location.href = "/member/search_zip2.php?zipcode=" + zipcode + "&juso=" + encodeURIComponent(juso);
         })
     </script>
 </html>
