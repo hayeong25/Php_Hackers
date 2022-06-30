@@ -4,13 +4,16 @@
     // 사이드바 영역
     switch($_GET['menu']) {
         case 'join':
-            include ("./include/joinlnb.php.php");
+            include ("./include/joinlnb.php");
             break;
         case 'privacy':
             include ("./include/privacylnb.php");
             break;
         case 'find':
             include ("./include/findlnb.php");
+            break;
+        case 'modify':
+            include ("./include/modifylnb.php");
             break;
     }
 
@@ -30,6 +33,12 @@
             break;
         case 'step5':
             include ("regist_complete.php");
+            break;
+        case 'modify':
+            include ("modify.php");
+            break;
+        case 'privacy':
+            include ("privacy.php");
             break;
     }
 

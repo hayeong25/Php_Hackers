@@ -7,7 +7,7 @@
 @import url("layout.css");
 @import url("member.css");
 @import url("popup.css");
-@import url("http://image.hackers.ac/pass/css/webfont.css");
+/* @import url("webfont.css"); */
 
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,menu,section,article, a, select, input{margin:0; padding:0;}
 

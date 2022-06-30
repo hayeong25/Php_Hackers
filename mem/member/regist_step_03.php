@@ -11,7 +11,7 @@
 								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" id="name" name="name" required/></p>
 								<p>
 									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="성별"/></span>
-									<input type="radio" class="radio" name="gender" value="male"><label style="margin-right:25px;">남</label>
+									<input type="radio" class="radio" name="gender" value="male" checked><label style="margin-right:25px;">남</label>
 									<input type="radio" class="radio" name="gender" value="female"><label>여</label>
 								</p>
 								<p>
@@ -115,7 +115,7 @@
 			// return 시, local Storage에서 값 가져와 입력값 유지
 			document.addEventListener('DOMContentLoaded', function() {
 				$("#name").val(localStorage.getItem('name'));
-				$("input[name='gender']").val(localStorage.getItem('gender')).prop('checked', true);
+				$("input[name='gender']").val(localStorage.getItem('gender')).attr('checked', true);
 				$("#year").val(localStorage.getItem('year'));
 				$("#month").val(localStorage.getItem('month'));
 				$("#day").val(localStorage.getItem('day'));

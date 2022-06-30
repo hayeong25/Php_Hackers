@@ -16,10 +16,10 @@
 				<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>
 				<!--<a href="#"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>-->
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="/member/gateway.php"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
+				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
 				<!--<a href="#"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보 수정" /></a>-->
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="/index.php"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>
+				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<a href="#"><img src="/img/integrate/top_icon04.gif" alt="시작페이지로 추가" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />

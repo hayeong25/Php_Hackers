@@ -57,9 +57,9 @@ $("#userid").on("click", function() {
 // 비밀번호 입력 시 local Storage에 저장
 $("[name='pw_confirm']").change(function() {
     if ($("[name='pw']").val() != $("[name='pw_confirm']").val()) {
+        alert('비밀번호가 일치하지 않습니다.');
         $("[name='pw']").val() == "";
         $("[name='pw_confirm']").val() == "";
-        alert('비밀번호가 일치하지 않습니다.');
         return;
     }else {
         localStorage.setItem('pw', $(this).val());
