@@ -247,7 +247,7 @@ $(".btnC").on("click", "a", function() {
         },
         success: function(data) {
             if (data == '1') {
-                location.href = "/member/gateway.php?page=step5";
+                location.href = "/member/gateway.php?menu=join&page=step5";
             } else {
                 alert('회원가입에 실패했습니다. 다시 시도해주세요.');
             }

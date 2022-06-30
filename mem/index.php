@@ -63,7 +63,7 @@ $(function(){
 	<div class="topmenu">
 			<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>
 		<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-		<a href="/member/gateway.php?page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
+		<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
 			<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 		<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>
 	</div>
@@ -486,7 +486,7 @@ $(function(){
 			<div class="policy">
 				<a href="/member/terms.html">이용약관</a>
 				<span class="bar" >|</span>
-				<a href="/?st=privacy"><strong>개인정보취급방침</strong></a>
+				<a href="#"><strong>개인정보취급방침</strong></a>
 			</div>
 			<address>
 			(주)챔프스터디 l 대표이사 : 전재윤 l 개인정보관리책임자 : 김병철 <br />

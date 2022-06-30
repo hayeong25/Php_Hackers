@@ -17,6 +17,6 @@
 	 // 회원 유형 선택 시
 	$('.choiceAge li').on("click", "a", function() {
 		localStorage.setItem('user_type', $(this).attr("id")); // 회원유형 local Storage에 담기
-		$(this).attr("href", "/member/gateway.php?page=step2");
+		$(this).attr("href", "/member/gateway.php?menu=join&page=step2");
 	})
 </script>
