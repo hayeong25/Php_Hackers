@@ -644,7 +644,7 @@
 		if($("[type='checkbox']").length != $("[type='checkbox']:checked").length) {
 			alert('모두 동의해야 다음 단계로 넘어갈 수 있습니다.');
 		}else {
-			$(this).attr("href", "/member/regist_step_03.php");
+			$(this).attr("href", "/member/gateway.php?page=step3");
 		}
 	})
 </script>

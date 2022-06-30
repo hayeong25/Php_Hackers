@@ -486,7 +486,7 @@
 					success: function(data) {
 						if (data == '1') {
 							confirm('회원가입 성공');
-							location.href = "/member/regist_complete.php";
+							location.href = "/member/gateway.php?page=step5";
 						} else {
 							alert('회원가입에 실패했습니다. 다시 시도해주세요.');
 						}

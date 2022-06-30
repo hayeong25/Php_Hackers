@@ -139,7 +139,7 @@
 							localStorage.setItem('phone1', $("#phone1").val());
 							localStorage.setItem('phone2', $("#phone2").val());
 							localStorage.setItem('phone3', $("#phone3").val());
-							location.href = "/member/regist_step_04.php";
+							location.href = "/member/gateway.php?page=step4";
 						}else {
 							alert('이미 존재하는 회원입니다.');
 							return;
