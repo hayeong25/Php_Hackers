@@ -19,36 +19,38 @@
         </tr>
         <tr bgcolor=white>
             <td bgcolor=white align=center height=25><span name="zipcode">123-123</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동</span>&nbsp;</td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 1</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">123-123</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동</span>&nbsp;</td>
+            <td bgcolor=white align=center height=25><span name="zipcode">124-124</span></td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 2</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">123-123</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동</span>&nbsp;</td>
+            <td bgcolor=white align=center height=25><span name="zipcode">125-125</span></td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 3</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">123-123</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동</span>&nbsp;</td>
+            <td bgcolor=white align=center height=25><span name="zipcode">126-126</span></td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 4</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
-            <td bgcolor=white align=center height=25><span name="zipcode">123-123</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동</span>&nbsp;</td>
+            <td bgcolor=white align=center height=25><span name="zipcode">127-127</span></td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">서울특별시 강남구 역삼동 5</span>&nbsp;</td>
         </tr>
     </table>
     <br>
     <div align=center>
         <a href="#" onclick=history.go(-1)><font color=black>뒤로가기</a> <font color=bbbbbb>|</font> <a href=# onclick=window.close()><font color=black>창 닫기</a>
     </div>
-    <script src="/js/jquery-1.8.1.min.js">
-        $("#juso").attr("href", $(this).closest().find($("[name='juso']")));
+    <script src="/js/jquery-1.8.1.min.js"></script>
+    <script>
+        $("td").on("click", "[name='juso']", function() {
+            var juso = encodeURIComponent($(this).text());
+            var zipcode = $(this).parent().find($("[name='zipcode']")).text();
 
-        $("[name='juso']").on("click", function() {
-            var juso = $(this).text();
-            var zipcode = $(this).find("[name='zipcode']").text();
-            console.log("juso : " + juso + "\nzipcode : " + zipcode);
+            // alert("zipcode : " + $(this).closest($("[name='zipcode']").text().toString()));
+            alert("juso : " + $(this).text() + "\nzipcode : " + JSON.stringify(zipcode));
+            location.href = "/member/search_zip2.php?zipcode=" + zipcode + "&juso=" + juso;
         })
     </script>
 </html>

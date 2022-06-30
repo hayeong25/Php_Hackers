@@ -78,7 +78,7 @@
 								<tr>
 									<th><span class="must">аж╪р</span></th>
 									<td>
-										<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="" id="zip_pop"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
+										<p><input type="text" class="zipcode"><a href="" id="zip_pop"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
 										<p style="margin:5px 0;"><input type="text" class="address" name="address1"></p>
 										<p><input type="text" class="address" name="address2"></p>
 									</td>
