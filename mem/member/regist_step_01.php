@@ -17,22 +17,6 @@
 	 // 회원 유형 선택 시
 	$('.choiceAge li').on("click", "a", function() {
 		localStorage.setItem('user_type', $(this).attr("id")); // 회원유형 local Storage에 담기
-		location.href = "/member/gateway.php?page=step2";
-
-		// page = "regist_step_02";
-
-		// $.ajax({
-		// 	type: 'POST',
-		// 	url: '/member/gateway.php',
-		// 	dataType : "html",
-    	// 	contentType: "application/json; charset=utf-8",
-		// 	data: {
-		// 		page:"regist_step_02",
-		// 	},
-		// 	success: function(data) {
-		// 		console.log("page : " + data.page);
-		// 		location.href = "regist_step_02.php";
-		// 	},
-		// });
+		$(this).attr("href", "/member/gateway.php?page=step2");
 	})
 </script>

@@ -98,15 +98,24 @@
 
 				pop();
 
-				function pop() {
-					window.open('/member/sms_auth_pop.php', 'sms_auth', 'top=50%, left=50%, width=500, height=400, resizable=no');
+				function pop() { // 팝업창 스크린 가운데에 띄우기
+					var screenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+					var screenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+
+					width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+					height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+			
+					var left = ((width / 2) - (500 / 2)) + screenLeft;
+					var top = ((height / 2) - (400 / 2)) + screenTop;
+
+					window.open('/member/sms_auth_pop.php', 'sms_auth', 'top=' + top + ', left=' + left + ', width=500, height=400, resizable=no');
 				}
 			})
 
 			// return 시, local Storage에서 값 가져와 입력값 유지
 			document.addEventListener('DOMContentLoaded', function() {
 				$("#name").val(localStorage.getItem('name'));
-				$("input[name='gender']:checked").val(localStorage.getItem('gender'));
+				$("input[name='gender']").val(localStorage.getItem('gender')).prop('checked', true);
 				$("#year").val(localStorage.getItem('year'));
 				$("#month").val(localStorage.getItem('month'));
 				$("#day").val(localStorage.getItem('day'));
@@ -129,7 +138,6 @@
 						mode:'phone',
 					},
 					success: function(data) {
-						console.log("결과 : " + data);
 						if(data == "0") {
 							localStorage.setItem('name', $("#name").val());
 							localStorage.setItem('gender', $("input[name='gender']:checked").val());

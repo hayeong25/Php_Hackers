@@ -291,16 +291,16 @@
 			if (user_type == 'child') {
 				str = '<th><span class="must">보호자 휴대폰번호</span></th>';
 				str += '<td>';
-				str += '<select name="parent_phone1">';
-				str += '<option value="010">010</option>';
-				str += '<option value="016">016</option>';
-				str += '<option value="017">017</option>';
-				str += '<option value="070">070</option>';
-				str += '</select>';
-				str += '- <input type="text" class="phone" name="parent_phone2"> - <input type="text" class="phone" name="parent_phone3">';
+				str += '<input type="text" class="phone" name="parent_phone1"> - <input type="text" class="phone" name="parent_phone2"> - <input type="text" class="phone" name="parent_phone3">';
 				str += '<p class="tip">※ 보호자(법정대리인)의 정보를 입력해 주세요</p>';
 				str += '</td>';
 				$(".parent").html(str);
+
+				$("[name='parent_phone3']").change(function() {
+					localStorage.setItem('parent_phone1', $("[name='parent_phone1']").val());
+					localStorage.setItem('parent_phone2', $("[name='parent_phone2']").val());
+					localStorage.setItem('parent_phone3', $("[name='parent_phone3']").val());
+				})
 			}
 
 			// 아이디 중복체크
@@ -340,6 +340,18 @@
 				});
 			})
 
+			// 비밀번호 입력 시 local Storage에 저장
+			$("[name='pw_confirm']").change(function() {
+				if ($("[name='pw']").val() != $("[name='pw_confirm']").val()) {
+					$("[name='pw']").val() == "";
+					$("[name='pw_confirm']").val() == "";
+					alert('비밀번호가 일치하지 않습니다.');
+					return;
+				}else {
+					localStorage.setItem('pw', $(this).val());
+				}
+			})
+
 			// 닉네임 중복체크
 			$("#nick").on("click", function() {
 				if ($("[name='nick']").val() == "") {
@@ -370,6 +382,15 @@
 			// 이메일 선택 시, input에 자동 입력
 			$("[name='email']").on('change', function() {
 				$("[name='email2']").val($(this).val());
+				localStorage.setItem('email1', $("[name='email1']").val());
+				localStorage.setItem('email2', $("[name='email2']").val());
+			})
+
+			// sns 수신 동의 시
+			$("[name='sns']").change(function() {
+				if($(this).is(":checked") == true) {
+					localStorage.setItem('sns', $(this).val());
+				}
 			})
 
 			// 우편번호 검색 팝업
@@ -377,7 +398,16 @@
 				pop();
 
 				function pop() {
-					window.open('/member/search_zip_pop.php', 'zipcode', 'top=50%, left=50%, width=600, height=600, resizable=no');
+					var screenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+					var screenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+
+					width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+					height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+			
+					var left = ((width / 2) - (600 / 2)) + screenLeft;
+					var top = ((height / 2) - (600 / 2)) + screenTop;
+
+					window.open('/member/search_zip_pop.php', 'zipcode', 'top=' + top + ', left=' + left + ', width=600, height=600, resizable=no');
 				}
 			})
 
@@ -392,10 +422,14 @@
 				localStorage.setItem('juso2', $("[name='address2']").val());
 			}
 
-			// 새로고침 시, 3단계에서 넘어온 항목, 아이디, 닉네임은 default 세팅
+			// 새로고침 시, 3단계에서 넘어온 항목, 입력한 항목은 default 세팅
 			document.addEventListener('DOMContentLoaded', function() {
 				if (localStorage.getItem('userid') != null) {
 					$("[name='userid']").val(localStorage.getItem('userid'));
+				}
+				if (localStorage.getItem('pw') != null) {
+					$("[name='pw']").val(localStorage.getItem('pw'));
+					$("[name='pw_confirm']").val(localStorage.getItem('pw'));
 				}
 				if (localStorage.getItem('nick') != null) {
 					$("[name='nick']").val(localStorage.getItem('nick'));
@@ -405,9 +439,23 @@
 				$("#year").val(localStorage.getItem('year'));
 				$("#month").val(localStorage.getItem('month'));
 				$("#day").val(localStorage.getItem('day'));
+				if (localStorage.getItem('email1') != null) {
+					$("[name='email1']").val(localStorage.getItem('email1'));
+					$("[name='email2']").val(localStorage.getItem('email2'));
+					$("[name='email']").val(localStorage.getItem('email2')).attr('selected', true);
+				}
+				if (localStorage.getItem('sns') != null) {
+					$("[name='sns']").val(localStorage.getItem('sns')).prop('checked', true);
+				}
 				$("[name='phone1']").val(localStorage.getItem('phone1'));
 				$("[name='phone2']").val(localStorage.getItem('phone2'));
 				$("[name='phone3']").val(localStorage.getItem('phone3'));
+
+				if (localStorage.getItem('parent_phone3') != null) {
+					$("[name='parent_phone1']").val(localStorage.getItem('parent_phone1'));
+					$("[name='parent_phone2']").val(localStorage.getItem('parent_phone2'));
+					$("[name='parent_phone3']").val(localStorage.getItem('parent_phone3'));
+				}
 
 				if (localStorage.getItem('zipcode') != null) {
 					$("[name='zipcode']").val(localStorage.getItem('zipcode'));
@@ -485,7 +533,6 @@
 					},
 					success: function(data) {
 						if (data == '1') {
-							confirm('회원가입 성공');
 							location.href = "/member/gateway.php?page=step5";
 						} else {
 							alert('회원가입에 실패했습니다. 다시 시도해주세요.');

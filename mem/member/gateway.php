@@ -33,5 +33,3 @@
 
     include ("./include/footer.php");
 ?>
-
-<!-- gitlab.teamcode88.com -->
