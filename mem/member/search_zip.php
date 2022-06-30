@@ -48,7 +48,7 @@
             var juso = $(this).text();
             var zipcode = $(this).parent().prev().find($("[name='zipcode']")).data('value');
             
-            location.href = "/member/search_zip2.php?zipcode=" + zipcode + "&juso=" + encodeURIComponent(juso);
+            location.href = "/member/search_zip2.php?zipcode=" + zipcode + "&juso=" + juso;
         })
     </script>
 </html>

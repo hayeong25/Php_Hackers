@@ -35,8 +35,7 @@
             var juso = $("input[name='juso']").val();
             var juso2 = $("input[name='juso2']").val();
 
-            alert("zipcode : " + zipcode + "\njuso : " + encodeURIComponent(juso) + "\njuso2 : " + encodeURIComponent(juso2));
-            opener.jusoCallBack(zipcode, encodeURIComponent(juso), encodeURIComponent(juso2));
+            opener.jusoCallBack(zipcode, juso, juso2);
 		    window.close();
         })
     </script>
