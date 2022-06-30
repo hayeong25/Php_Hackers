@@ -68,7 +68,7 @@ session_start();
 				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" style="margin-left:27px;"><img src="/img/integrate/top_emblem.gif" alt="브랜드대상" /></a>
 			</p>
 			<div class="topmenu">
-				<?php if(!isset($_SESSION['user_id'])) { ?>
+				<?php if(!isset($_SESSION['userid'])) { ?>
 					<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>
 					<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 					<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>

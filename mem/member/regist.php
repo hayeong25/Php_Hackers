@@ -38,8 +38,6 @@
     $result = mysqli_query($con,$sql);
 
     $_SESSION['userid'] = $userid;
-    $_SESSION['name'] = $name;
-    $_SESSION['pw'] = $pw;
 
     echo $result;
 ?>
