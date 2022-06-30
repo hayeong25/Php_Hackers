@@ -1,7 +1,7 @@
 <?php
     $type = $_POST['user_type'];
     $userid = $_POST['userid'];
-    $pw = $_POST['pw'];
+    $pw = password_hash($_POST['pw'], PASSWORD_DEFAULT); // 비밀번호 암호화
     $name = $_POST['name'];
     $nick = $_POST['nick'];
     $birth = $_POST['birth'];
