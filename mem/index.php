@@ -1,3 +1,9 @@
+<?php
+	session_start();
+
+	$session_id = $_SESSION['userid'];
+	$session_name = $_SESSION['username'];
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -57,13 +63,23 @@
 				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" style="margin-left:27px;"><img src="/img/integrate/top_emblem.gif" alt="브랜드대상" /></a>
 			</p>
 			<div class="topmenu">
-				
+				<?php if($_SESSION['userid'] == null) { ?>
+				<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>
+				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
+				<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
+				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
+				<?php } else { ?>
+				<a href="#" onclick="<?php session_unset();?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
+				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
+				<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
+				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
+				<?php } ?>
+				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>
 			</div>
 		</div>
 		<!-- container -->
 		<div id="container">
 			<div class="content">
-
 				<div class="mainMenu" id="mainMenu">
 					<ul>
 						<li>
@@ -401,14 +417,9 @@
 			<!--//팝업-->
 		</div>
 		<!-- / container 끝 -->
-
-
 		<div class="underBlank"></div>
 		<div id="footer">
 			<div style="width:100%; height:70px; overflow:hidden; position:relative; text-align:center; margin-bottom:20px">
-
-
-
 				<!-- 배너 121002 추가 -->
 				<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
 				<script type='text/javascript'>
@@ -563,11 +574,7 @@
 		*/
 					});
 				</SCRIPT>
-
-
 			</div>
-
-
 			<p class="logo_footer">
 				<img src="/img/integrate/logo_footer.gif" alt="해커스패스" />
 				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" class="emblem"><img src="/img/integrate/btm_emblem.gif" alt="브랜드대상" /></a>
@@ -585,11 +592,8 @@
 						패스닷컴 : 사업자등록번호 220-85-37767 | 통신판매업신고 (제2012-서울강남-01704호)&nbsp;<a href="http://www.ftc.go.kr/info/bizinfo/communicationView.jsp?apv_perm_no=2012322016230201704&area1=&area2=&currpage=1&searchKey=01&searchVal=패스닷컴&stdate=&enddate=" target="_blank">정보조회</a>
 					</address>
 					<span class="copy">COPYRIGHT ⓒ 2012 HACKERSPASS ALL RIGHTS RESERVED</span>
-
 				</div>
-
 			</div>
-
 		</div>
 	</div>
 	<!--팝업 : 로그인-->
@@ -622,26 +626,6 @@
 	</div>
 	<script src="/js/jquery-1.8.1.min.js"></script>
 	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			alert("userid : " + sessionStorage.getItem('userid'));
-			// login session 존재 시, 상단 메뉴 로그아웃 & 개인정보수정
-			if(sessionStorage.getItem('userid') != null) {
-				var str = '<a href="#" onclick="<?unset($_SESSION['userid']);?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>';
-				str += '<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />';
-				str += '<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>';
-				str += '<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />';
-				str += '<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>';
-				$(".topmenu").append(str);
-			}else {
-				var str = '<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>';
-				str += '<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />';
-				str += '<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>';
-				str += '<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />';
-				str += '<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>';
-				$(".topmenu").append(str);
-			}
-		})
-
 		$(".btnLogin").click(function() {
 			if($("[name='userid']").val() == "") {
 				alert('아이디를 입력해주세요.');

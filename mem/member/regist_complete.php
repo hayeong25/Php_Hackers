@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <div id="sub" class="content">
 	<h2><img src="/img/member/h2_join_all.gif" alt="" /></h2>
 	<div class="depth"><span>Home &gt; 통합회원가입 &gt; <em>가입완료</em></span></div>
@@ -26,13 +29,13 @@
 		</div>
 	</div>
 </div>
+<?php
+	echo "<script>" + $_SESSION['username'] + "</script>";
+?>
 <script src="/js/jquery-1.8.1.min.js"></script>
 <script>
 	$("#name").append(localStorage.getItem('name'));
 	$("#userid").append(localStorage.getItem('userid'));
-
-	sessionStorage.setItem('userid', localStorage.getItem('userid'));
-	sessionStorage.setItem('username', localStorage.getItem('name'));
 	
 	$("#joinEnd").on("click", "a", function() {
 		$(this).attr("href", "/");
