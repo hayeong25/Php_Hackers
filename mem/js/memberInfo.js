@@ -100,15 +100,12 @@ $("[name='email']").on('change', function() {
     localStorage.setItem('email2', $("[name='email2']").val());
 })
 
-// sns 수신 동의 시
-$("[name='sns']").change(function() {
-    if($(this).is(":checked") == true) {
-        localStorage.setItem('sns', 'Y');
-    }
-    else {
-        localStorage.setItem('sns', 'N');
-    }
-})
+
+if($("[name='sns']").is(":checked")) {
+    localStorage.setItem('sns', 'Y');
+}else {
+    localStorage.setItem('sns', 'N');
+}
 
 // 우편번호 검색 팝업
 $("#zip_pop").click(function() {
@@ -139,16 +136,6 @@ function jusoCallBack(zipcode, juso, juso2) {
     localStorage.setItem('juso2', $("[name='address2']").val());
 }
 
-// 직업 선택 시
-$("[name='job']").change(function() {
-    if($(this).is(":selected") == true) {
-        localStorage.setItem('job', $(this).val());
-    }
-    else {
-        localStorage.removeItem('job');
-    }
-})
-
 // 새로고침 시, 3단계에서 넘어온 항목, 입력한 항목은 default 세팅
 document.addEventListener('DOMContentLoaded', function() {
     if (localStorage.getItem('userid') != null) {
@@ -162,7 +149,11 @@ document.addEventListener('DOMContentLoaded', function() {
         $("[name='nick']").val(localStorage.getItem('nick'));
     }
     $("[name='username']").val(localStorage.getItem('name'));
-    $("input[name='gender']").val(localStorage.getItem('gender')).attr('selected', true);
+    if(localStorage.getItem('gender') == 'male') {
+        $("[value='male']").prop("checked", true);
+    }else if(localStorage.getItem('gender') == 'female') {
+        $("[value='female']").attr("checked", true);
+    }
     $("#year").val(localStorage.getItem('year'));
     $("#month").val(localStorage.getItem('month'));
     $("#day").val(localStorage.getItem('day'));
@@ -267,12 +258,11 @@ $(".btnC").on("click", "a", function() {
             address: address,
         },
         success: function(data) {
-            alert(data);
-            // if (data == '1') {
-            //     location.href = "/member/gateway.php?menu=join&page=step5";
-            // } else {
-            //     alert('회원가입에 실패했습니다. 다시 시도해주세요.');
-            // }
+            if (data == '1') {
+                location.href = "/member/gateway.php?menu=join&page=step5";
+            } else {
+                alert('회원가입에 실패했습니다. 다시 시도해주세요.');
+            }
         },
     });
 })

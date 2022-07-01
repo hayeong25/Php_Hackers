@@ -60,7 +60,7 @@
 		<script src="/js/jquery-1.8.1.min.js"></script>
 		<script>
 			// 생년월일 select option 추가
-			for(var i = 1920 ; i <= new Date().getFullYear() ; i++) {
+			for(var i = new Date().getFullYear(); i >= 1920; i--) {
 				$("#year").append('<option value="' + i + '">' + i + '</option>');    
 			}
 			for(var i = 1; i <= 12; i++) {
@@ -72,33 +72,13 @@
 				$('#day').append('<option value="' + day + '">' + day+ '</option>');    
 			}
 
-			// 성별 라디오 버튼 값 확인
-			$("[name='gender']").change(function() {
-				console.log("gender : " + $("[name='gender']:checked").val());
-				console.log("gender : " + $("input[name='gender']:checked").val());
-				console.log("gender : " + $(":input[name='gender']:checked").val());
-				console.log("gender : " + $("input[type='radio']:checked").val());
-				console.log("gender : " + $("[type='radio']:checked").val());
-				console.log("gender : " + $("input[name='gender'][type='radio']:checked").val());
-				console.log("gender : " + $("[name='gender'][type='radio']:checked").val());
-				console.log("gender : " + $("input:radio[name=gender]:checked").val());
-				console.log("gender : " + $(":input:radio[name=gender]:checked").val());
-				console.log("gender : " + $(".radio:checked").val());
-			})
-
 			$("#send").click(function() { // 인증번호 확인 버튼 클릭시
-				// 입력값 local Storage에 담기
-				localStorage.setItem('name', $("#name").val());
-				localStorage.setItem("gender", $("[name='gender']:checked").val());
-				localStorage.setItem('year', $("#year").val());
-				localStorage.setItem('month', $("#month").val());
-				localStorage.setItem('day', $("#day").val());
-				localStorage.setItem('phone1', $("#phone1").val());
-				localStorage.setItem('phone2', $("#phone2").val());
-				localStorage.setItem('phone3', $("#phone3").val());
-
 				if($("#name").val() == "") {
 					alert('이름을 입력해주세요.');
+					return;
+				}
+				if($("[name='gender']:checked").val() == 'undefined') {
+					alert('성별을 선택해주세요.');
 					return;
 				}
 				if($("#year").val()=="" || $("#month").val()=="" || $("#day").val()==""){
@@ -109,6 +89,16 @@
 					alert('휴대폰 번호를 입력해주세요.');
 					return;
 				}
+
+				// 입력값 local Storage에 담기
+				localStorage.setItem('name', $("#name").val());
+				localStorage.setItem("gender", $("[name='gender']:checked").val());
+				localStorage.setItem('year', $("#year").val());
+				localStorage.setItem('month', $("#month").val());
+				localStorage.setItem('day', $("#day").val());
+				localStorage.setItem('phone1', $("#phone1").val());
+				localStorage.setItem('phone2', $("#phone2").val());
+				localStorage.setItem('phone3', $("#phone3").val());
 
 				pop();
 
@@ -129,7 +119,11 @@
 			// return 시, local Storage에서 값 가져와 입력값 유지
 			document.addEventListener('DOMContentLoaded', function() {
 				$("#name").val(localStorage.getItem('name'));
-				$('input[name="gender"]').val(localStorage.getItem("gender"));
+				if(localStorage.getItem('gender') == 'male') {
+					$("[value='male']").prop("checked", true);
+				}else if(localStorage.getItem('gender') == 'female') {
+					$("[value='female']").attr("checked", true);
+				}
 				$("#year").val(localStorage.getItem('year'));
 				$("#month").val(localStorage.getItem('month'));
 				$("#day").val(localStorage.getItem('day'));
