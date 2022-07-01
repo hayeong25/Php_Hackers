@@ -26,7 +26,7 @@
 							</tr>
 							<tr>
 								<th><span class="must">이름</span></th>
-								<td><input type="text" class="text" name="name" readonly /></td>
+								<td><input type="text" class="text" name="username" readonly /></td>
 							</tr>
 							<tr>
 								<th><span class="must">닉네임</span></th>
@@ -109,6 +109,7 @@
 							<th>직업</th>
 							<td>
 								<select name="job">
+									<option value="">선택</option>
 									<option value="student">학생</option>
 									<option value="teacher">교사</option>
 									<option value="parent">학부모</option>
