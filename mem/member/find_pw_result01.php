@@ -7,18 +7,18 @@
 						<div class="left">
 							<h4 class="mgb40"><img src="/img/member/h4_password01.gif" alt="" /></h4>
 							<div class="PW_usemail mgb20">
-								<p class="mgb20"><img src="/img/member/text_check15.gif" alt="아이핀 인증을 통한 가입을 원하시면 아이핀 인증 버튼을 눌러 회원가입을 진행해 주세요."></p>
+								<p class="mgb20"><img src="/img/member/text_check15.gif" alt="가입 시 등록한 메일주소로 임시비밀번호 받기"></p>
 								<p class=""><strong class="red">abcdefg@gmail.com</strong></p>
 							</div>
-							<div class="btnC"><a href="#"><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
+							<div class="btnC"><a href="/member/gateway.php?menu=find&page=pw2"><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
 						</div>
 						<div class="right">
 							<h4 class="mgb40"><img src="/img/member/h4_password02.gif" alt="" /></h4>
 							<div class="PW_usephone mgb20">
-								<p class="mgb20"><img src="/img/member/text_check16.gif" alt="아이핀 인증을 통한 가입을 원하시면 아이핀 인증 버튼을 눌러 회원가입을 진행해 주세요."></p>
+								<p class="mgb20"><img src="/img/member/text_check16.gif" alt="가입 시 등록한 휴대폰으로 임시비밀번호 받기"></p>
 								<p class=""><strong class="red">010-1111-****</strong></p>
 							</div>
-							<div class="btnC"><a href="#"><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
+							<div class="btnC"><a href="/member/gateway.php?menu=find&page=pw3"><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
 						</div>
 						<div class="clear"></div>
 					</div>

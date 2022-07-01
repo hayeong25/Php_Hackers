@@ -76,7 +76,7 @@ session_start();
 				<?php } else { ?>
 					<a href="#" onclick="<?unset($_SESSION['userid']);?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
 					<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-					<a href="/member/modify.php"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
+					<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
 					<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } ?>
 				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>
@@ -635,7 +635,7 @@ session_start();
 						</div>
 						<div class="btnJoin">
 							<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/btn_login_join.gif" alt="회원가입" /></a>
-							<a href="#"><img src="/img/integrate/btn_login_find.gif" alt="아이디/비밀번호찾기" /></a>
+							<a href="/member/gateway.php?menu=find&page="><img src="/img/integrate/btn_login_find.gif" alt="아이디/비밀번호찾기" /></a>
 						</div>
 					</form>
 				</div>

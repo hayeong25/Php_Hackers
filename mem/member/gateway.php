@@ -15,6 +15,12 @@
         case 'modify':
             include ("./include/modifylnb.php");
             break;
+        case 'secession':
+            include ("./include/secessionlnb.php");
+            break;
+        case 'terms':
+            include ("./include/termslnb.php");
+            break;
     }
 
     // content ¿µ¿ª
@@ -39,6 +45,33 @@
             break;
         case 'privacy':
             include ("privacy.php");
+            break;
+        case 'terms':
+            include ("terms.php");
+            break;
+        case 'secession':
+            include ("secession.php");
+            break;
+        case 'idMail':
+            include ("find_id_mail.php");
+            break;
+        case 'idPhone':
+            include ("find_id_phone.php.php");
+            break; 
+        case 'idResult':
+            include ("find_id_result.php");
+            break;
+        case 'pwPhone':
+            include ("find_pw_phone.php");
+            break;
+        case 'pw1':
+            include ("find_pw_result01.php");
+            break;
+        case 'pw2':
+            include ("find_pw_result02.php");
+            break;
+        case 'pw3':
+            include ("find_pw_result03.php");
             break;
     }
 
