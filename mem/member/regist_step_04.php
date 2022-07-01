@@ -101,7 +101,7 @@
 									<option value="middle">중학교 졸업</option>
 									<option value="high">고등학교 졸업</option>
 									<option value="col">전문대 졸업</option>
-									<option value="univ">4년제대학 졸업</option>
+									<option value="univ">4년제대 졸업</option>
 								</select>
 							</td>
 						</tr>
@@ -109,7 +109,6 @@
 							<th>직업</th>
 							<td>
 								<select name="job">
-									<option value="">선택</option>
 									<option value="student">학생</option>
 									<option value="teacher">교사</option>
 									<option value="parent">학부모</option>
