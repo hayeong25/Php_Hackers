@@ -235,11 +235,8 @@ $(".btnC").on("click", "a", function() {
         return;
     }
 
-    alert("user_type : " + user_type + "\nuserid : "+ userid + "\npw : " + pw + "\nusername : " + username + "\nnick : "+ nick + "\nbirth : " + birth
-     + "\ngender : " + gender + "\nemail : " + email + "\nsns : " + sns + "\nphone : " + phone + "\nparentphone : " + parent_phone + "\naddress : " + address);
-
     $.ajax({
-        type: 'post',
+        type: 'get',
         url: '/member/regist.php',
         dataType: "html",
         contentType: "application/json; charset=utf-8",
