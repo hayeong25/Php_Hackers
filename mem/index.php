@@ -1,9 +1,5 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
 	<title>합격포털, 해커스 패스닷컴 :: 9급공무원, 공무원영어, 공인중개사, 취업, 금융자격증, 세무/회계자격증, 학점은행제, TOEIC, TEPS</title>
@@ -34,17 +30,10 @@ session_start();
 
 		});
 	</script>
-
-
-
 </head>
-
 <body>
 	<div id="wrapper">
-
-
 		<div id="header">
-
 			<div class="toplink">
 				<ul>
 					<li><a href="http://www.champstudy.com" title="챔프스터디" target="_blank"><img src="/img/integrate/top_menu_1.gif" alt="챔프스터디" /></a></li>
@@ -68,18 +57,7 @@ session_start();
 				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" style="margin-left:27px;"><img src="/img/integrate/top_emblem.gif" alt="브랜드대상" /></a>
 			</p>
 			<div class="topmenu">
-				<?php if(!isset($_SESSION['userid'])) { ?>
-					<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>
-					<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-					<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
-					<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<?php } else { ?>
-					<a href="#" onclick="<?unset($_SESSION['userid']);?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
-					<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-					<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
-					<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<?php } ?>
-				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>
+				
 			</div>
 		</div>
 		<!-- container -->
@@ -615,38 +593,55 @@ session_start();
 		</div>
 	</div>
 	<!--팝업 : 로그인-->
-	<?php if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_name'])) { ?>
-		<div id="boxes">
-			<div id="dialog" class="window">
-				<div class="popup_login">
-					<form method="post" action="">
-						<p class="btnClose"><a href="#" class="close"><img src="/img/integrate/btn_login_close.gif" alt="닫기" /></a></p>
-						<h2><img src="/img/integrate/h2_login.gif" alt="로그인" /></h2>
-						<div class="loginBox">
-							<div class="textInput">
-								<p><label><img src="/img/integrate/login_textID.gif" alt="아이디" /></label><input type="text" class="text" value="" name="userid" /></p>
-								<p><label><img src="/img/integrate/login_textPW.gif" alt="비밀번호" /></label><input type="password" class="text" onkeyup="" name="pw" /></p>
-							</div>
-							<a href="" class="btnLogin"><img src="/img/integrate/btn_login.gif" alt="로그인" /></a>
+	<div id="boxes">
+		<div id="dialog" class="window">
+			<div class="popup_login">
+				<form method="post" action="">
+					<p class="btnClose"><a href="#" class="close"><img src="/img/integrate/btn_login_close.gif" alt="닫기" /></a></p>
+					<h2><img src="/img/integrate/h2_login.gif" alt="로그인" /></h2>
+					<div class="loginBox">
+						<div class="textInput">
+							<p><label><img src="/img/integrate/login_textID.gif" alt="아이디" /></label><input type="text" class="text" value="" name="userid" /></p>
+							<p><label><img src="/img/integrate/login_textPW.gif" alt="비밀번호" /></label><input type="password" class="text" onkeyup="" name="pw" /></p>
 						</div>
-						<div class="loginText">
-							<p class="script"><img src="/img/integrate/login_textDivision.gif" alt="비밀번호는 대소문자를 구분합니다." /></p>
-							<input type="checkbox" class="checkbox"><label><img src="/img/integrate/login_textSave.gif" alt="아이디저장" /></label>
-						</div>
-						<div class="btnJoin">
-							<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/btn_login_join.gif" alt="회원가입" /></a>
-							<a href="/member/gateway.php?menu=find&page="><img src="/img/integrate/btn_login_find.gif" alt="아이디/비밀번호찾기" /></a>
-						</div>
-					</form>
-				</div>
+						<a href="" class="btnLogin"><img src="/img/integrate/btn_login.gif" alt="로그인" /></a>
+					</div>
+					<div class="loginText">
+						<p class="script"><img src="/img/integrate/login_textDivision.gif" alt="비밀번호는 대소문자를 구분합니다." /></p>
+						<input type="checkbox" class="checkbox"><label><img src="/img/integrate/login_textSave.gif" alt="아이디저장" /></label>
+					</div>
+					<div class="btnJoin">
+						<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/btn_login_join.gif" alt="회원가입" /></a>
+						<a href="/member/gateway.php?menu=find&page=idPhone"><img src="/img/integrate/btn_login_find.gif" alt="아이디/비밀번호찾기" /></a>
+					</div>
+				</form>
 			</div>
-			<!-- Mask to cover the whole screen -->
-			<div id="mask"></div>
 		</div>
-	<?php } ?>
-
+		<!-- Mask to cover the whole screen -->
+		<div id="mask"></div>
+	</div>
 	<script src="/js/jquery-1.8.1.min.js"></script>
 	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			alert("userid : " + sessionStorage.getItem('userid'));
+			// login session 존재 시, 상단 메뉴 로그아웃 & 개인정보수정
+			if(sessionStorage.getItem('userid') != null) {
+				var str = '<a href="#" onclick="<?unset($_SESSION['userid']);?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>';
+				str += '<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />';
+				str += '<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>';
+				str += '<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />';
+				str += '<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>';
+				$(".topmenu").append(str);
+			}else {
+				var str = '<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>';
+				str += '<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />';
+				str += '<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>';
+				str += '<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />';
+				str += '<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>';
+				$(".topmenu").append(str);
+			}
+		})
+
 		$(".btnLogin").click(function() {
 			if($("[name='userid']").val() == "") {
 				alert('아이디를 입력해주세요.');
@@ -676,9 +671,6 @@ session_start();
 							alert("아이디가 틀렸습니다.");
 						}
 					},
-					error:function(request,status,error){
-						alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
-					}
 				});
 		})
 	</script>

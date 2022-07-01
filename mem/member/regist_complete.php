@@ -31,6 +31,9 @@
 	$("#name").append(localStorage.getItem('name'));
 	$("#userid").append(localStorage.getItem('userid'));
 
+	sessionStorage.setItem('userid', localStorage.getItem('userid'));
+	sessionStorage.setItem('username', localStorage.getItem('name'));
+	
 	$("#joinEnd").on("click", "a", function() {
 		$(this).attr("href", "/");
 		localStorage.clear();
