@@ -40,5 +40,17 @@
                 echo "0";
             }
             break;
+        case 'email':
+            $email = $_GET['email'];
+
+            $sql = "select * from member where email = '$email'";
+            $result = mysqli_query($con, $sql);
+
+            if(mysqli_num_rows($result) > 0) {
+                echo "1";
+            }else {
+                echo "0";
+            }
+            break;
     }
 ?>

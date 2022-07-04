@@ -30,7 +30,7 @@
 	</div>
 </div>
 <?php
-	echo "<script>" + $_SESSION['username'] + "</script>";
+	echo "<script>alert('" + $_SESSION['username'] + "')</script>";
 ?>
 <script src="/js/jquery-1.8.1.min.js"></script>
 <script>

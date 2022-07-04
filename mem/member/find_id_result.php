@@ -5,13 +5,18 @@
 					<h3 class="mgb10"><img src="/img/member/h3_id02.gif" alt="아이디 결과" /></h3>
 					<div class="findID_wrap mgb50">
 						<p>
-							<strong class="blue">홍길동</strong>
+							<strong class="blue" id="name"></strong>
 							<img src="/img/member/text_id01.gif" alt="회원님의 통합아이디는" style="margin:0 5px;"/>
-							<strong class="blue">HONG</strong>
+							<strong class="blue" id="userid"></strong>
 							<img src="/img/member/text_id02.gif" alt="입니다" />
 						</p>
-						<a href="#"><img src="/img/member/btn_login_gray.gif" alt="로그인하기" /></a>
+						<a href="#dialog"><img src="/img/member/btn_login_gray.gif" alt="로그인하기" /></a>
 						<a href="/member/gateway.php?menu=find&page=pwPhone"><img src="/img/member/btn_find_password.gif" alt="비밀번호 찾기" /></a>
 					</div>
 				</div>
 			</div>
+			<script src="/js/jquery-1.8.1.min.js"></script>
+			<script>
+				$("#name").append(localStorage.getItem('name'));
+				$("#userid").append(localStorage.getItem('userid'));
+			</script>

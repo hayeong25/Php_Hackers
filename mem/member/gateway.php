@@ -52,11 +52,8 @@
         case 'secession':
             include ("secession.php");
             break;
-        case 'idMail':
-            include ("find_id_mail.php");
-            break;
-        case 'idPhone':
-            include ("find_id_phone.php.php");
+        case 'id':
+            include ("find_id.php");
             break; 
         case 'idResult':
             include ("find_id_result.php");
