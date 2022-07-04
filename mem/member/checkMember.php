@@ -52,5 +52,24 @@
                 echo "0";
             }
             break;
+        case 'secession':
+            $userid = $_GET['userid'];
+            $pw = $_GET['pw'];
+
+            $sql = "select pw from member where userid = '$userid'";
+
+            $result = mysqli_query($con, $sql);
+
+            if(mysqli_num_rows($result) > 0) {
+                if(password_verify($pw, $result)) {
+                    $sql = "delete from member where userid = '$userid' and pw = '$pw'";
+                    // 삭제 성공
+                    echo "1";
+                }else {
+                    echo "0";
+                }
+            }else {
+                echo "-1";
+            }
     }
 ?>

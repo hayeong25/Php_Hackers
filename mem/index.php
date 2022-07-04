@@ -637,25 +637,25 @@
 			alert("userid : " + $("[name='userid']").val() + "\npw : " + $("[name='pw']").val());
 
 			$.ajax({
-					type: 'post',
-					url: '/member/login.php',
-					dataType : "html",
-					contentType: "application/json; charset=utf-8",
-					data:{
-						userid:$("[name='userid']").val(),
-						pw:$("[name='pw']").val(),
-					},
-					success: function(data) {
-						if (data == '1') {
-							alert($("[name='userid']").val() + " 로그인 성공");
-							location.href = "/";
-						} else if (data == '0') {
-							alert('비밀번호가 틀렸습니다.');
-						} else {
-							alert("아이디가 틀렸습니다.");
-						}
-					},
-				});
+				type: 'post',
+				url: '/member/login.php',
+				dataType : "html",
+				contentType: "application/json; charset=utf-8",
+				data:{
+					userid:$("[name='userid']").val(),
+					pw:$("[name='pw']").val(),
+				},
+				success: function(data) {
+					if (data == '1') {
+						alert($("[name='userid']").val() + " 로그인 성공");
+						location.href = "/";
+					} else if (data == '0') {
+						alert('비밀번호가 틀렸습니다.');
+					} else {
+						alert("아이디가 틀렸습니다.");
+					}
+				},
+			});
 		})
 	</script>
 </body>

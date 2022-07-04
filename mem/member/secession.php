@@ -15,15 +15,15 @@
 								<tr>
 									<th rowspan="3" class="borderR">개인정보입력</th>
 									<th>성명</th>
-									<td><input type="text" class="info"/></td>
+									<td><input type="text" class="info" name="username" readonly/><?php $_SESSION['name']?></td>
 								</tr>
 								<tr>
 									<th>ID</th>
-									<td><input type="text" class="info"/></td>
+									<td><input type="text" class="info" name="userid" readonly/><?php $_SESSION['userid']?></td>
 								</tr>
 								<tr>
 									<th>비밀번호</th>
-									<td><input type="text" class="info"/></td>
+									<td><input type="text" class="info" name="pw"/></td>
 								</tr>
 							</tbody>
 						</table>
@@ -39,7 +39,42 @@
 						</ul>
 						<p class="mgb25"><img src="/img/member/text_out03.gif" alt="추가로 패스닷컴에 바라는 점이 있다면 작성해주시면 감사하겠습니다." /></p>
 						<div class="etcText mgb20"><textarea></textarea></div>
-						<div class="btnC"><a href="#"><img src="/img/member/btn_member_out.gif" alt="탈퇴하기"></a></div>
+						<div class="btnC"><a href=""><img src="/img/member/btn_member_out.gif" alt="탈퇴하기"></a></div>
 					</div>
 				</div>
 			</div>
+			<script src="/js/jquery-1.8.1.min.js"></script>
+			<script>
+				$(".btnC").on("click", "a", function() {
+					if($("[name='pw']").val() == "") {
+						alert('비밀번호를 입력해주세요.');
+						return;
+					}
+
+					if($("[type='checkbox']:checked").length < 1) {
+						alert('탈퇴 사유를 선택해주세요.');
+						return;
+					}
+
+					$.ajax({
+						type: 'get',
+						url: '/member/checkMember.php',
+						dataType : "html",
+						contentType: "application/json; charset=utf-8",
+						data:{
+							userid:$("[name='userid']").val(),
+							pw:$("[name='pw']").val(),
+							mode:'secession',
+						},
+						success: function(data) {
+							if (data == '1') {
+								alert('탈퇴처리 되었습니다. 메인으로 돌아갑니다.');
+								location.href = "/";
+							} else {
+								alert("비밀번호가 틀렸습니다.");
+								return;
+							}
+						},
+					});
+				})
+			</script>
