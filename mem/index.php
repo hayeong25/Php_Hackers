@@ -633,22 +633,20 @@
 			if($("[name='pw']").val() == "") {
 				alert('비밀번호를 입력해주세요.');
 			}
-			
-			alert("userid : " + $("[name='userid']").val() + "\npw : " + $("[name='pw']").val());
 
 			$.ajax({
 				type: 'post',
 				url: '/member/login.php',
-				dataType : "html",
-				contentType: "application/json; charset=utf-8",
+				dataType : "json",
 				data:{
 					userid:$("[name='userid']").val(),
 					pw:$("[name='pw']").val(),
 				},
 				success: function(data) {
-					if (data == '1') {
+					if (data == "1") {
 						alert($("[name='userid']").val() + " 로그인 성공");
-						location.href = "/";
+						$('#mask').hide();
+						$('.window').hide();
 					} else if (data == '0') {
 						alert('비밀번호가 틀렸습니다.');
 					} else {

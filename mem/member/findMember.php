@@ -8,12 +8,12 @@
     $con -> set_charset('utf8');
 
     $data = $_POST;
+    $send_mode = $data['mode'];
 
-    if($data['mode'] == 'phone' || $data['mode'] == 'email') {
+    if($send_mode == 'phone' || $send_mode == 'email') {
         $send_name = $data['username'];
         $send_data = $data['data'];
-        $send_mode = $data['mode'];
-    
+        
         switch($send_mode) {
             case 'phone':
                 $sql = "select name, userid from member where name = '$send_name' and phone = '$send_data'";
@@ -31,15 +31,16 @@
         );
     
         echo json_encode(array("name" => $data['name'], "userid" => $data['userid']));
-    }else if($data['mode'] == 'updatePw_phone' || $data['mode'] == 'updatePw_email'){
+    }else if($send_mode == 'updatePw_phone' || $send_mode == 'updatePw_email'){
         $send_data = $data['data'];
+        $hash_pw = password_hash('123456', PASSWORD_DEFAULT);
         
-        switch($data['mode']) {
+        switch($send_mode) {
             case 'updatePw_phone':
-                $sql = "update member set pw = '123456' where phone = '$send_data'";
+                $sql = "update member set pw = '$hash_pw' where phone = '$send_data'";
                 break;
             case 'updatePw_email':
-                $sql = "update member set pw = '123456' where email = '$send_data'";
+                $sql = "update member set pw = '$hash_pw' where email = '$send_data'";
                 break;
         }
        
