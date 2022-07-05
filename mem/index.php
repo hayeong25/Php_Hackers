@@ -7,7 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<title>합격포털, 해커스 패스닷컴 :: 9급공무원, 공무원영어, 공인중개사, 취업, 금융자격증, 세무/회계자격증, 학점은행제, TOEIC, TEPS</title>
 	<meta name="keywords" content="9급공무원, 공인중개사, 펀드투자상담사, 파생상품투자상담사, 증권투자상담사, 공무원영어, 금융자격증, 세무, 회계자격증, TOEIC, TEPS, 토익, 텝스, 학점은행제, 취업" />
 	<meta name="description" content="9급공무원, 공인중개사, 펀드투자상담사, 파생상품투자상담사, 증권투자상담사, 공무원영어, 금융자격증, 세무, 회계자격증, TOEIC, TEPS, 토익, 텝스, 학점은행제, 취업" />

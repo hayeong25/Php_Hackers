@@ -1,31 +1,14 @@
+<?header('Content-Type: text/html; charset=UTF-8');?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>해커스패스 통합사이트</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" type="text/css" href="/css/default.css" />
 <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/js/integrate.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
-<script type="text/javascript">
-	function allPopClose(setName) {
-		$("#" + setName).hide();
-	}
-	$(function() {
-		rollingB("issue_tab", "issue_banner");
-		rollingC("book_tab", "book_banner");
-
-		$("#mainMenu li").hover(function() {
-			$(this).children().children("img.passimg").attr("src", $(this).children().children("img.passimg").attr("src").replace("_off", "_on"));
-			$(this).children().children("img.passicon").attr("src", $(this).children().children("img.passicon").attr("src").replace("_off", "_on"));
-		}, function() {
-			$(this).children().children("img.passimg").attr("src", $(this).children().children("img.passimg").attr("src").replace("_on", "_off"));
-			$(this).children().children("img.passicon").attr("src", $(this).children().children("img.passicon").attr("src").replace("_on", "_off"));
-		});
-
-	});
-</script>
+<title>해커스패스 통합사이트</title>
 </head>
 <body>
 	<div id="wrapper">

@@ -1,3 +1,4 @@
+<?header('Content-Type: text/html; charset=UTF-8');?>
 			<div id="sub" class="content">
 				<h2><img src="/img/member/h2_findID.gif" alt="" /></h2>
 				<div class="depth"><span>Home &gt; 회원가입 &gt; <em>아이디/비밀번호찾기</em></span></div>
@@ -10,19 +11,19 @@
 								<input type="radio" class="radio" name="find" value="email" /><label><img src="/img/member/text_check12.gif" alt="이메일 인증" /></label>
 							</h4>
 							<div class="ID_phone mgb20">
-								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name"/></p>
+								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" value="sksksk" class="name"/></p>
 								<p>
 									<span><img src="/img/member/text_check02.gif" alt="생년월일"/></span>
 									<select id="year">
-										<option value=""></option>
+										<option value="2022"></option>
 									</select>
 									<label>년</label>
 									<select id="month">
-										<option value=""></option>
+										<option value="09"></option>
 									</select>
 									<label>월</label>
 									<select id="day">
-										<option value=""></option>
+										<option value="11"></option>
 									</select>
 									<label>일</label>
 								</p>
@@ -31,7 +32,7 @@
 									<div class="info"></div>
 								</p>
 							</div>
-							<div class="btnC ok"><a href=""><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
+							<div class="btnC ok"><a href="#"><img src="/img/member/btn_confirm2.gif" alt="확인"></a></div>
 						</div>
 						<div class="right">
 							<h4 class="mgb30"><img src="/img/member/h4_ipin02.gif" alt="아이핀인증" /></h4>
@@ -68,7 +69,7 @@
 				$("[name='find']").change(function() {
 					if($("[name='find']:checked").val() == 'phone') {
 						$(".find").html('<img src="/img/member/text_check04.gif" alt="핸드폰번호"/>');
-						$(".info").html('<input type="text" class="phone1" size="4"/> - <input type="text" class="phone2" size="4"/> - <input type="text" class="phone3" size="4"/>');
+						$(".info").html('<input type="text" class="phone1" value="010" size="4"/> - <input type="text" class="phone2" value="4567" size="4"/> - <input type="text" class="phone3" value="4567" size="4"/>');
 					}else {
 						$(".find").html('<img src="/img/member/text_check14.gif" alt="이메일인증"/>');
 						$(".info").html('<input type="text" class="email1" size="6" /> @ <input type="text" class="email2" size="8"/>');
@@ -107,19 +108,29 @@
 						mode = "email";
 					}
 
+					console.log("aaaa");
+					// return;
+					// console.log("bbbb");
+					
 					$.ajax({
-						type: 'get',
-						url: '/member/findMember.php',
-						dataType : "html",
-						contentType: "application/json; charset=utf-8",
+						type: 'post',
+						url: '/member/findMember.ajax.php',
+						dataType : "JSON",
+						// contentType: "application/json; charset=utf-8",
 						data:{
 							data:data,
 							mode:mode,
 						},
 						success: function(data) {
+							console.log(data);
 							alert(data);
+
+							// var result = JSON.parse(data);
+ 							// alert("name : " + result.name + "\nid : " + result['userid']);
+
 							alert("username : " + data.name + "\nuserid : " + data.userid);
 							alert("username : " + data['name'] + "\nuserid : " + data['userid']);
+
 							// console.log(JSON.stringify(data));
 							
 							// if(data == "1") {

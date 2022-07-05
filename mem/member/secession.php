@@ -1,3 +1,9 @@
+<?php
+	session_start();
+
+	$username = $_SESSION['name'];
+	$userid = $_SESSION['userid'];
+?>
 			<div id="sub" class="content">
 				<h2><img src="/img/member/h2_out.gif" alt="회원탈퇴" /></h2>
 				<div class="depth"><span>Home &gt; 개인정보관리 &gt; <em>회원탈퇴</em></span></div>
@@ -15,11 +21,11 @@
 								<tr>
 									<th rowspan="3" class="borderR">개인정보입력</th>
 									<th>성명</th>
-									<td><input type="text" class="info" name="username" readonly/><?php $_SESSION['name']?></td>
+									<td><input type="text" class="info" name="username" readonly/><?php $username ?></td>
 								</tr>
 								<tr>
 									<th>ID</th>
-									<td><input type="text" class="info" name="userid" readonly/><?php $_SESSION['userid']?></td>
+									<td><input type="text" class="info" name="userid" readonly/><?php $userid ?></td>
 								</tr>
 								<tr>
 									<th>비밀번호</th>
@@ -69,6 +75,10 @@
 						success: function(data) {
 							if (data == '1') {
 								alert('탈퇴처리 되었습니다. 메인으로 돌아갑니다.');
+								<?php
+									$userid.session_destroy();
+									$username.session_destroy();
+								?>
 								location.href = "/";
 							} else {
 								alert("비밀번호가 틀렸습니다.");

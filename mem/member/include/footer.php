@@ -44,6 +44,10 @@
 	</div>
 	<script src="/js/jquery-1.8.1.min.js"></script>
 	<script>
+		$(function() {
+			$("#dialog").hide();
+		})
+		
 		$(".btnLogin").click(function() {
 			if($("[name='userid']").val() == "") {
 				alert('아이디를 입력해주세요.');
