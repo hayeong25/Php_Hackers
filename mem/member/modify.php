@@ -1,3 +1,15 @@
+<?php
+    session_start();
+
+    // if(!isset($_SESSION['userid'])){
+    //     echo "<script>alert('잘못된 접근입니다.');";
+    //     echo "window.location.href=\"/\";</script>";
+    // }
+
+    // $conn = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
+    // $sql = "SELECT * FROM member WHERE userid='$session_id'";
+    // $member = mysqli_fetch_array(mysqli_query($conn, $sql));
+?>
 			<div id="sub" class="content">
 				<h2><img src="/img/member/h2_edit.gif" alt="개인정보수정" /></h2>
 				<div class="depth"><span>Home &gt; 개인정보관리 &gt; <em>개인정보수정</em></span></div>
@@ -12,23 +24,23 @@
 						<tbody>
 							<tr>
 								<th><span class="must">이름</span></th>
-								<td><input type="text" class="text" name="username" value="<? echo $member['name'] ?>" readonly/></td>
+								<td><input type="text" class="text" name="username" value="" readonly/></td>
 							</tr>
 							<tr>
 								<th><span class="must">성별</span></th>
 								<td>
-									<input type="radio" class="radio" name="gender" value="male" <? echo ($member['gender'] == 'male') ? "checked" : "" ?> onclick="return false"><label class="mgr30">남</label>
-									<input type="radio" class="radio" name="gender" value="female" <? echo ($member['gender'] == 'female') ? "checked" : "" ?> onclick="return false"><label>여</label>
+									<input type="radio" class="radio" name="gender" value="male" onclick="return false"><label class="mgr30">남</label>
+									<input type="radio" class="radio" name="gender" value="female" onclick="return false"><label>여</label>
 								</td>
 							</tr>
 							<tr>
 								<th><span class="must">생년월일</span></th>
 								<td>
-									<input type="text" name="year" id="year" size="4" value="<? $year ?>" readonly>
+									<input type="text" name="year" id="year" size="4" value="" readonly>
 									<label>년</label>
-									<input type="text" name="month" id="month" size="4" value="<? $month ?>" readonly>
+									<input type="text" name="month" id="month" size="4" value="" readonly>
 									<label>월</label>
-									<input type="text" name="day" id="day" size="4" value="<? $day ?>" readonly>
+									<input type="text" name="day" id="day" size="4" value="" readonly>
 									<label>일</label>
 								</td>
 							</tr>
@@ -252,3 +264,55 @@
 					<div class="btnC"><a href="#"><img src="/img/member/btn_edit.gif" alt="수정하기"></a></div>
 				</div>
 			</div>
+			<script src="/js/jquery-1.8.1.min.js"></script>
+			<script>
+				// 회원유형 확인
+				var user_type = sessionStorage.getItem('user_type');
+
+				// 어린이회원일 경우, 보호자 연락처 입력폼 보여주기
+				if (user_type == 'child') {
+					str = '<th><span class="must">보호자 휴대폰번호</span></th>';
+					str += '<td>';
+					str += '<input type="text" class="phone" name="parent_phone1" readonly> - <input type="text" class="phone" name="parent_phone2" readonly> - <input type="text" class="phone" name="parent_phone3" readonly>';
+					str += '<p class="tip">※ 보호자(법정대리인)의 정보를 입력해 주세요</p>';
+					str += '</td>';
+					$(".parent").html(str);
+				}
+
+				// 새로고침 시, 비밀번호를 제외한 DB 항목은 default 세팅
+				document.addEventListener('DOMContentLoaded', function() {
+					$("[name='username']").val(sessionStorage.getItem('username'));
+					$("[name='userid']").val(sessionStorage.getItem('userid'));
+
+					if(sessionStorage.getItem('gender') == 'male') {
+						$("[value='male']").prop("checked", true);
+					}else if(sessionStorage.getItem('gender') == 'female') {
+						$("[value='female']").attr("checked", true);
+					}
+					$("#year").val(sessionStorage.getItem('year'));
+					$("#month").val(sessionStorage.getItem('month'));
+					$("#day").val(sessionStorage.getItem('day'));
+					if (sessionStorage.getItem('email1') != null) {
+						$("[name='email1']").val(sessionStorage.getItem('email1'));
+						$("[name='email2']").val(sessionStorage.getItem('email2'));
+						$("[name='email']").val(sessionStorage.getItem('email2')).attr('selected', true);
+					}
+					if (sessionStorage.getItem('sns') == "Y") {
+						$("[name='sns']").val(sessionStorage.getItem('sns')).attr('checked', true);
+					}
+					$("[name='phone1']").val(sessionStorage.getItem('phone1'));
+					$("[name='phone2']").val(sessionStorage.getItem('phone2'));
+					$("[name='phone3']").val(sessionStorage.getItem('phone3'));
+					if (sessionStorage.getItem('parent_phone3') != null) {
+						$("[name='parent_phone1']").val(sessionStorage.getItem('parent_phone1'));
+						$("[name='parent_phone2']").val(sessionStorage.getItem('parent_phone2'));
+						$("[name='parent_phone3']").val(sessionStorage.getItem('parent_phone3'));
+					}
+					if (sessionStorage.getItem('zipcode') != null) {
+						$("[name='zipcode']").val(sessionStorage.getItem('zipcode'));
+					}
+					if (sessionStorage.getItem('juso') != null) {
+						$("[name='address1']").val(sessionStorage.getItem('juso'));
+					}
+				})
+			</script>

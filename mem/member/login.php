@@ -35,6 +35,7 @@
         // 로그인 성공
         $_SESSION['userid'] = $result['userid'];
         $_SESSION['name'] = $result['name'];
+        @ini_set("session.cache_expire", "86400");
         echo json_encode(array("name" => $data['name'], "userid" => $data['userid'], "birth" => $data['birth'], "gender" => $data['gender'], "phone" => $data['phone'], "parent_phone" => $data['parent_phone'], "address" => $data['address'], "email" => $data['email'], "sns" => $data['sns'], "user_type" => $data['type']));
         return;
     }else {

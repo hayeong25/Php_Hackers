@@ -75,8 +75,8 @@
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } ?>
 				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>
-				<input type="hidden" name="session_id" value="<? $session_id ?>">
-				<input type="hidden" name="session_name" value="<? $session_name ?>">
+				<input type="hidden" name="session_id" value="<?php $session_id ?>">
+				<input type="hidden" name="session_name" value="<?php $session_name ?>">
 			</div>
 		</div>
 		<!-- container -->
@@ -628,6 +628,11 @@
 	</div>
 	<script src="/js/jquery-1.8.1.min.js"></script>
 	<script>
+		$(function() {
+			$("[name='session_id']").val(sessionStorage.getItem('userid'));
+			$("[name='session_name']").val(sessionStorage.getItem('username'));
+		})
+
 		$(".btnLogin").click(function() {
 			if($("[name='userid']").val() == "") {
 				alert('아이디를 입력해주세요.');
@@ -650,6 +655,25 @@
 					} else if (data == '-1') {
 						alert("아이디가 틀렸습니다.");
 					} else {
+						sessionStorage.setItem('userid', data['userid']);
+						sessionStorage.setItem('username', data['name']);
+						sessionStorage.setItem('gender', data['gender']);
+						sessionStorage.setItem('year', data['birth'].split("-")[0]);
+						sessionStorage.setItem('month', data['birth'].split("-")[1]);
+						sessionStorage.setItem('day', data['birth'].split("-")[2]);
+						sessionStorage.setItem('phone1', data['phone'].split("-")[0]);
+						sessionStorage.setItem('phone2', data['phone'].split("-")[1]);
+						sessionStorage.setItem('phone3', data['phone'].split("-")[2]);
+						sessionStorage.setItem('parent_phone1', data['parent_phone'].split("-")[0]);
+						sessionStorage.setItem('parent_phone2', data['parent_phone'].split("-")[1]);
+						sessionStorage.setItem('parent_phone3', data['parent_phone'].split("-")[2]);
+						sessionStorage.setItem('juso', data['address'].split("(")[0]);
+						sessionStorage.setItem('zipcode', data['address'].split("(")[1]);
+						sessionStorage.setItem('email1', data['email'].split("@")[0]);
+						sessionStorage.setItem('email2', data['email'].split("@")[1]);
+						sessionStorage.setItem('sns', data['sns']);
+						sessionStorage.setItem('user_type', data['user_type']);
+						alert("juso : " + data['address'].split("()")[0]);
 						alert($("[name='userid']").val() + " 로그인 성공");
 						$('#mask').hide();
 						$('.window').hide();

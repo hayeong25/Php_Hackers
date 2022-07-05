@@ -1,4 +1,10 @@
 <?php
+    session_start();
+
+    $session_id = $_SESSION['userid'];
+	$session_name = $_SESSION['username'];
+    @ini_set("session.cache_expire", "86400");
+
     include ("./include/header.php");
 
     // 사이드바 영역
