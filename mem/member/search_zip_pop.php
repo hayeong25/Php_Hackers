@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Search ZipCode</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor=white leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">

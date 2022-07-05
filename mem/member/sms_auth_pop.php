@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>해커스패스 통합사이트</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" type="text/css" href="/css/popup.css" />
 </head>

@@ -63,13 +63,13 @@
 					}
 
 					$(".find").append('<img src="/img/member/text_check04.gif" alt="핸드폰번호"/>');
-					$(".info").append('<input type="text" class="phone1" size="4"/> - <input type="text" class="phone2" size="4"/> - <input type="text" class="phone3" size="4"/>');
+					$(".info").append('<input type="text" class="phone1" value="010" size="4"/> - <input type="text" class="phone2" value="4567" size="4"/> - <input type="text" class="phone3" value="4567" size="4"/>');
 				})
 
 				$("[name='find']").change(function() {
 					if($("[name='find']:checked").val() == 'phone') {
 						$(".find").html('<img src="/img/member/text_check04.gif" alt="핸드폰번호"/>');
-						$(".info").html('<input type="text" class="phone1" value="010" size="4"/> - <input type="text" class="phone2" value="4567" size="4"/> - <input type="text" class="phone3" value="4567" size="4"/>');
+						$(".info").html('<input type="text" class="phone1"  size="4"/> - <input type="text" class="phone2" size="4"/> - <input type="text" class="phone3" size="4"/>');
 					}else {
 						$(".find").html('<img src="/img/member/text_check14.gif" alt="이메일인증"/>');
 						$(".info").html('<input type="text" class="email1" size="6" /> @ <input type="text" class="email2" size="8"/>');
@@ -107,14 +107,10 @@
 						data = email;
 						mode = "email";
 					}
-
-					console.log("aaaa");
-					// return;
-					// console.log("bbbb");
 					
 					$.ajax({
 						type: 'post',
-						url: '/member/findMember.ajax.php',
+						url: '/member/findMember.php',
 						dataType : "JSON",
 						// contentType: "application/json; charset=utf-8",
 						data:{
@@ -123,7 +119,7 @@
 						},
 						success: function(data) {
 							console.log(data);
-							alert(data);
+							// alert(data);
 
 							// var result = JSON.parse(data);
  							// alert("name : " + result.name + "\nid : " + result['userid']);
