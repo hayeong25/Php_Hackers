@@ -1,5 +1,8 @@
 <?php
     header('Content-Type: text/html; charset=UTF-8');
+
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
     
     $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
     $con -> set_charset('utf8');
@@ -42,7 +45,7 @@
        
         $result = mysqli_query($con, $sql);
     
-        if(mysqli_num_rows($result) > 0) {
+        if($result > 0) {
             echo "1";
         }else {
             echo "0";

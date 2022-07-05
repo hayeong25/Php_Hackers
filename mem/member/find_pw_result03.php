@@ -11,7 +11,7 @@
 							<li><label><img src="/img/member/text_pw08.gif" alt="" /></label><span class="imsi_text">123456</span></li>
 						</ul>
 						<p class="mgb30"><img src="/img/member/text_pw05.gif" alt="새로운 비밀번호로 변경하여 이용하시기 바랍니다." /></p>
-						<div class="btnC"><a href="#dialog"><img src="/img/member/btn_login_gray.gif" alt="로그인하기" /></a></div>
+						<div class="btnC"><a href="/"><img src="/img/member/btn_login_gray.gif" alt="로그인하기" /></a></div>
 					</div>
 				</div>
 			</div>

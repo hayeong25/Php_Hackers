@@ -10,7 +10,7 @@
 							<strong class="blue" id="userid"></strong>
 							<img src="/img/member/text_id02.gif" alt="입니다" />
 						</p>
-						<a href="#dialog"><img src="/img/member/btn_login_gray.gif" alt="로그인하기" /></a>
+						<a href="/"><img src="/img/member/btn_login_gray.gif" alt="로그인하기" /></a>
 						<a href="/member/gateway.php?menu=find&page=pw"><img src="/img/member/btn_find_password.gif" alt="비밀번호 찾기" /></a>
 					</div>
 				</div>

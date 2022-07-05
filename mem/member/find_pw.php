@@ -79,9 +79,9 @@
                 phone:phone,
             },
             success: function(data) {
-                alert("email : " + data.email + "\nphone : " + data.phone);
                 localStorage.setItem('phone', data.phone);
                 localStorage.setItem('email', data.email);
+                alert("email : " + data.email + "\nphone : " + data.phone);
                 
                 if(data != null) {
                     location.href = "/member/gateway.php?menu=find&page=pw1";
