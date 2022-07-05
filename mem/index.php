@@ -63,7 +63,7 @@
 				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" style="margin-left:27px;"><img src="/img/integrate/top_emblem.gif" alt="브랜드대상" /></a>
 			</p>
 			<div class="topmenu">
-				<?php if($_SESSION['userid'] == null) { ?>
+				<?php if($session_id == null) { ?>
 				<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
@@ -71,10 +71,12 @@
 				<?php } else { ?>
 				<a href="#" onclick="<?php session_unset();?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
+				<a href="/member/gateway.php?menu=modify&page=modify" class="modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } ?>
 				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="홈" /></a>
+				<input type="hidden" name="session_id" value="<? $session_id ?>">
+				<input type="hidden" name="session_name" value="<? $session_name ?>">
 			</div>
 		</div>
 		<!-- container -->
@@ -643,14 +645,14 @@
 					pw:$("[name='pw']").val(),
 				},
 				success: function(data) {
-					if (data == "1") {
+					if (data == '0') {
+						alert('비밀번호가 틀렸습니다.');
+					} else if (data == '-1') {
+						alert("아이디가 틀렸습니다.");
+					} else {
 						alert($("[name='userid']").val() + " 로그인 성공");
 						$('#mask').hide();
 						$('.window').hide();
-					} else if (data == '0') {
-						alert('비밀번호가 틀렸습니다.');
-					} else {
-						alert("아이디가 틀렸습니다.");
 					}
 				},
 			});

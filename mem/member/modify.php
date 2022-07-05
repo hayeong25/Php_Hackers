@@ -12,52 +12,49 @@
 						<tbody>
 							<tr>
 								<th><span class="must">이름</span></th>
-								<td>홍길동</td>
+								<td><input type="text" class="text" name="username" value="<? echo $member['name'] ?>" readonly/></td>
 							</tr>
 							<tr>
 								<th><span class="must">성별</span></th>
 								<td>
-									<input type="radio" class="radio"><label class="mgr30">남</label>
-									<input type="radio" class="radio"><label>여</label>
+									<input type="radio" class="radio" name="gender" value="male" <? echo ($member['gender'] == 'male') ? "checked" : "" ?> onclick="return false"><label class="mgr30">남</label>
+									<input type="radio" class="radio" name="gender" value="female" <? echo ($member['gender'] == 'female') ? "checked" : "" ?> onclick="return false"><label>여</label>
 								</td>
 							</tr>
 							<tr>
 								<th><span class="must">생년월일</span></th>
 								<td>
-									<select>
-										<option>2012</option>
-									</select>
-									<label class="mgr10">년</label>
-									<select>
-										<option>01</option>
-									</select>
-									<label class="mgr10">월</label>
-									<select>
-										<option>01</option>
-									</select>
+									<input type="text" name="year" id="year" size="4" value="<? $year ?>" readonly>
+									<label>년</label>
+									<input type="text" name="month" id="month" size="4" value="<? $month ?>" readonly>
+									<label>월</label>
+									<input type="text" name="day" id="day" size="4" value="<? $day ?>" readonly>
 									<label>일</label>
 								</td>
 							</tr>
 							<tr>
 								<th><span class="must">아이디</span></th>
-								<td><strong>HONG</strong></td>
+								<td><input type="text" class="text" name="userid" readonly/></td>
 							</tr>
 							<tr>
 								<th><span class="must">비밀번호</span></th>
-								<td><input type="password" class="text"/> <span class="tip">(비밀번호는 4~32자 영문+숫자 조합만 가능합니다.)</span></td>
+								<td><input type="password" class="text" name="pw" /><span class="tip">(비밀번호는 4~32자 영문+숫자 조합만 가능합니다.)</span></td>
 							</tr>
 							<tr>
 								<th><span class="must">비밀번호확인</span></th>
-								<td><input type="password" class="text" /></td>
+								<td><input type="password" class="text" name="pw_confirm" /></td>
 							</tr>
 							<tr>
 								<th><span class="must">e-mail주소</span></th>
 								<td>
-									<input type="text" class="text"/> @ <input type="text" class="text"/> 
-									<select style="margin-right:5px;">
-										<option>직접입력</option>
+									<input type="text" class="text" name="email1" /> @ <input type="text" class="text" name="email2" />
+									<select style="margin-right:5px;" name="email">
+										<option value="">직접입력</option>
+										<option value="gmail.com">gmail.com</option>
+										<option value="hotmail.com">hotmail.com</option>
+										<option value="naver.com">naver.com</option>
 									</select>
-									<input type="checkbox" class="checkbox" /><label>수신동의</label>
+									<input type="checkbox" class="checkbox" name="sns" /><label>수신동의</label>
 									<p class="tip">*패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
 									<p class="icon_check">[직접입력]을 통해 메일 계정을 입력시 : 메일이 정상적으로 수신되지 않을 수 있습니다.</p>
 									<p class="icon_check">Hotmail, Gmail 이용시 : 메일이 도착하지 않으면 [스팸 편지함]을 확인 해 주시기 바랍니다.</p>
@@ -66,28 +63,18 @@
 							<tr>
 								<th><span class="must">휴대폰번호</span></th>
 								<td>
-									<select>
-										<option>010</option>
-									</select>
-									- <input type="text" class="phone"> - <input type="text" class="phone">
+									<input type="text" class="phone" name="phone1" size="4" readonly>
+									- <input type="text" class="phone" name="phone2" size="4" readonly> - <input type="text" class="phone" name="phone3" size="4" readonly>
 									<p class="tip">* 패스닷컴에서 제공하는 유용한 정보를 받아 볼 수 있습니다.</p>
 								</td>
 							</tr>
-							<tr>
-								<th><span class="must">집전화번호</span></th>
-								<td>
-									<select>
-										<option>010</option>
-									</select>
-									- <input type="text" class="phone"> - <input type="text" class="phone">
-								</td>
-							</tr>
+							<tr class="parent"></tr>
 							<tr>
 								<th><span class="must">주소</span></th>
 								<td>
-									<p><input type="text" class="zipcode"> - <input type="text" class="zipcode"> <a href="#"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
-									<p style="margin:5px 0;"><input type="text" class="address"></p>
-									<p><input type="text" class="address"></p>
+									<p><input type="text" class="zipcode" name="zipcode" readonly><a href="" id="zip_pop"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
+									<p style="margin:5px 0;"><input type="text" class="address" name="address1" readonly></p>
+									<p><input type="text" class="address" name="address2" readonly></p>
 								</td>
 							</tr>
 						</tbody>
@@ -102,16 +89,22 @@
 							<tr>
 								<th>최종학력</th>
 								<td>
-									<select>
-										<option>선택</option>
-									</select>
+								<select name="school">
+									<option value="">선택</option>
+									<option value="middle">중학교 졸업</option>
+									<option value="high">고등학교 졸업</option>
+									<option value="col">전문대 졸업</option>
+									<option value="univ">4년제 졸업</option>
+								</select>
 								</td>
 							</tr>
 							<tr>
 								<th>직업</th>
 								<td>
-									<select>
-										<option>학생</option>
+									<select name="job">
+										<option value="student">학생</option>
+										<option value="teacher">교사</option>
+										<option value="parent">학부모</option>
 									</select>
 								</td>
 							</tr>

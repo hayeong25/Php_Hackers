@@ -101,7 +101,7 @@
 									<option value="middle">중학교 졸업</option>
 									<option value="high">고등학교 졸업</option>
 									<option value="col">전문대 졸업</option>
-									<option value="univ">4년제대 졸업</option>
+									<option value="univ">4년제 졸업</option>
 								</select>
 							</td>
 						</tr>

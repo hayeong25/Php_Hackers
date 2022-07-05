@@ -1,4 +1,10 @@
-<?header('Content-Type: text/html; charset=UTF-8');?>
+<?php
+	header('Content-Type: text/html; charset=UTF-8');
+
+	session_start();
+	$session_id = $_SESSION['userid'];
+	$session_name = $_SESSION['username'];
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,7 +22,7 @@
 		<div id="header">
 			<p class="logo"><img src="/img/integrate/logo.gif" alt="해커스패스" /></p>
 			<div class="topmenu">
-				<?php if(!isset($_SESSION['userid'])) { ?>
+				<?php if($session_id == null) { ?>
 				<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="로그인" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
