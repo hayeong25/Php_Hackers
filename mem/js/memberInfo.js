@@ -193,7 +193,7 @@ var birth = localStorage.getItem('year') + localStorage.getItem('month') + local
 var gender = localStorage.getItem('gender');
 var email = localStorage.getItem('email1') + "@" + localStorage.getItem('email2');
 var sns = localStorage.getItem('sns');
-var phone = localStorage.getItem('phone1') + localStorage.getItem('phone2') + localStorage.getItem('phone3');
+var phone = localStorage.getItem('phone1') + "-" + localStorage.getItem('phone2') + "-" + localStorage.getItem('phone3');
 var parent_phone = localStorage.getItem('parent_phone1') + localStorage.getItem('parent_phone2') + localStorage.getItem('parent_phone3');
 var address = localStorage.getItem('juso') + " " + localStorage.getItem('juso2') + " (" + localStorage.getItem('zipcode') + ")";
 

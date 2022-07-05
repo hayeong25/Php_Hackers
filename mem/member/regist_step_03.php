@@ -133,7 +133,7 @@
 			})
 
 			$("#ok").on("click", "a", function() {
-				var phone = $("#phone1").val() + $("#phone2").val() + $("#phone3").val();
+				var phone = $("#phone1").val() + "-" + $("#phone2").val() + "-" + $("#phone3").val();
 
 				// DB 회원 정보 조회
 				$.ajax({

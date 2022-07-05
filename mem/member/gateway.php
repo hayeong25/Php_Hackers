@@ -58,8 +58,8 @@
         case 'idResult':
             include ("find_id_result.php");
             break;
-        case 'pwPhone':
-            include ("find_pw_phone.php");
+        case 'pw':
+            include ("find_pw.php");
             break;
         case 'pw1':
             include ("find_pw_result01.php");

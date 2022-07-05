@@ -11,19 +11,19 @@
 								<input type="radio" class="radio" name="find" value="email" /><label><img src="/img/member/text_check12.gif" alt="이메일 인증" /></label>
 							</h4>
 							<div class="ID_phone mgb20">
-								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" value="sksksk" class="name"/></p>
+								<p><span><img src="/img/member/text_check01.gif" alt="이름"/></span><input type="text" class="name" name="username"/></p>
 								<p>
 									<span><img src="/img/member/text_check02.gif" alt="생년월일"/></span>
 									<select id="year">
-										<option value="2022"></option>
+										<option></option>
 									</select>
 									<label>년</label>
 									<select id="month">
-										<option value="09"></option>
+										<option></option>
 									</select>
 									<label>월</label>
 									<select id="day">
-										<option value="11"></option>
+										<option></option>
 									</select>
 									<label>일</label>
 								</p>
@@ -63,13 +63,13 @@
 					}
 
 					$(".find").append('<img src="/img/member/text_check04.gif" alt="핸드폰번호"/>');
-					$(".info").append('<input type="text" class="phone1" value="010" size="4"/> - <input type="text" class="phone2" value="4567" size="4"/> - <input type="text" class="phone3" value="4567" size="4"/>');
+					$(".info").append('<input type="text" class="phone1" size="4"/> - <input type="text" class="phone2" size="4"/> - <input type="text" class="phone3" size="4"/>');
 				})
 
 				$("[name='find']").change(function() {
 					if($("[name='find']:checked").val() == 'phone') {
 						$(".find").html('<img src="/img/member/text_check04.gif" alt="핸드폰번호"/>');
-						$(".info").html('<input type="text" class="phone1"  size="4"/> - <input type="text" class="phone2" size="4"/> - <input type="text" class="phone3" size="4"/>');
+						$(".info").html('<input type="text" class="phone1" size="4"/> - <input type="text" class="phone2" size="4"/> - <input type="text" class="phone3" size="4"/>');
 					}else {
 						$(".find").html('<img src="/img/member/text_check14.gif" alt="이메일인증"/>');
 						$(".info").html('<input type="text" class="email1" size="6" /> @ <input type="text" class="email2" size="8"/>');
@@ -94,7 +94,7 @@
 						return;
 					}
 					
-					var phone = $(".phone1").val() + $(".phone2").val() + $(".phone3").val();
+					var phone = $(".phone1").val() + "-" + $(".phone2").val() + "-" + $(".phone3").val();
 					var email = $(".email1").val() + $(".email2").val();
 					
 					var data; // 휴대폰번호 or 이메일
@@ -112,29 +112,22 @@
 						type: 'post',
 						url: '/member/findMember.php',
 						dataType : "JSON",
-						// contentType: "application/json; charset=utf-8",
 						data:{
+							username:$("[name='username']").val(),
 							data:data,
 							mode:mode,
 						},
 						success: function(data) {
-							console.log(data);
-							// alert(data);
-
-							// var result = JSON.parse(data);
- 							// alert("name : " + result.name + "\nid : " + result['userid']);
-
 							alert("username : " + data.name + "\nuserid : " + data.userid);
-							alert("username : " + data['name'] + "\nuserid : " + data['userid']);
-
-							// console.log(JSON.stringify(data));
+							localStorage.setItem('name', data.name);
+							localStorage.setItem('userid', data.userid);
 							
-							// if(data == "1") {
-							// 	location.href = "/member/gateway.php?menu=find&page=idResult";
-							// }else {
-							// 	alert('등록되지 않은 회원입니다.');
-							// 	return;
-							// }
+							if(data != null) {
+								location.href = "/member/gateway.php?menu=find&page=idResult";
+							}else {
+								alert('등록되지 않은 회원입니다.');
+								return;
+							}
 						},
 					});
 				})
