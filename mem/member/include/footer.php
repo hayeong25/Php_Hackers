@@ -44,9 +44,22 @@
 	</div>
 	<script src="/js/jquery-1.8.1.min.js"></script>
 	<script>
+		function allPopClose(setName) {
+			$("#" + setName).hide();
+		}
 		$(function() {
-			$("#dialog").hide();
-		})
+			rollingB("issue_tab", "issue_banner");
+			rollingC("book_tab", "book_banner");
+
+			$("#mainMenu li").hover(function() {
+				$(this).children().children("img.passimg").attr("src", $(this).children().children("img.passimg").attr("src").replace("_off", "_on"));
+				$(this).children().children("img.passicon").attr("src", $(this).children().children("img.passicon").attr("src").replace("_off", "_on"));
+			}, function() {
+				$(this).children().children("img.passimg").attr("src", $(this).children().children("img.passimg").attr("src").replace("_on", "_off"));
+				$(this).children().children("img.passicon").attr("src", $(this).children().children("img.passicon").attr("src").replace("_on", "_off"));
+			});
+
+		});
 		
 		$(".btnLogin").click(function() {
 			if($("[name='userid']").val() == "") {

@@ -1,3 +1,9 @@
+<?php
+	if(!isset($session_id)) {
+		echo "<script>alert('session_id 없음! 잘못된 접근입니다.');</script>";
+		echo "<script>location.href = '/';</script>";
+	}else {
+?>
 			<div id="sub" class="content">
 				<h2><img src="/img/member/h2_edit.gif" alt="개인정보수정" /></h2>
 				<div class="depth"><span>Home &gt; 개인정보관리 &gt; <em>개인정보수정</em></span></div>
@@ -252,6 +258,9 @@
 					<div class="btnC"><a href="#"><img src="/img/member/btn_edit.gif" alt="수정하기"></a></div>
 				</div>
 			</div>
+<?php
+	}
+?>
 			<script src="/js/jquery-1.8.1.min.js"></script>
 			<script>
 				// 회원유형 확인
@@ -359,14 +368,15 @@
 
 					$.ajax({
 						type: 'post',
-						url: '/member/modifyMember.php',
+						url: '/member/regist.php',
 						dataType : "JSON",
 						data:{
 							userid:sessionStorage.getItem('userid'),
 							pw:pw,
 							email:email,
 							sns:sns,
-							address:address
+							address:address,
+							mode:'modify'
 						},
 						success: function(data) {
 							alert(data);

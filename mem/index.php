@@ -89,7 +89,7 @@
 						<li>
 							<!--공무원학원-->
 							<a href="http://gosi.pass.com/?keywd=130703_passgatemain_thumbnail&logger_kw=130703_passgatemain_thumbnail&source=logger_kw " target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_01.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_01.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_01.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://gosi.pass.com/html/mmove.htm?st=info&id=pservant_lec2_sev3&keywd=131119_passgatethumnail_1130presentation&logger_kw=131119_passgatethumnail_1130presentation&ssource=logger_kw" target="_blank" class="btnRED"><img src="/img/main/mainbanner/tit_text01.png" alt="" /></a></div>
@@ -97,7 +97,7 @@
 						<li>
 							<!--공무원동영상-->
 							<a href="http://egosi.pass.com/?keywd=egosimain_passgate_20130703&logger_kw=egosimain_passgate_20130703&source=logger_kw" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_02.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_02.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_02.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://egosi.pass.com/site/?c=superpass3&_C_=3241&keywd=131119_passgatethumnail_superpass&logger_kw=131119_passgatethumnail_superpass&source=logger_kw" target="_blank" class="btnRED"><img src="/img/main/mainbanner/tit_text02.png" alt="" /></a></div>
@@ -106,7 +106,7 @@
 							<!--경찰학원-->
 
 							<a href="http://epolice.pass.com/?keywd=egosimain_passgate_20130703&logger_kw=egosimain_passgate_20130703&source=logger_kw" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_03.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_03.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_03.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://police.pass.com/html/mmove.htm?st=lecture&id=class_intro_new&keywd=131119_passgatethumnail_poliregi&logger_kw=131119_passgatethumnail_poliregi&source=logger_kw" target="_blank" class="btndarkBlue"><img src="/img/main/mainbanner/tit_text03.png" alt="" /></a></div>
@@ -114,7 +114,7 @@
 						<li>
 							<!--경찰동영상-->
 							<a href="http://epolice.pass.com/?keywd=egosimain_passgate_20130703&logger_kw=egosimain_passgate_20130703&source=logger_kw" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_04.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_04.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_04.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://epolice.pass.com/site/?c=superpass&keywd=131119_passgatethumnail_polisuperpass&logger_kw=131119_passgatethumnail_polisuperpass&source=logger_kw" target="_blank" class="btndarkBlue"><img src="/img/main/mainbanner/tit_text04.png" alt="" /></a></div>
@@ -122,7 +122,7 @@
 						<li>
 							<!--중개사학원-->
 							<a href="http://land.pass.com/" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_05.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_05.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_05.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://land.pass.com/site/?st=class_info&idx=201&type=17&_C_=3282 " target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text05.png" alt="" /></a></div>
@@ -130,7 +130,7 @@
 						<li>
 							<!--중개사동영상-->
 							<a href="http://eland.pass.com/?keywd=elandmain_passgate_20130703&logger_kw=elandmain_passgate_20130703&source=logger_kw" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_06.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_06.png" alt="" class="passicon"  />
 								<img src="/img/main/mainbanner/main_menu_off_06.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://eland.pass.com/site/?c=event_131025&_C_=2949" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text06.png" alt="" /></a></div>
@@ -138,7 +138,7 @@
 						<li>
 							<!--부동산경매-->
 							<a href="http://land.pass.com/site/?st=class_info3&idx=g02&_C_=2708" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_07.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_07.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_07.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://land.pass.com/site/?st=class_info3&idx=g02&type=15&site_part=g&_C_=3139" target="_blank" class="btnBROWN"><img src="/img/main/mainbanner/tit_text07.png" alt="" /></a></div>
@@ -153,8 +153,8 @@
 						</li>
 						<li>
 							<!--금융-->
-							<a href="http://fn.pass.com/&_C_=3316" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_09.png" alt="" class="passicon" style="display:none;" />
+							<a href="https://fn.hackers.com/" target="_blank">
+								<img src="/img/main/mainbanner/main_icon_off_09.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_09.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://fn.pass.com/bbs/board.php?id=notice&no=106&lnb=6&_C_=3366" target="_blank" class="btnBLUE"><img src="/img/main/mainbanner/tit_text08.png" alt="" /></a></div>
@@ -162,7 +162,7 @@
 						<li>
 							<!--AFPK-->
 							<a href="http://fn.pass.com/site/?st=fp_list&big_cart=1&middle_cart=117&_C_=3242" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_10.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_10.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_10.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://fn.pass.com/bbs/board.php?id=notice&no=163&lnb=6" target="_blank" class="btnBLUE"><img src="/img/main/mainbanner/tit_text09.png" alt="" /></a></div>
@@ -170,7 +170,7 @@
 						<li>
 							<!--영어-->
 							<a href="http://www.champstudy.com/?keywd=champmain_passgate_20130703&logger_kw=champmain_passgate_20130703&source=logger_kw" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_11.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_11.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_11.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://www.champstudy.com/bbs/zboard.php?id=notice&no=667&_C_=3285" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text10.png" alt="" /></a></div>
@@ -178,7 +178,7 @@
 						<li>
 							<!--취업-->
 							<a href="http://www.champstudy.com/Champ_M/?go=biz&book_select=&middle=18&keywd=champbizmain_passgate_20130703&logger_kw=champbizmain_passgate_20130703&source=logger_kw" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_12.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_12.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_12.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://www.champstudy.com/bbs/zboard.php?id=notice&no=395&_C_=3286" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text11.png" alt="" /></a></div>
@@ -189,12 +189,12 @@
 								<img src="/img/main/mainbanner/main_icon_off_13.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_13.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner" style="display:none;"><a href="#" target="_blank" class="btnORANGE"></a></div>
+							<div class="ad_banner"><a href="#" target="_blank" class="btnORANGE"></a></div>
 						</li>
 						<li>
 							<!--평생교육원-->
 							<a href="http://www.edu2080.co.kr/event/partner_event.asp?PCD=57yfb&_C_=1620" target="_blank">
-								<img src="/img/main/mainbanner/main_icon_off_14.png" alt="" class="passicon" style="display:none;" />
+								<img src="/img/main/mainbanner/main_icon_off_14.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_14.gif" alt="" class="passimg" />
 							</a>
 							<div class="ad_banner"><a href="http://www.edu2080.co.kr/event/partner_event.asp?PCD=57yfb&_C_=1620" target="_blank" class="btnORANGE"><img src="/img/main/mainbanner/tit_text12.png" alt="" /></a></div>
@@ -645,11 +645,12 @@
 
 			$.ajax({
 				type: 'post',
-				url: '/member/login.php',
+				url: '/member/regist.php',
 				dataType : "json",
 				data:{
 					userid:$("[name='userid']").val(),
 					pw:$("[name='pw']").val(),
+					mode:'login',
 				},
 				success: function(data) {
 					if (data == '0') {

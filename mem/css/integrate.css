@@ -59,7 +59,7 @@ div.mainMenu ul.m_130612 li .layer_banner {position:absolute; left:0; bottom:0; 
 /*메인 배너 2013.11.19 수정*/
 div.mainMenu ul li {position:relative; height:150px;}
 div.mainMenu ul li .ad_banner {position:absolute; left:4px; bottom:4px; width:242px; height:80px;  text-align:center;}
-div.mainMenu ul li .ad_banner a {display:inline-block; *display:inline; *zoom:1; width:207px; height:35px; overflow:hidden; margin-top:25px; text-align:center; background:url('../../img/main/mainbanner/bg_layer_title.png') no-repeat;}
+div.mainMenu ul li .ad_banner a {display:inline-block; *display:inline; *zoom:1; width:207px; height:35px; overflow:hidden; margin-top:25px; text-align:center; background:url('/img/main/mainbanner/bg_layer_title.png') no-repeat;}
 div.mainMenu ul li .ad_banner a.btnRED {background-position:0 0;}
 div.mainMenu ul li .ad_banner a.btndarkBlue {background-position:0 -35px;}
 div.mainMenu ul li .ad_banner a.btnGREEN {background-position:0 -70px;}

@@ -14,7 +14,7 @@ input, select {vertical-align:middle; outline:none;}
 
 
 /*가입인증 팝업*/
-.popup_join {width:338px; border:1px #d7d7d7 solid; background:#fff; position:absolute; z-index:20; top:10px; left:50%; margin-left:-170px;}
+.popup_join {width:338px; border:1px #d7d7d7 solid; background:#fff; position:absolute; z-index:20; top:363px; left:50%; margin-left:-170px;}
 .popup_join h3 {margin-bottom:10px; color:#333; font-size:12px;}
 .popup_join .con {padding:30px 30px 20px;}
 .popup_join .con .tip_text {font-size:11px;}

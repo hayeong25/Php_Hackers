@@ -250,6 +250,7 @@ $(".btnC").on("click", "a", function() {
             phone: phone,
             parent_phone: parent_phone,
             address: address,
+            mode:'regist',
         },
         success: function(data) {
             if (data == '1') {
