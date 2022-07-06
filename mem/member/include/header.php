@@ -4,8 +4,7 @@
 	header('Content-Type: text/html; charset=UTF-8');
 
 	$session_id = $_SESSION['userid'];
-	$session_name = $_SESSION['username'];
-	
+
 	echo "<script>alert('session_id : $session_id')</script>";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -31,7 +30,7 @@
 				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } else { ?>
-				<a href="#" onclick="<?php unset($_SESSION['userid']);?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
+				<a href="#" onclick="<?php session_destroy($session_id);?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />

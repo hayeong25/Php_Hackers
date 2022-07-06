@@ -1,8 +1,9 @@
 <?php
 	session_start();
+	
+	header('Content-Type: text/html; charset=UTF-8');
 
 	$session_id = $_SESSION['userid'];
-	$session_name = $_SESSION['username'];
 
 	echo "<script>alert('session_id : $session_id')</script>";
 ?>
@@ -71,7 +72,7 @@
 				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } else { ?>
-				<a href="#" onclick="<?php session_destroy();?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
+				<a href="#" onclick="<?php session_unset();?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<a href="/member/gateway.php?menu=modify&page=modify" class="modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
@@ -527,7 +528,6 @@
 					.f_banner ul li {
 						width: 138px;
 						height: 67px;
-						float: left;
 						display: inline-block;
 					}
 				</style>
