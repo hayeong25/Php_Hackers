@@ -3,7 +3,6 @@
 
 	$session_id = $_SESSION['userid'];
 	$session_name = $_SESSION['username'];
-	session_save_path();
 
 	echo "<script>alert('session_id : $session_id')</script>";
 ?>
@@ -676,7 +675,7 @@
 						sessionStorage.setItem('email2', data['email'].split("@")[1]);
 						sessionStorage.setItem('sns', data['sns']);
 						sessionStorage.setItem('user_type', data['user_type']);
-						
+
 						alert($("[name='userid']").val() + " 로그인 성공");
 						$('#mask').hide();
 						$('.window').hide();

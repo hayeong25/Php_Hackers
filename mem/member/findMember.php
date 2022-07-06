@@ -1,8 +1,5 @@
 <?php
     header('Content-Type: text/html; charset=UTF-8');
-
-    // ini_set('display_errors', 1);
-    // error_reporting(E_ALL);
     
     $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
     $con -> set_charset('utf8');

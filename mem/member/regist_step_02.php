@@ -639,7 +639,8 @@
 <script src="/js/jquery-1.8.1.min.js"></script>
 <script>
 	$(".btnC").on("click", "a", function() { // 체크박스 체크유무 확인
-		if($("[type='checkbox']").length != $("[type='checkbox']:checked").length) {
+		// if($("[type='checkbox']").length != $("[type='checkbox']:checked").length) {
+		if($("[type='checkbox']:checked").length != 4) {
 			alert('모두 동의해야 다음 단계로 넘어갈 수 있습니다.');
 		}else {
 			$(this).attr("href", "/member/gateway.php?menu=join&page=step3");

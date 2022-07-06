@@ -1,21 +1,18 @@
 <?php
     session_start();
-    
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
 
-    $type = $_GET['user_type'];
-    $userid = $_GET['userid'];
-    $pw = password_hash($_GET['pw'], PASSWORD_DEFAULT); // 비밀번호 암호화
-    $name = $_GET['name'];
-    $nick = $_GET['nick'];
-    $birth = $_GET['birth'];
-    $gender = $_GET['gender'];
-    $email = $_GET['email'];
-    $sns = $_GET['sns'];
-    $phone = $_GET['phone'];
-    $parent_phone = $_GET['parent_phone'];
-    $address = $_GET['address'];
+    $type = $_POST['user_type'];
+    $userid = $_POST['userid'];
+    $pw = password_hash($_POST['pw'], PASSWORD_DEFAULT); // 비밀번호 암호화
+    $name = $_POST['name'];
+    $nick = $_POST['nick'];
+    $birth = $_POST['birth'];
+    $gender = $_POST['gender'];
+    $email = $_POST['email'];
+    $sns = $_POST['sns'];
+    $phone = $_POST['phone'];
+    $parent_phone = $_POST['parent_phone'];
+    $address = $_POST['address'];
 
     $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
 
