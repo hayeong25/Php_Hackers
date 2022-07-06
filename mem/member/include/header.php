@@ -5,6 +5,7 @@
 	$session_id = $_SESSION['userid'];
 	$session_name = $_SESSION['username'];
 	@ini_set("session.cache_expire", "86400");
+	echo "<script>alert('session_id : $session_id')</script>";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

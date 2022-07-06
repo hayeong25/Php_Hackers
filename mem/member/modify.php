@@ -1,15 +1,3 @@
-<?php
-    session_start();
-
-    // if(!isset($_SESSION['userid'])){
-    //     echo "<script>alert('잘못된 접근입니다.');";
-    //     echo "window.location.href=\"/\";</script>";
-    // }
-
-    // $conn = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
-    // $sql = "SELECT * FROM member WHERE userid='$session_id'";
-    // $member = mysqli_fetch_array(mysqli_query($conn, $sql));
-?>
 			<div id="sub" class="content">
 				<h2><img src="/img/member/h2_edit.gif" alt="개인정보수정" /></h2>
 				<div class="depth"><span>Home &gt; 개인정보관리 &gt; <em>개인정보수정</em></span></div>
@@ -279,6 +267,35 @@
 					$(".parent").html(str);
 				}
 
+				// 우편번호 검색 팝업
+				$("#zip_pop").click(function() {
+					pop();
+
+					function pop() {
+						var screenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+						var screenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+
+						width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+						height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+						var left = ((width / 2) - (600 / 2)) + screenLeft;
+						var top = ((height / 2) - (600 / 2)) + screenTop;
+
+						window.open('/member/search_zip_pop.php', 'zipcode', 'top=' + top + ', left=' + left + ', width=600, height=600, resizable=no');
+					}
+				})
+
+				// 검색한 주소 정보 가져오기
+				function jusoCallBack(zipcode, juso, juso2) {
+					$("[name='zipcode']").val(zipcode);
+					$("[name='address1']").val(juso);
+					$("[name='address2']").val(juso2);
+
+					localStorage.setItem('zipcode', $("[name='zipcode']").val());
+					localStorage.setItem('juso', $("[name='address1']").val());
+					localStorage.setItem('juso2', $("[name='address2']").val());
+				}
+
 				// 새로고침 시, 비밀번호를 제외한 DB 항목은 default 세팅
 				document.addEventListener('DOMContentLoaded', function() {
 					$("[name='username']").val(sessionStorage.getItem('username'));
@@ -314,5 +331,59 @@
 					if (sessionStorage.getItem('juso') != null) {
 						$("[name='address1']").val(sessionStorage.getItem('juso'));
 					}
+				})
+
+				$(".btnC").on("click", "a", function() {
+					if($("[name='pw']").val() == "" || $("[name='pw_confirm']").val() == "") {
+						alert('비밀번호를 입력해주세요.');
+						return;
+					}
+					if($("[name='pw']").val() != $("[name='pw_confirm']").val()) {
+						alert('비밀번호가 일치하지 않습니다.');
+						return;
+					}
+
+					// DB data
+					var pw = $("[name='pw']").val();
+					var email = $("[name='email1']").val() + "@" + $("[name='email2']").val();
+					var sns;
+					if($("[name='sns']").is(":checked")) {
+						sns = 'Y';
+					}else {
+						sns = 'N';
+					}
+					var address = $("[name='address1']").val() + " " + $("[name='address2']").val() + " (" + $("[name='zipcode']").val() + ")";
+
+					alert('userid : ' + sessionStorage.getItem('userid'));
+
+					$.ajax({
+						type: 'post',
+						url: '/member/modifyMember.php',
+						dataType : "JSON",
+						data:{
+							userid:sessionStorage.getItem('userid'),
+							pw:pw,
+							email:email,
+							sns:sns,
+							address:address
+						},
+						success: function(data) {
+							alert(data);
+
+							if(!data) {
+								alert('수정 실패. 다시 시도해주세요.');
+								return;
+							}else {
+								sessionStorage.setItem('juso', data['address'].split("\\(\\)")[0]);
+								sessionStorage.setItem('zipcode', data['address'].split("\\(\\)")[1]);
+								sessionStorage.setItem('email1', data['email'].split("@")[0]);
+								sessionStorage.setItem('email2', data['email'].split("@")[1]);
+								sessionStorage.setItem('sns', data['sns']);
+								alert('수정되었습니다.');
+								location.href = "/";
+								
+							}
+						},
+					});
 				})
 			</script>

@@ -3,6 +3,9 @@
 
 	$session_id = $_SESSION['userid'];
 	$session_name = $_SESSION['username'];
+	session_save_path();
+
+	echo "<script>alert('session_id : $session_id')</script>";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -69,7 +72,7 @@
 				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="회원가입" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } else { ?>
-				<a href="#" onclick="<?php session_unset();?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
+				<a href="#" onclick="<?php session_destroy();?>"><img src="/img/integrate/top_icon01_1.gif" alt="로그아웃" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<a href="/member/gateway.php?menu=modify&page=modify" class="modify"><img src="/img/integrate/top_icon02_1.gif" alt="개인정보수정" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
@@ -668,12 +671,12 @@
 						sessionStorage.setItem('parent_phone2', data['parent_phone'].split("-")[1]);
 						sessionStorage.setItem('parent_phone3', data['parent_phone'].split("-")[2]);
 						sessionStorage.setItem('juso', data['address'].split("(")[0]);
-						sessionStorage.setItem('zipcode', data['address'].split("(")[1]);
+						sessionStorage.setItem('zipcode', data['address'].split(/(([0-9]{3})-([0-9]{3}))/g)[1]);
 						sessionStorage.setItem('email1', data['email'].split("@")[0]);
 						sessionStorage.setItem('email2', data['email'].split("@")[1]);
 						sessionStorage.setItem('sns', data['sns']);
 						sessionStorage.setItem('user_type', data['user_type']);
-						alert("juso : " + data['address'].split("()")[0]);
+						
 						alert($("[name='userid']").val() + " 로그인 성공");
 						$('#mask').hide();
 						$('.window').hide();

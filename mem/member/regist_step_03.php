@@ -137,10 +137,9 @@
 
 				// DB 회원 정보 조회
 				$.ajax({
-					type: 'get',
+					type: 'post',
 					url: '/member/checkMember.php',
-					dataType : "html",
-					contentType: "application/json; charset=utf-8",
+					dataType : "json",
 					data:{
 						phone:phone,
 						mode:'phone',

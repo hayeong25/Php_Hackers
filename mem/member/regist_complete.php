@@ -1,6 +1,3 @@
-<?php
-	session_start();
-?>
 <div id="sub" class="content">
 	<h2><img src="/img/member/h2_join_all.gif" alt="" /></h2>
 	<div class="depth"><span>Home &gt; 통합회원가입 &gt; <em>가입완료</em></span></div>

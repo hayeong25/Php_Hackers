@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
 
@@ -22,8 +24,6 @@
         values('$type', '$userid', '$pw', '$name', '$nick', DATE_FORMAT('$birth', '%Y-%m-%d'), '$gender', '$email', '$sns', '$phone', '$parent_phone', '$address')";
     
     $result = mysqli_query($con,$sql);
-
-    session_start();
 
     $_SESSION['userid'] = $userid;
     $_SESSION['username'] = $name;

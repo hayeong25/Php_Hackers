@@ -1,11 +1,15 @@
 <?php
+    header('Content-Type: text/html; charset=UTF-8');
+
     $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");
+    $con -> set_charset('utf8');
 
-    $mode = $_GET['mode'];
+    $data = $_POST;
+    $send_mode = $data['mode'];
 
-    switch($mode) {
+    switch($send_mode) {
         case 'phone':
-            $phone = $_GET['phone'];
+            $phone = $data['phone'];
 
             $sql = "select * from member where phone = '$phone'";
             $result = mysqli_query($con, $sql);
@@ -17,7 +21,7 @@
             }
             break;
         case 'userid':
-            $userid = $_GET['userid'];
+            $userid = $data['userid'];
 
             $sql = "select * from member where userid = '$userid'";
             $result = mysqli_query($con, $sql);
@@ -29,7 +33,7 @@
             }
             break;
         case 'nick':
-            $nick = $_GET['nick'];
+            $nick = $data['nick'];
 
             $sql = "select * from member where nick = '$nick'";
             $result = mysqli_query($con, $sql);
@@ -41,7 +45,7 @@
             }
             break;
         case 'email':
-            $email = $_GET['email'];
+            $email = $data['email'];
 
             $sql = "select * from member where email = '$email'";
             $result = mysqli_query($con, $sql);
@@ -53,8 +57,8 @@
             }
             break;
         case 'secession':
-            $userid = $_GET['userid'];
-            $pw = $_GET['pw'];
+            $userid = $data['userid'];
+            $pw = $data['pw'];
 
             $sql = "select pw from member where userid = '$userid'";
 

@@ -34,10 +34,9 @@ $("#userid").on("click", function() {
         return;
     }
     $.ajax({
-        type: 'get',
+        type: 'post',
         url: '/member/checkMember.php',
-        dataType: "html",
-        contentType: "application/json; charset=utf-8",
+        dataType: "json",
         data: {
             userid: $("[name='userid']").val(),
             mode: 'userid',
@@ -73,10 +72,9 @@ $("#nick").on("click", function() {
         return;
     }
     $.ajax({
-        type: 'get',
+        type: 'post',
         url: '/member/checkMember.php',
-        dataType: "html",
-        contentType: "application/json; charset=utf-8",
+        dataType: "json",
         data: {
             nick: $("[name='nick']").val(),
             mode: 'nick',
@@ -236,10 +234,9 @@ $(".btnC").on("click", "a", function() {
     }
 
     $.ajax({
-        type: 'get',
+        type: 'post',
         url: '/member/regist.php',
-        dataType: "html",
-        contentType: "application/json; charset=utf-8",
+        dataType: "json",
         data: {
             user_type: user_type,
             userid: userid,
