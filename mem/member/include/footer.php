@@ -4,9 +4,9 @@
 			<p class="logo_footer"><img src="/img/integrate/logo_footer.gif" alt="해커스패스" /></p>
 			<div>
 				<p class="policy">
-					<a href="#"><img src="/img/integrate/footer_icon01.gif" alt="이용약관" /></a>
+					<a href="/member/gateway.php?menu=terms&page=terms"><img src="/img/integrate/footer_icon01.gif" alt="이용약관" /></a>
 					<img src="/img/integrate/footer_iconbar.gif" alt="" class="bar" />
-					<a href="#"><img src="/img/integrate/footer_icon02.gif" alt="개인정보취급방침" /></a>
+					<a href="/member/gateway.php?menu=privacy&page=privacy"><img src="/img/integrate/footer_icon02.gif" alt="개인정보취급방침" /></a>
 					<img src="/img/integrate/footer_iconbar.gif" alt="" class="bar" />
 					<a href="#"><img src="/img/integrate/footer_icon03.gif" alt="제휴문의" /></a>
 				</p>

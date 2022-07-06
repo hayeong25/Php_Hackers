@@ -1,6 +1,12 @@
 <?php
     session_start();
-    
+
+    $_SESSION['userid'];
+    $_SESSION['name'];
+
+    $session_id = $_SESSION['userid'];
+	$session_name = $_SESSION['username'];
+
     header('Content-Type: text/html; charset=UTF-8');
     
     $con = mysqli_connect("localhost", "root", "hackers1234!", "mysql");

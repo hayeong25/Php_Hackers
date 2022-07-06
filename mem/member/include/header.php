@@ -3,8 +3,8 @@
 
 	header('Content-Type: text/html; charset=UTF-8');
 
-	$session_id = $_SESSION['userid'];
-	$session_name = $_SESSION['username'];
+	// $session_id = $_SESSION['userid'];
+	// $session_name = $_SESSION['username'];
 	
 	echo "<script>alert('session_id : $session_id')</script>";
 ?>

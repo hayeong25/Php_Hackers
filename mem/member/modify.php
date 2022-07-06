@@ -290,10 +290,6 @@
 					$("[name='zipcode']").val(zipcode);
 					$("[name='address1']").val(juso);
 					$("[name='address2']").val(juso2);
-
-					localStorage.setItem('zipcode', $("[name='zipcode']").val());
-					localStorage.setItem('juso', $("[name='address1']").val());
-					localStorage.setItem('juso2', $("[name='address2']").val());
 				}
 
 				// 새로고침 시, 비밀번호를 제외한 DB 항목은 default 세팅
@@ -352,7 +348,12 @@
 					}else {
 						sns = 'N';
 					}
-					var address = $("[name='address1']").val() + " " + $("[name='address2']").val() + " (" + $("[name='zipcode']").val() + ")";
+					var address;
+					if($("[name='address2']").val() == "") {
+						address = sessionStorage.getItem('juso') + " (" + sessionStorage.getItem('zipcode') + ")";
+					}else {
+						address = $("[name='address1']").val() + " " + $("[name='address2']").val() + " (" + $("[name='zipcode']").val() + ")";
+					}
 
 					alert('userid : ' + sessionStorage.getItem('userid'));
 
