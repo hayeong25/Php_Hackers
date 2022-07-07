@@ -1,10 +1,10 @@
 			<div id="sub" class="content">
-				<h2><img src="/img/member/h2_out.gif" alt="È¸¿øÅ»Åð" /></h2>
-				<div class="depth"><span>Home &gt; °³ÀÎÁ¤º¸°ü¸® &gt; <em>È¸¿øÅ»Åð</em></span></div>
+				<h2><img src="/img/member/h2_out.gif" alt="íšŒì›íƒˆí‡´" /></h2>
+				<div class="depth"><span>Home &gt; ê°œì¸ì •ë³´ê´€ë¦¬ &gt; <em>íšŒì›íƒˆí‡´</em></span></div>
 				<div class="con mOut_wrap">
-					<h3 class="mgb10"><img src="/img/member/h3_out01.gif" alt="Å»ÅðÀ¯ÀÇ»çÇ×" /></h3>
+					<h3 class="mgb10"><img src="/img/member/h3_out01.gif" alt="íƒˆí‡´ìœ ì˜ì‚¬í•­" /></h3>
 					<div class="warningBox">
-						<p class="mgb25"><img src="/img/member/text_out01.gif" alt="È¸¿ø Å»Åð½Ã ÆÐ½º´åÄÄ À¥»çÀÌÆ®¿¡¼­ Á¦°øµÇ´Â ¼­ºñ½º¸¦ »ç¿ëÇÏ½Ç ¼ö ¾ø½À´Ï´Ù. °¡ÀÔ ½Ã µî·ÏÇÏ¼Ì´ø ¸ðµç °³ÀÎÁ¤º¸°¡ »èÁ¦µË´Ï´Ù." /></p>
+						<p class="mgb25"><img src="/img/member/text_out01.gif" alt="íšŒì› íƒˆí‡´ì‹œ íŒ¨ìŠ¤ë‹·ì»´ ì›¹ì‚¬ì´íŠ¸ì—ì„œ ì œê³µë˜ëŠ” ì„œë¹„ìŠ¤ë¥¼ ì‚¬ìš©í•˜ì‹¤ ìˆ˜ ì—†ìŠµë‹ˆë‹¤. ê°€ìž… ì‹œ ë“±ë¡í•˜ì…¨ë˜ ëª¨ë“  ê°œì¸ì •ë³´ê°€ ì‚­ì œë©ë‹ˆë‹¤." /></p>
 						<table cellpadding="0" cellspacing="0" border="0" class="mgb50">
 							<colgroup>
 								<col width="128px" />
@@ -13,8 +13,8 @@
 							</colgroup>
 							<tbody>
 								<tr>
-									<th rowspan="3" class="borderR">°³ÀÎÁ¤º¸ÀÔ·Â</th>
-									<th>¼º¸í</th>
+									<th rowspan="3" class="borderR">ê°œì¸ì •ë³´ìž…ë ¥</th>
+									<th>ì„±ëª…</th>
 									<td><input type="text" class="info" name="username" readonly/><?php $session_name ?></td>
 								</tr>
 								<tr>
@@ -22,24 +22,24 @@
 									<td><input type="text" class="info" name="userid" readonly/><?php $session_id ?></td>
 								</tr>
 								<tr>
-									<th>ºñ¹Ð¹øÈ£</th>
+									<th>ë¹„ë°€ë²ˆí˜¸</th>
 									<td><input type="text" class="info" name="pw"/></td>
 								</tr>
 							</tbody>
 						</table>
-						<h3 class="mgb25"><img src="/img/member/h3_out02.gif" alt="Å»Åð»çÀ¯" /></h3>
-						<p class="mgb25"><img src="/img/member/text_out02.gif" alt="¾ÕÀ¸·Î ÆÐ½º´åÄÄÀÇ ´õ¿í ¹ßÀüµÈ ¸ð½ÀÀ» À§ÇØ ¸¸Á·½º·´Áö ¸øÇÑ ºÎºÐÀÌ ÀÖÀ¸½Ã´Ù¸é Ã¼Å©ÇØÁÖ½Ã¸é °¨»çÇÏ°Ú½À´Ï´Ù." /></p>
+						<h3 class="mgb25"><img src="/img/member/h3_out02.gif" alt="íƒˆí‡´ì‚¬ìœ " /></h3>
+						<p class="mgb25"><img src="/img/member/text_out02.gif" alt="ì•žìœ¼ë¡œ íŒ¨ìŠ¤ë‹·ì»´ì˜ ë”ìš± ë°œì „ëœ ëª¨ìŠµì„ ìœ„í•´ ë§Œì¡±ìŠ¤ëŸ½ì§€ ëª»í•œ ë¶€ë¶„ì´ ìžˆìœ¼ì‹œë‹¤ë©´ ì²´í¬í•´ì£¼ì‹œë©´ ê°ì‚¬í•˜ê² ìŠµë‹ˆë‹¤." /></p>
 						<ul class="out_reason mgb25">
-							<li><input type="checkbox" class="checkbox" /><label>´Ù¸¥ ¾ÆÀÌµð·Î Àç°¡ÀÔÀ» À§ÇØ</label></li>
-							<li><input type="checkbox" class="checkbox" /><label>¼­ºñ½º Àå¾Ö°¡ Àæ¾Æ¼­</label></li>
-							<li><input type="checkbox" class="checkbox" /><label>ºÒ¸¸ÀÌ³ª ºÒÆí»çÇ×¿¡ ´ëÇÑ ÀÀ´ë°¡ ³ªºü¼­</label></li>
-							<li><input type="checkbox" class="checkbox" /><label>¹«·á·Î Á¦°øÇÏ´Â ÄÁÅÙÃ÷ µîÀÇ ÇýÅÃÀÌ Àû¾î¼­</label></li>
-							<li><input type="checkbox" class="checkbox" /><label>ÄÁÅÙÃ÷ÀÇ Ç°ÁúÀÌ ³·¾Æ¼­</label></li>
-							<li><input type="checkbox" class="checkbox" /><label>»ç¿ëºóµµ°¡ ³·¾Æ¼­</label></li>
+							<li><input type="checkbox" class="checkbox" /><label>ë‹¤ë¥¸ ì•„ì´ë””ë¡œ ìž¬ê°€ìž…ì„ ìœ„í•´</label></li>
+							<li><input type="checkbox" class="checkbox" /><label>ì„œë¹„ìŠ¤ ìž¥ì• ê°€ ìž¦ì•„ì„œ</label></li>
+							<li><input type="checkbox" class="checkbox" /><label>ë¶ˆë§Œì´ë‚˜ ë¶ˆíŽ¸ì‚¬í•­ì— ëŒ€í•œ ì‘ëŒ€ê°€ ë‚˜ë¹ ì„œ</label></li>
+							<li><input type="checkbox" class="checkbox" /><label>ë¬´ë£Œë¡œ ì œê³µí•˜ëŠ” ì»¨í…ì¸  ë“±ì˜ í˜œíƒì´ ì ì–´ì„œ</label></li>
+							<li><input type="checkbox" class="checkbox" /><label>ì»¨í…ì¸ ì˜ í’ˆì§ˆì´ ë‚®ì•„ì„œ</label></li>
+							<li><input type="checkbox" class="checkbox" /><label>ì‚¬ìš©ë¹ˆë„ê°€ ë‚®ì•„ì„œ</label></li>
 						</ul>
-						<p class="mgb25"><img src="/img/member/text_out03.gif" alt="Ãß°¡·Î ÆÐ½º´åÄÄ¿¡ ¹Ù¶ó´Â Á¡ÀÌ ÀÖ´Ù¸é ÀÛ¼ºÇØÁÖ½Ã¸é °¨»çÇÏ°Ú½À´Ï´Ù." /></p>
+						<p class="mgb25"><img src="/img/member/text_out03.gif" alt="ì¶”ê°€ë¡œ íŒ¨ìŠ¤ë‹·ì»´ì— ë°”ë¼ëŠ” ì ì´ ìžˆë‹¤ë©´ ìž‘ì„±í•´ì£¼ì‹œë©´ ê°ì‚¬í•˜ê² ìŠµë‹ˆë‹¤." /></p>
 						<div class="etcText mgb20"><textarea></textarea></div>
-						<div class="btnC"><a href=""><img src="/img/member/btn_member_out.gif" alt="Å»ÅðÇÏ±â"></a></div>
+						<div class="btnC"><a href=""><img src="/img/member/btn_member_out.gif" alt="íƒˆí‡´í•˜ê¸°"></a></div>
 					</div>
 				</div>
 			</div>
@@ -47,12 +47,12 @@
 			<script>
 				$(".btnC").on("click", "a", function() {
 					if($("[name='pw']").val() == "") {
-						alert('ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+						alert('ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.');
 						return;
 					}
 
 					if($("[type='checkbox']:checked").length < 1) {
-						alert('Å»Åð »çÀ¯¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä.');
+						alert('íƒˆí‡´ ì‚¬ìœ ë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”.');
 						return;
 					}
 
@@ -67,14 +67,14 @@
 						},
 						success: function(data) {
 							if (data == '1') {
-								alert('Å»ÅðÃ³¸® µÇ¾ú½À´Ï´Ù. ¸ÞÀÎÀ¸·Î µ¹¾Æ°©´Ï´Ù.');
+								alert('íƒˆí‡´ì²˜ë¦¬ ë˜ì—ˆìŠµë‹ˆë‹¤. ë©”ì¸ìœ¼ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.');
 								<?php
 									$userid.session_destroy();
 									$username.session_destroy();
 								?>
 								location.href = "/";
 							} else {
-								alert("ºñ¹Ð¹øÈ£°¡ Æ²·È½À´Ï´Ù.");
+								alert("ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.");
 								return;
 							}
 						},

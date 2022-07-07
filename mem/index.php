@@ -4,16 +4,16 @@
 	header('Content-Type: text/html; charset=UTF-8');
 
 	$session_id = $_SESSION['userid'];
-
+	
 	echo "<script>alert('session_id : $session_id')</script>";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<title>ÇÕ°ÝÆ÷ÅÐ, ÇØÄ¿½º ÆÐ½º´åÄÄ :: 9±Þ°ø¹«¿ø, °ø¹«¿ø¿µ¾î, °øÀÎÁß°³»ç, Ãë¾÷, ±ÝÀ¶ÀÚ°ÝÁõ, ¼¼¹«/È¸°èÀÚ°ÝÁõ, ÇÐÁ¡ÀºÇàÁ¦, TOEIC, TEPS</title>
-	<meta name="keywords" content="9±Þ°ø¹«¿ø, °øÀÎÁß°³»ç, ÆÝµåÅõÀÚ»ó´ã»ç, ÆÄ»ý»óÇ°ÅõÀÚ»ó´ã»ç, Áõ±ÇÅõÀÚ»ó´ã»ç, °ø¹«¿ø¿µ¾î, ±ÝÀ¶ÀÚ°ÝÁõ, ¼¼¹«, È¸°èÀÚ°ÝÁõ, TOEIC, TEPS, ÅäÀÍ, ÅÜ½º, ÇÐÁ¡ÀºÇàÁ¦, Ãë¾÷" />
-	<meta name="description" content="9±Þ°ø¹«¿ø, °øÀÎÁß°³»ç, ÆÝµåÅõÀÚ»ó´ã»ç, ÆÄ»ý»óÇ°ÅõÀÚ»ó´ã»ç, Áõ±ÇÅõÀÚ»ó´ã»ç, °ø¹«¿ø¿µ¾î, ±ÝÀ¶ÀÚ°ÝÁõ, ¼¼¹«, È¸°èÀÚ°ÝÁõ, TOEIC, TEPS, ÅäÀÍ, ÅÜ½º, ÇÐÁ¡ÀºÇàÁ¦, Ãë¾÷" />
+	<title>í•©ê²©í¬í„¸, í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ :: 9ê¸‰ê³µë¬´ì›, ê³µë¬´ì›ì˜ì–´, ê³µì¸ì¤‘ê°œì‚¬, ì·¨ì—…, ê¸ˆìœµìžê²©ì¦, ì„¸ë¬´/íšŒê³„ìžê²©ì¦, í•™ì ì€í–‰ì œ, TOEIC, TEPS</title>
+	<meta name="keywords" content="9ê¸‰ê³µë¬´ì›, ê³µì¸ì¤‘ê°œì‚¬, íŽ€ë“œíˆ¬ìžìƒë‹´ì‚¬, íŒŒìƒìƒí’ˆíˆ¬ìžìƒë‹´ì‚¬, ì¦ê¶Œíˆ¬ìžìƒë‹´ì‚¬, ê³µë¬´ì›ì˜ì–´, ê¸ˆìœµìžê²©ì¦, ì„¸ë¬´, íšŒê³„ìžê²©ì¦, TOEIC, TEPS, í† ìµ, í…ìŠ¤, í•™ì ì€í–‰ì œ, ì·¨ì—…" />
+	<meta name="description" content="9ê¸‰ê³µë¬´ì›, ê³µì¸ì¤‘ê°œì‚¬, íŽ€ë“œíˆ¬ìžìƒë‹´ì‚¬, íŒŒìƒìƒí’ˆíˆ¬ìžìƒë‹´ì‚¬, ì¦ê¶Œíˆ¬ìžìƒë‹´ì‚¬, ê³µë¬´ì›ì˜ì–´, ê¸ˆìœµìžê²©ì¦, ì„¸ë¬´, íšŒê³„ìžê²©ì¦, TOEIC, TEPS, í† ìµ, í…ìŠ¤, í•™ì ì€í–‰ì œ, ì·¨ì—…" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="shortcut icon" href="/img/icon/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="/css/default.css" />
@@ -45,39 +45,39 @@
 		<div id="header">
 			<div class="toplink">
 				<ul>
-					<li><a href="http://www.champstudy.com" title="Ã¨ÇÁ½ºÅÍµð" target="_blank"><img src="/img/integrate/top_menu_1.gif" alt="Ã¨ÇÁ½ºÅÍµð" /></a></li>
-					<li><a href="http://gosi.pass.com" title="ÇØÄ¿½º ÆÐ½º´åÄÄ 9±Þ°ø¹«¿ø" target="_blank"><img src="/img/integrate/top_menu_2.gif" alt="9±Þ°ø¹«¿ø" /></a></li>
-					<li><a href="http://police.pass.com" title="ÇØÄ¿½º ÆÐ½º´åÄÄ °æÂû°ø¹«¿ø" target="_blank"><img src="/img/integrate/top_menu_13.gif" alt="°æÂû°ø¹«¿ø" /></a></li>
-					<li><a href="http://fn.pass.com" title="ÇØÄ¿½º ÆÐ½º´åÄÄ ±ÝÀ¶" target="_blank"><img src="/img/integrate/top_menu_3.gif" alt="ÇØÄ¿½º ÆÐ½º´åÄÄ ±ÝÀ¶" /></a></li>
-					<li><a href="http://land.pass.com" title="ÇØÄ¿½º ÆÐ½º´åÄÄ °øÀÎÁß°³»ç¤ýÇàÁ¤»ç" target="_blank"><img src="/img/integrate/top_menu_4.gif" alt="ÇØÄ¿½º ÆÐ½º´åÄÄ °øÀÎÁß°³»ç¤ýÇàÁ¤»ç" /></a></li>
-					<li><a href="http://www.hackersjob.com" title="ÇØÄ¿½ºÀâ" target="_blank"><img src="/img/integrate/top_menu_5.gif" alt="ÇØÄ¿½ºÀâ" /></a></li>
-					<li><a href="http://www.hackers.co.kr/" title="ÇØÄ¿½º¿µ¾î" target="_blank"><img src="/img/integrate/top_menu_6.gif" alt="ÇØÄ¿½º¿µ¾î" /></a></li>
-					<li><a href="http://www.gohackers.com/" title="°í¿ìÇØÄ¿½º" target="_blank"><img src="/img/integrate/top_menu_7.gif" alt="°í¿ìÇØÄ¿½º" /></a></li>
-					<li><a href="http://www.hackersuhak.com/" title="ÇØÄ¿½ºÀ¯ÇÐ" target="_blank"><img src="/img/integrate/top_menu_14.gif" alt="ÇØÄ¿½ºÀ¯ÇÐ" /></a></li>
-					<li><a href="http://www.hackers.ac/" title="ÇØÄ¿½º ¾îÇÐ¿ø" target="_blank"><img src="/img/integrate/top_menu_8.gif" alt="ÇØÄ¿½º ¾îÇÐ¿ø" /></a></li>
-					<li><a href="http://start.champstudy.com/" title="±âÃÊ¿µ¾î Àü¹®°ü" target="_blank"><img src="/img/integrate/top_menu_12.gif" alt="±âÃÊ¿µ¾î Àü¹®°ü" /></a></li>
-					<li><a href="http://www.jumphackers.com/" title="Á¡ÇÁÇØÄ¿½º" target="_blank"><img src="/img/integrate/top_menu_9.gif" alt="Á¡ÇÁÇØÄ¿½º" /></a></li>
-					<li><a href="http://www.hackers.com/index_gateway.html" title="ÇØÄ¿½º ´åÄÄ" target="_blank"><img src="/img/integrate/top_menu_10.gif" alt="ÇØÄ¿½º ´åÄÄ" /></a></li>
-					<li><a href="http://www.hackers.com/" title="ÇØÄ¿½º Ã¤¿ë" target="_blank"><img src="/img/integrate/top_menu_11.gif" alt="ÇØÄ¿½º Ã¤¿ë" /></a></li>
+					<li><a href="http://www.champstudy.com" title="ì±”í”„ìŠ¤í„°ë””" target="_blank"><img src="/img/integrate/top_menu_1.gif" alt="ì±”í”„ìŠ¤í„°ë””" /></a></li>
+					<li><a href="http://gosi.pass.com" title="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ 9ê¸‰ê³µë¬´ì›" target="_blank"><img src="/img/integrate/top_menu_2.gif" alt="9ê¸‰ê³µë¬´ì›" /></a></li>
+					<li><a href="http://police.pass.com" title="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê²½ì°°ê³µë¬´ì›" target="_blank"><img src="/img/integrate/top_menu_13.gif" alt="ê²½ì°°ê³µë¬´ì›" /></a></li>
+					<li><a href="http://fn.pass.com" title="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê¸ˆìœµ" target="_blank"><img src="/img/integrate/top_menu_3.gif" alt="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê¸ˆìœµ" /></a></li>
+					<li><a href="http://land.pass.com" title="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê³µì¸ì¤‘ê°œì‚¬ã†í–‰ì •ì‚¬" target="_blank"><img src="/img/integrate/top_menu_4.gif" alt="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê³µì¸ì¤‘ê°œì‚¬ã†í–‰ì •ì‚¬" /></a></li>
+					<li><a href="http://www.hackersjob.com" title="í•´ì»¤ìŠ¤ìž¡" target="_blank"><img src="/img/integrate/top_menu_5.gif" alt="í•´ì»¤ìŠ¤ìž¡" /></a></li>
+					<li><a href="http://www.hackers.co.kr/" title="í•´ì»¤ìŠ¤ì˜ì–´" target="_blank"><img src="/img/integrate/top_menu_6.gif" alt="í•´ì»¤ìŠ¤ì˜ì–´" /></a></li>
+					<li><a href="http://www.gohackers.com/" title="ê³ ìš°í•´ì»¤ìŠ¤" target="_blank"><img src="/img/integrate/top_menu_7.gif" alt="ê³ ìš°í•´ì»¤ìŠ¤" /></a></li>
+					<li><a href="http://www.hackersuhak.com/" title="í•´ì»¤ìŠ¤ìœ í•™" target="_blank"><img src="/img/integrate/top_menu_14.gif" alt="í•´ì»¤ìŠ¤ìœ í•™" /></a></li>
+					<li><a href="http://www.hackers.ac/" title="í•´ì»¤ìŠ¤ ì–´í•™ì›" target="_blank"><img src="/img/integrate/top_menu_8.gif" alt="í•´ì»¤ìŠ¤ ì–´í•™ì›" /></a></li>
+					<li><a href="http://start.champstudy.com/" title="ê¸°ì´ˆì˜ì–´ ì „ë¬¸ê´€" target="_blank"><img src="/img/integrate/top_menu_12.gif" alt="ê¸°ì´ˆì˜ì–´ ì „ë¬¸ê´€" /></a></li>
+					<li><a href="http://www.jumphackers.com/" title="ì í”„í•´ì»¤ìŠ¤" target="_blank"><img src="/img/integrate/top_menu_9.gif" alt="ì í”„í•´ì»¤ìŠ¤" /></a></li>
+					<li><a href="http://www.hackers.com/index_gateway.html" title="í•´ì»¤ìŠ¤ ë‹·ì»´" target="_blank"><img src="/img/integrate/top_menu_10.gif" alt="í•´ì»¤ìŠ¤ ë‹·ì»´" /></a></li>
+					<li><a href="http://www.hackers.com/" title="í•´ì»¤ìŠ¤ ì±„ìš©" target="_blank"><img src="/img/integrate/top_menu_11.gif" alt="í•´ì»¤ìŠ¤ ì±„ìš©" /></a></li>
 				</ul>
 			</div>
 			<p class="logo">
-				<a href=""><img src="/img/integrate/logo.gif" alt="ÇØÄ¿½ºÆÐ½º" /></a>
-				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" style="margin-left:27px;"><img src="/img/integrate/top_emblem.gif" alt="ºê·£µå´ë»ó" /></a>
+				<a href=""><img src="/img/integrate/logo.gif" alt="í•´ì»¤ìŠ¤íŒ¨ìŠ¤" /></a>
+				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" style="margin-left:27px;"><img src="/img/integrate/top_emblem.gif" alt="ë¸Œëžœë“œëŒ€ìƒ" /></a>
 			</p>
 			<div class="topmenu">
 				<?php if($session_id == null) { ?>
-				<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="·Î±×ÀÎ" /></a>
+				<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="ë¡œê·¸ì¸" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="È¸¿ø°¡ÀÔ" /></a>
+				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="íšŒì›ê°€ìž…" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } else { ?>
-				<a href="#" onclick="<?php session_unset();?>"><img src="/img/integrate/top_icon01_1.gif" alt="·Î±×¾Æ¿ô" /></a>
+				<a href="#" onclick="<?php session_unset();?>"><img src="/img/integrate/top_icon01_1.gif" alt="ë¡œê·¸ì•„ì›ƒ" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="/member/gateway.php?menu=modify&page=modify" class="modify"><img src="/img/integrate/top_icon02_1.gif" alt="°³ÀÎÁ¤º¸¼öÁ¤" /></a>
+				<a href="/member/gateway.php?menu=modify&page=modify" class="modify"><img src="/img/integrate/top_icon02_1.gif" alt="ê°œì¸ì •ë³´ìˆ˜ì •" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } ?>
-				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="È¨" /></a>
+				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="í™ˆ" /></a>
 				<input type="hidden" name="session_id" value="<?php $session_id ?>">
 				<input type="hidden" name="session_name" value="<?php $session_name ?>">
 			</div>
@@ -88,64 +88,64 @@
 				<div class="mainMenu" id="mainMenu">
 					<ul>
 						<li>
-							<!--°ø¹«¿øÇÐ¿ø-->
+							<!--ê³µë¬´ì›í•™ì›-->
 							<a href="http://gosi.pass.com/?keywd=130703_passgatemain_thumbnail&logger_kw=130703_passgatemain_thumbnail&source=logger_kw " target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_01.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_01.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://gosi.pass.com/html/mmove.htm?st=info&id=pservant_lec2_sev3&keywd=131119_passgatethumnail_1130presentation&logger_kw=131119_passgatethumnail_1130presentation&ssource=logger_kw" target="_blank" class="btnRED"><img src="/img/main/mainbanner/tit_text01.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://gosi.pass.com/html/mmove.htm?st=info&id=pservant_lec2_sev3&keywd=131119_passgatethumnail_1130presentation&logger_kw=131119_passgatethumnail_1130presentation&ssource=logger_kw" target="_blank" class="btnRED"><img src="/img/main/mainbanner/tit_text01.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--°ø¹«¿øµ¿¿µ»ó-->
+							<!--ê³µë¬´ì›ë™ì˜ìƒ-->
 							<a href="http://egosi.pass.com/?keywd=egosimain_passgate_20130703&logger_kw=egosimain_passgate_20130703&source=logger_kw" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_02.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_02.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://egosi.pass.com/site/?c=superpass3&_C_=3241&keywd=131119_passgatethumnail_superpass&logger_kw=131119_passgatethumnail_superpass&source=logger_kw" target="_blank" class="btnRED"><img src="/img/main/mainbanner/tit_text02.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://egosi.pass.com/site/?c=superpass3&_C_=3241&keywd=131119_passgatethumnail_superpass&logger_kw=131119_passgatethumnail_superpass&source=logger_kw" target="_blank" class="btnRED"><img src="/img/main/mainbanner/tit_text02.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--°æÂûÇÐ¿ø-->
+							<!--ê²½ì°°í•™ì›-->
 
 							<a href="http://epolice.pass.com/?keywd=egosimain_passgate_20130703&logger_kw=egosimain_passgate_20130703&source=logger_kw" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_03.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_03.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://police.pass.com/html/mmove.htm?st=lecture&id=class_intro_new&keywd=131119_passgatethumnail_poliregi&logger_kw=131119_passgatethumnail_poliregi&source=logger_kw" target="_blank" class="btndarkBlue"><img src="/img/main/mainbanner/tit_text03.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://police.pass.com/html/mmove.htm?st=lecture&id=class_intro_new&keywd=131119_passgatethumnail_poliregi&logger_kw=131119_passgatethumnail_poliregi&source=logger_kw" target="_blank" class="btndarkBlue"><img src="/img/main/mainbanner/tit_text03.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--°æÂûµ¿¿µ»ó-->
+							<!--ê²½ì°°ë™ì˜ìƒ-->
 							<a href="http://epolice.pass.com/?keywd=egosimain_passgate_20130703&logger_kw=egosimain_passgate_20130703&source=logger_kw" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_04.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_04.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://epolice.pass.com/site/?c=superpass&keywd=131119_passgatethumnail_polisuperpass&logger_kw=131119_passgatethumnail_polisuperpass&source=logger_kw" target="_blank" class="btndarkBlue"><img src="/img/main/mainbanner/tit_text04.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://epolice.pass.com/site/?c=superpass&keywd=131119_passgatethumnail_polisuperpass&logger_kw=131119_passgatethumnail_polisuperpass&source=logger_kw" target="_blank" class="btndarkBlue"><img src="/img/main/mainbanner/tit_text04.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--Áß°³»çÇÐ¿ø-->
+							<!--ì¤‘ê°œì‚¬í•™ì›-->
 							<a href="http://land.pass.com/" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_05.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_05.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://land.pass.com/site/?st=class_info&idx=201&type=17&_C_=3282 " target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text05.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://land.pass.com/site/?st=class_info&idx=201&type=17&_C_=3282 " target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text05.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--Áß°³»çµ¿¿µ»ó-->
+							<!--ì¤‘ê°œì‚¬ë™ì˜ìƒ-->
 							<a href="http://eland.pass.com/?keywd=elandmain_passgate_20130703&logger_kw=elandmain_passgate_20130703&source=logger_kw" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_06.png" alt="" class="passicon"  />
 								<img src="/img/main/mainbanner/main_menu_off_06.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://eland.pass.com/site/?c=event_131025&_C_=2949" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text06.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://eland.pass.com/site/?c=event_131025&_C_=2949" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text06.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--ºÎµ¿»ê°æ¸Å-->
+							<!--ë¶€ë™ì‚°ê²½ë§¤-->
 							<a href="http://land.pass.com/site/?st=class_info3&idx=g02&_C_=2708" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_07.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_07.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://land.pass.com/site/?st=class_info3&idx=g02&type=15&site_part=g&_C_=3139" target="_blank" class="btnBROWN"><img src="/img/main/mainbanner/tit_text07.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://land.pass.com/site/?st=class_info3&idx=g02&type=15&site_part=g&_C_=3139" target="_blank" class="btnBROWN"><img src="/img/main/mainbanner/tit_text07.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--ÇàÁ¤»ç-->
+							<!--í–‰ì •ì‚¬-->
 							<a href="http://eland.pass.com/site/?c=hang_comming&big_cate=2&keywd=passgate_comingsoon_20131015&logger_kw=passgate_comingsoon_20131015&source=logger_kw" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_08.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_08.gif" alt="" class="passimg" />
@@ -153,12 +153,12 @@
 							<div class="ad_banner" style="display:none;"><a href="#" target="_blank" class="btnPUPLE"></a></div>
 						</li>
 						<li>
-							<!--±ÝÀ¶-->
+							<!--ê¸ˆìœµ-->
 							<a href="https://fn.hackers.com/" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_09.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_09.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://fn.pass.com/bbs/board.php?id=notice&no=106&lnb=6&_C_=3366" target="_blank" class="btnBLUE"><img src="/img/main/mainbanner/tit_text08.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://fn.pass.com/bbs/board.php?id=notice&no=106&lnb=6&_C_=3366" target="_blank" class="btnBLUE"><img src="/img/main/mainbanner/tit_text08.png" alt="" /></a></div>
 						</li>
 						<li>
 							<!--AFPK-->
@@ -166,42 +166,42 @@
 								<img src="/img/main/mainbanner/main_icon_off_10.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_10.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://fn.pass.com/bbs/board.php?id=notice&no=163&lnb=6" target="_blank" class="btnBLUE"><img src="/img/main/mainbanner/tit_text09.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://fn.pass.com/bbs/board.php?id=notice&no=163&lnb=6" target="_blank" class="btnBLUE"><img src="/img/main/mainbanner/tit_text09.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--¿µ¾î-->
+							<!--ì˜ì–´-->
 							<a href="http://www.champstudy.com/?keywd=champmain_passgate_20130703&logger_kw=champmain_passgate_20130703&source=logger_kw" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_11.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_11.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://www.champstudy.com/bbs/zboard.php?id=notice&no=667&_C_=3285" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text10.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://www.champstudy.com/bbs/zboard.php?id=notice&no=667&_C_=3285" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text10.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--Ãë¾÷-->
+							<!--ì·¨ì—…-->
 							<a href="http://www.champstudy.com/Champ_M/?go=biz&book_select=&middle=18&keywd=champbizmain_passgate_20130703&logger_kw=champbizmain_passgate_20130703&source=logger_kw" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_12.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_12.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://www.champstudy.com/bbs/zboard.php?id=notice&no=395&_C_=3286" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text11.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://www.champstudy.com/bbs/zboard.php?id=notice&no=395&_C_=3286" target="_blank" class="btnGREEN"><img src="/img/main/mainbanner/tit_text11.png" alt="" /></a></div>
 						</li>
 						<li>
-							<!--µ¶ÇÐ»ç-->
+							<!--ë…í•™ì‚¬-->
 							<a href="http://www.haksa2080.com/?_C_=1528" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_13.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_13.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="#" target="_blank" class="btnORANGE"></a></div>
+							<div class="ad_banner" style="display:none;"><a href="#" target="_blank" class="btnORANGE"></a></div>
 						</li>
 						<li>
-							<!--Æò»ý±³À°¿ø-->
+							<!--í‰ìƒêµìœ¡ì›-->
 							<a href="http://www.edu2080.co.kr/event/partner_event.asp?PCD=57yfb&_C_=1620" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_14.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_14.gif" alt="" class="passimg" />
 							</a>
-							<div class="ad_banner"><a href="http://www.edu2080.co.kr/event/partner_event.asp?PCD=57yfb&_C_=1620" target="_blank" class="btnORANGE"><img src="/img/main/mainbanner/tit_text12.png" alt="" /></a></div>
+							<div class="ad_banner" style="display:none;"><a href="http://www.edu2080.co.kr/event/partner_event.asp?PCD=57yfb&_C_=1620" target="_blank" class="btnORANGE"><img src="/img/main/mainbanner/tit_text12.png" alt="" /></a></div>
 						</li>
 						<li>
-							<p><img src="/img/main/mainbanner/main_icon_off_15.png" alt="" class="passicon lasticon" /><img src="/img/main/mainbanner/main_menu_15_on.gif" alt="ÇØÄ¿½º ÆÐ½º´åÄÄÀÌ ÇÕ°ÝÀ» ±â¿øÇÕ´Ï´Ù!" class="passimg" /></p>
+							<p><img src="/img/main/mainbanner/main_icon_off_15.png" alt="" class="passicon lasticon" /><img src="/img/main/mainbanner/main_menu_15_on.gif" alt="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ì´ í•©ê²©ì„ ê¸°ì›í•©ë‹ˆë‹¤!" class="passimg" /></p>
 						</li>
 					</ul>
 				</div>
@@ -209,7 +209,7 @@
 				<div class="board">
 					<!--issue-->
 					<div class="issue" style="width:1000px; margin-bottom:40px;">
-						<h3><img src="/img/integrate/h3_issue.gif" alt="ÆÐ½º´åÄÄ ÇÖÀÌ½´" /></h3>
+						<h3><img src="/img/integrate/h3_issue.gif" alt="íŒ¨ìŠ¤ë‹·ì»´ í•«ì´ìŠˆ" /></h3>
 						<ul id="issue_tab">
 							<li><a href="#"><img src="/img/integrate/dot_on.gif" alt="" /></a></li>
 							<li><a href="#"><img src="/img/integrate/dot_off.gif" alt="" /></a></li>
@@ -263,123 +263,123 @@
 					<!--//issue-->
 					<!--notice-->
 					<div class="notice" style="width:494px;">
-						<h3><img src="/img/integrate/h3_notice.gif" alt="ÆÐ½º´åÄÄ °øÁö»çÇ×" /></h3>
+						<h3><img src="/img/integrate/h3_notice.gif" alt="íŒ¨ìŠ¤ë‹·ì»´ ê³µì§€ì‚¬í•­" /></h3>
 						<div class="notice_btn">
 							<span class="pre"><img src="/img/integrate/btn_pre.gif" alt="pre" /></span>
 							<span class="next"><img src="/img/integrate/btn_next.gif" alt="next" /></span>
 						</div>
 						<ul class="page1">
 							<li>
-								<p class="type">°ø¹«¿ø</p>
+								<p class="type">ê³µë¬´ì›</p>
 								<p class="subject">
-									<a href="http://gosi.pass.com/html/mmove.htm?id=pservant_lec2_sev3&keywd=1111_gategongzi_1130presentation&logger_kw=1111_gategongzi_1130presentation&source=logger_kw" target="_blank">[¼³¸íÈ¸] ½º¹«»ì¿¡ °ø¹«¿øµÇ´Â ºñ¹ý °ø°³! (11/..</a>
+									<a href="http://gosi.pass.com/html/mmove.htm?id=pservant_lec2_sev3&keywd=1111_gategongzi_1130presentation&logger_kw=1111_gategongzi_1130presentation&source=logger_kw" target="_blank">[ì„¤ëª…íšŒ] ìŠ¤ë¬´ì‚´ì— ê³µë¬´ì›ë˜ëŠ” ë¹„ë²• ê³µê°œ! (11/..</a>
 								</p>
 								<p class="date">2013-11-11</p>
 							</li>
 							<li>
-								<p class="type">°ø¹«¿ø</p>
+								<p class="type">ê³µë¬´ì›</p>
 								<p class="subject">
-									<a href="http://egosi.pass.com/site/?c=superpass3&_C_=3140" target="_blank">[ÃÖ´ë 97% ÇÒÀÎ] ¿ù 3¸¸¿ø´ë¿¡ °ø¹«¿ø ÀÎ°­ ÀÚ..</a>
+									<a href="http://egosi.pass.com/site/?c=superpass3&_C_=3140" target="_blank">[ìµœëŒ€ 97% í• ì¸] ì›” 3ë§Œì›ëŒ€ì— ê³µë¬´ì› ì¸ê°• ìž..</a>
 								</p>
 								<p class="date">2013-11-11</p>
 							</li>
 							<li>
-								<p class="type">±ÝÀ¶</p>
+								<p class="type">ê¸ˆìœµ</p>
 								<p class="subject">
-									<a href="http://fn.pass.com/bbs/board.php?id=notice&no=161&lnb=6&_C_=3378" target="_blank">[ÀºÇàFPÃÖÁ¾¸¶¹«¸®] 12½Ã°£¸¸¿¡ ³¡³»´Â ÀºÇàFP!..</a>
+									<a href="http://fn.pass.com/bbs/board.php?id=notice&no=161&lnb=6&_C_=3378" target="_blank">[ì€í–‰FPìµœì¢…ë§ˆë¬´ë¦¬] 12ì‹œê°„ë§Œì— ëë‚´ëŠ” ì€í–‰FP!..</a>
 								</p>
 								<p class="date">2013-11-11</p>
 							</li>
 							<li>
-								<p class="type">±ÝÀ¶</p>
+								<p class="type">ê¸ˆìœµ</p>
 								<p class="subject">
-									<a href="http://fn.pass.com/site/?st=fp_view&lec_no=729&big_cart=1&middle_cart=117&_C_=3301" target="_blank">[3¿ù AFPK ¿Ïº®´ëºñ!] ÃÖ´ë 13¸¸¿ø Áö¿ø!</a>
+									<a href="http://fn.pass.com/site/?st=fp_view&lec_no=729&big_cart=1&middle_cart=117&_C_=3301" target="_blank">[3ì›” AFPK ì™„ë²½ëŒ€ë¹„!] ìµœëŒ€ 13ë§Œì› ì§€ì›!</a>
 								</p>
 								<p class="date">2013-11-11</p>
 							</li>
 							<li>
-								<p class="type">Áß°³»ç</p>
+								<p class="type">ì¤‘ê°œì‚¬</p>
 								<p class="subject">
-									<a href="http://eland.pass.com/site/?c=board&no=165" target="_blank">[ÃÖ´ë92%ÇÒÀÎ] µ¿¿µ»ó ¿¬°£È¸¿ø¹Ý 2014 ÃÖ½Å±³..</a>
+									<a href="http://eland.pass.com/site/?c=board&no=165" target="_blank">[ìµœëŒ€92%í• ì¸] ë™ì˜ìƒ ì—°ê°„íšŒì›ë°˜ 2014 ìµœì‹ êµ..</a>
 								</p>
 								<p class="date">2013-11-05</p>
 							</li>
 							<li>
-								<p class="type">Áß°³»ç</p>
+								<p class="type">ì¤‘ê°œì‚¬</p>
 								<p class="subject">
-									<a href="http://eland.pass.com/site/?c=board&site=&no=168" target="_blank">[ÆÄ°ÝÇýÅÃ] Áß°³»ç ½ÃÇèÈÄ±â ³²±â°í, ºÎµ¿»ê°æ¸Å ÇÐ..</a>
+									<a href="http://eland.pass.com/site/?c=board&site=&no=168" target="_blank">[íŒŒê²©í˜œíƒ] ì¤‘ê°œì‚¬ ì‹œí—˜í›„ê¸° ë‚¨ê¸°ê³ , ë¶€ë™ì‚°ê²½ë§¤ í•™..</a>
 								</p>
 								<p class="date">2013-11-05</p>
 							</li>
 							<li>
-								<p class="type">°ø¹«¿ø</p>
+								<p class="type">ê³µë¬´ì›</p>
 								<p class="subject">
-									<a href="http://gosi.pass.com/html/mmove.htm?id=matching&keywd=1112_passcomgongzi_matching&logger_kw=1112_passcomgongzi_matching&source=logger_kw" target="_blank">2013 9±Þ °ø¹«¿ø½ÃÇè ÀûÁß½ÅÈ­!</a>
+									<a href="http://gosi.pass.com/html/mmove.htm?id=matching&keywd=1112_passcomgongzi_matching&logger_kw=1112_passcomgongzi_matching&source=logger_kw" target="_blank">2013 9ê¸‰ ê³µë¬´ì›ì‹œí—˜ ì ì¤‘ì‹ í™”!</a>
 								</p>
 								<p class="date">2013-11-12</p>
 							</li>
 							<li>
-								<p class="type">Áß°³»ç</p>
+								<p class="type">ì¤‘ê°œì‚¬</p>
 								<p class="subject">
-									<a href="http://land.pass.com/bbs/zboard.php?id=notice&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=162&bbs_no=&no=162" target="_blank">[11/30±îÁö] 2014 °øÀÎÁß°³»çÇÐ¿ø ¿¬È¸¿ø ÇÒ..</a>
+									<a href="http://land.pass.com/bbs/zboard.php?id=notice&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=162&bbs_no=&no=162" target="_blank">[11/30ê¹Œì§€] 2014 ê³µì¸ì¤‘ê°œì‚¬í•™ì› ì—°íšŒì› í• ..</a>
 								</p>
 								<p class="date">2013-11-30</p>
 							</li>
 						</ul>
 						<ul class="page2" style="display:none;">
 							<li>
-								<p class="type">°ø¹«¿ø</p>
+								<p class="type">ê³µë¬´ì›</p>
 								<p class="subject">
-									<a href="http://gosi.pass.com/html/mmove.htm?id=testexam&keywd=1111_gategongzi_2ndexam&logger_kw=1111_gategongzi_2ndexam&source=logger_kw" target="_blank">[¸ðÀÇ°í»ç] 2014´ëºñ Á¦2È¸ ÀûÁß¸ðÀÇ°í»ç¡Ú100..</a>
+									<a href="http://gosi.pass.com/html/mmove.htm?id=testexam&keywd=1111_gategongzi_2ndexam&logger_kw=1111_gategongzi_2ndexam&source=logger_kw" target="_blank">[ëª¨ì˜ê³ ì‚¬] 2014ëŒ€ë¹„ ì œ2íšŒ ì ì¤‘ëª¨ì˜ê³ ì‚¬â˜…100..</a>
 								</p>
 								<p class="date">2013-11-11</p>
 							</li>
 							<li>
-								<p class="type">±ÝÀ¶</p>
+								<p class="type">ê¸ˆìœµ</p>
 								<p class="subject">
-									<a href="http://fn.pass.com/bbs/board.php?id=notice&no=106&lnb=6&_C_=3302" target="_blank">[±ÝÀ¶ 5Á¾] ÃÊ´Ü±â ÇÕ°Ý ÆÐÅ°Áö! ÃÖ´ë 54% S..</a>
+									<a href="http://fn.pass.com/bbs/board.php?id=notice&no=106&lnb=6&_C_=3302" target="_blank">[ê¸ˆìœµ 5ì¢…] ì´ˆë‹¨ê¸° í•©ê²© íŒ¨í‚¤ì§€! ìµœëŒ€ 54% S..</a>
 								</p>
 								<p class="date">2013-11-11</p>
 							</li>
 							<li>
-								<p class="type">Áß°³»ç</p>
+								<p class="type">ì¤‘ê°œì‚¬</p>
 								<p class="subject">
-									<a href="http://land.pass.com/bbs/zboard.php?id=notice&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=161&bbs_no=&no=161" target="_blank">[Áß°³»ç ÇÕ°Ý¼³¸íÈ¸]11/30ÀÏ(Åä) ¿ÀÈÄ1½Ã!</a>
+									<a href="http://land.pass.com/bbs/zboard.php?id=notice&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=161&bbs_no=&no=161" target="_blank">[ì¤‘ê°œì‚¬ í•©ê²©ì„¤ëª…íšŒ]11/30ì¼(í† ) ì˜¤í›„1ì‹œ!</a>
 								</p>
 								<p class="date">2013-11-23</p>
 							</li>
 							<li>
-								<p class="type">Áß°³»ç</p>
+								<p class="type">ì¤‘ê°œì‚¬</p>
 								<p class="subject">
-									<a href="http://land.pass.com/bbs/zboard.php?id=notice&no=151" target="_blank">Á¦24È¸ °øÀÎÁß°³»ç ÇÕ°ÝÀÚ ¹ßÇ¥ ¹× ÀÚ°ÝÁõ ±³ºÎÀÏÁ¤..</a>
+									<a href="http://land.pass.com/bbs/zboard.php?id=notice&no=151" target="_blank">ì œ24íšŒ ê³µì¸ì¤‘ê°œì‚¬ í•©ê²©ìž ë°œí‘œ ë° ìžê²©ì¦ êµë¶€ì¼ì •..</a>
 								</p>
 								<p class="date">2013-11-03</p>
 							</li>
 							<li>
-								<p class="type">°ø¹«¿ø</p>
+								<p class="type">ê³µë¬´ì›</p>
 								<p class="subject">
-									<a href="http://gosi.pass.com/html/mmove.htm?id=class_intro_new&regi_mode=17&smode=1&keywd=1112_passcomgongzi_seoulinterview&logger_kw=1112_passcomgongzi_seoulinterview&source=logger_kw" target="_blank">[¿µ¾î¸éÁ¢¹Ý] ¼­¿ï½Ã ¿µ¾î¸éÁ¢ ÁýÁß°ü¸®¹Ý!</a>
+									<a href="http://gosi.pass.com/html/mmove.htm?id=class_intro_new&regi_mode=17&smode=1&keywd=1112_passcomgongzi_seoulinterview&logger_kw=1112_passcomgongzi_seoulinterview&source=logger_kw" target="_blank">[ì˜ì–´ë©´ì ‘ë°˜] ì„œìš¸ì‹œ ì˜ì–´ë©´ì ‘ ì§‘ì¤‘ê´€ë¦¬ë°˜!</a>
 								</p>
 								<p class="date">2013-11-12</p>
 							</li>
 							<li>
-								<p class="type">°ø¹«¿ø</p>
+								<p class="type">ê³µë¬´ì›</p>
 								<p class="subject">
-									<a href="http://egosi.pass.com/site/?c=event_20130417&cate=event_20130417&_C_=3141" target="_blank">°ø¹«¿ø ¸íÇ°ÀÎ°­ ¹«·áÃ¼Çè ÀÌº¥Æ®! ÀÎ°­ 50% ÇÒÀÎ..</a>
+									<a href="http://egosi.pass.com/site/?c=event_20130417&cate=event_20130417&_C_=3141" target="_blank">ê³µë¬´ì› ëª…í’ˆì¸ê°• ë¬´ë£Œì²´í—˜ ì´ë²¤íŠ¸! ì¸ê°• 50% í• ì¸..</a>
 								</p>
 								<p class="date">2013-11-11</p>
 							</li>
 							<li>
-								<p class="type">±ÝÀ¶</p>
+								<p class="type">ê¸ˆìœµ</p>
 								<p class="subject">
-									<a href="http://fn.pass.com/bbs/board.php?id=notice&no=163&lnb=6&_C_=3367" target="_blank">[ÃÖ´ë 41¸¸¿ø ÇÒÀÎ] AFPK / CFP °øµ¿±¸¸Å..</a>
+									<a href="http://fn.pass.com/bbs/board.php?id=notice&no=163&lnb=6&_C_=3367" target="_blank">[ìµœëŒ€ 41ë§Œì› í• ì¸] AFPK / CFP ê³µë™êµ¬ë§¤..</a>
 								</p>
 								<p class="date">2013-11-22</p>
 							</li>
 							<li>
-								<p class="type">Áß°³»ç</p>
+								<p class="type">ì¤‘ê°œì‚¬</p>
 								<p class="subject">
-									<a href="http://land.pass.com/bbs/zboard.php?id=notice&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=158&bbs_no=&no=158" target="_blank">[Àü°ÝÃâ°£] 2014 ÇØÄ¿½º °øÀÎÁß°³»ç ÀÔ¹®¼­½Ã¸®Áî..</a>
+									<a href="http://land.pass.com/bbs/zboard.php?id=notice&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=158&bbs_no=&no=158" target="_blank">[ì „ê²©ì¶œê°„] 2014 í•´ì»¤ìŠ¤ ê³µì¸ì¤‘ê°œì‚¬ ìž…ë¬¸ì„œì‹œë¦¬ì¦ˆ..</a>
 								</p>
 								<p class="date">2013-11-11</p>
 							</li>
@@ -391,7 +391,7 @@
 					<!--//notice-->
 					<!--book-->
 					<div class="book">
-						<h3><img src="/img/integrate/h3_book.gif" alt="ÇØÄ¿½º ÆÐ½º´åÄÄ ±³Àç" /></h3>
+						<h3><img src="/img/integrate/h3_book.gif" alt="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ êµìž¬" /></h3>
 						<ul id="book_tab">
 							<li><a href="#"><img src="/img/integrate/dot_on.gif"></a></li>
 							<li><a href="#"><img src="/img/integrate/dot_off.gif"></a></li>
@@ -419,13 +419,13 @@
 					<div class="clear"></div>
 				</div>
 			</div>
-			<!--//ÆË¾÷-->
+			<!--//íŒì—…-->
 		</div>
-		<!-- / container ³¡ -->
+		<!-- / container ë -->
 		<div class="underBlank"></div>
 		<div id="footer">
 			<div style="width:100%; height:70px; overflow:hidden; position:relative; text-align:center; margin-bottom:20px">
-				<!-- ¹è³Ê 121002 Ãß°¡ -->
+				<!-- ë°°ë„ˆ 121002 ì¶”ê°€ -->
 				<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
 				<script type='text/javascript'>
 					var $j = jQuery.noConflict();
@@ -535,43 +535,43 @@
 					<a href="#" class="fbtn_left"><img src="/img/common/btn_fsite_left.gif" id="fbtn_left"></a>
 					<div class="fbanner_list" id="fbanner_list">
 						<ul>
-							<li><a href="http://www.champstudy.com" title="Ã¨ÇÁ½ºÅÍµð" target="_blank"><img src="/img/common/fsmenu_01.gif" alt="Ã¨ÇÁ½ºÅÍµð"></a></li>
-							<li><a href="http://start.champstudy.com" title="±âÃÊ¿µ¾î Àü¹®°ü" target="_blank"><img src="/img/common/fsmenu_12.gif" alt="±âÃÊ¿µ¾î Àü¹®°ü"></a></li>
-							<li><a href="http://www.hackers.co.kr/" title="ÇØÄ¿½º¿µ¾î" target="_blank"><img src="/img/common/fsmenu_02.gif" alt="ÇØÄ¿½º¿µ¾î"></a></li>
-							<li><a href="http://www.gohackers.com" title="°í¿ìÇØÄ¿½º" target="_blank"><img src="/img/common/fsmenu_03.gif" alt="°í¿ìÇØÄ¿½º"></a></li>
-							<li><a href="http://www.hackersuhak.com/" title="ÇØÄ¿½ºÀ¯ÇÐ" target="_blank"><img src="/img/common/fsmenu_18.gif" alt="ÇØÄ¿½ºÀ¯ÇÐ"></a></li>
-							<li><a href="http://www.hackers.ac" title="ÇØÄ¿½º¾îÇÐ¿ø" target="_blank"><img src="/img/common/fsmenu_04.gif" alt="ÇØÄ¿½º¾îÇÐ¿ø"></a></li>
-							<li><a href="http://www.hackerspass.com" title="ÇØÄ¿½ºÆÐ½º °ø¹«¿ø" target="_blank"><img src="/img/common/fsmenu_05.gif" alt="ÇØÄ¿½ºÆÐ½º °ø¹«¿ø"></a></li>
-							<li><a href="http://egosi.pass.com" title="ÇØÄ¿½ºÆÐ½º °ø¹«¿ø µ¿¿µ»ó" target="_blank"><img src="/img/common/fsmenu_06.gif" alt="ÇØÄ¿½ºÆÐ½º °ø¹«¿ø µ¿¿µ»ó"></a></li>
-							<li><a href="http://police.pass.com" title="°æÂû°ø¹«¿ø" target="_blank"><img src="/img/common/fsmenu_15.gif" alt="°æÂû°ø¹«¿ø"></a></li>
-							<li><a href="http://epolice.pass.com" title="°æÂû°ø¹«¿ø µ¿¿µ»ó" target="_blank"><img src="/img/common/fsmenu_16.gif" alt="°æÂû°ø¹«¿ø µ¿¿µ»ó"></a></li>
-							<li><a href="http://www.hackersjob.com" title="ÇØÄ¿½ºÀâ" target="_blank"><img src="/img/common/fsmenu_07.gif" alt="ÇØÄ¿½ºÀâ"></a></li>
-							<li><a href="http://fn.pass.com" title="ÇØÄ¿½º ÆÐ½º´åÄÄ ±ÝÀ¶" target="_blank"><img src="/img/common/fsmenu_08.gif" alt="ÇØÄ¿½º ÆÐ½º´åÄÄ ±ÝÀ¶"></a></li>
-							<li><a href="http://land.pass.com" title="ÇØÄ¿½º ÆÐ½º´åÄÄ °øÀÎÁß°³»ç¤ýÇàÁ¤»ç" target="_blank"><img src="/img/common/fsmenu_12.jpg" alt="ÇØÄ¿½º ÆÐ½º´åÄÄ °øÀÎÁß°³»ç¤ýÇàÁ¤»ç"></a></li>
-							<li><a href="http://eland.pass.com" title="ÇØÄ¿½º ÆÐ½º´åÄÄ °øÀÎÁß°³»ç¤ýÇàÁ¤»ç µ¿¿µ»ó" target="_blank"><img src="/img/common/fsmenu_12_1.jpg" alt="ÇØÄ¿½º ÆÐ½º´åÄÄ °øÀÎÁß°³»ç¤ýÇàÁ¤»ç µ¿¿µ»ó"></a></li>
-							<li><a href="http://www.jumphackers.com" title="Á¡ÇÁÇØÄ¿½º" target="_blank"><img src="/img/common/fsmenu_09.gif" alt="Á¡ÇÁÇØÄ¿½º"></a></li>
-							<li><a href="http://www.hackers.com" title="ÇØÄ¿½º´åÄÄ" target="_blank"><img src="/img/common/fsmenu_10.gif" alt="ÇØÄ¿½º´åÄÄ"></a></li>
-							<li><a href="http://recruit.hackers.com" title="ÇØÄ¿½ºÃ¤¿ë" target="_blank"><img src="/img/common/fsmenu_11.gif" alt="ÇØÄ¿½ºÃ¤¿ë"></a></li>
+							<li><a href="http://www.champstudy.com" title="ì±”í”„ìŠ¤í„°ë””" target="_blank"><img src="/img/common/fsmenu_01.gif" alt="ì±”í”„ìŠ¤í„°ë””"></a></li>
+							<li><a href="http://start.champstudy.com" title="ê¸°ì´ˆì˜ì–´ ì „ë¬¸ê´€" target="_blank"><img src="/img/common/fsmenu_12.gif" alt="ê¸°ì´ˆì˜ì–´ ì „ë¬¸ê´€"></a></li>
+							<li><a href="http://www.hackers.co.kr/" title="í•´ì»¤ìŠ¤ì˜ì–´" target="_blank"><img src="/img/common/fsmenu_02.gif" alt="í•´ì»¤ìŠ¤ì˜ì–´"></a></li>
+							<li><a href="http://www.gohackers.com" title="ê³ ìš°í•´ì»¤ìŠ¤" target="_blank"><img src="/img/common/fsmenu_03.gif" alt="ê³ ìš°í•´ì»¤ìŠ¤"></a></li>
+							<li><a href="http://www.hackersuhak.com/" title="í•´ì»¤ìŠ¤ìœ í•™" target="_blank"><img src="/img/common/fsmenu_18.gif" alt="í•´ì»¤ìŠ¤ìœ í•™"></a></li>
+							<li><a href="http://www.hackers.ac" title="í•´ì»¤ìŠ¤ì–´í•™ì›" target="_blank"><img src="/img/common/fsmenu_04.gif" alt="í•´ì»¤ìŠ¤ì–´í•™ì›"></a></li>
+							<li><a href="http://www.hackerspass.com" title="í•´ì»¤ìŠ¤íŒ¨ìŠ¤ ê³µë¬´ì›" target="_blank"><img src="/img/common/fsmenu_05.gif" alt="í•´ì»¤ìŠ¤íŒ¨ìŠ¤ ê³µë¬´ì›"></a></li>
+							<li><a href="http://egosi.pass.com" title="í•´ì»¤ìŠ¤íŒ¨ìŠ¤ ê³µë¬´ì› ë™ì˜ìƒ" target="_blank"><img src="/img/common/fsmenu_06.gif" alt="í•´ì»¤ìŠ¤íŒ¨ìŠ¤ ê³µë¬´ì› ë™ì˜ìƒ"></a></li>
+							<li><a href="http://police.pass.com" title="ê²½ì°°ê³µë¬´ì›" target="_blank"><img src="/img/common/fsmenu_15.gif" alt="ê²½ì°°ê³µë¬´ì›"></a></li>
+							<li><a href="http://epolice.pass.com" title="ê²½ì°°ê³µë¬´ì› ë™ì˜ìƒ" target="_blank"><img src="/img/common/fsmenu_16.gif" alt="ê²½ì°°ê³µë¬´ì› ë™ì˜ìƒ"></a></li>
+							<li><a href="http://www.hackersjob.com" title="í•´ì»¤ìŠ¤ìž¡" target="_blank"><img src="/img/common/fsmenu_07.gif" alt="í•´ì»¤ìŠ¤ìž¡"></a></li>
+							<li><a href="http://fn.pass.com" title="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê¸ˆìœµ" target="_blank"><img src="/img/common/fsmenu_08.gif" alt="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê¸ˆìœµ"></a></li>
+							<li><a href="http://land.pass.com" title="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê³µì¸ì¤‘ê°œì‚¬ã†í–‰ì •ì‚¬" target="_blank"><img src="/img/common/fsmenu_12.jpg" alt="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê³µì¸ì¤‘ê°œì‚¬ã†í–‰ì •ì‚¬"></a></li>
+							<li><a href="http://eland.pass.com" title="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê³µì¸ì¤‘ê°œì‚¬ã†í–‰ì •ì‚¬ ë™ì˜ìƒ" target="_blank"><img src="/img/common/fsmenu_12_1.jpg" alt="í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ë‹·ì»´ ê³µì¸ì¤‘ê°œì‚¬ã†í–‰ì •ì‚¬ ë™ì˜ìƒ"></a></li>
+							<li><a href="http://www.jumphackers.com" title="ì í”„í•´ì»¤ìŠ¤" target="_blank"><img src="/img/common/fsmenu_09.gif" alt="ì í”„í•´ì»¤ìŠ¤"></a></li>
+							<li><a href="http://www.hackers.com" title="í•´ì»¤ìŠ¤ë‹·ì»´" target="_blank"><img src="/img/common/fsmenu_10.gif" alt="í•´ì»¤ìŠ¤ë‹·ì»´"></a></li>
+							<li><a href="http://recruit.hackers.com" title="í•´ì»¤ìŠ¤ì±„ìš©" target="_blank"><img src="/img/common/fsmenu_11.gif" alt="í•´ì»¤ìŠ¤ì±„ìš©"></a></li>
 						</ul>
 					</div>
 					<a href="#" class="fbtn_right"><img src="/img/common/btn_fsite_right.gif" id="fbtn_right"></a>
 				</div>
 
 
-				<!-- // ¹è³Ê 120928 Ãß°¡ ³¡ -->
+				<!-- // ë°°ë„ˆ 120928 ì¶”ê°€ ë -->
 
 				<SCRIPT LANGUAGE="JavaScript">
 					$j("#fbanner_list").jCarouselLite({
 
 						btnNext: "#fbtn_left",
 						btnPrev: "#fbtn_right",
-						visible: 7, // ³ëÃâ¼ö
+						visible: 7, // ë…¸ì¶œìˆ˜
 						start: 0,
 						auto: 3000,
 						speed: 1000
 						/*
-			//circular: false, ¼øÈ¯
-			//scroll: 2, ÀÌµ¿°¹¼ö
+			//circular: false, ìˆœí™˜
+			//scroll: 2, ì´ë™ê°¯ìˆ˜
 			//mouseWheel: true,
 			//vertical: true
 		   // btnGo: [".1", ".2", ".3", ".4"]
@@ -580,47 +580,47 @@
 				</SCRIPT>
 			</div>
 			<p class="logo_footer">
-				<img src="/img/integrate/logo_footer.gif" alt="ÇØÄ¿½ºÆÐ½º" />
-				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" class="emblem"><img src="/img/integrate/btm_emblem.gif" alt="ºê·£µå´ë»ó" /></a>
+				<img src="/img/integrate/logo_footer.gif" alt="í•´ì»¤ìŠ¤íŒ¨ìŠ¤" />
+				<a href="http://www.hackers.co.kr/Html/S_Toeic/index.html?id=B_TOEIC_QA&no=469515" target="_blank" class="emblem"><img src="/img/integrate/btm_emblem.gif" alt="ë¸Œëžœë“œëŒ€ìƒ" /></a>
 			</p>
 			<div class="under_menu">
 				<div class="copyright">
 					<div class="policy">
-						<a href="/member/terms.html">ÀÌ¿ë¾à°ü</a>
+						<a href="/member/terms.html">ì´ìš©ì•½ê´€</a>
 						<span class="bar">|</span>
-						<a href="#"><strong>°³ÀÎÁ¤º¸Ãë±Þ¹æÄ§</strong></a>
+						<a href="#"><strong>ê°œì¸ì •ë³´ì·¨ê¸‰ë°©ì¹¨</strong></a>
 					</div>
 					<address>
-						(ÁÖ)Ã¨ÇÁ½ºÅÍµð l ´ëÇ¥ÀÌ»ç : ÀüÀçÀ± l °³ÀÎÁ¤º¸°ü¸®Ã¥ÀÓÀÚ : ±èº´Ã¶ <br />
-						¼­¿ïÆ¯º°½Ã ¼­ÃÊ±¸ ¼­ÃÊµ¿ 1316-15 Çö´ë¼º¿ìºôµù 203È£ | TEL : °ø¹«¿ø ÇÐ¿ø (02)566-5800 <br />
-						ÆÐ½º´åÄÄ : »ç¾÷ÀÚµî·Ï¹øÈ£ 220-85-37767 | Åë½ÅÆÇ¸Å¾÷½Å°í (Á¦2012-¼­¿ï°­³²-01704È£)&nbsp;<a href="http://www.ftc.go.kr/info/bizinfo/communicationView.jsp?apv_perm_no=2012322016230201704&area1=&area2=&currpage=1&searchKey=01&searchVal=ÆÐ½º´åÄÄ&stdate=&enddate=" target="_blank">Á¤º¸Á¶È¸</a>
+						(ì£¼)ì±”í”„ìŠ¤í„°ë”” l ëŒ€í‘œì´ì‚¬ : ì „ìž¬ìœ¤ l ê°œì¸ì •ë³´ê´€ë¦¬ì±…ìž„ìž : ê¹€ë³‘ì²  <br />
+						ì„œìš¸íŠ¹ë³„ì‹œ ì„œì´ˆêµ¬ ì„œì´ˆë™ 1316-15 í˜„ëŒ€ì„±ìš°ë¹Œë”© 203í˜¸ | TEL : ê³µë¬´ì› í•™ì› (02)566-5800 <br />
+						íŒ¨ìŠ¤ë‹·ì»´ : ì‚¬ì—…ìžë“±ë¡ë²ˆí˜¸ 220-85-37767 | í†µì‹ íŒë§¤ì—…ì‹ ê³  (ì œ2012-ì„œìš¸ê°•ë‚¨-01704í˜¸)&nbsp;<a href="http://www.ftc.go.kr/info/bizinfo/communicationView.jsp?apv_perm_no=2012322016230201704&area1=&area2=&currpage=1&searchKey=01&searchVal=íŒ¨ìŠ¤ë‹·ì»´&stdate=&enddate=" target="_blank">ì •ë³´ì¡°íšŒ</a>
 					</address>
-					<span class="copy">COPYRIGHT ¨Ï 2012 HACKERSPASS ALL RIGHTS RESERVED</span>
+					<span class="copy">COPYRIGHT â“’ 2012 HACKERSPASS ALL RIGHTS RESERVED</span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--ÆË¾÷ : ·Î±×ÀÎ-->
+	<!--íŒì—… : ë¡œê·¸ì¸-->
 	<div id="boxes">
 		<div id="dialog" class="window">
 			<div class="popup_login">
 				<form method="post" action="">
-					<p class="btnClose"><a href="#" class="close"><img src="/img/integrate/btn_login_close.gif" alt="´Ý±â" /></a></p>
-					<h2><img src="/img/integrate/h2_login.gif" alt="·Î±×ÀÎ" /></h2>
+					<p class="btnClose"><a href="#" class="close"><img src="/img/integrate/btn_login_close.gif" alt="ë‹«ê¸°" /></a></p>
+					<h2><img src="/img/integrate/h2_login.gif" alt="ë¡œê·¸ì¸" /></h2>
 					<div class="loginBox">
 						<div class="textInput">
-							<p><label><img src="/img/integrate/login_textID.gif" alt="¾ÆÀÌµð" /></label><input type="text" class="text" value="" name="userid" /></p>
-							<p><label><img src="/img/integrate/login_textPW.gif" alt="ºñ¹Ð¹øÈ£" /></label><input type="password" class="text" onkeyup="" name="pw" /></p>
+							<p><label><img src="/img/integrate/login_textID.gif" alt="ì•„ì´ë””" /></label><input type="text" class="text" value="" name="userid" /></p>
+							<p><label><img src="/img/integrate/login_textPW.gif" alt="ë¹„ë°€ë²ˆí˜¸" /></label><input type="password" class="text" onkeyup="" name="pw" /></p>
 						</div>
-						<a href="" class="btnLogin"><img src="/img/integrate/btn_login.gif" alt="·Î±×ÀÎ" /></a>
+						<a href="" class="btnLogin"><img src="/img/integrate/btn_login.gif" alt="ë¡œê·¸ì¸" /></a>
 					</div>
 					<div class="loginText">
-						<p class="script"><img src="/img/integrate/login_textDivision.gif" alt="ºñ¹Ð¹øÈ£´Â ´ë¼Ò¹®ÀÚ¸¦ ±¸ºÐÇÕ´Ï´Ù." /></p>
-						<input type="checkbox" class="checkbox"><label><img src="/img/integrate/login_textSave.gif" alt="¾ÆÀÌµðÀúÀå" /></label>
+						<p class="script"><img src="/img/integrate/login_textDivision.gif" alt="ë¹„ë°€ë²ˆí˜¸ëŠ” ëŒ€ì†Œë¬¸ìžë¥¼ êµ¬ë¶„í•©ë‹ˆë‹¤." /></p>
+						<input type="checkbox" class="checkbox"><label><img src="/img/integrate/login_textSave.gif" alt="ì•„ì´ë””ì €ìž¥" /></label>
 					</div>
 					<div class="btnJoin">
-						<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/btn_login_join.gif" alt="È¸¿ø°¡ÀÔ" /></a>
-						<a href="/member/gateway.php?menu=find&page=id"><img src="/img/integrate/btn_login_find.gif" alt="¾ÆÀÌµð/ºñ¹Ð¹øÈ£Ã£±â" /></a>
+						<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/btn_login_join.gif" alt="íšŒì›ê°€ìž…" /></a>
+						<a href="/member/gateway.php?menu=find&page=id"><img src="/img/integrate/btn_login_find.gif" alt="ì•„ì´ë””/ë¹„ë°€ë²ˆí˜¸ì°¾ê¸°" /></a>
 					</div>
 				</form>
 			</div>
@@ -637,10 +637,10 @@
 
 		$(".btnLogin").click(function() {
 			if($("[name='userid']").val() == "") {
-				alert('¾ÆÀÌµð¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+				alert('ì•„ì´ë””ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.');
 			}
 			if($("[name='pw']").val() == "") {
-				alert('ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+				alert('ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”.');
 			}
 
 			$.ajax({
@@ -654,9 +654,9 @@
 				},
 				success: function(data) {
 					if (data == '0') {
-						alert('ºñ¹Ð¹øÈ£°¡ Æ²·È½À´Ï´Ù.');
+						alert('ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.');
 					} else if (data == '-1') {
-						alert("¾ÆÀÌµð°¡ Æ²·È½À´Ï´Ù.");
+						alert("ì•„ì´ë””ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.");
 					} else {
 						sessionStorage.setItem('userid', data['userid']);
 						sessionStorage.setItem('username', data['name']);
@@ -677,7 +677,7 @@
 						sessionStorage.setItem('sns', data['sns']);
 						sessionStorage.setItem('user_type', data['user_type']);
 
-						alert($("[name='userid']").val() + " ·Î±×ÀÎ ¼º°ø");
+						alert($("[name='userid']").val() + " ë¡œê·¸ì¸ ì„±ê³µ");
 						$('#mask').hide();
 						$('.window').hide();
 					}

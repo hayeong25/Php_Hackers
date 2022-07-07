@@ -14,13 +14,13 @@
     <table border=0 cellspacing=1 cellpadding=4 width=100% bgcolor=black height=100%>
         <form name="write2" method="post">
             <tr bgcolor=777777>
-                <td align=center><b><font color=white>©ЛфМ╧Ьхё ют╥б </b>(Insert Zipcode)</td>
+                <td align=center><b><font color=white>Л ╟М▌╦К╡┬М≤╦ Л·┘К═╔ </b>(Insert Zipcode)</td>
             </tr>
             <tr bgcolor=white>
                 <td align=center height=100%>
-                Ё╙╦саЖ аж╪р ╨н╨пю╩ ют╥б го╫ехд х╝юню╩ ╢╜╥╞ аж╫й╫ц©ю.<br><br>
+                К┌≤К╗╦Л╖─ Лё╪Л├▄ К╤─К╤└Л²└ Л·┘К═╔ М∙≤Л▀═М⌡└ М≥∙Л²╦Л²└ К┬▄К÷╛ Лё╪Л▀╜Л▀°Л≤╓.<br><br>
                 <br>
-            <input type=text name=juso2 class='input' size=40><input type='button' value='х╝ юн' class='submit' name=p>
+            <input type=text name=juso2 class='input' size=40><input type='button' value='М≥∙ Л²╦' class='submit' name=p>
             <input type="hidden" name="zipcode" value="<?=$zipcode ?>">
             <input type="hidden" name="juso" value="<?=$juso ?>">
             <input type="hidden" name="juso2" value="">

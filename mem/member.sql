@@ -1,19 +1,19 @@
 use mysql;
 
 create table member (
-	no INT NOT NULL AUTO_INCREMENT, -- È¸¿ø¹øÈ£(PK)
-    name varchar(10) NOT NULL, -- ÀÌ¸§
-    nick varchar(20) NOT NULL, -- ´Ğ³×ÀÓ
-    userid varchar(20) NOT NULL, -- ¾ÆÀÌµğ
-    pw varchar(35) NOT NULL, -- ºñ¹Ğ¹øÈ£
-    birth date NOT NULL, -- »ı³â¿ùÀÏ (1999-01-01)
-    gender varchar(8) NOT NULL, -- ¼ºº° (³²/¿©)
-    phone varchar(20) NOT NULL, -- ¿¬¶ôÃ³
-    parent_phone varchar(20), -- ºÎ¸ğ´Ô ¿¬¶ôÃ³ (¾î¸°ÀÌÈ¸¿ø¸¸)
-    address varchar(100) NOT NULL, -- ÁÖ¼Ò
-    email varchar(30) NOT NULL, -- ÀÌ¸ŞÀÏ
-    type varchar(12) NOT NULL, -- È¸¿øÀ¯Çü(¾î¸°ÀÌÈ¸¿ø/ÀÏ¹İÈ¸¿ø)
-    sns char(2) NOT NULL, -- SNS ¼ö½Å µ¿ÀÇ(Y/N)
-    job varchar(10), -- Á÷¾÷
+	no INT NOT NULL AUTO_INCREMENT, -- íšŒì›ë²ˆí˜¸(PK)
+    name varchar(10) NOT NULL, -- ì´ë¦„
+    nick varchar(20) NOT NULL, -- ë‹‰ë„¤ì„
+    userid varchar(20) NOT NULL, -- ì•„ì´ë””
+    pw varchar(35) NOT NULL, -- ë¹„ë°€ë²ˆí˜¸
+    birth date NOT NULL, -- ìƒë…„ì›”ì¼ (1999-01-01)
+    gender varchar(8) NOT NULL, -- ì„±ë³„ (ë‚¨/ì—¬)
+    phone varchar(20) NOT NULL, -- ì—°ë½ì²˜
+    parent_phone varchar(20), -- ë¶€ëª¨ë‹˜ ì—°ë½ì²˜ (ì–´ë¦°ì´íšŒì›ë§Œ)
+    address varchar(100) NOT NULL, -- ì£¼ì†Œ
+    email varchar(30) NOT NULL, -- ì´ë©”ì¼
+    type varchar(12) NOT NULL, -- íšŒì›ìœ í˜•(ì–´ë¦°ì´íšŒì›/ì¼ë°˜íšŒì›)
+    sns char(2) NOT NULL, -- SNS ìˆ˜ì‹  ë™ì˜(Y/N)
+    job varchar(10), -- ì§ì—…
     CONSTRAINT testTable_PK PRIMARY KEY(no)
 );

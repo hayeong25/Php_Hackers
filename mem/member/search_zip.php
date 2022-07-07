@@ -9,38 +9,38 @@
 <body bgcolor=white leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>
     <table border=0 cellspacing=1 cellpadding=4 width=100% bgcolor=black>
         <tr bgcolor=777777>
-            <td align=center><b><font color=white> + ΎΖ·΅ΐΗ ΑΦΌÒΈρ·ΟΏ΅Ό­ Ό±ΕΓΗΟΏ© ΑΦ½Κ½ΓΏΐ. +</td>
+            <td align=center><b><font color=white> + μ•„λμ μ£Όμ†λª©λ΅μ—μ„ μ„ νƒν•μ—¬ μ£Όμ‹­μ‹μ¤. +</td>
         </tr>
     </table>
     <table border=0 cellspacing=1 cellpadding=2 width=100% bgcolor=888888>
         <tr align=center bgcolor=dddddd>
-            <td width=25%>ΏμΖνΉψΘ£</td>
-            <td width=75%>ΑΦΌÒ</td>
+            <td width=25%>μ°νΈλ²νΈ</td>
+            <td width=75%>μ£Όμ†</td>
         </tr>
         <tr bgcolor=white>
             <td bgcolor=white align=center height=25><span name="zipcode" data-value="123-123">123-123</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">Ό­ΏοΖ―Ί°½Γ °­³²±Έ Ώª»οµΏ 1</span>&nbsp;</td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">μ„μΈνΉλ³„μ‹ κ°•λ‚¨κµ¬ μ—­μ‚Όλ™ 1</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
             <td bgcolor=white align=center height=25><span name="zipcode" data-value="124-124">124-124</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">Ό­ΏοΖ―Ί°½Γ °­³²±Έ Ώª»οµΏ 2</span>&nbsp;</td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">μ„μΈνΉλ³„μ‹ κ°•λ‚¨κµ¬ μ—­μ‚Όλ™ 2</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
             <td bgcolor=white align=center height=25><span name="zipcode" data-value="125-125">125-125</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">Ό­ΏοΖ―Ί°½Γ °­³²±Έ Ώª»οµΏ 3</span>&nbsp;</td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">μ„μΈνΉλ³„μ‹ κ°•λ‚¨κµ¬ μ—­μ‚Όλ™ 3</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
             <td bgcolor=white align=center height=25><span name="zipcode" data-value="126-126">126-126</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">Ό­ΏοΖ―Ί°½Γ °­³²±Έ Ώª»οµΏ 4</span>&nbsp;</td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">μ„μΈνΉλ³„μ‹ κ°•λ‚¨κµ¬ μ—­μ‚Όλ™ 4</span>&nbsp;</td>
         </tr>
         <tr bgcolor=white>
             <td bgcolor=white align=center height=25><span name="zipcode" data-value="127-127">127-127</span></td>
-            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">Ό­ΏοΖ―Ί°½Γ °­³²±Έ Ώª»οµΏ 5</span>&nbsp;</td>
+            <td bgcolor=white align=left height=25>&nbsp;&nbsp;<span name="juso">μ„μΈνΉλ³„μ‹ κ°•λ‚¨κµ¬ μ—­μ‚Όλ™ 5</span>&nbsp;</td>
         </tr>
     </table>
     <br>
     <div align=center>
-        <a href="#" onclick=history.go(-1)><font color=black>µΪ·Ξ°΅±β</a> <font color=bbbbbb>|</font> <a href=# onclick=window.close()><font color=black>ΓΆ ΄έ±β</a>
+        <a href="#" onclick=history.go(-1)><font color=black>λ’¤λ΅κ°€κΈ°</a> <font color=bbbbbb>|</font> <a href=# onclick=window.close()><font color=black>μ°½ λ‹«κΈ°</a>
     </div>
     <script src="/js/jquery-1.8.1.min.js"></script>
     <script>

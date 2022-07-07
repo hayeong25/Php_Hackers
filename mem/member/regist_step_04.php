@@ -1,10 +1,10 @@
 		<div id="sub" class="content">
 			<h2><img src="/img/member/h2_join_all.gif" alt="" /></h2>
-			<div class="depth"><span>Home &gt; ÅëÇÕÈ¸¿ø°¡ÀÔ &gt; <em>È¸¿øÁ¤º¸ÀÔ·Â</em></span></div>
+			<div class="depth"><span>Home &gt; í†µí•©íšŒì›ê°€ìž… &gt; <em>íšŒì›ì •ë³´ìž…ë ¥</em></span></div>
 			<div class="con join_wrap">
 				<div class="top_img"><img src="/img/member/new2013/top_step04.gif" alt="" /></div>
-				<h3 class="mgb10"><img src="/img/member/h3_baseInfo.gif" alt="±âº»Á¤º¸ÀÔ·Â" /></h3>
-				<p class="referText"><img src="/img/member/icon_redStar.gif" alt="*" /> Ç¥½Ã ºÎºÐÀº ÇÊ¼ö ÀÔ·Â»çÇ×ÀÔ´Ï´Ù.</p>
+				<h3 class="mgb10"><img src="/img/member/h3_baseInfo.gif" alt="ê¸°ë³¸ì •ë³´ìž…ë ¥" /></h3>
+				<p class="referText"><img src="/img/member/icon_redStar.gif" alt="*" /> í‘œì‹œ ë¶€ë¶„ì€ í•„ìˆ˜ ìž…ë ¥ì‚¬í•­ìž…ë‹ˆë‹¤.</p>
 				<form action="/member/regist.php" method="post">
 					<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
 						<colgroup>
@@ -13,70 +13,70 @@
 						</colgroup>
 						<tbody>
 							<tr>
-								<th><span class="must">¾ÆÀÌµð</span></th>
-								<td><input type="text" class="text" name="userid" /><a href="" id="userid"><img src="/img/member/btn_overlap.gif" alt="Áßº¹È®ÀÎ" /></a> <span class="tip">(4~10ÀÚ ¿µ¹®, ¼ýÀÚ¸¸ °¡´ÉÇÕ´Ï´Ù.)</span></td>
+								<th><span class="must">ì•„ì´ë””</span></th>
+								<td><input type="text" class="text" name="userid" /><a href="" id="userid"><img src="/img/member/btn_overlap.gif" alt="ì¤‘ë³µí™•ì¸" /></a> <span class="tip">(4~10ìž ì˜ë¬¸, ìˆ«ìžë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.)</span></td>
 							</tr>
 							<tr>
-								<th><span class="must">ºñ¹Ð¹øÈ£</span></th>
-								<td><input type="password" class="text" name="pw" /> <span class="tip">(ºñ¹Ð¹øÈ£´Â 4~32ÀÚ ¿µ¹®+¼ýÀÚ Á¶ÇÕ¸¸ °¡´ÉÇÕ´Ï´Ù.)</span></td>
+								<th><span class="must">ë¹„ë°€ë²ˆí˜¸</span></th>
+								<td><input type="password" class="text" name="pw" /> <span class="tip">(ë¹„ë°€ë²ˆí˜¸ëŠ” 4~32ìž ì˜ë¬¸+ìˆ«ìž ì¡°í•©ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.)</span></td>
 							</tr>
 							<tr>
-								<th><span class="must">ºñ¹Ð¹øÈ£È®ÀÎ</span></th>
+								<th><span class="must">ë¹„ë°€ë²ˆí˜¸í™•ì¸</span></th>
 								<td><input type="password" class="text" name="pw_confirm" /></td>
 							</tr>
 							<tr>
-								<th><span class="must">ÀÌ¸§</span></th>
+								<th><span class="must">ì´ë¦„</span></th>
 								<td><input type="text" class="text" name="username" readonly /></td>
 							</tr>
 							<tr>
-								<th><span class="must">´Ð³×ÀÓ</span></th>
-								<td><input type="text" class="text" name="nick" /><a href="" id="nick"><img src="/img/member/btn_overlap.gif" alt="Áßº¹È®ÀÎ" /></a></td>
+								<th><span class="must">ë‹‰ë„¤ìž„</span></th>
+								<td><input type="text" class="text" name="nick" /><a href="" id="nick"><img src="/img/member/btn_overlap.gif" alt="ì¤‘ë³µí™•ì¸" /></a></td>
 							</tr>
 							<tr>
-								<th><span class="must">»ý³â¿ùÀÏ</span></th>
+								<th><span class="must">ìƒë…„ì›”ì¼</span></th>
 								<td>
 									<input type="text" name="year" id="year" size="4" readonly>
-									<label>³â</label>
+									<label>ë…„</label>
 									<input type="text" name="month" id="month" size="4" readonly>
-									<label>¿ù</label>
+									<label>ì›”</label>
 									<input type="text" name="day" id="day" size="4" readonly>
-									<label>ÀÏ</label>
+									<label>ì¼</label>
 								</td>
 							</tr>
 							<tr>
-								<th><span class="must">¼ºº°</span></th>
+								<th><span class="must">ì„±ë³„</span></th>
 								<td>
-									<input type="radio" class="radio" name="gender" value="male" onclick="return false"><label class="mgr30">³²</label>
-									<input type="radio" class="radio" name="gender" value="female" onclick="return false"><label>¿©</label>
+									<input type="radio" class="radio" name="gender" value="male" onclick="return false"><label class="mgr30">ë‚¨</label>
+									<input type="radio" class="radio" name="gender" value="female" onclick="return false"><label>ì—¬</label>
 								</td>
 							</tr>
 							<tr>
-								<th><span class="must">e-mailÁÖ¼Ò</span></th>
+								<th><span class="must">e-mailì£¼ì†Œ</span></th>
 								<td>
 									<input type="text" class="text" name="email1" /> @ <input type="text" class="text" name="email2" />
 									<select style="margin-right:5px;" name="email">
-										<option value="">Á÷Á¢ÀÔ·Â</option>
+										<option value="">ì§ì ‘ìž…ë ¥</option>
 										<option value="gmail.com">gmail.com</option>
 										<option value="hotmail.com">hotmail.com</option>
 										<option value="naver.com">naver.com</option>
 									</select>
-									<input type="checkbox" class="checkbox" name="sns" /><label>¼ö½Åµ¿ÀÇ</label>
-									<p class="tip">*ÆÐ½º´åÄÄ¿¡¼­ Á¦°øÇÏ´Â À¯¿ëÇÑ Á¤º¸¸¦ ¹Þ¾Æ º¼ ¼ö ÀÖ½À´Ï´Ù.</p>
-									<p class="icon_check">[Á÷Á¢ÀÔ·Â]À» ÅëÇØ ¸ÞÀÏ °èÁ¤À» ÀÔ·Â½Ã : ¸ÞÀÏÀÌ Á¤»óÀûÀ¸·Î ¼ö½ÅµÇÁö ¾ÊÀ» ¼ö ÀÖ½À´Ï´Ù.</p>
-									<p class="icon_check">Hotmail, Gmail ÀÌ¿ë½Ã : ¸ÞÀÏÀÌ µµÂøÇÏÁö ¾ÊÀ¸¸é [½ºÆÔ ÆíÁöÇÔ]À» È®ÀÎ ÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù.</p>
+									<input type="checkbox" class="checkbox" name="sns" /><label>ìˆ˜ì‹ ë™ì˜</label>
+									<p class="tip">*íŒ¨ìŠ¤ë‹·ì»´ì—ì„œ ì œê³µí•˜ëŠ” ìœ ìš©í•œ ì •ë³´ë¥¼ ë°›ì•„ ë³¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
+									<p class="icon_check">[ì§ì ‘ìž…ë ¥]ì„ í†µí•´ ë©”ì¼ ê³„ì •ì„ ìž…ë ¥ì‹œ : ë©”ì¼ì´ ì •ìƒì ìœ¼ë¡œ ìˆ˜ì‹ ë˜ì§€ ì•Šì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
+									<p class="icon_check">Hotmail, Gmail ì´ìš©ì‹œ : ë©”ì¼ì´ ë„ì°©í•˜ì§€ ì•Šìœ¼ë©´ [ìŠ¤íŒ¸ íŽ¸ì§€í•¨]ì„ í™•ì¸ í•´ ì£¼ì‹œê¸° ë°”ëžë‹ˆë‹¤.</p>
 								</td>
 							</tr>
 							<tr>
-								<th><span class="must">ÈÞ´ëÆù¹øÈ£</span></th>
+								<th><span class="must">íœ´ëŒ€í°ë²ˆí˜¸</span></th>
 								<td>
 									<input type="text" class="phone" name="phone1" size="4" readonly>
 									- <input type="text" class="phone" name="phone2" size="4" readonly> - <input type="text" class="phone" name="phone3" size="4" readonly>
-									<p class="tip">* ÆÐ½º´åÄÄ¿¡¼­ Á¦°øÇÏ´Â À¯¿ëÇÑ Á¤º¸¸¦ ¹Þ¾Æ º¼ ¼ö ÀÖ½À´Ï´Ù.</p>
+									<p class="tip">* íŒ¨ìŠ¤ë‹·ì»´ì—ì„œ ì œê³µí•˜ëŠ” ìœ ìš©í•œ ì •ë³´ë¥¼ ë°›ì•„ ë³¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
 								</td>
 							</tr>
 							<tr class="parent"></tr>
 							<tr>
-								<th><span class="must">ÁÖ¼Ò</span></th>
+								<th><span class="must">ì£¼ì†Œ</span></th>
 								<td>
 									<p><input type="text" class="zipcode" name="zipcode" readonly><a href="" id="zip_pop"><img src="/img/member/btn_zipcode.gif" alt="" /></a></p>
 									<p style="margin:5px 0;"><input type="text" class="address" name="address1" readonly></p>
@@ -86,7 +86,7 @@
 						</tbody>
 					</table>
 				</form>
-				<h3 class="mgb10"><img src="/img/member/h3_choiceInfo.gif" alt="¼±ÅÃÁ¤º¸ÀÔ·Â" /></h3>
+				<h3 class="mgb10"><img src="/img/member/h3_choiceInfo.gif" alt="ì„ íƒì •ë³´ìž…ë ¥" /></h3>
 				<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
 					<colgroup>
 						<col width="136px" />
@@ -94,45 +94,45 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>ÃÖÁ¾ÇÐ·Â</th>
+							<th>ìµœì¢…í•™ë ¥</th>
 							<td>
 								<select name="school">
-									<option value="">¼±ÅÃ</option>
-									<option value="middle">ÁßÇÐ±³ Á¹¾÷</option>
-									<option value="high">°íµîÇÐ±³ Á¹¾÷</option>
-									<option value="col">Àü¹®´ë Á¹¾÷</option>
-									<option value="univ">4³âÁ¦ Á¹¾÷</option>
+									<option value="">ì„ íƒ</option>
+									<option value="middle">ì¤‘í•™êµ ì¡¸ì—…</option>
+									<option value="high">ê³ ë“±í•™êµ ì¡¸ì—…</option>
+									<option value="col">ì „ë¬¸ëŒ€ ì¡¸ì—…</option>
+									<option value="univ">4ë…„ì œ ì¡¸ì—…</option>
 								</select>
 							</td>
 						</tr>
 						<tr>
-							<th>Á÷¾÷</th>
+							<th>ì§ì—…</th>
 							<td>
 								<select name="job">
-									<option value="student">ÇÐ»ý</option>
-									<option value="teacher">±³»ç</option>
-									<option value="parent">ÇÐºÎ¸ð</option>
+									<option value="student">í•™ìƒ</option>
+									<option value="teacher">êµì‚¬</option>
+									<option value="parent">í•™ë¶€ëª¨</option>
 								</select>
 							</td>
 						</tr>
 						<tr>
-							<th>°¡ÀÔ°æ·Î</th>
+							<th>ê°€ìž…ê²½ë¡œ</th>
 							<td>
 								<ul class="inflow">
-									<li class="col1"><input type="radio" class="radio"><label>ÁöÀÎ¼Ò°³</label></li>
-									<li class="col2"><input type="radio" class="radio"><label>ÇØÄ¿½º»çÀÌÆ®(ÇØÄ¿½º¾îÇÐ¿ø, °í¿ì ÇØÄ¿½º µî)</label></li>
-									<li class="col3"><input type="radio" class="radio"><label>È«º¸¹°</label></li>
-									<li class="col1"><input type="radio" class="radio"><label>Æ÷ÅÐ»çÀÌÆ® °Ë»ö</label></li>
-									<li class="col2"><input type="radio" class="radio"><label>±âÅ¸</label></li>
+									<li class="col1"><input type="radio" class="radio"><label>ì§€ì¸ì†Œê°œ</label></li>
+									<li class="col2"><input type="radio" class="radio"><label>í•´ì»¤ìŠ¤ì‚¬ì´íŠ¸(í•´ì»¤ìŠ¤ì–´í•™ì›, ê³ ìš° í•´ì»¤ìŠ¤ ë“±)</label></li>
+									<li class="col3"><input type="radio" class="radio"><label>í™ë³´ë¬¼</label></li>
+									<li class="col1"><input type="radio" class="radio"><label>í¬í„¸ì‚¬ì´íŠ¸ ê²€ìƒ‰</label></li>
+									<li class="col2"><input type="radio" class="radio"><label>ê¸°íƒ€</label></li>
 								</ul>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-				<h3 class="mgb30 interest"><img src="/img/member/h3_favorite.gif" alt="°ü½ÉºÐ¾ß¼±ÅÃ" /><span><img src="/img/member/icon_redStar.gif" alt="*" /> Áßº¹¼±ÅÃ °¡´ÉÇÕ´Ï´Ù.</span></h3>
-				<p class="interest"><label><input type="checkbox" /> °ø¹«¿ø</label><label><input type="checkbox" /> ±ÝÀ¶</label><label><input type="checkbox" /> °øÀÎÁß°³»ç</label></p>
-				<h4 class="mgb10"><img src="/img/member/h4_favorite01.gif" alt="°ø¹«¿ø½ÃÇè" /></h4>
-				<p class="referText"><img src="/img/member/icon_redStar.gif" alt="*" /> °ü½ÉÀÖ´Â ºÐ¾ß¸¦ ¼±ÅÃÇÏ½Ã¸é, ¸ÂÃã°ü¸®¸¦ ¹ÞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.</p>
+				<h3 class="mgb30 interest"><img src="/img/member/h3_favorite.gif" alt="ê´€ì‹¬ë¶„ì•¼ì„ íƒ" /><span><img src="/img/member/icon_redStar.gif" alt="*" /> ì¤‘ë³µì„ íƒ ê°€ëŠ¥í•©ë‹ˆë‹¤.</span></h3>
+				<p class="interest"><label><input type="checkbox" /> ê³µë¬´ì›</label><label><input type="checkbox" /> ê¸ˆìœµ</label><label><input type="checkbox" /> ê³µì¸ì¤‘ê°œì‚¬</label></p>
+				<h4 class="mgb10"><img src="/img/member/h4_favorite01.gif" alt="ê³µë¬´ì›ì‹œí—˜" /></h4>
+				<p class="referText"><img src="/img/member/icon_redStar.gif" alt="*" /> ê´€ì‹¬ìžˆëŠ” ë¶„ì•¼ë¥¼ ì„ íƒí•˜ì‹œë©´, ë§žì¶¤ê´€ë¦¬ë¥¼ ë°›ìœ¼ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
 				<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
 					<colgroup>
 						<col width="136px" />
@@ -140,82 +140,82 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>°ü½ÉÁ÷·Ä</th>
+							<th>ê´€ì‹¬ì§ë ¬</th>
 							<td>
 								<ul class="favor_type">
-									<li><input type="checkbox" class="checkbox" /><label>ÀÏ¹ÝÇàÁ¤Á÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¼¼¹«Á÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>°ü¼¼Á÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>±³À°ÇàÁ¤Á÷</label></li>
-									<li class="end"><input type="checkbox" class="checkbox" /><label>º¸È£°üÂûÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>»çÈ¸º¹ÁöÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¿Ü¹«¿µ»çÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>±³Á¤Á÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¼Ò³âº¸È£Á÷</label></li>
-									<li class="end"><input type="checkbox" class="checkbox" /><label>È­°øÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¸¶¾à¼ö»çÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ÃâÀÔ±¹°ü¸®Á÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>±â°èÁ÷(ÀÏ¹Ý±â°è)</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>Àü±âÁ÷</label></li>
-									<li class="end"><input type="checkbox" class="checkbox" /><label>Àü¼Û±â¼úÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ÀÓ¾÷Á÷(ÀÏ¹ÝÀÓ¾÷)</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>Åä¸ñÁ÷(ÀÏ¹ÝÅä¸ñ)</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>°ÇÃàÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>Àü»êÁ÷(Àü»ê°³¹ß)</label></li>
-									<li class="end"><input type="checkbox" class="checkbox" /><label>»ç¼­Á÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¼Ò¹æÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>±º¹«¿ø</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>°æÂûÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>°¨»çÁ÷</label></li>
-									<li class="end"><input type="checkbox" class="checkbox" /><label>°ËÂû»ç¹«Á÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>³ó¾÷Á÷(ÀÏ¹Ý³ó¾÷)</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>º¸°ÇÁ÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>±âÅ¸</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì¼ë°˜í–‰ì •ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì„¸ë¬´ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê´€ì„¸ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>êµìœ¡í–‰ì •ì§</label></li>
+									<li class="end"><input type="checkbox" class="checkbox" /><label>ë³´í˜¸ê´€ì°°ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì‚¬íšŒë³µì§€ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì™¸ë¬´ì˜ì‚¬ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>êµì •ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì†Œë…„ë³´í˜¸ì§</label></li>
+									<li class="end"><input type="checkbox" class="checkbox" /><label>í™”ê³µì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ë§ˆì•½ìˆ˜ì‚¬ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì¶œìž…êµ­ê´€ë¦¬ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê¸°ê³„ì§(ì¼ë°˜ê¸°ê³„)</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì „ê¸°ì§</label></li>
+									<li class="end"><input type="checkbox" class="checkbox" /><label>ì „ì†¡ê¸°ìˆ ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ìž„ì—…ì§(ì¼ë°˜ìž„ì—…)</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>í† ëª©ì§(ì¼ë°˜í† ëª©)</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê±´ì¶•ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì „ì‚°ì§(ì „ì‚°ê°œë°œ)</label></li>
+									<li class="end"><input type="checkbox" class="checkbox" /><label>ì‚¬ì„œì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì†Œë°©ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>êµ°ë¬´ì›</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê²½ì°°ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê°ì‚¬ì§</label></li>
+									<li class="end"><input type="checkbox" class="checkbox" /><label>ê²€ì°°ì‚¬ë¬´ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ë†ì—…ì§(ì¼ë°˜ë†ì—…)</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ë³´ê±´ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê¸°íƒ€</label></li>
 								</ul>
 							</td>
 						</tr>
 						<tr>
-							<th>°ü½ÉÁö¿ª</th>
+							<th>ê´€ì‹¬ì§€ì—­</th>
 							<td>
 								<ul class="favor_area">
-									<li><input type="checkbox" class="checkbox" /><label>±¹°¡Á÷</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¼­¿ï½Ã</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ÀÎÃµ½Ã</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>´ë±¸½Ã</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>´ëÀü½Ã</label></li>
-									<li class="end"><input type="checkbox" class="checkbox" /><label>±¤ÁÖ½Ã</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¿ï»ê½Ã</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ºÎ»ê½Ã</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>°æ±âµµ</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>°­¿øµµ</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ÃæºÏ</label></li>
-									<li class="end"><input type="checkbox" class="checkbox" /><label>Ãæ³²</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ÀüºÏ</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>Àü³²</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>°æºÏ</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>°æ³²</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>Á¦ÁÖµµ</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>êµ­ê°€ì§</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì„œìš¸ì‹œ</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì¸ì²œì‹œ</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ëŒ€êµ¬ì‹œ</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ëŒ€ì „ì‹œ</label></li>
+									<li class="end"><input type="checkbox" class="checkbox" /><label>ê´‘ì£¼ì‹œ</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ìš¸ì‚°ì‹œ</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ë¶€ì‚°ì‹œ</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê²½ê¸°ë„</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê°•ì›ë„</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì¶©ë¶</label></li>
+									<li class="end"><input type="checkbox" class="checkbox" /><label>ì¶©ë‚¨</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì „ë¶</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì „ë‚¨</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê²½ë¶</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ê²½ë‚¨</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì œì£¼ë„</label></li>
 								</ul>
 							</td>
 						</tr>
 						<tr>
-							<th>°ü½É°ú¸ñ</th>
+							<th>ê´€ì‹¬ê³¼ëª©</th>
 							<td>
 								<ul class="favor_subject">
-									<li><input type="checkbox" class="checkbox" /><label>±¹¾î</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¿µ¾î</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ÇÑ±¹»ç</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>¼öÇÐ</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>»çÈ¸</label></li>
-									<li class="end"><input type="checkbox" class="checkbox" /><label>°úÇÐ</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ÇàÁ¤ÇÐ</label></li>
-									<li><input type="checkbox" class="checkbox" /><label>ÇàÁ¤¹ý</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>êµ­ì–´</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì˜ì–´</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>í•œêµ­ì‚¬</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ìˆ˜í•™</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>ì‚¬íšŒ</label></li>
+									<li class="end"><input type="checkbox" class="checkbox" /><label>ê³¼í•™</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>í–‰ì •í•™</label></li>
+									<li><input type="checkbox" class="checkbox" /><label>í–‰ì •ë²•</label></li>
 								</ul>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-				<h4 class="mgb10"><img src="/img/member/h4_favorite02.gif" alt="±ÝÀ¶/±âÅ¸ ÀÚ°ÝÁõ" /></h4>
+				<h4 class="mgb10"><img src="/img/member/h4_favorite02.gif" alt="ê¸ˆìœµ/ê¸°íƒ€ ìžê²©ì¦" /></h4>
 				<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
 					<colgroup>
 						<col width="136px" />
@@ -223,42 +223,42 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th>°ü½ÉÀÚ°ÝÁõ</th>
+							<th>ê´€ì‹¬ìžê²©ì¦</th>
 							<td>
 								<ul class="favor_license">
-									<li class="col1"><input type="checkbox" class="checkbox" /><label>ÆÝµåÅõÀÚ»ó´ã»ç</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>Áõ±ÇÅõÀÚ»ó´ã»ç</label></li>
-									<li class="col3"><input type="checkbox" class="checkbox" /><label>ÆÄ»ý»óÇ°ÅõÀÚ»ó´ã»ç</label></li>
-									<li class="col1"><input type="checkbox" class="checkbox" /><label>ÅõÀÚÀÚ¿î¿ë»ç</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>Àç¹«À§Çè°ü¸®»ç(±¹³»FRM)</label></li>
-									<li class="col3"><input type="checkbox" class="checkbox" /><label>±ÝÀ¶ÅõÀÚºÐ¼®»ç</label></li>
-									<li class="col1"><input type="checkbox" class="checkbox" /><label>ÀÚ»ê°ü¸®»ç(ÀºÇà FP)</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>¿ÜÈ¯Àü¹®¿ª 1Á¾</label></li>
-									<li class="col3"><input type="checkbox" class="checkbox" /><label>¿ÜÈ¯Àü¹®¿ª 2Á¾</label></li>
-									<li class="col1"><input type="checkbox" class="checkbox" /><label>ÀºÇàÅÚ·¯</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>Á¾ÇÕÀÚ»ê°ü¸®»ç(IFP)</label></li>
-									<li class="col3"><input type="checkbox" class="checkbox" /><label>º¯¾×º¸ÇèÆÇ¸Å°ü¸®»ç</label></li>
+									<li class="col1"><input type="checkbox" class="checkbox" /><label>íŽ€ë“œíˆ¬ìžìƒë‹´ì‚¬</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>ì¦ê¶Œíˆ¬ìžìƒë‹´ì‚¬</label></li>
+									<li class="col3"><input type="checkbox" class="checkbox" /><label>íŒŒìƒìƒí’ˆíˆ¬ìžìƒë‹´ì‚¬</label></li>
+									<li class="col1"><input type="checkbox" class="checkbox" /><label>íˆ¬ìžìžìš´ìš©ì‚¬</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>ìž¬ë¬´ìœ„í—˜ê´€ë¦¬ì‚¬(êµ­ë‚´FRM)</label></li>
+									<li class="col3"><input type="checkbox" class="checkbox" /><label>ê¸ˆìœµíˆ¬ìžë¶„ì„ì‚¬</label></li>
+									<li class="col1"><input type="checkbox" class="checkbox" /><label>ìžì‚°ê´€ë¦¬ì‚¬(ì€í–‰ FP)</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>ì™¸í™˜ì „ë¬¸ì—­ 1ì¢…</label></li>
+									<li class="col3"><input type="checkbox" class="checkbox" /><label>ì™¸í™˜ì „ë¬¸ì—­ 2ì¢…</label></li>
+									<li class="col1"><input type="checkbox" class="checkbox" /><label>ì€í–‰í…”ëŸ¬</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>ì¢…í•©ìžì‚°ê´€ë¦¬ì‚¬(IFP)</label></li>
+									<li class="col3"><input type="checkbox" class="checkbox" /><label>ë³€ì•¡ë³´í—˜íŒë§¤ê´€ë¦¬ì‚¬</label></li>
 									<li class="col1"><input type="checkbox" class="checkbox" /><label>CFA</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>FRM(±¹Á¦FRM)</label></li>
-									<li class="col3"><input type="checkbox" class="checkbox" /><label>°æ¿µÁöµµ»ç</label></li>
-									<li class="col1"><input type="checkbox" class="checkbox" /><label>¿ÜÈ¯°ü¸®»ç</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>¹«¿ª¿µ¾î</label></li>
-									<li class="col3"><input type="checkbox" class="checkbox" /><label>±¹Á¦¹«¿ª»ç</label></li>
-									<li class="col1"><input type="checkbox" class="checkbox" /><label>Àü»ê¼¼¹«È¸°è</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>±â¾÷ÀÚ±Ý°ü¸®»ç(CTM)</label></li>
-									<li class="col3"><input type="checkbox" class="checkbox" /><label>IFRS°ü¸®»ç</label></li>
-									<li class="col1"><input type="checkbox" class="checkbox" /><label>Àü»ê¼¼¹« 1±Þ</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>Àü»ê¼¼¹« 2±Þ</label></li>
-									<li class="col3"><input type="checkbox" class="checkbox" /><label>Àü»êÈ¸°è 1±Þ</label></li>
-									<li class="col1"><input type="checkbox" class="checkbox" /><label>Àü»êÈ¸°è 2±Þ</label></li>
-									<li class="col2"><input type="checkbox" class="checkbox" /><label>´ë±â¾÷ ÀÎÀû¼º(SSAT, DCATµî)</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>FRM(êµ­ì œFRM)</label></li>
+									<li class="col3"><input type="checkbox" class="checkbox" /><label>ê²½ì˜ì§€ë„ì‚¬</label></li>
+									<li class="col1"><input type="checkbox" class="checkbox" /><label>ì™¸í™˜ê´€ë¦¬ì‚¬</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>ë¬´ì—­ì˜ì–´</label></li>
+									<li class="col3"><input type="checkbox" class="checkbox" /><label>êµ­ì œë¬´ì—­ì‚¬</label></li>
+									<li class="col1"><input type="checkbox" class="checkbox" /><label>ì „ì‚°ì„¸ë¬´íšŒê³„</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>ê¸°ì—…ìžê¸ˆê´€ë¦¬ì‚¬(CTM)</label></li>
+									<li class="col3"><input type="checkbox" class="checkbox" /><label>IFRSê´€ë¦¬ì‚¬</label></li>
+									<li class="col1"><input type="checkbox" class="checkbox" /><label>ì „ì‚°ì„¸ë¬´ 1ê¸‰</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>ì „ì‚°ì„¸ë¬´ 2ê¸‰</label></li>
+									<li class="col3"><input type="checkbox" class="checkbox" /><label>ì „ì‚°íšŒê³„ 1ê¸‰</label></li>
+									<li class="col1"><input type="checkbox" class="checkbox" /><label>ì „ì‚°íšŒê³„ 2ê¸‰</label></li>
+									<li class="col2"><input type="checkbox" class="checkbox" /><label>ëŒ€ê¸°ì—… ì¸ì ì„±(SSAT, DCATë“±)</label></li>
 								</ul>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-				<!-- ºÎµ¿»ê ÀÚ°ÝÁõ -->
-				<h4 class="mgb10"><img src="/img/member/h4_favorite03.gif" alt="ºÎµ¿»ê ÀÚ°ÝÁõ" /></h4>
+				<!-- ë¶€ë™ì‚° ìžê²©ì¦ -->
+				<h4 class="mgb10"><img src="/img/member/h4_favorite03.gif" alt="ë¶€ë™ì‚° ìžê²©ì¦" /></h4>
 				<table cellpadding="0" cellspacing="0" border="0" class="basicType mgb30">
 					<colgroup>
 						<col width="136px" />
@@ -266,20 +266,20 @@
 					</colgroup>
 					<tbody>
 						<tr>
-							<th height="45">°ü½ÉÀÚ°ÝÁõ</th>
+							<th height="45">ê´€ì‹¬ìžê²©ì¦</th>
 							<td>
 								<ul class="favor_license">
-									<li class="col4"><input type="checkbox" class="checkbox" /><label>°øÀÎÁß°³»ç</label></li>
-									<li class="col4"><input type="checkbox" class="checkbox" /><label>ÁÖÅÃ°ü¸®»ç</label></li>
-									<li class="col4"><input type="checkbox" class="checkbox" /><label>°æ¸Å/°ø¸Å</label></li>
-									<li class="col4"><input type="checkbox" class="checkbox" /><label>°¨Á¤Æò°¡»ç</label></li>
+									<li class="col4"><input type="checkbox" class="checkbox" /><label>ê³µì¸ì¤‘ê°œì‚¬</label></li>
+									<li class="col4"><input type="checkbox" class="checkbox" /><label>ì£¼íƒê´€ë¦¬ì‚¬</label></li>
+									<li class="col4"><input type="checkbox" class="checkbox" /><label>ê²½ë§¤/ê³µë§¤</label></li>
+									<li class="col4"><input type="checkbox" class="checkbox" /><label>ê°ì •í‰ê°€ì‚¬</label></li>
 								</ul>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-				<!-- // ºÎµ¿»ê ÀÚ°ÝÁõ ³¡ -->
-				<div class="btnC"><a href=""><img src="/img/member/btn_join.gif" alt="°¡ÀÔÇÏ±â"></a></div>
+				<!-- // ë¶€ë™ì‚° ìžê²©ì¦ ë -->
+				<div class="btnC"><a href=""><img src="/img/member/btn_join.gif" alt="ê°€ìž…í•˜ê¸°"></a></div>
 			</div>
 		</div>
 		<script src="/js/jquery-1.8.1.min.js"></script>

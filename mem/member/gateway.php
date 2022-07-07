@@ -1,7 +1,9 @@
 <?php
+    session_start();
+    
     include ("./include/header.php");
 
-    // »çÀÌµå¹Ù ¿µ¿ª
+    // ì‚¬ì´ë“œë°” ì˜ì—­
     switch($_GET['menu']) {
         case 'join':
             include ("./include/joinlnb.php");
@@ -23,7 +25,7 @@
             break;
     }
 
-    // content ¿µ¿ª
+    // content ì˜ì—­
     switch($_GET['page']) {
         case 'step1':
             include ("regist_step_01.php");
@@ -73,4 +75,5 @@
     }
 
     include ("./include/footer.php");
+    exit();
 ?>

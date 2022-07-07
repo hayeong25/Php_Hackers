@@ -1,44 +1,44 @@
-<h3 class="mgb10"><img src="/img/member/h3_password01.gif" alt="ºñ¹Ğ¹øÈ£Ã£±â" /></h3>
+<h3 class="mgb10"><img src="/img/member/h3_password01.gif" alt="ë¹„ë°€ë²ˆí˜¸ì°¾ê¸°" /></h3>
 <div class="idCheck_wrap">
     <div class="left">
         <div class="PW_phone mgb20">
-            <p><span><img src="/img/member/text_check13.gif" alt="¾ÆÀÌµğ"/></span><input type="text" class="name" name="userid" /></p>
-            <p><span><img src="/img/member/text_check01.gif" alt="ÀÌ¸§"/></span><input type="text" class="name" name="username"/></p>
+            <p><span><img src="/img/member/text_check13.gif" alt="ì•„ì´ë””"/></span><input type="text" class="name" name="userid" /></p>
+            <p><span><img src="/img/member/text_check01.gif" alt="ì´ë¦„"/></span><input type="text" class="name" name="username"/></p>
             <p>
-                <span><img src="/img/member/text_check02.gif" alt="»ı³â¿ùÀÏ"/></span>
+                <span><img src="/img/member/text_check02.gif" alt="ìƒë…„ì›”ì¼"/></span>
                 <select id="year">
                     <option></option>
                 </select>
-                <label>³â</label>
+                <label>ë…„</label>
                 <select id="month">
                     <option></option>
                 </select>
-                <label>¿ù</label>
+                <label>ì›”</label>
                 <select id="day">
                     <option></option>
                 </select>
-                <label>ÀÏ</label>
+                <label>ì¼</label>
             </p>
             <p>
-                <span><img src="/img/member/text_check04.gif" alt="ÇÚµåÆù¹øÈ£"/></span>
+                <span><img src="/img/member/text_check04.gif" alt="í•¸ë“œí°ë²ˆí˜¸"/></span>
                 <input type="text" class="phone1" size="4"/> - <input type="text" class="phone2" size="4"/> - <input type="text" class="phone3" size="4"/>
             </p>
         </div>
-        <div class="btnC ok"><a href="#"><img src="/img/member/btn_confirm2.gif" alt="È®ÀÎ"></a></div>
+        <div class="btnC ok"><a href="#"><img src="/img/member/btn_confirm2.gif" alt="í™•ì¸"></a></div>
     </div>
     <div class="right">
-        <h4 class="mgb30"><img src="/img/member/h4_ipin02.gif" alt="¾ÆÀÌÇÉÀÎÁõ" /></h4>
+        <h4 class="mgb30"><img src="/img/member/h4_ipin02.gif" alt="ì•„ì´í•€ì¸ì¦" /></h4>
         <div class="ipinCheck ipinPW mgb20">
-            <p class="ipin_img mgb20"><img src="/img/member/text_check07.gif" alt="¾ÆÀÌÇÉ ÀÎÁõÀ» ÅëÇÑ °¡ÀÔÀ» ¿øÇÏ½Ã¸é ¾ÆÀÌÇÉ ÀÎÁõ ¹öÆ°À» ´­·¯ È¸¿ø°¡ÀÔÀ» ÁøÇàÇØ ÁÖ¼¼¿ä."></p>
+            <p class="ipin_img mgb20"><img src="/img/member/text_check07.gif" alt="ì•„ì´í•€ ì¸ì¦ì„ í†µí•œ ê°€ì…ì„ ì›í•˜ì‹œë©´ ì•„ì´í•€ ì¸ì¦ ë²„íŠ¼ì„ ëˆŒëŸ¬ íšŒì›ê°€ì…ì„ ì§„í–‰í•´ ì£¼ì„¸ìš”."></p>
             <p><label class="ipin"><img src="/img/member/text_check08.gif" alt=""></label><input type="text" class="ipin" /></p>
         </div>
-        <div class="btnC"><a href="#"><img src="/img/member/btn_ipinOK.gif" alt="¾ÆÀÌÇÉÀÎÁõ"></a></div>
+        <div class="btnC"><a href="#"><img src="/img/member/btn_ipinOK.gif" alt="ì•„ì´í•€ì¸ì¦"></a></div>
     </div>
     <div class="clear"></div>
 </div>
 <script src="/js/jquery-1.8.1.min.js"></script>
 <script>
-    // »ı³â¿ùÀÏ select option Ãß°¡
+    // ìƒë…„ì›”ì¼ select option ì¶”ê°€
     for(var i = new Date().getFullYear(); i >= 1920; i--) {
         $("#year").append('<option value="' + i + '">' + i + '</option>');    
     }
@@ -53,18 +53,18 @@
 
     $(".ok").on("click", "a", function() {
         if($("[name='userid']").val() == "") {
-            alert('¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+            alert('ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.');
         }
         if($("[name='username']").val() == "") {
-            alert('ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+            alert('ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.');
             return;
         }
         if($("#year").val() == "" || $("#month").val() == "" || $("#day").val() == "") {
-            alert('»ı³â¿ùÀÏÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+            alert('ìƒë…„ì›”ì¼ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.');
             return;
         }
         if($(".phone1").val() == "" || $(".phone2").val() == "" || $(".phone3").val() == "") {
-            alert('ÈŞ´ëÆù ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+            alert('íœ´ëŒ€í° ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.');
             return;
         }
 
@@ -86,7 +86,7 @@
                 if(data != null) {
                     location.href = "/member/gateway.php?menu=find&page=pw1";
                 }else {
-                    alert('µî·ÏµÇÁö ¾ÊÀº È¸¿øÀÔ´Ï´Ù.');
+                    alert('ë“±ë¡ë˜ì§€ ì•Šì€ íšŒì›ì…ë‹ˆë‹¤.');
                     return;
                 }
             },

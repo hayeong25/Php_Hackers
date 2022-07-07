@@ -1,36 +1,36 @@
 			<div id="sub" class="content">
 				<h2><img src="/img/member/h2_join_all.gif" alt="" /></h2>
-				<div class="depth"><span>Home &gt; ÅëÇÕÈ¸¿ø°¡ÀÔ &gt; <em>º»ÀÎÈ®ÀÎ</em></span></div>
+				<div class="depth"><span>Home &gt; í†µí•©íšŒì›ê°€ì… &gt; <em>ë³¸ì¸í™•ì¸</em></span></div>
 				<div class="con join_wrap">
 					<div class="top_img"><img src="/img/member/new2013/top_step03.gif" alt="" /></div>
-					<h3 class="mgb10"><img src="/img/member/h3_phone.gif" alt="ÈŞ´ëÆùÀÎÁõ" /></h3>
+					<h3 class="mgb10"><img src="/img/member/h3_phone.gif" alt="íœ´ëŒ€í°ì¸ì¦" /></h3>
 					<div class="idCheck_wrap mgb50">
 						<div class="left">
 							<div class="phoneBox mgb20">
 								<form action="" method="post">
-								<p><span><img src="/img/member/text_check01.gif" alt="ÀÌ¸§"/></span><input type="text" class="name" id="name" name="name" required/></p>
+								<p><span><img src="/img/member/text_check01.gif" alt="ì´ë¦„"/></span><input type="text" class="name" id="name" name="name" required/></p>
 								<p>
-									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="¼ºº°"/></span>
-									<input type="radio" class="radio" name="gender" value="male"><label style="margin-right:25px;">³²</label>
-									<input type="radio" class="radio" name="gender" value="female"><label>¿©</label>
+									<span style="padding:0"><img src="/img/member/text_check03.gif" alt="ì„±ë³„"/></span>
+									<input type="radio" class="radio" name="gender" value="male"><label style="margin-right:25px;">ë‚¨</label>
+									<input type="radio" class="radio" name="gender" value="female"><label>ì—¬</label>
 								</p>
 								<p>
-									<span><img src="/img/member/text_check02.gif" alt="»ı³â¿ùÀÏ"/></span>
+									<span><img src="/img/member/text_check02.gif" alt="ìƒë…„ì›”ì¼"/></span>
 									<select id="year">
 										<option value=""></option>
 									</select>
-									<label>³â</label>
+									<label>ë…„</label>
 									<select id="month">
 										<option value=""></option>
 									</select>
-									<label>¿ù</label>
+									<label>ì›”</label>
 									<select id="day">
 										<option value=""></option>
 									</select>
-									<label>ÀÏ</label>
+									<label>ì¼</label>
 								</p>
 								<p>
-									<span><img src="/img/member/text_check04.gif" alt="ÇÚµåÆù¹øÈ£"/></span>
+									<span><img src="/img/member/text_check04.gif" alt="í•¸ë“œí°ë²ˆí˜¸"/></span>
 									<select id="phone1">
 										<option value="010">010</option>
 										<option value="016">016</option>
@@ -38,20 +38,20 @@
 										<option value="070">070</option>
 									</select>
 									- <input type="text" class="phone" id="phone2"/> - <input type="text" class="phone" id="phone3"/>
-									<a href="" id="send"><img src="/img/member/btn_sendNum.gif" alt="ÀÎÁõ¹øÈ£¹Ş±â" /></a><br />
+									<a href="" id="send"><img src="/img/member/btn_sendNum.gif" alt="ì¸ì¦ë²ˆí˜¸ë°›ê¸°" /></a><br />
 								</p>
 								<ul class="under_text">
-									<li>ÁÖ¹Îµî·Ï¹øÈ£ ÀÔ·Â ¾øÀÌ ÇÚµåÆù¹øÈ£·Î È¸¿ø°¡ÀÔÀÌ °¡´ÉÇÕ´Ï´Ù.</li>
-									<li>ÀÌ¸§, »ı³â¿ùÀÏ, ¼ºº°Àº <span class="red">ÃßÈÄ º¯°æÀÌ ºÒ°¡´É</span>ÇÏ¹Ç·Î,<br />Á¤È®ÇÏ°Ô ÀÔ·ÂÇØ ÁÖ½Ã±â ¹Ù¶ø´Ï´Ù. </li>
-									<li>¸Ş½ÃÁö ¼ö½Å °¡´ÉÇÑ ÈŞ´ëÆùÀ¸·Î ÀÎÁõ¹øÈ£¸¦ ¹ŞÀ¸½Ç ¼ö ÀÖÀ¸¸ç, <br /><span class="red">µ¿ÀÏ¹øÈ£·Î 1°³ ¾ÆÀÌµğ¸¸ °¡ÀÔ °¡´É</span>ÇÕ´Ï´Ù.</li>
+									<li>ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ ì…ë ¥ ì—†ì´ í•¸ë“œí°ë²ˆí˜¸ë¡œ íšŒì›ê°€ì…ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.</li>
+									<li>ì´ë¦„, ìƒë…„ì›”ì¼, ì„±ë³„ì€ <span class="red">ì¶”í›„ ë³€ê²½ì´ ë¶ˆê°€ëŠ¥</span>í•˜ë¯€ë¡œ,<br />ì •í™•í•˜ê²Œ ì…ë ¥í•´ ì£¼ì‹œê¸° ë°”ëë‹ˆë‹¤. </li>
+									<li>ë©”ì‹œì§€ ìˆ˜ì‹  ê°€ëŠ¥í•œ íœ´ëŒ€í°ìœ¼ë¡œ ì¸ì¦ë²ˆí˜¸ë¥¼ ë°›ìœ¼ì‹¤ ìˆ˜ ìˆìœ¼ë©°, <br /><span class="red">ë™ì¼ë²ˆí˜¸ë¡œ 1ê°œ ì•„ì´ë””ë§Œ ê°€ì… ê°€ëŠ¥</span>í•©ë‹ˆë‹¤.</li>
 								</ul>
 								</form>
 							</div>
-							<div class="btnC" id="ok"><a href=""><img src="/img/member/btn_confirm2.gif" alt="È®ÀÎ"></a></div>
+							<div class="btnC" id="ok"><a href=""><img src="/img/member/btn_confirm2.gif" alt="í™•ì¸"></a></div>
 						</div>
 						<div class="right">
-							<div class="ipinJoin_new mgb20"><p><img src="/img/member/text_check06.gif" alt="¾ÆÀÌÇÉ ÀÎÁõÀ» ÅëÇÑ °¡ÀÔÀ» ¿øÇÏ½Ã¸é ¾ÆÀÌÇÉ ÀÎÁõ ¹öÆ°À» ´­·¯ È¸¿ø°¡ÀÔÀ» ÁøÇàÇØ ÁÖ¼¼¿ä."></p></div>
-							<div class="btnC"><a href="#"><img src="/img/member/btn_ipinOK.gif" alt="¾ÆÀÌÇÉÀÎÁõ"></a></div>
+							<div class="ipinJoin_new mgb20"><p><img src="/img/member/text_check06.gif" alt="ì•„ì´í•€ ì¸ì¦ì„ í†µí•œ ê°€ì…ì„ ì›í•˜ì‹œë©´ ì•„ì´í•€ ì¸ì¦ ë²„íŠ¼ì„ ëˆŒëŸ¬ íšŒì›ê°€ì…ì„ ì§„í–‰í•´ ì£¼ì„¸ìš”."></p></div>
+							<div class="btnC"><a href="#"><img src="/img/member/btn_ipinOK.gif" alt="ì•„ì´í•€ì¸ì¦"></a></div>
 						</div>
 						<div class="clear"></div>
 					</div>
@@ -59,7 +59,7 @@
 			</div>
 		<script src="/js/jquery-1.8.1.min.js"></script>
 		<script>
-			// »ı³â¿ùÀÏ select option Ãß°¡
+			// ìƒë…„ì›”ì¼ select option ì¶”ê°€
 			for(var i = new Date().getFullYear(); i >= 1920; i--) {
 				$("#year").append('<option value="' + i + '">' + i + '</option>');    
 			}
@@ -72,25 +72,25 @@
 				$('#day').append('<option value="' + day + '">' + day+ '</option>');    
 			}
 
-			$("#send").click(function() { // ÀÎÁõ¹øÈ£ È®ÀÎ ¹öÆ° Å¬¸¯½Ã
+			$("#send").click(function() { // ì¸ì¦ë²ˆí˜¸ í™•ì¸ ë²„íŠ¼ í´ë¦­ì‹œ
 				if($("#name").val() == "") {
-					alert('ÀÌ¸§À» ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+					alert('ì´ë¦„ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.');
 					return;
 				}
 				if($("[name='gender']:checked").val() == 'undefined') {
-					alert('¼ºº°À» ¼±ÅÃÇØÁÖ¼¼¿ä.');
+					alert('ì„±ë³„ì„ ì„ íƒí•´ì£¼ì„¸ìš”.');
 					return;
 				}
 				if($("#year").val()=="" || $("#month").val()=="" || $("#day").val()==""){
-					alert("»ı³â¿ùÀÏÀ» ¼±ÅÃÇØÁÖ¼¼¿ä.");
+					alert("ìƒë…„ì›”ì¼ì„ ì„ íƒí•´ì£¼ì„¸ìš”.");
 					return;
 				}
 				if($("#phone1").val() == "" || $("#phone2").val() == "" || $("#phone3").val() == "") {
-					alert('ÈŞ´ëÆù ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+					alert('íœ´ëŒ€í° ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.');
 					return;
 				}
 
-				// ÀÔ·Â°ª local Storage¿¡ ´ã±â
+				// ì…ë ¥ê°’ local Storageì— ë‹´ê¸°
 				localStorage.setItem('name', $("#name").val());
 				localStorage.setItem("gender", $("[name='gender']:checked").val());
 				localStorage.setItem('year', $("#year").val());
@@ -102,7 +102,7 @@
 
 				pop();
 
-				function pop() { // ÆË¾÷Ã¢ ½ºÅ©¸° °¡¿îµ¥¿¡ ¶ç¿ì±â
+				function pop() { // íŒì—…ì°½ ìŠ¤í¬ë¦° ê°€ìš´ë°ì— ë„ìš°ê¸°
 					var screenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
 					var screenTop = window.screenTop != undefined ? window.screenTop : screen.top;
 
@@ -116,7 +116,7 @@
 				}
 			})
 
-			// return ½Ã, local Storage¿¡¼­ °ª °¡Á®¿Í ÀÔ·Â°ª À¯Áö
+			// return ì‹œ, local Storageì—ì„œ ê°’ ê°€ì ¸ì™€ ì…ë ¥ê°’ ìœ ì§€
 			document.addEventListener('DOMContentLoaded', function() {
 				$("#name").val(localStorage.getItem('name'));
 				if(localStorage.getItem('gender') == 'male') {
@@ -135,7 +135,7 @@
 			$("#ok").on("click", "a", function() {
 				var phone = $("#phone1").val() + "-" + $("#phone2").val() + "-" + $("#phone3").val();
 
-				// DB È¸¿ø Á¤º¸ Á¶È¸
+				// DB íšŒì› ì •ë³´ ì¡°íšŒ
 				$.ajax({
 					type: 'post',
 					url: '/member/checkMember.php',
@@ -148,7 +148,7 @@
 						if(data == "0") {
 							location.href = "/member/gateway.php?menu=join&page=step4";
 						}else {
-							alert('ÀÌ¹Ì Á¸ÀçÇÏ´Â È¸¿øÀÔ´Ï´Ù.');
+							alert('ì´ë¯¸ ì¡´ì¬í•˜ëŠ” íšŒì›ì…ë‹ˆë‹¤.');
 							return;
 						}
 					},

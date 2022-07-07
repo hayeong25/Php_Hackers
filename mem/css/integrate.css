@@ -5,7 +5,7 @@
 *****************************/
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,menu,section,article, a, select, input{margin:0; padding:0;}
 
-body {margin:0; padding:0; font:12px dotum; color:#666; /*background:url('../../img/integrate/bg_body2.gif') top repeat-x;*/ line-height:100%; overflow-x:hidden;}
+body {margin:0; padding:0; font:12px dotum; color:#666; /*background:url('/img/integrate/bg_body2.gif') top repeat-x;*/ line-height:100%; overflow-x:hidden;}
 table {border-collapse: collapse;}
 fieldset, img {border:0;}
 img {margin-bottom:0; vertical-align:top; }
@@ -40,15 +40,15 @@ input, select {vertical-align:middle; outline:none;}
 #header .toplink li.end {background:none; padding-right:0;}
 #header .toplink li  a {display:block; height:15px;}
 #header .toplink li  a  span{display:none;}
-#header .toplink li  a.menu01 {background:url('../../img/integrate/top_link01.gif') no-repeat; width:66px;}
-#header .toplink li  a.menu02 {background:url('../../img/integrate/top_link02.gif') no-repeat; width:79px;}
-#header .toplink li  a.menu03 {background:url('../../img/integrate/top_link03.gif') no-repeat; width:63px;}
-#header .toplink li  a.menu04 {background:url('../../img/integrate/top_link04.gif') no-repeat; width:102px;}
+#header .toplink li  a.menu01 {background:url('/img/integrate/top_link01.gif') no-repeat; width:66px;}
+#header .toplink li  a.menu02 {background:url('/img/integrate/top_link02.gif') no-repeat; width:79px;}
+#header .toplink li  a.menu03 {background:url('/img/integrate/top_link03.gif') no-repeat; width:63px;}
+#header .toplink li  a.menu04 {background:url('/img/integrate/top_link04.gif') no-repeat; width:102px;}
 #header .toplink li a:hover {background-position:0 -15px;}
 #header .toplink img.bar {margin:0 15px;}
 */
 
-div.mainMenu {width:1000px; margin-bottom:34px; overflow:hidden; background:url('../../img/integrate/main_menu_bg.gif') left bottom no-repeat; padding-bottom:10px;}
+div.mainMenu {width:1000px; margin-bottom:34px; overflow:hidden; background:url('/img/integrate/main_menu_bg.gif') left bottom no-repeat; padding-bottom:10px;}
 div.mainMenu ul {width:100%; overflow:hidden;}
 div.mainMenu li {float:left; height:200px;}
 
@@ -132,31 +132,31 @@ div.mainMenu ul li .lasticon {left:33px; bottom:50px;}
 #footer .hackers_link { width:125px; height:22px; z-index:20; position:absolute; margin-left:721px; *margin-left:-120px;  }
 
 #footer .site_link {cursor: pointer}
-#footer ul.site_url {display:none; width:125px; height:195px; background:url('../../img/integrate/bg_sitelink.gif') no-repeat; overflow:hidden;}
+#footer ul.site_url {display:none; width:125px; height:195px; background:url('/img/integrate/bg_sitelink.gif') no-repeat; overflow:hidden;}
 #footer ul.site_url li {margin-bottom:6px; text-align:left; padding-left:10px;}
 #footer ul.site_url li a{display:block; height:11px; overflow:hidden;}
 #footer ul.site_url li a span {display:none;}
-#footer ul.site_url li a.site01 {background:url('../../img/integrate/sitelink01.gif') no-repeat; width:101px; margin-top:6px;}
-#footer ul.site_url li a.site02 {background:url('../../img/integrate/sitelink02.gif') no-repeat; width:102px;}
-#footer ul.site_url li a.site03 {background:url('../../img/integrate/sitelink03.gif') no-repeat; width:61px;}
-#footer ul.site_url li a.site04 {background:url('../../img/integrate/sitelink04.gif') no-repeat; width:100px;}
-#footer ul.site_url li a.site05 {background:url('../../img/integrate/sitelink05.gif') no-repeat; width:59px;}
-#footer ul.site_url li a.site06 {background:url('../../img/integrate/sitelink06.gif') no-repeat; width:51px;}
-#footer ul.site_url li a.site07 {background:url('../../img/integrate/sitelink07.gif') no-repeat; width:51px;}
-#footer ul.site_url li a.site08 {background:url('../../img/integrate/sitelink08.gif') no-repeat; width:51px;}
-#footer ul.site_url li a.site09 {background:url('../../img/integrate/sitelink09.gif') no-repeat; width:51px;}
-#footer ul.site_url li a.site10 {background:url('../../img/integrate/sitelink10.gif') no-repeat; width:40px;}
-#footer ul.site_url li a.site11 {background:url('../../img/integrate/sitelink11.gif') no-repeat; width:69px;}
+#footer ul.site_url li a.site01 {background:url('/img/integrate/sitelink01.gif') no-repeat; width:101px; margin-top:6px;}
+#footer ul.site_url li a.site02 {background:url('/img/integrate/sitelink02.gif') no-repeat; width:102px;}
+#footer ul.site_url li a.site03 {background:url('/img/integrate/sitelink03.gif') no-repeat; width:61px;}
+#footer ul.site_url li a.site04 {background:url('/img/integrate/sitelink04.gif') no-repeat; width:100px;}
+#footer ul.site_url li a.site05 {background:url('/img/integrate/sitelink05.gif') no-repeat; width:59px;}
+#footer ul.site_url li a.site06 {background:url('/img/integrate/sitelink06.gif') no-repeat; width:51px;}
+#footer ul.site_url li a.site07 {background:url('/img/integrate/sitelink07.gif') no-repeat; width:51px;}
+#footer ul.site_url li a.site08 {background:url('/img/integrate/sitelink08.gif') no-repeat; width:51px;}
+#footer ul.site_url li a.site09 {background:url('/img/integrate/sitelink09.gif') no-repeat; width:51px;}
+#footer ul.site_url li a.site10 {background:url('/img/integrate/sitelink10.gif') no-repeat; width:40px;}
+#footer ul.site_url li a.site11 {background:url('/img/integrate/sitelink11.gif') no-repeat; width:69px;}
 #footer ul.site_url li a:hover {background-position:0 -11px;}
 
 
-#mask { position:absolute; left:0; top:-4px; z-index:9000; background:#000 /*url('../../img/integrate/bg_main.png') repeat*/; display:none;}
+#mask { position:absolute; left:0; top:-4px; z-index:9000; background:#000 /*url('/img/integrate/bg_main.png') repeat*/; display:none;}
 	@media screen and (-webkit-min-device-pixel-ratio:0){#mask {top:0;}}
 	@-moz-document url-prefix() {#mask {top:0;}}
 
 
 #boxes .window { position:absolute; left:50%; top:50%; margin-top:-120px; margin-left:-217px; width:434px; height:240px; display:none; z-index:9999; }
-#boxes #dialog { width:434px; height:240px; background:url('../../img/integrate/bg_login.png') no-repeat; }
+#boxes #dialog { width:434px; height:240px; background:url('/img/integrate/bg_login.png') no-repeat; }
 
 .popup_login {}
 .popup_login .btnClose {text-align:right; padding-right:20px; margin-top:20px;}

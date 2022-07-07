@@ -1,31 +1,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ÇØÄ¿½ºÆÐ½º ÅëÇÕ»çÀÌÆ®</title>
+<title>í•´ì»¤ìŠ¤íŒ¨ìŠ¤ í†µí•©ì‚¬ì´íŠ¸</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" type="text/css" href="/css/popup.css" />
 </head>
 <body>
 	<div class="popup_join">
-		<h1><img src="/img/popup/tit_01.gif" alt="ÆÐ½º´åÄÄ °¡ÀÔÀÎÁõ" /></h1>
+		<h1><img src="/img/popup/tit_01.gif" alt="íŒ¨ìŠ¤ë‹·ì»´ ê°€ìž…ì¸ì¦" /></h1>
 		<div class="con">
-			<h3>ÇÚµåÆù¹øÈ£ ÀÎÁõ</h3>
-			<p class="tip_text" style="margin-bottom:20px;">ÇÚµåÆùÀ¸·Î ¹ÞÀº ÀÎÁõ¹øÈ£ ÀÔ·Â ÈÄ È®ÀÎÀ» ´­·¯ ÁÖ¼¼¿ä.</p>
+			<h3>í•¸ë“œí°ë²ˆí˜¸ ì¸ì¦</h3>
+			<p class="tip_text" style="margin-bottom:20px;">í•¸ë“œí°ìœ¼ë¡œ ë°›ì€ ì¸ì¦ë²ˆí˜¸ ìž…ë ¥ í›„ í™•ì¸ì„ ëˆŒëŸ¬ ì£¼ì„¸ìš”.</p>
 			<div class="check_num">
-				<label><img src="/img/popup/text_01.gif" alt="ÀÎÁõ¹øÈ£" /></label>
+				<label><img src="/img/popup/text_01.gif" alt="ì¸ì¦ë²ˆí˜¸" /></label>
 				<input type="text" class="checkNum" />
 			</div>
-			<p class="tip_text" style="margin-bottom:35px;"><span style="font-size:12px;">¡Ø</span> ÀÎÁõºñ¿ëÀº ÆÐ½º´åÄÄ¿¡¼­ ºÎ´ãÇÕ´Ï´Ù</p>
-			<h3><img src="/img/popup/text_02.gif" alt="ÀÎÁõ¹øÈ£°¡ µµÂøÇÏÁö ¾Ê´Â´Ù¸é?" /></h3>
+			<p class="tip_text" style="margin-bottom:35px;"><span style="font-size:12px;">â€»</span> ì¸ì¦ë¹„ìš©ì€ íŒ¨ìŠ¤ë‹·ì»´ì—ì„œ ë¶€ë‹´í•©ë‹ˆë‹¤</p>
+			<h3><img src="/img/popup/text_02.gif" alt="ì¸ì¦ë²ˆí˜¸ê°€ ë„ì°©í•˜ì§€ ì•ŠëŠ”ë‹¤ë©´?" /></h3>
 			<ul class="check_text">
-				<li>ÀçÀÎÁõÀ» ½ÃµµÇØ ÁÖ¼¼¿ä.</li>
-				<li>ÀçÀÎÁõ ½ÇÆÐ ½Ã Åë½Å»ç¿¡ ¹®ÀÇÇÏ½Ã±â ¹Ù¶ø´Ï´Ù.</li>
-				<li>Åë½Å»ç ¹®ÀÇ Àü Â÷´Ü¼³Á¤, ¸Þ½ÃÁöÇÔ ¿ë·® ÃÊ°ú ¿©ºÎ,<br />½ºÆÔ¹®ÀÚÇÔÀ» È®ÀÎÇØ ÁÖ¼¼¿ä.</li>
+				<li>ìž¬ì¸ì¦ì„ ì‹œë„í•´ ì£¼ì„¸ìš”.</li>
+				<li>ìž¬ì¸ì¦ ì‹¤íŒ¨ ì‹œ í†µì‹ ì‚¬ì— ë¬¸ì˜í•˜ì‹œê¸° ë°”ëžë‹ˆë‹¤.</li>
+				<li>í†µì‹ ì‚¬ ë¬¸ì˜ ì „ ì°¨ë‹¨ì„¤ì •, ë©”ì‹œì§€í•¨ ìš©ëŸ‰ ì´ˆê³¼ ì—¬ë¶€,<br />ìŠ¤íŒ¸ë¬¸ìží•¨ì„ í™•ì¸í•´ ì£¼ì„¸ìš”.</li>
 			</ul>
 			<div class="btn">
-				<a href="" id="ok"><img src="/img/popup/btn_ok.gif" alt="È®ÀÎ" /></a>
-				<a href="#"><img src="/img/popup/btn_re.gif" alt="ÀçÀü¼Û" /></a>
+				<a href="" id="ok"><img src="/img/popup/btn_ok.gif" alt="í™•ì¸" /></a>
+				<a href="#"><img src="/img/popup/btn_re.gif" alt="ìž¬ì „ì†¡" /></a>
 			</div>
 		</div>
 	</div>
@@ -33,10 +33,10 @@
 	<script>
 		$("#ok").click(function() {
 			if($(".checkNum").val() == '1234') {
-				confirm('ÀÎÁõµÇ¾ú½À´Ï´Ù.');
+				confirm('ì¸ì¦ë˜ì—ˆìŠµë‹ˆë‹¤.');
 				window.close();
 			}else {
-				alert('ÀÎÁõ¹øÈ£¸¦ ´Ù½Ã È®ÀÎÇØÁÖ¼¼¿ä.');
+				alert('ì¸ì¦ë²ˆí˜¸ë¥¼ ë‹¤ì‹œ í™•ì¸í•´ì£¼ì„¸ìš”.');
 			}
 		})
 	</script>

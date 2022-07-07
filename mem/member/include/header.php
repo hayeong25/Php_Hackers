@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	
 
 	header('Content-Type: text/html; charset=UTF-8');
 
@@ -17,41 +17,41 @@
 <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/js/integrate.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
-<title>ÇØÄ¿½ºÆÐ½º ÅëÇÕ»çÀÌÆ®</title>
+<title>í•´ì»¤ìŠ¤íŒ¨ìŠ¤ í†µí•©ì‚¬ì´íŠ¸</title>
 </head>
 <body>
 	<div id="wrapper">
 		<div id="header">
-			<p class="logo"><img src="/img/integrate/logo.gif" alt="ÇØÄ¿½ºÆÐ½º" /></p>
+			<p class="logo"><img src="/img/integrate/logo.gif" alt="í•´ì»¤ìŠ¤íŒ¨ìŠ¤" /></p>
 			<div class="topmenu">
 				<?php if(!isset($session_id)) { ?>
-				<a href="#dialog" name="modal"><img src="/img/integrate/top_icon01.gif" alt="·Î±×ÀÎ" /></a>
+				<a href="/" name="modal"><img src="/img/integrate/top_icon01.gif" alt="ë¡œê·¸ì¸" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="È¸¿ø°¡ÀÔ" /></a>
+				<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/top_icon02.gif" alt="íšŒì›ê°€ìž…" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } else { ?>
-				<a href="#" onclick="<?php session_destroy($session_id);?>"><img src="/img/integrate/top_icon01_1.gif" alt="·Î±×¾Æ¿ô" /></a>
+				<a href="#" onclick="<?php session_destroy($session_id);?>"><img src="/img/integrate/top_icon01_1.gif" alt="ë¡œê·¸ì•„ì›ƒ" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="°³ÀÎÁ¤º¸¼öÁ¤" /></a>
+				<a href="/member/gateway.php?menu=modify&page=modify"><img src="/img/integrate/top_icon02_1.gif" alt="ê°œì¸ì •ë³´ìˆ˜ì •" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
 				<?php } ?>
-				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="È¨" /></a>
+				<a href="/"><img src="/img/integrate/top_icon03.gif" alt="í™ˆ" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="#"><img src="/img/integrate/top_icon04.gif" alt="½ÃÀÛÆäÀÌÁö·Î Ãß°¡" /></a>
+				<a href="#"><img src="/img/integrate/top_icon04.gif" alt="ì‹œìž‘íŽ˜ì´ì§€ë¡œ ì¶”ê°€" /></a>
 				<img src="/img/integrate/top_iconbar.gif" alt="|" class="bar" />
-				<a href="#"><img src="/img/integrate/top_icon05.gif" alt="Áñ°ÜÃ£±â Ãß°¡" /></a>
-				<a href="#" class="family_site"><img src="/img/integrate/img_familysite.gif" alt="ÇØÄ¿½º ÆÐ¹Ð¸®»çÀÌÆ®" /></a>
+				<a href="#"><img src="/img/integrate/top_icon05.gif" alt="ì¦ê²¨ì°¾ê¸° ì¶”ê°€" /></a>
+				<a href="#" class="family_site"><img src="/img/integrate/img_familysite.gif" alt="í•´ì»¤ìŠ¤ íŒ¨ë°€ë¦¬ì‚¬ì´íŠ¸" /></a>
 				<ul class="family_link">
-					<li><a href="http://www.hackerspass.com/" target="_blank">ÇØÄ¿½º ÆÐ½º¤Ó°ø¹«¿ø</a></li>
-					<li><a href="#" target="_blank">ÇØÄ¿½º ÆÐ½º¤Ó±Ý&nbsp;&nbsp;&nbsp;À¶</a></li>
-					<li><a href="http://www.hackers.co.kr" target="_blank">ÇØÄ¿½ºÅäÀÍ</a></li>
-					<li><a href="http://www.hackers.ac" target="_blank">ÇØÄ¿½º¾îÇÐ¿ø</a></li>
-					<li><a href="http://www.champstudy.com" target="_blank">µ¿¿µ»ó°­ÀÇ</a></li>
-					<li><a href="http://www.hackers.co.kr" target="_blank">ÇØÄ¿½ºÅÜ½º</a></li>
-					<li><a href="http://www.gohackers.com" target="_blank">ÇØÄ¿½ºÅäÇÃ</a></li>
-					<li><a href="http://www.jumphackers.com" target="_blank">ÇØÄ¿½º¼ö´É</a></li>
-					<li><a href="http://recruit.hackers.com/" target="_blank">ÀÎÀçÃ¤¿ë</a></li>
-					<li><a href="#" target="_blank">ÇØÄ¿½º±³À°±×·ì</a></li>
+					<li><a href="http://www.hackerspass.com/" target="_blank">í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ã…£ê³µë¬´ì›</a></li>
+					<li><a href="#" target="_blank">í•´ì»¤ìŠ¤ íŒ¨ìŠ¤ã…£ê¸ˆ&nbsp;&nbsp;&nbsp;ìœµ</a></li>
+					<li><a href="http://www.hackers.co.kr" target="_blank">í•´ì»¤ìŠ¤í† ìµ</a></li>
+					<li><a href="http://www.hackers.ac" target="_blank">í•´ì»¤ìŠ¤ì–´í•™ì›</a></li>
+					<li><a href="http://www.champstudy.com" target="_blank">ë™ì˜ìƒê°•ì˜</a></li>
+					<li><a href="http://www.hackers.co.kr" target="_blank">í•´ì»¤ìŠ¤í…ìŠ¤</a></li>
+					<li><a href="http://www.gohackers.com" target="_blank">í•´ì»¤ìŠ¤í† í”Œ</a></li>
+					<li><a href="http://www.jumphackers.com" target="_blank">í•´ì»¤ìŠ¤ìˆ˜ëŠ¥</a></li>
+					<li><a href="http://recruit.hackers.com/" target="_blank">ì¸ìž¬ì±„ìš©</a></li>
+					<li><a href="#" target="_blank">í•´ì»¤ìŠ¤êµìœ¡ê·¸ë£¹</a></li>
 				</ul>
 			</div>
 		</div>

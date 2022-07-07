@@ -1,72 +1,27 @@
 </div>
 		<div class="underBlank"></div>
 		<div id="footer">
-			<p class="logo_footer"><img src="/img/integrate/logo_footer.gif" alt="ÇØÄ¿½ºÆĞ½º" /></p>
+			<p class="logo_footer"><img src="/img/integrate/logo_footer.gif" alt="í•´ì»¤ìŠ¤íŒ¨ìŠ¤" /></p>
 			<div>
 				<p class="policy">
-					<a href="/member/gateway.php?menu=terms&page=terms"><img src="/img/integrate/footer_icon01.gif" alt="ÀÌ¿ë¾à°ü" /></a>
+					<a href="/member/gateway.php?menu=terms&page=terms"><img src="/img/integrate/footer_icon01.gif" alt="ì´ìš©ì•½ê´€" /></a>
 					<img src="/img/integrate/footer_iconbar.gif" alt="" class="bar" />
-					<a href="/member/gateway.php?menu=privacy&page=privacy"><img src="/img/integrate/footer_icon02.gif" alt="°³ÀÎÁ¤º¸Ãë±Ş¹æÄ§" /></a>
+					<a href="/member/gateway.php?menu=privacy&page=privacy"><img src="/img/integrate/footer_icon02.gif" alt="ê°œì¸ì •ë³´ì·¨ê¸‰ë°©ì¹¨" /></a>
 					<img src="/img/integrate/footer_iconbar.gif" alt="" class="bar" />
-					<a href="#"><img src="/img/integrate/footer_icon03.gif" alt="Á¦ÈŞ¹®ÀÇ" /></a>
+					<a href="#"><img src="/img/integrate/footer_icon03.gif" alt="ì œíœ´ë¬¸ì˜" /></a>
 				</p>
-				<address><img src="/img/integrate/address.gif" alt="¼­¿ï½Ã ¼­ÃÊ±¸ ¼­ÃÊµ¿ 1316-15 Çö´ë¼º¿ìºôµù 203È£|TEL.02-554-7272|FAX.02-554-0551|»ç¾÷ÀÚµî·Ï¹øÈ£ 120-87-09984|(ÁÖ)Ã¨ÇÁ½ºÅÍµğ ´ëÇ¥ÀÌ»ç.Àå°æ¿ø|°³ÀÎÁ¤º¸°ü¸®Ã¥ÀÓÀÚ.±èº´Ã¶|COPYRIGHT ¨Ï 2012 HACKERSPASS ALL RIGHTS RESERVED" /></address>
+				<address><img src="/img/integrate/address.gif" alt="ì„œìš¸ì‹œ ì„œì´ˆêµ¬ ì„œì´ˆë™ 1316-15 í˜„ëŒ€ì„±ìš°ë¹Œë”© 203í˜¸|TEL.02-554-7272|FAX.02-554-0551|ì‚¬ì—…ìë“±ë¡ë²ˆí˜¸ 120-87-09984|(ì£¼)ì±”í”„ìŠ¤í„°ë”” ëŒ€í‘œì´ì‚¬.ì¥ê²½ì›|ê°œì¸ì •ë³´ê´€ë¦¬ì±…ì„ì.ê¹€ë³‘ì² |COPYRIGHT â“’ 2012 HACKERSPASS ALL RIGHTS RESERVED" /></address>
 			</div>
 		</div>
-	</div>
-	<!--ÆË¾÷ : ·Î±×ÀÎ-->
-	<div id="boxes">
-		<div id="dialog" class="window">
-			<div class="popup_login">
-				<form method="post" action="">
-					<p class="btnClose"><a href="#" class="close"><img src="/img/integrate/btn_login_close.gif" alt="´İ±â" /></a></p>
-					<h2><img src="/img/integrate/h2_login.gif" alt="·Î±×ÀÎ" /></h2>
-					<div class="loginBox">
-						<div class="textInput">
-							<p><label><img src="/img/integrate/login_textID.gif" alt="¾ÆÀÌµğ" /></label><input type="text" class="text" value="" name="userid" /></p>
-							<p><label><img src="/img/integrate/login_textPW.gif" alt="ºñ¹Ğ¹øÈ£" /></label><input type="password" class="text" onkeyup="" name="pw" /></p>
-						</div>
-						<a href="" class="btnLogin"><img src="/img/integrate/btn_login.gif" alt="·Î±×ÀÎ" /></a>
-					</div>
-					<div class="loginText">
-						<p class="script"><img src="/img/integrate/login_textDivision.gif" alt="ºñ¹Ğ¹øÈ£´Â ´ë¼Ò¹®ÀÚ¸¦ ±¸ºĞÇÕ´Ï´Ù." /></p>
-						<input type="checkbox" class="checkbox"><label><img src="/img/integrate/login_textSave.gif" alt="¾ÆÀÌµğÀúÀå" /></label>
-					</div>
-					<div class="btnJoin">
-						<a href="/member/gateway.php?menu=join&page=step1"><img src="/img/integrate/btn_login_join.gif" alt="È¸¿ø°¡ÀÔ" /></a>
-						<a href="/member/gateway.php?menu=find&page=id"><img src="/img/integrate/btn_login_find.gif" alt="¾ÆÀÌµğ/ºñ¹Ğ¹øÈ£Ã£±â" /></a>
-					</div>
-				</form>
-			</div>
-		</div>
-		<!-- Mask to cover the whole screen -->
-		<div id="mask"></div>
 	</div>
 	<script src="/js/jquery-1.8.1.min.js"></script>
 	<script>
-		function allPopClose(setName) {
-			$("#" + setName).hide();
-		}
-		$(function() {
-			rollingB("issue_tab", "issue_banner");
-			rollingC("book_tab", "book_banner");
-
-			$("#mainMenu li").hover(function() {
-				$(this).children().children("img.passimg").attr("src", $(this).children().children("img.passimg").attr("src").replace("_off", "_on"));
-				$(this).children().children("img.passicon").attr("src", $(this).children().children("img.passicon").attr("src").replace("_off", "_on"));
-			}, function() {
-				$(this).children().children("img.passimg").attr("src", $(this).children().children("img.passimg").attr("src").replace("_on", "_off"));
-				$(this).children().children("img.passicon").attr("src", $(this).children().children("img.passicon").attr("src").replace("_on", "_off"));
-			});
-
-		});
-		
 		$(".btnLogin").click(function() {
 			if($("[name='userid']").val() == "") {
-				alert('¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+				alert('ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.');
 			}
 			if($("[name='pw']").val() == "") {
-				alert('ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.');
+				alert('ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.');
 			}
 			
 			alert("userid : " + $("[name='userid']").val() + "\npw : " + $("[name='pw']").val());
@@ -82,12 +37,12 @@
 				},
 				success: function(data) {
 					if (data == '1') {
-						alert($("[name='userid']").val() + " ·Î±×ÀÎ ¼º°ø");
+						alert($("[name='userid']").val() + " ë¡œê·¸ì¸ ì„±ê³µ");
 						location.href = "/";
 					} else if (data == '0') {
-						alert('ºñ¹Ğ¹øÈ£°¡ Æ²·È½À´Ï´Ù.');
+						alert('ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.');
 					} else {
-						alert("¾ÆÀÌµğ°¡ Æ²·È½À´Ï´Ù.");
+						alert("ì•„ì´ë””ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.");
 					}
 				},
 			});

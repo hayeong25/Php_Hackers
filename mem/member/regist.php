@@ -13,11 +13,11 @@
     $send_mode = $data['mode'];
 
     switch($send_mode) {
-        // È¸¿ø°¡ÀÔ
+        // íšŒì›ê°€ì…
         case 'regist':
             $type = $data['user_type'];
             $userid = $data['userid'];
-            $pw = password_hash($data['pw'], PASSWORD_DEFAULT); // ºñ¹Ğ¹øÈ£ ¾ÏÈ£È­
+            $pw = password_hash($data['pw'], PASSWORD_DEFAULT); // ë¹„ë°€ë²ˆí˜¸ ì•”í˜¸í™”
             $name = $data['name'];
             $nick = $data['nick'];
             $birth = $data['birth'];
@@ -40,7 +40,7 @@
             echo $result;
 
             break;
-        // ·Î±×ÀÎ
+        // ë¡œê·¸ì¸
         case 'login':
             $userid = $data['userid'];
             $pw = $data['pw'];
@@ -63,21 +63,21 @@
             );
 
             if(password_verify($pw, $result['pw'])) {
-                // ·Î±×ÀÎ ¼º°ø
+                // ë¡œê·¸ì¸ ì„±ê³µ
                 $_SESSION['userid'] = $result['userid'];
                 $_SESSION['name'] = $result['name'];
                 echo json_encode(array("name" => $data['name'], "userid" => $data['userid'], "birth" => $data['birth'], "gender" => $data['gender'], "phone" => $data['phone'], "parent_phone" => $data['parent_phone'], "address" => $data['address'], "email" => $data['email'], "sns" => $data['sns'], "user_type" => $data['type']));
                 return;
             }else {
-                // °á°ú´Â ³ª¿Ô´Âµ¥ ºñ¹Ğ¹øÈ£ ÀÏÄ¡ÇÏÁö ¾ÊÀ» °æ¿ì
+                // ê²°ê³¼ëŠ” ë‚˜ì™”ëŠ”ë° ë¹„ë°€ë²ˆí˜¸ ì¼ì¹˜í•˜ì§€ ì•Šì„ ê²½ìš°
                 echo "0";
                 return;
             }
-            // ÇØ´ç ¾ÆÀÌµğ ¾øÀ» °æ¿ì
+            // í•´ë‹¹ ì•„ì´ë”” ì—†ì„ ê²½ìš°
             echo "-1";
 
             break;
-        // È¸¿øÁ¤º¸¼öÁ¤
+        // íšŒì›ì •ë³´ìˆ˜ì •
         case 'modify':
             $userid = $data['userid'];
             $pw = password_hash($data['pw'], PASSWORD_DEFAULT);
