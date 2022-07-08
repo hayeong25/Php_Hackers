@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	$session_id = $_SESSION['userid'];
+	$session_name = $_SESSION['name'];
 
 	include  "./db.php";
 ?>
@@ -9,7 +10,7 @@
 				<h2 class="title">강의문의<span class="navi"><a href="/">HOME</a> &gt; <a href="#">강의안내</a> &gt; <em>강의문의</em></span></h2>
 				<div class="content_wrap">
 					<ul class="tab_menu">
-						<li class="on"><a href="#">전체문의</a></li>
+						<li class="on"><a href="/board/gateway.php?menu=list">전체문의</a></li>
 						<li><a href="#">학원 강의문의</a></li>
 						<li><a href="#">온라인 강의문의</a></li>
 						<li><a href="#" class="last">교재 문의</a></li>
@@ -33,8 +34,8 @@
 								<th class="last">조회수</th>
 							</tr>
 							<?php
-								// board 테이블에서 no 내림차순 20개까지 보여주기
-								$sql = mq("select * from board order by no desc limit 0,20"); 
+								// board 테이블에서 bno 내림차순 20개까지 보여주기
+								$sql = mq("select * from board order by bno desc limit 0,20"); 
 								while ($board = $sql -> fetch_array()) {
 									$title = $board["title"]; 
 									if(strlen($title) > 30) { 
@@ -43,9 +44,9 @@
 									}
 							?>
 							<tr>
-								<td><?php echo $board['no'] ?></td>
+								<td><?php echo $board['bno'] ?></td>
 								<td><?php echo $board['category'] ?></td>
-								<td class="title"><a href="#"><?php echo $title ?></a></td>
+								<td class="title"><a href="gateway.php?menu=view&bno=<?php echo $board['bno'] ?>"><?php echo $title ?></a></td>
 								<td><?php echo $board['name'] ?></td>
 								<td><?php echo $board['regdate'] ?></td>
 								<td class="last"><?php echo $board['hit'] ?></td>

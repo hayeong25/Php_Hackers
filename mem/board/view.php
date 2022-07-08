@@ -1,9 +1,38 @@
+<?php
+	session_start();
+	$session_id = $_SESSION['userid'];
+	$session_name = $_SESSION['name'];
+
+	include  "./db.php";
+?>
 			<!-- contents -->
 			<div class="contents">
 				<h2 class="title">강의문의<span class="navi"><a href="/">HOME</a> &gt; <a href="#">강의안내</a> &gt; <em>강의문의</em></span></h2>
+				<?php
+					$bno = $_GET['bno'];
+					// 조회수 1 증가
+					$hit = mysqli_fetch_array(mq("select * from board where bno ='".$bno."'"));
+					$hit = $hit['hit'] + 1;
+					$fet = mq("update board set hit = '".$hit."' where bno = '".$bno."'");
+
+					$sql = mq("select * from board where bno='".$bno."'");
+					$board = $sql -> fetch_array();
+				?>
 				<div class="content_wrap">
-					<p class="board_btn"><a href="#" class="green">글쓰기</a><a href="#" class="green">답글</a><a href="#" class="green">목록</a><span><a href="#" class="green">수정</a><a href="#" class="green">삭제</a></span></p>
-					<!-- 뷰페이지 -->
+					<p class="board_btn">
+						<?php if(isset($session_id)) { ?>
+							<a href="#" class="green">글쓰기</a>
+							<a href="#" class="green">답글</a>
+						<?php } ?>
+						<a href="/board/gateway.php?menu=list" class="green">목록</a>
+						<span>
+							<?php if($session_name == $board['name']) { ?>
+								<a href="#" class="green">수정</a>
+								<a href="#" class="green">삭제</a>
+							<?php } ?>
+						</span>
+					</p>
+					<!-- view 페이지 -->
 					<div class="board_view" style="padding-bottom:5px">						
 						<table>
 							<colgroup>
@@ -16,51 +45,71 @@
 							</colgroup>
 							<tr>
 								<th>구분</th>
-								<td colspan="5"  class="last">온라인 강의문의</td>
+								<td colspan="5"  class="last"><?php echo $board['category'] ?></td>
 							</tr>
 							<tr>
 								<th>글제목</th>
-								<td colspan="5"  class="last">임재환 교수님 너무 재밌지 않나요??</td>
+								<td colspan="5"  class="last"><?php echo $board['title'] ?></td>
 							</tr>
 							<tr>
 								<th>작성자</th>
-								<td>관리자</td>
+									<td><?php echo $board['name'] ?></td>
 								<th>조회수</th>
-								<td>168</td>
+									<td><?php echo $board['hit'] ?></td>
 								<th>등록일</th>
-								<td class="last">2012-03-28<a href="#" class="grey">주소복사</a></td>
+									<td class="last"><?php echo $board['regdate'] ?></td>
 							</tr>
 							<tr>
 								<th>첨부파일</th>
-								<td colspan="5" class="last"><a href="#">종로편입아카데미.hwp</a></td>
+								<td colspan="5" class="last"><a href="#"><?php echo $board['filename'] ?></a></td>
 							</tr>
 							<tr>
-								<td colspan="6" class="view last">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세<br />동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세<br />동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세<br />동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세<br />동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세<br />동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세</td>
+								<td colspan="6" class="view last">
+									<?php echo $board['content'] ?>
+								</td>
 							</tr>
 						</table>
 					</div>
 					<!-- // 뷰페이지 끝 -->
+
 					<!-- 댓글 -->
 					<div class="reply_wrap">
 						<fieldset>
 							<legend>댓글달기</legend>
-							<p><textarea></textarea><button>등록</button></p>
+								<p>
+									<textarea name="reply_content"></textarea>
+									<button name="reply">등록</button>
+								</p>
 						</fieldset>
 						<div class="reply_list">
+						<?php
+							$bno = $_GET['bno'];
+
+							$sql = mq("select * from reply where bno='".$bno."' order by rno desc");
+							while ($reply = $sql -> fetch_array()) {
+						?>
 							<ul>
-								<li class="name">김남경<span class="date">2012/09/28</span><span class="btn"><a href="#">수정</a><var>|</var><a href="#">삭제</a></span></li>
-								<li class="comment">국제가수 싸이의 미국 최고권위의 차트인 빌보드 핫 100 2위 등극 사실에 일본 네티즌들이 격한 반응을 보였다. 현재 싸이의 빌보드 2위 등극을 보도한 일본 매체는 한 곳도 없다. 국내 언론의 일본어판 제공기사를 통해서 확인이 가능할 뿐이다. 그런데 이런 싸이의 빌보드 2위 등극에 일부 일본 네티즌들이 차트 조작설에 1963년 3주간 빌보드 1위에 등극했던 사카모토 큐의 ‘스키야키’가 더 위대하다는 주장을 전하고 있다.일본 네티즌들의 ‘강남스타일’ 차트 조작은 유튜브에서 화제가 된 당시부터 유명했다. 이들은 한국 네티즌들이 유튜브에서 싸이를 화제가 되도록 수도 없이 틀어댔고. 그 결과 이 같은 결과를 낳았다고 주장하고 있다.
+								<li class="name">
+									<?php echo $reply['name'] ?>
+									<span class="date"><?php echo $reply['regdate'] ?></span>
+									<?php if($session_name == $reply['name']) { ?>
+										<span class="btn"><a href="#" id="modify_reply">수정</a><var>|</var><a href="#" id="delete_reply">삭제</a></span></li>
+									<?php } ?>
+								<li class="comment"><?php echo $reply['content'] ?>
 								</li>
 							</ul>
-							<ul>
-								<li class="name">김남경<span class="date">2012/09/28</span><span class="btn"><a href="#">수정</a><var>|</var><a href="#">삭제</a></span></li>
-								<li class="comment">국제가수 싸이의 미국 최고권위의 차트인 빌보드 핫 100 2위 등극 사실에 일본 네티즌들이 격한 반응을 보였다. 현재 싸이의 빌보드 2위 등극을 보도한 일본 매체는 한 곳도 없다. 국내 언론의 일본어판 제공기사를 통해서 확인이 가능할 뿐이다. 그런데 이런 싸이의 빌보드 2위 등극에 일부 일본 네티즌들이 차트 조작설에 1963년 3주간 빌보드 1위에 등극했던 사카모토 큐의 ‘스키야키’가 더 위대하다는 주장을 전하고 있다.일본 네티즌들의 ‘강남스타일’ 차트 조작은 유튜브에서 화제가 된 당시부터 유명했다. 이들은 한국 네티즌들이 유튜브에서 싸이를 화제가 되도록 수도 없이 틀어댔고. 그 결과 이 같은 결과를 낳았다고 주장하고 있다.
-								</li>
-							</ul>
+						<?php
+							}
+						?>
 						</div>
 					</div>
 					<!-- 댓글 끝 -->
-					<p class="board_btn"><a href="#" class="green">목록</a><a href="#" class="green">글쓰기</a></p>
+
+					<p class="board_btn">
+						<?php if(isset($session_id)) { ?>
+							<a href="/board/gateway.php?menu=write" class="green">글쓰기</a>
+						<?php } ?>
+					</p>
 					<div class="board_list">						
 						<table>
 							<colgroup>
@@ -79,30 +128,27 @@
 								<th>날짜</th>
 								<th class="last">조회수</th>
 							</tr>
+							<?php
+								// 하단 리스트 게시물 5개씩 보여주기
+								$sql = mq("select * from board order by bno desc limit 0,5"); 
+								while ($board = $sql -> fetch_array()) {
+									$title = $board["title"]; 
+									if(strlen($title) > 30) { 
+										// 제목 길이 30 넘으면 ...
+										$title = str_replace($board["title"], mb_substr($board["title"], 0, 30, "utf-8"). "...", $board["title"]);
+									}
+							?>
 							<tr>
-								<td>공지</td>
-								<td></td>
-								<td class="title"><a href="#">부동산학개론 기초</a><img src="/board/images/board/new.gif" alt="NEW" /></td>
-								<td>해커스 패스닷컴</td>
-								<td>2012/09/25</td>
-								<td class="last">132</td>
+								<td><?php echo $board['bno'] ?></td>
+								<td><?php echo $board['category'] ?></td>
+								<td class="title"><a href="gateway.php?menu=view&bno=<?php echo $board['bno'] ?>"><?php echo $title ?></a></td>
+								<td><?php echo $board['name'] ?></td>
+								<td><?php echo $board['regdate'] ?></td>
+								<td class="last"><?php echo $board['hit'] ?></td>
 							</tr>
-							<tr>
-								<td>2</td>
-								<td>온라인 강의문의</td>
-								<td class="title"><a href="#">부동산학개론 기초</a></td>
-								<td>해커스 패스닷컴</td>
-								<td>2012/09/25</td>
-								<td class="last">132</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>학원 강의문의</td>
-								<td class="title"><a href="#">└ 부동산학개론 기초</a></td>
-								<td>해커스 패스닷컴</td>
-								<td>2012/09/25</td>
-								<td class="last">132</td>
-							</tr>
+							<?php
+								}
+							?>
 						</table>
 					</div>
 					<div class="paging">
@@ -119,10 +165,85 @@
 						<legend>리스트검색</legend>
 						<select>
 							<option value="" selected="selected">제목</option>
-							<option value=""></option>
+							<option value="">내용</option>
+							<option value="">제목+내용</option>
+							<option value="">글쓴이</option>
 						</select>
 						<input type="text" /><a href="#" class="black"><span>검색</span></a><a href="#" class="black"><span>내가 쓴 글 보기</span></a>
 					</fieldset>
 				</div>
 			</div>
 			<!-- // contents 끝 -->
+			<script src="/js/jquery-1.9.1.js"></script>
+			<script>
+				// 댓글 등록
+				$("[name='reply']").click(function() {
+					if($("[name='reply_content']").val() == "") {
+						alert('내용을 입력해주세요.');
+						return;
+					}
+
+					$.ajax({
+						type: 'post',
+						url: '/board/reply.php',
+						dataType : "JSON",
+						data:{
+							bno:<?php echo $_GET['bno'] ?>,
+							name:<?php echo $session_name ?>,
+							content:$("[name='reply_content']").val(),
+							mode:'register'
+						},
+						success: function(data) {
+							if(data == "1") {
+								location.href = "/board/gateway.php?menu=view&bno=<?php echo $_GET['bno'] ?>";
+							}
+						},
+					});
+				})
+
+				// 댓글 수정
+				$("#modify_reply").click(function() {
+					if($("[name='reply_content']").val() == "") {
+						alert('내용을 입력해주세요.');
+						return;
+					}
+
+					$.ajax({
+						type: 'post',
+						url: '/board/reply.php',
+						dataType : "JSON",
+						data:{
+							rno:<?php echo $reply['rno'] ?>,
+							content:$("[name='reply_content']").val(),
+							mode:'modify'
+						},
+						success: function(data) {
+							if(data == "1") {
+								location.href = "/board/gateway.php?menu=view&bno=<?php echo $_GET['bno'] ?>";
+							}
+						},
+					});
+				})
+
+				// 댓글 삭제
+				$("#delete_reply").click(function() {
+					$delete = confirm('삭제하시겠습니까?');
+
+					if($delete) {
+						$.ajax({
+							type: 'post',
+							url: '/board/reply.php',
+							dataType : "JSON",
+							data:{
+								rno:<?php echo $reply['rno'] ?>,
+								mode:'delete'
+							},
+							success: function(data) {
+								if(data == "1") {
+									location.href = "/board/gateway.php?menu=view&bno=<?php echo $_GET['bno'] ?>";
+								}
+							},
+						});
+					}
+				})
+			</script>
