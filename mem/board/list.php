@@ -1,3 +1,9 @@
+<?php
+	session_start();
+	$session_id = $_SESSION['userid'];
+
+	include  "./db.php";
+?>
 			<!-- contents -->
 			<div class="contents">
 				<h2 class="title">강의문의<span class="navi"><a href="/">HOME</a> &gt; <a href="#">강의안내</a> &gt; <em>강의문의</em></span></h2>
@@ -26,34 +32,38 @@
 								<th>날짜</th>
 								<th class="last">조회수</th>
 							</tr>
+							<?php
+								// board 테이블에서 no 내림차순 20개까지 보여주기
+								$sql = mq("select * from board order by no desc limit 0,20"); 
+								while ($board = $sql -> fetch_array()) {
+									$title = $board["title"]; 
+									if(strlen($title) > 30) { 
+										// 제목 길이 30 넘으면 ...
+										$title = str_replace($board["title"], mb_substr($board["title"], 0, 30, "utf-8"). "...", $board["title"]);
+									}
+							?>
 							<tr>
-								<td>공지</td>
-								<td></td>
-								<td class="title"><a href="#">부동산학개론 기초</a><img src="/board/images/board/new.gif" alt="NEW" /></td>
-								<td>해커스 패스닷컴</td>
-								<td>2012/09/25</td>
-								<td class="last">132</td>
+								<td><?php echo $board['no'] ?></td>
+								<td><?php echo $board['category'] ?></td>
+								<td class="title"><a href="#"><?php echo $title ?></a></td>
+								<td><?php echo $board['name'] ?></td>
+								<td><?php echo $board['regdate'] ?></td>
+								<td class="last"><?php echo $board['hit'] ?></td>
 							</tr>
-							<tr>
-								<td>2</td>
-								<td>온라인 강의문의</td>
-								<td class="title"><a href="#">부동산학개론 기초</a></td>
-								<td>해커스 패스닷컴</td>
-								<td>2012/09/25</td>
-								<td class="last">132</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>학원 강의문의</td>
-								<td class="title"><a href="#">└ 부동산학개론 기초</a></td>
-								<td>해커스 패스닷컴</td>
-								<td>2012/09/25</td>
-								<td class="last">132</td>
-							</tr>
+							<?php
+								}
+							?>
 						</table>
 					</div>
 					<div class="paging">
-						<p class="btn"><a href="/board/gateway.php?menu=list" class="green">목록</a><a href="/board/gateway.php?menu=write" class="green">글쓰기</a></p>
+						<p class="btn"><a href="/board/gateway.php?menu=list" class="green">목록</a>
+						<?php
+							if(isset($session_id)) {
+						?>
+						<a href="/board/gateway.php?menu=write" class="green">글쓰기</a></p>
+						<?php
+							}
+						?>
 						<div>
 							<a href="#" class="prev"><img src="/board/images/button/pprev.gif" alt="이전" /></a>
 							<a href="#" class="prev"><img src="/board/images/button/prev.gif" alt="이전" /></a>
