@@ -12,7 +12,6 @@
 @import url("sitemap.css");
 @import url("class_info.css");
 @import url("lecture.css");
-@import url("http://image.hackers.ac/pass/css/webfont.css");
 
 body {height:100%; margin:0; padding:0; font-size:12px !important; -webkit-text-size-adjust:none; font-family: 'Nanum Gothic', sans-serif; color:#666; background:url(../images/common/bg.gif) repeat-x}
 * {margin:0; padding:0; font-family:Nanum Gothic;}
