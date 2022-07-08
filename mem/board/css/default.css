@@ -1,0 +1,259 @@
+/*****************************
+제목 :  공통 CSS
+작성일 : 2012.09.24
+작성자 : 김남경
+*****************************/
+
+@import url("layout.css");
+@import url("board.css");
+@import url("free.css");
+@import url("login.css");
+@import url("about.css");
+@import url("sitemap.css");
+@import url("class_info.css");
+@import url("lecture.css");
+@import url("http://image.hackers.ac/pass/css/webfont.css");
+
+body {height:100%; margin:0; padding:0; font-size:12px !important; -webkit-text-size-adjust:none; font-family: 'Nanum Gothic', sans-serif; color:#666; background:url(../images/common/bg.gif) repeat-x}
+* {margin:0; padding:0; font-family:Nanum Gothic;}
+*:first-child+html * {font-weight:normal;}
+
+table {border-collapse: collapse}
+img,fieldset {border:0;}
+img {margin-bottom:0;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ img {margin-bottom:-3px;}}
+/*@-moz-document url-prefix() {img {margin-bottom:-3px}}*/
+li,dt,dd {list-style:none;}
+a {color:#000; text-decoration:none; cursor:pointer;}
+button {cursor:pointer; border:none;}
+button span {display:none;}
+b {font-weight:bold;}
+em,address,var {font-style:normal;}
+var {padding:0 3px;}
+legend, caption {display:none;}
+input, select {vertical-align:middle;}
+input {border:1px solid #dedede;}
+label input {border:0;}
+a {color:#000; text-decoration:none;}
+strong, b {font-weight:bold;}
+table,td,tr,div {font-family:Nanum Gothic;  font-size:12px; color:#000;}
+.pointer{cursor:pointer;}
+
+#wrapper {width:100%;}
+#header {position:relative; width:946px; height:105px; margin:0 auto; z-index:1;}
+#header .util_menu {float:right; margin:9px 0 0; width:100%; overflow:hidden}
+#header .util_menu li {float:right;}
+#header .util_menu a {display:inline-block; padding:0 6px 0 3px; color:#7e7e7e; font-size:11px; letter-spacing:-1px; background:url(../images/common/bar.gif) right no-repeat}
+#header .util_menu a:hover {color:#000;}
+#header .util_menu a.last {background:none; padding:0 0 0 3px;}
+#header li.family {margin:0 2px 0 0; float:left;}
+#header h1 {position:absolute; top:46px; left:0;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ #header h1 {top:48px;}}
+#header h1 img {vertical-align:middle;}
+#header h1 .sub_logo {margin:4px 0 0 18px;}
+#header h1 .sub_logo3 {margin:0 0 0 8px;}
+
+
+#header .gnb {float:right; *width:680px;  margin:37px 0 0 0;}
+@-moz-document url-prefix() {#header .gnb {margin:37px 0 0 0;}}
+#header .gnb li {float:left; margin:0 0 0 24px;}
+#header .gnb a {width:100%; height:45px; color:#333; font-weight:normal; font-size:15px; letter-spacing:-1px; display:inline-block;}
+#header .gnb a:hover, #header .gnb li.on a {color:#46b0a4; background:url(../images/common/sub_arrow.png) no-repeat 50% bottom;}
+
+#header .gnb li.land_lecture a {color:#257276;}
+#header .gnb li.land_lecture a:hover {color:#46b0a4;}
+#header .gnb li.e_lecture a {color:#257276;}
+#header .gnb li.e_lecture a:hover {color:#46b0a4; background:none;}
+#header .gnb li.l_lecture a {color:#2a5985;}
+#header .gnb li.l_lecture a:hover {color:#46b0a4;}
+
+#header .gnb li.g_lecture a {color:#938167;}
+#header .gnb li.g_lecture a:hover {color:#46b0a4;}
+
+
+
+.gnb_menu {width:100%; height:48px; background:url(../images/common/sub_gnbBg.png) repeat-x; z-index:2}
+.gnb_menu div.g_menu_fixed {position:relative; width:946px; margin:0 auto; }
+.gnb_menu ul {position:absolute; top:-13px; background:none;}
+
+/*
+.gnb_menu ul.menu01 {margin-left:255px; background-position:70px 0;}
+.gnb_menu ul.menu02 {margin-left:286px; background-position:124px 0;}
+.gnb_menu ul.menu03 {margin-left:384px; background-position:126px 0;}
+.gnb_menu ul.menu04 {margin-left:235px; background-position:385px 0;}
+.gnb_menu ul.menu05 {margin-left:450px; background-position:270px 0; }
+.gnb_menu ul.menu06 {margin-left:350px; background-position:465px 0; *background-position:460px 0;}
+.gnb_menu ul.menu07 {margin-left:596px; background-position:310px 0;}
+*/
+.gnb_menu ul.menu01 {margin-right:0px;} /* 학원안내 */
+.gnb_menu ul.menu02 {margin-right:20px;} /* 공인중개사 */
+.gnb_menu ul.menu03 {margin-right:100px;} /* 교수/교재소개 */
+.gnb_menu ul.menu04 {margin-right:0;} /* 무료강의 */
+.gnb_menu ul.menu05 {margin-right:0;} /* 참여게시판 */
+.gnb_menu ul.menu06 {margin-right:0;} /* 고객안내 */
+.gnb_menu ul.menu07 {margin-right:596px;} /* 동영상강의 */
+.gnb_menu ul.menu08 {margin-right:245px;} /* 행정사 */
+.gnb_menu ul.menu09 {margin-right:335px;} /* 부동산경매 */
+
+.gnb_menu li {float:left; margin:25px 0 0 29px;}
+.gnb_menu a {font-size:14px; color:#fff;}
+.gnb_menu a:hover, .gnb_menu li.on a {color:#8ddfe3;}
+
+.gnb_menu .my_room {position:absolute; top:10px; color:#fff; font-size:14px;}
+.gnb_menu .my_room img {margin:0 0 0 11px; vertical-align:middle;}
+
+.gnb_menu li img.finish {position:absolute; top:3px; left:125px;}
+
+.gnb_menu li span.bar {color:#fff; padding:0 5px 0 7px}
+.gnb_menu li span.depth3 a {color:#e6e7e9; font-size:13px; margin-right:6px;}
+.gnb_menu li span.depth3 a:hover,.gnb_menu li span.depth3 a.on {color:#8ddfe3;}
+
+/* 동영상 */
+#header .gnb.eLend {margin:36px 0 0;}
+#header .gnb.eLend a {height:46px;}
+#header .gnb.eLend li {float:left; margin:0 0 0 35px;}
+
+.gnb_menu ul {right:0;}
+.gnb_menu ul.menu01_e {margin-right:340px;} /* 중개사/ 행정사 */
+.gnb_menu ul.menu02_e {margin-right:0px;} /* */
+.gnb_menu ul.menu03_e {margin-right:200px;} /* 교수/교재소개 */
+.gnb_menu ul.menu04_e {margin-right:190px;} /* 무료학습실 */
+.gnb_menu ul.menu05_e {margin-right:110px;} /* 무료강의 */
+.gnb_menu ul.menu06_e {margin-right:0px;} /* 참여게시판 */
+.gnb_menu ul.menu07_e {} /* 고객안내 */
+
+.gnb_menu2 {position:relative; top:-4px; margin-bottom:-4px; }
+
+
+/* 로그인 */
+.loginBox {position:relative; width:958px; margin:0 auto; font-size:12px; color:#fff;}
+.loginBox a {font-size:12px; color:#fff; line-height:24px; display:inline-block;}
+.loginBox .login_title {float:left; margin-top:9px; margin-right:10px;}
+.loginBox .login_btns {height:42px; line-height:42px; display:block; overflow:hidden;}
+.loginBox .inputBox {float:left; margin-top:8px;}
+.loginBox .inputBox .input_bg {border:0; color:#868585; width:148px; height:26px; line-height:26px; padding-left:5px; display:inline-block;}
+.loginBox .inputBox .input_id {background:url('http://eland.pass.com/img/common/bg_id.png') no-repeat;}
+.loginBox .inputBox .input_pw {background:url('http://eland.pass.com/img/common/bg_pw.png') no-repeat;}
+.loginBox .inputBox .input_not {background:url('http://eland.pass.com/img/common/bg_input_not.png') no-repeat;}
+.loginBox .inputBox .btn_login {float:left; margin:0 2px; display:inline-block;}
+.loginBox .inputBox label {float:left; color:#fff; margin:1px 0 0 3px; line-height:26px; display:inline-block;}
+.loginBox .inputBox label.save_id {cursor:pointer;}
+.loginBox .inputBox label input {margin:-3px 3px 0 5px;}
+
+.loginBox .btns {float:right; width:250px; margin-top:13px; color:#fff; text-align:right;}
+
+/*
+#header .gnb {float:right; *width:680px;  margin:37px 0 0 0;}
+@-moz-document url-prefix() {#header .gnb {margin:37px 0 0 0;}}
+#header .gnb li {float:left; margin:0 0 0 24px;}
+#header .gnb a {width:100%; height:44px; color:#333; font-weight:normal; font-size:15px; letter-spacing:-1px; display:inline-block;}
+#header .gnb a:hover, #header .gnb li.on a {color:#46b0a4;}
+
+#header .gnb li.e_lecture a {color:#257276;}
+#header .gnb li.e_lecture a:hover {color:#46b0a4;}
+#header .gnb li.l_lecture a {color:#0066b3;}
+#header .gnb li.l_lecture a:hover {color:#46b0a4; background:url(../images/common/sub_arrow.png) no-repeat 50% bottom;}
+
+.gnb_menu {position:absolute; top:105px; left:0; width:100%; height:48px; background:url(../images/common/sub_gnbBg.png) repeat-x; z-index:2}
+.gnb_menu div {position:relative; width:946px; margin:0 auto; }
+.gnb_menu ul {position:absolute; top:-13px; background:none;}
+
+.gnb_menu ul.menu01 {margin-left:300px;} /* 학원안내 /
+.gnb_menu ul.menu01 .arrow {position:absolute; top:0px; left:172px;}
+.gnb_menu ul.menu02 {margin-left:200px;} /* 공인중개사 /
+.gnb_menu ul.menu02 .arrow {position:absolute; top:0px; left:125px;}
+.gnb_menu ul.menu03 {margin-left:480px;} /* 교수/교재소개 /
+.gnb_menu ul.menu03 .arrow {position:absolute; top:0px; left:82px;}
+.gnb_menu ul.menu04 {margin-left:570px;} /* 무료강의 /
+.gnb_menu ul.menu04 .arrow {position:absolute; top:0px; left:82px;}
+.gnb_menu ul.menu05 {margin-left:480px;} /* 참여게시판 /
+.gnb_menu ul.menu05 .arrow {position:absolute; top:0px; left:255px;}
+.gnb_menu ul.menu06 {margin-left:350px;} /* 고객안내 /
+.gnb_menu ul.menu06 .arrow {position:absolute; top:0px; left:472px;}
+.gnb_menu ul.menu07 {margin-left:596px;} /* 동영상강의 /
+.gnb_menu ul.menu07 .arrow {position:absolute; top:0px; left:60px;}
+.gnb_menu ul.menu08 {margin-left:275px;} /* 행정사 /
+.gnb_menu ul.menu08 .arrow {position:absolute; top:0px; left:126px;}
+.gnb_menu li {float:left; margin:25px 0 0 29px;}
+.gnb_menu a {font-size:14px; color:#fff;}
+.gnb_menu a:hover, .gnb_menu li.on a {color:#8ddfe3;}
+*/
+
+
+
+/* container */
+#container {width:100%; padding:27px 0 100px; background:#f9f9f9;}
+#container:after {clear:both; display:block; content:""}
+#container div.layout {position:relative; width:946px; margin:0 auto;}
+
+#full_menu {float:left; width:100%; background:#31363f; }
+#full_menu div {width:946px; margin:0 auto; padding:26px 0 0;  background:#31363f; }
+#full_menu dl {float:left; padding:0 0 19px;}
+#full_menu dt {margin:0 0 14px;}
+#full_menu dd {margin:0 0 6px 1px;}
+#full_menu dt a {color:#46b0a4; font-size:15px;}
+#full_menu dd a {color:#fff; font-size:12px;}
+
+#footer {float:left; width:100%; padding:0 0 30px; border-top:1px solid #dbdbd8;}
+#footer .menu a {color:#888}
+#footer .menu a strong {font-weight:bold; color:#000;}
+#footer .copy {width:946px; margin:20px auto 0; }
+#footer .copy h1 {float:left; margin:0 48px 0 0;}
+.btm_logo {margin-bottom:14px}
+#footer p.menu {width:730px; float:left;}
+#footer p.menu var {padding:0 11px;}
+#footer address {float:left; font-size:11px; line-height:16px; color:#999; padding-top:10px}
+#footer address a.info {font-family:'Nanum Gothic'; background:#fff; border:1px #9a989b solid; color:#444; padding:0 2px; letter-spacing:-1px;}
+
+/* quick menu */
+#quick_menu {position:absolute; top:30px; right:-109px; z-index:3}
+#quick_menu .quick_box{width:88px; background:#fff; border:1px solid #c8cacf;}
+#quick_menu h2, #quick_menu p.top {font-size:13px; text-align:center; font-family:arial; font-weight:bold;}
+#quick_menu h2 {color: white;padding:3px 0 4px; background:#ddd; border-bottom:1px solid #c8cacf; background:url('http://land.pass.com/images/common/quick_top_bg.jpg') repeat-x;}
+#quick_menu li {margin:0 7px; text-align:center; border-bottom:1px solid #e3e4e7;}
+#quick_menu li a {display:block; padding:8px 0;}
+#quick_menu li.last {border-bottom:none;}
+#quick_menu li.last a {color:#b70e26;}
+#quick_menu p.top {padding:1px 0; border-top:1px solid #7d8087; background:#31363f;}
+#quick_menu p.top a {color:#fff;}
+#quick_menu p.first{margin-top:10px;}
+#quick_menu p.body{}
+#quick_menu .exam_date {width:90px; margin-bottom:7px; overflow:hidden;}
+#quick_menu .exam_date .exam_info {width:100%; line-height:18px; color:#232323; *font-weight:400; letter-spacing:0px; text-align:center;}
+#quick_menu .exam_date .exam_info em {font-weight:600; color:#cd1c3b;}
+#quick_menu .exam_date .dday {width:100%; height:24px; line-height:24px; margin-top:5px; background:url('http://gosi.pass.com/images/common/quick_dday_bg.png') no-repeat; display:block;}
+#quick_menu .exam_date .dday span {margin-left:34px; *margin-left:28px; color:#fff; letter-spacing:13px; font-size:13px;}
+
+/* quick menu 동영상 */
+#quick_menu_e {position:absolute; top:0px; right:-140px;  z-index:3}
+#quick_menu_e .quick_box{width:88px; background:#fff; border:1px solid #c8cacf; margin-top:10px}
+#quick_menu_e h2, #quick_menu_e p.top {font-size:13px; text-align:center; font-family:arial; font-weight:bold;}
+#quick_menu_e h2 {padding:3px 0 4px; background:#ddd; border-bottom:1px solid #c8cacf;}
+#quick_menu_e li img {vertical-align:top;}
+#quick_menu_e p.top {padding:1px 0; border-top:1px solid #7d8087; background:#31363f;}
+#quick_menu_e p.top a {color:#fff;}
+
+#quick_menu_e ul.banner {}
+#quick_menu_e ul.banner li {margin:9px 0 0;}
+#quick_menu_e dl {}
+#quick_menu_e dt {margin:0}
+#quick_menu_e dd {margin:0 0 0 5px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {#quick_menu_e dd {margin:5px 0 0 5px;}}
+#quick_menu_e dd span {position:relative; top:-2px; *top:-4px; display:inline-block; width:52px; height:22px; padding:0 0 0 4px; *padding:0; font-size:19px; text-align:center; letter-spacing:6px; color:#fff; background:url('http://eland.pass.com/img/common/d-day02.gif') no-repeat;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {#quick_menu_e dd span{padding:0 0 0 2px; letter-spacing:5px}}
+#quick_menu_e dd span img {vertical-align:middle;}
+#quick_menu_e ul.menu {width:74px; margin:3px 0 0 7px; border-top:1px solid #e3e4e7;}
+#quick_menu_e ul.menu li {padding:8px 0 9px; font-size:12px; border-bottom:1px solid #e3e4e7; text-align:center;}
+#quick_menu_e ul.menu li a {color:#000; }
+#quick_menu_e ul.menu li.last {border-bottom:none;}
+
+/* footer 동영상 */
+#footer_e {float:left; width:100%; min-width:946px; padding:0 0 30px; background:#32363f; border-top:1px solid #dbdbd8;}
+#footer_e .menu a {color:#cbcbcb;}
+#footer_e .menu a strong {font-weight:bold; color:#fff;}
+#footer_e .copy {width:958px; margin:20px auto 0; color:#cbcbcb;}
+#footer_e .copy h1 {float:left; margin:0 48px 0 0;}
+#footer_e p.menu {width:750px; float:left; margin:0 0 19px;}
+#footer_e p.menu var {padding:0 11px;}
+#footer_e address {float:left; font-size:11px; line-height:16px; color:#999;}
+#footer_e a.info {font-family:'Nanum Gothic'; background:#fff; border:1px #9a989b solid; color:#444; padding:0 2px; letter-spacing:-1px;}

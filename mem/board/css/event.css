@@ -1,0 +1,148 @@
+
+/* 응원댓글 이벤트 121004 박선희 */
+
+div.register {position:relative; width:750px; height:1127px; background:url("http://land.pass.com/images/event/bg_event_coming_soon.jpg") no-repeat }
+.register_area {position:absolute; top:990px; left:32px;}
+textarea {
+    border:1px solid #d3d3d3;
+    color: #666666;
+    float: left;
+    font-size: 12px;
+	 width: 617px;
+    height: 99px;
+    line-height: 20px;
+    padding: 4px 0 0 6px;
+    vertical-align: top;
+}
+.cb_btn_area {
+    float: left;
+    margin-left: 5px;
+}
+.cb_btn_area input {
+    display: block;
+    float: left;
+	border:1px solid #d3d3d3;
+}
+div.comment {width:708px; height:auto; border-bottom:1px solid #dfded9; border-right:1px solid #dfded9; border-left:1px solid #dfded9; 	padding:25px 20px 10px; background-color:#fff}
+
+
+.comment table {
+    width: 700px;
+}
+
+
+.comment table th span {float:right; padding-top:2px}
+*:first-child+html .comment table th span {float:right; vertical-align:top; border:1px solid red; }
+
+.comment table th, .comment table td  {
+    border-bottom: 1px solid #dedede;
+    color: #757575;
+
+	text-align:left
+}
+
+.comment table th.nickname, .comment table td.comment_cont { padding: 5px 0 7px 20px;}
+
+.paginate_simple{padding:15px 0;text-align:center;line-height:normal}
+.paginate_simple *{display:inline-block;position:relative;margin:0 -2px;padding:2px 4px;font-size:11px;font-family:Tahoma, Sans-serif;color:#9d9c9c;line-height:normal;text-decoration:none;vertical-align:middle}
+.paginate_simple a:hover,
+.paginate_simple a:active,
+.paginate_simple a:focus{background-color:#f8f8f8}
+.paginate_simple strong{color:#262626}
+.paginate_simple .direction{padding:0 6px;font-weight:bold;font-size:14px;color:#666;text-align:center}
+.paginate_simple .direction:hover,
+.paginate_simple .direction:active,
+.paginate_simple .direction:focus{background-color:transparent !important;color:#333}
+.paginate_simple .direction span{overflow:hidden;visibility:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0}
+
+
+
+
+
+
+.eventCafe_wrap {}
+.eventCafe_wrap div {position:relative}
+.eventCafe_wrap div label {display:none}
+.eventCafe_wrap div.box label {display:inline-block}
+.eventCafe_wrap div input {border:0}
+.eventCafe_wrap img {vertical-align: top;}
+.eventCafe_wrap * {font-family: dotum;font-size: 12px;margin: 0;padding: 0;}
+.eventCafe_wrap div.box {background: url("http://land.pass.com/images/event/bg_eventCafe_04.gif") no-repeat scroll 0 0 transparent;border: 0 none;margin: 0;width: 620px;height:328px;padding:44px 40px}
+.eventCafe_wrap fieldset {}
+.eventCafe_wrap h2 {font-weight: normal;position: relative;}
+.eventCafe_wrap h2 img {padding: 0 0 18px 12px;}
+.eventCafe_wrap h2 span {color: #646464;position: absolute;right: 6px;top: 3px;}
+.eventCafe_wrap h2 span input {border: medium none;height: auto; position: relative;top: -2px;vertical-align: middle;width: auto;}
+.eventCafe_wrap h2 span img {margin: 0 0 0 3px;padding: 0;vertical-align: middle;}
+.eventCafe_wrap fieldset table {border-top: 1px solid #8992B9; width: 100%;}
+.eventCafe_wrap fieldset th, fieldset td {border-bottom: 1px solid #D1D1DD;}
+.eventCafe_wrap fieldset th {background: none repeat scroll 0 0 #F0F1F5; border-right: 1px solid #D1D1DD;color: #494A4E;height: 37px;padding-left: 41px;text-align: left;}
+.eventCafe_wrap fieldset th em {color: #E72027;}
+.eventCafe_wrap fieldset td {padding-left: 22px;}
+.eventCafe_wrap fieldset input { border: 1px solid #DFDFDF;color: #626262;height: 19px;vertical-align: middle;width: 143px;}
+.eventCafe_wrap fieldset select {color: #626262;}
+.eventCafe_wrap fieldset .phone {margin: 0 13px 0 0;width: 90px;}
+.eventCafe_wrap fieldset input.name {background: url("http://www.edu2080.co.kr/image/event/eventCafe_wrap/input_bg.gif") no-repeat scroll 0 0 transparent;}
+.eventCafe_wrap p.point {color: #E72027;margin: 6px 0 0 8px;}
+.eventCafe_wrap p.btn_app {margin: 20px 0 30px;text-align: center;}
+#eventCafe_wrap1008 {border: 0 none; width: 700px;}
+#eventCafe_wrap1008 div.box {background: url("http://land.pass.com/images/event/bg_eventCafe_04.gif") repeat-y scroll 0 0 transparent; border: 0 none;margin: 0;width: 700px;height:416px}
+#eventCafe_wrap1008 fieldset {margin: 0 0 0 46px; width: 608px;}
+#eventCafe_wrap1008 h2 {background: none repeat scroll 0 0 #FFFFFF;font-weight: normal;position: relative;}
+#eventCafe_wrap1008 h2 span input {top: -1px;}
+#eventCafe_wrap1008 p.btn_app {margin: 20px 0 7px;text-align: center;}
+#eventCafe_wrap1008 fieldset th {background: none repeat scroll 0 0 #F0F1F5;border-right: 1px solid #D1D1DD;color: #494A4E;height: 37px;padding-left: 35px;text-align: left;width: 80px;}
+#eventCafe_wrap1008 fieldset th.cnt {padding: 0;text-align: center;width: 115px;}
+#eventCafe_wrap1011 {border: 0 none;width: 740px;}
+#eventCafe_wrap1011 div.box {background: url("http://www.edu2080.co.kr/image/event/eventCafe_wrap/eventCafe_wrap_bg2.jpg") repeat-y scroll 0 0 transparent;border: 0 none;margin: 0;width: 740px;}
+#eventCafe_wrap1011 fieldset {margin: 0 0 0 66px;width: 608px;}
+#eventCafe_wrap1011 h2 {background: none repeat scroll 0 0 #FFFFFF;font-weight: normal;position: relative;}
+#eventCafe_wrap1011 h2 span input {top: -1px;}
+#eventCafe_wrap1011 p.btn_app {margin: 20px 0 7px;text-align: center;}
+#eventCafe_wrap1011 fieldset th {background: none repeat scroll 0 0 #F0F1F5; border-right: 1px solid #D1D1DD;color: #494A4E;height: 37px;padding-left: 35px;text-align: left;width: 80px;}
+#eventCafe_wrap1011 fieldset th.cnt {padding: 0;text-align: center;width: 115px;}
+#eventCafe_wrap1011 #e121101 {background: url("http://www.edu2080.co.kr/image/event/eventCafe_wrap/eventCafe_wrap_9_bg.jpg") repeat-y scroll 0 0 transparent;border: 0 none;margin: 0;width: 740px;}
+#eventCafe_wrap1011 #e121101 fieldset {margin: 0 0 0 88px;width: 569px;}
+#eventCafe_wrap1011 #e121101 fieldset h2 img {padding-left: 0;}
+
+.radio_01 {position:absolute; top:190px; left:204px}
+.radio_02 {position:absolute; top:190px; left:410px}
+.radio_03 {position:absolute; top:190px; left:620px}
+.radio_04 {position:absolute; top:262px; left:250px}
+.radio_05 {position:absolute; top:458px; left:250px}
+.radio_06 {position:absolute; top:262px; left:570px}
+.radio_07 {position:absolute; top:458px; left:570px}
+
+
+/* 이벤트 공통 _130912 정미례 */
+.event_wrap {position:relative; width:750px;}
+.event_wrap img {vertical-align:top; margin:0; border:0;}
+.event_wrap .pointer {cursor:pointer;}
+
+/*
+.e130912 h1 {height:48px; background:url('http://eland.pass.com/img/event/2013/130808/header.gif') no-repeat;}
+*/
+
+/* 추석이벤트 */
+.e130912 h1 {height:30px; background-color:#000;}
+.e130912 h1 span {margin-top:6px; font-weight:bold; font-size:13px; color:#fff; display:inline-block;}
+.e130912 h1 span.t1 {float:left; width:285px; margin-left:15px;}
+.e130912 h1 span.t1 em {color:#fff203;}
+.e130912 h1 span.t2 {float:left; width:120px; color:#ff0000; text-align:center;}
+.e130912 h1 span.t3 {float:right; margin-right:15px;}
+.e130912 h1 span.t3 em {color:#ff7d27;}
+
+.e130912_pop {position:relative;}
+.e130912_pop label.choice_book {position:absolute; top:277px; *top:275px; width:160px; height:20px; display:block;}
+.e130912_pop label.c1 {left:141px;}
+.e130912_pop label.c2 {left:337px;}
+.e130912_pop label input {border:0;}
+
+/* 2014 연간회원반 */
+.e131022 .d_day {position:relative;}
+.e131022 .d_day span {position:absolute; top:32px; width:60px; font-weight:bold; font-family:arial; font-size:55px; color:#fff; letter-spacing:-4px; display:block;}
+.e131022 .d_day span.day {left:90px; letter-spacing:-1px;}
+.e131022 .d_day span.hour {left:202px;}
+.e131022 .d_day span.min {left:277px;}
+.e131022 .d_day span.sec {left:349px;}
+.e131022 .d_day span.btn_apply {top:15px; left:440px;}

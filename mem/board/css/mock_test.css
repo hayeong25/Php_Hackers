@@ -1,0 +1,351 @@
+/* 모의고사_130220_정미례 */
+
+.mock_test {width:750px; overflow:hidden;}
+.mock_test h4 {margin-bottom:15px;}
+.mock_test em{font-weight:bold;}
+.mock_test h5 {margin:30px 0 8px; padding-left:10px; font-size:16px; color:#686b76; background:url('http://land.pass.com/images/mock_test/icon_01.jpg') 0 6px no-repeat;}
+.mock_test h5 em {color:#414b6f}
+.mock_test h5 em.green {color:#257276}
+
+/* 섹션탭 */
+.mock_tab {display:inline-block;}
+.mock_tab li {float:left; width:150px; height:54px; display:inline-block; cursor:pointer;}
+.mock_tab li span {display:none;}
+.mock_tab li.m_tab01 {background:url('http://land.pass.com/images/mock_test/tab_01.jpg');}
+.mock_tab li.m_tab02 {background:url('http://land.pass.com/images/mock_test/tab_02.jpg');}
+.mock_tab li.m_tab03 {background:url('http://land.pass.com/images/mock_test/tab_03.jpg');}
+.mock_tab li.m_tab04 {background:url('http://land.pass.com/images/mock_test/tab_04.jpg');}
+.mock_tab li.m_tab05 {background:url('http://land.pass.com/images/mock_test/tab_05.jpg');}
+.mock_tab li:hover,
+.mock_tab li.on {background-position:0 -54px;}
+
+/* 섹션 */
+.mock_test .section {width:708px; padding:35px 0 0 40px; border:1px solid #e2e2e2; border-top:0;}
+.mock_test .btn_apply {width:670px; margin:30px 0 60px; text-align:center;}
+.mock_test .btn_apply a {width:300px; height:54px; line-height:54px; margin:0 3px; padding-right:13px; font-weight:bold; font-size:22px; color:#fff; text-align:center; display:inline-block; background:url('http://land.pass.com/images/mock_test/btn_apply_bg.jpg') no-repeat;}
+.mock_test .script {color:#666;}
+.mock_test .script a {font-weight:bold;}
+
+/* 섹션_박스 */
+.mock_test .m_box {width:664px; border:3px solid #e6e9f2; display:inline-block;}
+.mock_test .m_box ul {margin:10px 0 10px 20px;}
+.mock_test .m_box ul li {line-height:24px; padding-left:8px; font-size:14px; color:#555; background:url('http://land.pass.com/images/mock_test/icon_02.jpg') 0 9px no-repeat;}
+
+.mock_test .caution p {float:left; display:inline-block;}
+.mock_test .caution p img {padding:10px 0 10px 20px;}
+.mock_test .caution ul {float:left; display:inline-block;}
+
+/* 테이블 */
+.mock_test table {width:670px; margin-bottom:15px;}
+/*.mock_test table * {font-family:dotum;}*/
+.mock_test th,
+.mock_test td {line-height:22px; padding:10px 0 8px 25px; font-size:14px; color:#5b5b5b; border:1px solid #d6dae7;}
+.mock_test th {padding-left:0; color:#fff; background-color:#257276;}
+
+.mock_test td.btn_map {padding:0px 0 10px 30px; }
+.mock_test td.btn_map a {position:relative; top:9px; margin-left:5px; display:inline-block;}
+.mock_test td.btn_map a img {float:left;}
+.mock_test td.choice {line-height:24px;}
+.mock_test td.choice label {font-size:14px; display:block;}
+.mock_test td.choice label em {font-weight:bold; color:#71788f;}
+.mock_test td.birth label {margin-right:15px;}
+
+.mock_test .section td .red {color:#cc0000;}
+.mock_test .section td .stext {margin-top:5px; display:inline-block;}
+.mock_test .sec_02 td,
+.mock_test .sec_02 td span {font-size:12px; color:#414b6f;}
+.mock_test .sec_02 td select {height:20px;}
+.mock_test .sec_02 td input.txt {height:18px; line-height:18px;}
+
+
+/* 테이블_답변 */
+.mock_test .sec_03 {padding-bottom:30px;}
+.mock_test .tab_menu {width:auto; margin:20px 0px 20px}
+.mock_test .tab_menu li {width:332px; margin-right:6px;}
+.mock_test .tab_menu li a {width:100%; font-size:16px;}
+
+.mock_test table.answer th,
+.mock_test table.answer td {padding:4px 0 2px 0px; font-size:13px;  text-align:center;}
+.mock_test table.answer th {color:#587a7c; background-color:#cfe3e4;}
+
+.mock_test table.answer thead th,
+.mock_test table.answer thead td {color:#fff; background-color:#257276;}
+
+
+
+/* 팝업_성적확인_공무원_수정 */
+.myresultWrap {border:1px #c5c5c5 solid; width:689px; padding:15px 25px; color:#666;}
+.myresultWrap h2 {padding:8px 0 8px; margin-bottom:17px; font-size:18px; color:#fff; background:#545555; text-align:center; }
+.myresultWrap h2 em {color:#fff221;}
+.myresultWrap h3 {font-size:18px; padding-left:2px;}
+.myresultWrap h4 {font-size:14px; padding:0 0 10px 2px; color:#525252}
+@media screen and (-webkit-min-device-pixel-ratio:0){ .myresultWrap h2 {padding:9px 0}}
+@-moz-document url-prefix() {.myresultWrap h2 {padding:9px 0;}}
+
+.myresultWrap .myresultScore {width:689px; height:150px; background:url('/images/mock_test/report/myresult_bg.gif') no-repeat;}
+.myresultWrap .myresultScore div {float:left; width:225px; height:70px; line-height:70px; margin-top:20px; font-weight:bold; font-size:53px; font-family:verdana; color:#cc0000; letter-spacing:-1px; text-align:center;}
+.myresultWrap .myresultScore div span {font-size:30px; font-family:dotum}
+
+.myresultWrap .score3 div {margin-top:18px; font-size:38px;}
+.myresultWrap .score3 div span {position:relative; top:-3px; margin-left:3px; font-size:20px; font-family: 'Nanum Gothic', sans-serif; letter-spacing:0;}
+.myresultWrap .score3 div span.all_score {color:#989898;}
+.myresultWrap .myresultScore div.average2 {}
+.myresultWrap .myresultScore div.average3 {margin-left:7px;}
+.myresultWrap .myresultScore div.allpercent2 {width:218px; margin-left:13px;}
+.myresultWrap .myresultScore div .text00 {width:100%; line-height:40px; color:#888; display:block;}
+.myresultWrap .myresultScore div .text00 em {color:#333;}
+.myresultWrap .myresultScore div .text01 {}
+.myresultWrap .myresultScore div .text02 {}
+.myresultWrap .myresultScore div .text03 {color:#333;}
+
+.myresultWrap .mytestBanner {text-align:center;}
+.myresultWrap .mytestBanner a {margin:0 10px; padding:13px; color:#fff; background-color:#4b4b4b; display:inline-block;}
+.myresultWrap .mytestBanner a em {margin-top:3px; color:#fff221;  display:block;}
+
+.myresultWrap .myresultBox {width:689px;}
+.myresultWrap .myresultBox .mgb10 {margin-bottom:10px;}
+.myresultWrap .myresultBox .mgb20 {margin-bottom:20px;}
+.myresultWrap .myresultBox .mgb35 {margin-bottom:35px;}
+.myresultWrap .btnR {text-align:right; margin-bottom:5px;}
+.myresultWrap .btnR .floatL {float:left;}
+.myresultWrap .btnR_a {width:689px; text-align:right; position:absolute; margin:-32px 0 0;}
+.myresultWrap .btnR_a span {width:110px; height:24px; line-height:24px; margin-left:5px; text-align:center; background:url('/images/mock_test/report/btn_bg.gif') no-repeat; display:inline-block;}
+.myresultWrap .btnR_a span a {width:100%; height:100%; display:block;}
+
+.myresultWrap .tab_result {width:689px; height:37px; margin-bottom:25px;}
+.myresultWrap .tab_result li{float:left;}
+.myresultWrap .tab_result li a {display:block; height:37px;}
+.myresultWrap .tab_result li a span{display:none;}
+.myresultWrap .tab_result li a.menu01 {background:url('/images/mock_test/report/tab_result01.gif') no-repeat; width:345px;}
+.myresultWrap .tab_result li a.menu02 {background:url('/images/mock_test/report/tab_result02.gif') no-repeat; width:344px;}
+.myresultWrap .tab_result li.on a, .myresultWrap .tab_result li a:hover {background-position:0 -37px;}
+
+.myresultWrap .myresultBox h3 {margin-bottom:10px; position:relative}
+.myresultWrap .myresultBox span.add_txt {position:absolute; top:0; right:0; font-size:12px; text-align:right; font-weight:normal}
+.myresultWrap .myresultBox span.add_txt em {color:red}
+.myresultWrap .myresultBox .myscore {width:689px; font-size:12px;}
+.myresultWrap .myresultBox .myscore th {border:1px #d5dbeb solid; background:#f5f6fa; padding:10px 0 7px; letter-spacing:-0.05em; color:#737790;}
+.myresultWrap .myresultBox .myscore th.bg_white {background:#fff; padding:9px 0 7px;}
+.myresultWrap .myresultBox .myscore td {border:1px #d5dbeb solid; text-align:center; padding:9px 0 7px;  color:#333333;}
+.myresultWrap .myresultBox .myscore td.bg_gray {background:#f5f6fa; font-weight:bold;}
+.myresultWrap .myresultBox .myscore th.alignL {text-align:left; padding:9px 15px 7px;}
+.myresultWrap .myresultBox .myscore td.alignL {text-align:left; padding:9px 10px 7px;}
+.myresultWrap .myresultBox .myscore tr.level td {min-height:55px; height:auto!important; _height:55px;}
+.myresultWrap .myresultBox .myscore tr.level td p {margin:2px 0; height:16px;}
+.myresultWrap .myresultBox .myscore tr.level td span.type {display:inline-block; width:170px;} /* 추천강좌명 */
+.myresultWrap .myresultBox .myscore tr.level td a {vertical-align:-3px;}
+.myresultWrap .myresultBox .myscore tr.total_sum th {color:#4f8da4; background:#e9f5fa; padding:20px 0 17px; font-size:14px;}
+.myresultWrap .myresultBox .myscore tr.total_sum td {color:#4f8da4; background:#e9f5fa; font-weight:bold; font-size:14px; font-family:Tahoma;}
+.myresultWrap .myresultBox .myscore td.redtext {color:#cc0000;}
+
+.myresultWrap .graphbox01 {border:1px #d5dbeb solid; background:url('/images/mock_test/report/bg_graph_title.gif') center 16px no-repeat; padding:30px 40px 10px; min-height:180px;}
+.myresultWrap .graphbox01 .garph_bar {width:100%; }
+.myresultWrap .graphbox01 .garph_bar td {text-align:center; margin:0; padding:0;}
+.myresultWrap .graphbox01 .garph_bar tr.bar td {border-bottom:1px #636363 solid; height:160px; vertical-align:bottom; }
+.myresultWrap .graphbox01 .garph_bar tr.bar td p{display:inline-block; zoom:1; *display:inline; width:28px;}
+*:first-child+html  .myresultWrap .graphbox01 .garph_bar tr.bar td p {margin:0 2px;}
+.myresultWrap .graphbox01 .garph_bar tr.bar td p span {font-size:16px; font-weight:bold; color:#555; font-family:Tahoma;}
+.myresultWrap .graphbox01 .garph_bar tr.bar td p span.myscore {color:#4f8da4;}
+.myresultWrap .graphbox01 .garph_bar tr.bar td img{width:28px; vertical-align:-4px;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ .myresultWrap .graphbox01 .garph_bar tr.bar td img {vertical-align:0;}}
+@-moz-document url-prefix() {.myresultWrap .graphbox01 .garph_bar tr.bar td img {vertical-align:-0;}}
+
+.myresultWrap .graphbox01 .garph_bar tr.tit td {font-size:14px; font-weight:bold; color:#555; padding-top:12px;}
+
+/* new Start*/
+.myresultWrap .graphbox02 {border:1px #d5dbeb solid; background:url('/images/mock_test/report/bg_graph_title_v2.gif') center 16px no-repeat; padding:30px 40px 10px; min-height:180px;}
+.myresultWrap .graphbox02 .garph_bar {width:100%; }
+.myresultWrap .graphbox02 .garph_bar td {text-align:center; margin:0; padding:0;}
+.myresultWrap .graphbox02 .garph_bar tr.bar td {border-bottom:1px #636363 solid; height:160px; vertical-align:bottom; }
+.myresultWrap .graphbox02 .garph_bar tr.bar td p{display:inline-block; zoom:1; *display:inline; width:28px;}
+*:first-child+html  .myresultWrap .graphbox02 .garph_bar tr.bar td p {margin:0 2px;}
+.myresultWrap .graphbox02 .garph_bar tr.bar td p span {font-size:16px; font-weight:bold; color:#555; font-family:Tahoma;}
+.myresultWrap .graphbox02 .garph_bar tr.bar td p span.myscore {color:#4f8da4;}
+.myresultWrap .graphbox02 .garph_bar tr.bar td img{width:28px; vertical-align:-4px;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ .myresultWrap .graphbox02 .garph_bar tr.bar td img {vertical-align:0;}}
+@-moz-document url-prefix() {.myresultWrap .graphbox02 .garph_bar tr.bar td img {vertical-align:-0;}}
+
+.myresultWrap .graphbox02 .garph_bar tr.tit td {font-size:14px; font-weight:bold; color:#555; padding-top:12px;}
+/* new  End */
+
+.myresultWrap .commentbox {border:1px #d5dbeb solid; padding:15px 10px 12px; min-height:70px; height:auto!important; _height:107px; line-height:160%; color:#666;}
+.myresultWrap .commentbox span {display:block;  padding-left:40px;}
+.myresultWrap .commentbox strong {float:left; color:#555;}
+
+.myresultWrap .recommend {width:100%; border-top:2px solid #de0b14;}
+.myresultWrap .recommend th {font-size:14px;  padding:12px 0 14px; *padding:12px 0 14px;background:none; background-color:#fff7f4; border-bottom:1px solid #dedede; border-right:1px solid #dedede}
+.myresultWrap .recommend td {font-size:13px; letter-spacing:-1px; border-right:1px solid #dedede; border-bottom:1px solid #dedede; text-align:center;}
+.myresultWrap .recommend td a {font-size:13px;}
+.myresultWrap .recommend .noline {border-right:0}
+
+/* 채점표_탭 */
+.myresultWrap .tab_menu {margin-bottom:10px;}
+.myresultWrap .tab_menu a {width:111px;}
+.myresultWrap .tab_menu .last a {width:109px;}
+
+/* 추천강의 테이블 */
+.myresultWrap .b_lecture3 th,
+.myresultWrap .b_lecture3 td {line-height:16px; padding:7px 0; word-break:break-all; }
+.myresultWrap .b_lecture3 td {color:#555;}
+.myresultWrap .b_lecture3 td.subject {padding: 5px 5px;}
+.myresultWrap .b_lecture3 td span.tline {text-decoration:line-through;}
+.myresultWrap .b_lecture3 td .apply_s {line-height:21px;}
+
+
+/* 버튼_130415_정미례 */
+.mock_test .btns {width:96%; margin:30px 0; text-align:center;}
+.mock_test .btns span {width:285px; height:90px; line-height:30px; margin:0 13px; display:inline-block; background:url('http://land.pass.com/zfiles/free_class/audit_btn.jpg') no-repeat;}
+.mock_test .btns span.red {background:url('http://land.pass.com/images/mock_test/btn_bg_red.jpg') no-repeat;}
+.mock_test .btns span.blue {background:url('http://land.pass.com/images/mock_test/btn_bg_blue.jpg') no-repeat;}
+.mock_test .btns span a {width:97%; height:73px; margin-top:2px; padding:12px 5px 0 0; color:#fff; font-weight:normal; font-size:20px; display:inline-block;}
+.mock_test .btns span a em {font-weight:bold; color:#feef4c; font-size:25px;}
+
+
+/* 팝업_성적확인_탭수정_130424_정미례 */
+.myresultWrap .tab_result2 {width:689px; height:42px; margin-bottom:25px;margin-top: 18px;}
+.myresultWrap .tab_result2 li {float:left;}
+.myresultWrap .tab_result2 li a {height:42px; display:block;}
+.myresultWrap .tab_result2 li a span {display:none;}
+.myresultWrap .tab_result2 li a.menu01 {width:230px; background:url('/images/mock_test/report/tab_result2_01.jpg') no-repeat;}
+.myresultWrap .tab_result2 li a.menu02 {width:230px; background:url('/images/mock_test/report/tab_result2_02.jpg') no-repeat;}
+.myresultWrap .tab_result2 li a.menu03 {width:229px; background:url('/images/mock_test/report/tab_result2_03.jpg') no-repeat;}
+.myresultWrap .tab_result2 li.on a,
+.myresultWrap .tab_result2 li a:hover {background-position:0 -42px;}
+
+/* 행정사_모의고사 무료다운로드_130611_정미례 */
+.free_down {width:750px; overflow:hidden;}
+.free_down img {vertical-align:top;}
+.free_down .download {position:relative;}
+.free_down .number_bg {position:absolute; top:24px; left:33px; width:320px; height:116px; background:url('/images/mock_test/free_down/number_bg.png') no-repeat;}
+.free_down .number_bg span {float:left;margin-top:20px;width:70px; height:80px; margin-right:4px; display:inline-block;}
+.free_down .number_bg span.n0 {background-image:url('/images/mock_test/free_down/n_0.png');}
+.free_down .number_bg span.n1 {background-image:url('/images/mock_test/free_down/n_1.png');}
+.free_down .number_bg span.n2 {background-image:url('/images/mock_test/free_down/n_2.png');}
+.free_down .number_bg span.n3 {background-image:url('/images/mock_test/free_down/n_3.png');}
+.free_down .number_bg span.n4 {background-image:url('/images/mock_test/free_down/n_4.png');}
+.free_down .number_bg span.n5 {background-image:url('/images/mock_test/free_down/n_5.png');}
+.free_down .number_bg span.n6 {background-image:url('/images/mock_test/free_down/n_6.png');}
+.free_down .number_bg span.n7 {background-image:url('/images/mock_test/free_down/n_7.png');}
+.free_down .number_bg span.n8 {background-image:url('/images/mock_test/free_down/n_8.png');}
+.free_down .number_bg span.n9 {background-image:url('/images/mock_test/free_down/n_9.png');}
+.free_down .number_bg span {background-repeat:no-repeat; background-position:14px 22px;}
+
+	/* 다운로드 버튼 클릭 시 */
+	.free_down .down_btns {position:relative;}
+	.free_down .select_list {position:absolute; top:92px; width:246px; border:1px solid #ccc; background:url('http://gosi.hackerspass.com/images/teacher_info/select_bg.png') repeat; z-index:100;}
+	.free_down .select_list li {float:left; width:100%; height:30px; line-height:30px;  font-size:14px; text-align:center; color:#666; border-bottom:1px solid #eee; display:inline-block; cursor:pointer;}
+	.free_down .select_list li:hover,
+	.free_down .select_list li.on {color:#fff; background-color:#999;}
+
+/* 중개사_모의고사 무료다운로드_130902_정미례 */
+.free_down_j {width:750px; overflow:hidden;}
+.free_down_j img {vertical-align:top;}
+.free_down_j .download {position:relative;}
+.free_down_j span.number {position:absolute; top:55px; left:47px; width:300px; font-weight:bold; font-size:60px; color:#fff; letter-spacing:44px; display:inline-block;}
+
+	/* 다운로드 버튼 클릭 시 */
+	.free_down_j .down_btns {position:relative;}
+	.free_down_j .select_list {position:absolute; top:80px; width:250px; border:1px solid #ccc; background:url('http://gosi.hackerspass.com/images/teacher_info/select_bg.png') repeat; z-index:100;}
+	.free_down_j .select_list li {float:left; width:100%; height:30px; line-height:30px;  font-size:14px; text-align:center; color:#666; border-bottom:1px solid #eee; display:inline-block; cursor:pointer;}
+	.free_down_j .select_list li:hover,
+	.free_down_j .select_list li.on {color:#fff; background-color:#999;}
+
+
+
+/* 모의고사_130220_정미례 */
+
+.haeng_test {width:750px; overflow:hidden;}
+.haeng_test h4 {margin-bottom:15px; font-size:28px; color:#003663;}
+.haeng_test h4 b {color:#034ea2; font-weight:normal;}
+.haeng_test h5 {margin:30px 0 8px; padding-left:10px; font-size:16px; color:#686b76; background:url('http://land.pass.com/images/mock_test/icon_01.jpg') 0 6px no-repeat;}
+.haeng_test h5 em {color:#414b6f}
+.haeng_test h5 em.green {color:#257276}
+
+/* 섹션탭 */
+.heng_tabW {width:748px; border-left:1px solid #e1e1e1;  border-right:1px solid #e1e1e1;}
+.heng_tabW ul.mock_tab {width:748px; overflow:hidden; padding-top:11px; border-bottom:6px solid #003663;}
+.heng_tabW ul.mock_tab li {float:left; width:146px; height:33px; padding-top:14px; margin-right:5px; cursor:pointer; color:#fff; font-size:22px; background:#485969; text-align:center;}
+.heng_tabW ul.mock_tab li.last {width:144px; margin-right:0;}
+.heng_tabW ul.mock_tab li:hover,
+.heng_tabW ul.mock_tab li.on {background:url('http://land.pass.com/images/mock_test/bg_tab.gif') repeat;}
+
+.heng_tabW ul.mock_tab.first li ,
+.heng_tabW ul.mock_tab.first li.on {width:246px;}
+.heng_tabW ul.mock_tab.first li.last,
+.heng_tabW ul.mock_tab.first li.last.on {width:246px;}
+
+/* 섹션 */
+.haeng_test .section {width:708px; padding:35px 0 35px 40px; border:1px solid #e2e2e2; border-top:0;}
+.haeng_test .btn_apply {width:670px; margin:30px 0 60px; text-align:center;}
+.haeng_test .btn_apply a {display:inline-block; width:253px; height:33px; margin:0 3px; padding:13px 0 0 0; font-weight:bold; text-align:center; background:#45515f;}
+.haeng_test .btn_apply a span {padding-right:15px; background:url('http://land.pass.com/images/mock_test/btn_apply_arrow.gif') no-repeat right 4px; font-size:17px; line-height:20px; color:#fff;}
+.haeng_test .script {color:#666;}
+.haeng_test .script a {font-weight:bold;}
+
+/* 섹션_박스 */
+.haeng_test .m_box {width:664px; border:3px solid #e6e9f2; display:inline-block;}
+.haeng_test .m_box ul {margin:10px 0 10px 20px;}
+.haeng_test .m_box ul li {line-height:24px; padding-left:8px; font-size:14px; color:#555; background:url('http://land.pass.com/images/mock_test/icon_02.jpg') 0 9px no-repeat;}
+
+.haeng_test .caution p {float:left; display:inline-block;}
+.haeng_test .caution p img {padding:10px 0 10px 20px;}
+.haeng_test .caution ul {float:left; display:inline-block;}
+
+/* 테이블 */
+.haeng_test table {width:670px; margin-bottom:15px;}
+/*.haeng_test table * {font-family:dotum;}*/
+.haeng_test th,
+.haeng_test td {line-height:22px; padding:10px 0 8px 25px; font-size:14px; color:#5b5b5b; border:1px solid #d6dae7;}
+.haeng_test th {padding-left:0; color:#fff; background-color:#0072b7;}
+
+.haeng_test td.btn_map {padding:0px 0 10px 30px; }
+.haeng_test td.btn_map a {position:relative; top:9px; margin-left:5px; display:inline-block;}
+.haeng_test td.btn_map a img {float:left;}
+.haeng_test td.choice {line-height:24px;}
+.haeng_test td.choice label {font-size:14px; display:block;}
+.haeng_test td.choice label em {font-weight:bold; color:#71788f;}
+.haeng_test td.birth label {margin-right:15px;}
+
+.haeng_test .section td .red {color:#cc0000;}
+.haeng_test .section td .stext {margin-top:5px; display:inline-block;}
+.haeng_test .sec_02 td,
+.haeng_test .sec_02 td span {font-size:12px; color:#414b6f;}
+.haeng_test .sec_02 td select {height:20px;}
+.haeng_test .sec_02 td input.txt {height:18px; line-height:18px;}
+
+
+/* 테이블_답변 */
+.haeng_test .sec_03 {padding-bottom:30px;}
+.haeng_test .tab_menu {width:auto; margin:20px 0px 20px}
+.haeng_test .tab_menu li {width:332px; margin-right:6px;}
+.haeng_test .tab_menu li a {width:100%; font-size:16px;}
+
+.haeng_test table.answer th,
+.haeng_test table.answer td {padding:4px 0 2px 0px; font-size:13px;  text-align:center;}
+.haeng_test table.answer th {color:#587a7c; background-color:#cfe3e4;}
+
+.haeng_test table.answer thead th,
+.haeng_test table.answer thead td {color:#fff; background-color:#0072b7;}
+
+/* 버튼_130415_정미례 */
+.haeng_test .btns {width:96%; margin:30px 0; text-align:center;}
+.haeng_test .btns span {width:285px; height:90px; line-height:30px; margin:0 13px; display:inline-block; background:url('http://land.pass.com/zfiles/free_class/audit_btn.jpg') no-repeat;}
+.haeng_test .btns span.red {background:url('http://land.pass.com/images/mock_test/btn_bg_red.jpg') no-repeat;}
+.haeng_test .btns span.blue {background:url('http://land.pass.com/images/mock_test/btn_bg_blue2.gif') no-repeat;}
+.haeng_test .btns span a {width:97%; height:73px; margin-top:2px; padding:12px 5px 0 0; color:#fff; font-weight:normal; font-size:20px; display:inline-block;}
+.haeng_test .btns span a em {font-weight:bold; color:#feef4c; font-size:25px;}
+
+/* 탭 시스템폰트로 변경_기본탭 5개 */
+div.mock_test .pass_cTab {border-left:0; border-right:1px solid #e2e2e2}
+div.mock_test .pass_cTab ul {width:750px; height:36px; padding-top:1px; overflow:hidden; border-bottom:5px solid #257276; border-left:0; border-right:0}
+div.mock_test .pass_cTab li {float:left; margin-right:1px; color:#666;}
+div.mock_test .pass_cTab li a {display:block; width:149px; height:26px; padding:11px 0 0; background:#eceae7; text-align:center; color:#666; font-size:14px;}
+div.mock_test .pass_cTab li.on a {background:#257276; color:#fff;}
+div.mock_test .pass_cTab li:hover a {background:#257276; color:#fff;}
+div.mock_test .pass_cTab li.last {margin-right:0;}
+div.mock_test .pass_cTab li.last a {width:150px;}
+
+/* 탭이 4개일때 */
+div.mock_test .pass_cTab4 li a {width:187px;}
+div.mock_test .pass_cTab4 li.last a {width:186px;}
+

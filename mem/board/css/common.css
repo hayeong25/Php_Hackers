@@ -1,0 +1,35 @@
+/*****************************
+제목 : 기본 CSS
+작성일 : 2013.01.25
+작성자 : 정미례
+*****************************/
+@import url("http://image.hackers.ac/pass/css/webfont.css");
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,menu,section,article, a, select, input {margin:0; padding:0; font-size:12px; font-weight:normal; font-family: 'Nanum Gothic', sans-serif;}
+
+body {height:100%; margin:0; padding:0; font-size:12px !important; -webkit-text-size-adjust:none; font-family: 'Nanum Gothic', sans-serif; color:#666;}
+* {margin:0; padding:0; font-family: 'Nanum Gothic', sans-serif;}
+
+table {border-collapse: collapse}
+img,fieldset {border:0;}
+img {margin-bottom:0;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ img {margin-bottom:-3px;}}
+/*@-moz-document url-prefix() {img {margin-bottom:-3px}}*/
+li,dt,dd {list-style:none;}
+a {color:#000; text-decoration:none; cursor:pointer;}
+button {cursor:pointer; border:none;}
+button span {display:none;}
+em,address,var {font-style:normal;}
+var {padding:0 3px;}
+legend, caption {display:none;}
+input, select {vertical-align:middle;}
+input {border:1px solid #dedede;}
+label input {border:0;}
+a {color:#000; text-decoration:none;}
+strong, b {font-weight:bold;}
+table,td,tr,div {font-family: 'Nanum Gothic', sans-serif;  font-size:12px; color:#000;}
+
+
+.contents h2.title {position:relative; padding:0 0 8px; font-size:20px; color:#000; border-bottom:1px solid #dadada;}
+.contents h2.title span.navi {position:absolute; top:11px; right:0; font-size:12px; font-weight:normal; color:#7e7e7e; text-align:right;}
+.contents h2.title em {color:#257276;}

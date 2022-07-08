@@ -1,0 +1,26 @@
+@import url("http://image.hackers.ac/pass/css/webfont.css");
+
+body {height:100%; margin:0; padding:0; font-size:12px !important; -webkit-text-size-adjust:none; font-family: 'Nanum Gothic', sans-serif; color:#666;}
+* {margin:0; padding:0; font-family:Nanum Gothic;}
+*:first-child+html * {font-weight:normal;}
+
+table {border-collapse: collapse}
+img,fieldset {border:0;}
+img {margin-bottom:0;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ img {margin-bottom:-3px;}}
+/*@-moz-document url-prefix() {img {margin-bottom:-3px}}*/
+li,dt,dd {list-style:none;}
+a {color:#000; text-decoration:none; cursor:pointer;}
+button {cursor:pointer; border:none;}
+button span {display:none;}
+b {font-weight:bold;}
+em,address,var {font-style:normal;}
+var {padding:0 3px;}
+legend, caption {display:none;}
+input, select {vertical-align:middle;}
+input {border:1px solid #dedede;}
+label input {border:0;}
+a {color:#000; text-decoration:none;}
+strong, b {font-weight:bold;}
+table,td,tr,div {font-family:Nanum Gothic;  font-size:12px; color:#000;}
+

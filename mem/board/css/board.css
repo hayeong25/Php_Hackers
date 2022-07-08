@@ -1,0 +1,67 @@
+.board_list {clear:both; width:750px; border-top:2px solid #257276; overflow:hidden;}
+.board_list table {width:750px;}
+.board_list table th {padding:5px 0 7px; color:#257276; background:#eef2f2; border-bottom:1px solid #aecacc; border-right:1px solid #aecacc; }
+.board_list table .last {border-right:none;}
+.board_list td {padding:7px 0 9px; background:#fff; border-bottom:1px solid #c8c8c8; border-right:1px solid #c8c8c8; text-align:center;}
+.board_list td.title {text-align:left; padding-left:10px;}
+.board_list td img {margin:0 0 0 5px; vertical-align:middle}
+.board_list td a:hover {color:#257276;}
+.board_btn {float:left; position:relative; width:100%; margin:0 0 8px;}
+.board_btn a {width:47px;}
+.board_btn span {position:absolute; right:0;}
+/*.board_btn span a {margin:0 0 0 7px;}*/
+
+.paging {float:right; position:relative; padding:18px 0 0; text-align:center; width:750px;}
+.paging .btn {position:absolute; top:13px; left:0;}
+.paging .btn a {width:47px;}
+.paging div img {padding:0 5px; vertical-align:middle;}
+.paging div a {padding:0 5px;}
+.paging div a:hover, .paging div em {color:#257276; padding:0 5px;}
+.paging div a.prev, .paging div a.next {padding:0;}
+
+fieldset.search {float:right; width:750px; margin:25px 0 0; text-align:center;}
+fieldset.search select {width:88px; height:20px; vertical-align:middle; border:1px solid #dedede}
+fieldset.search input {width:251px; height:20px; margin:0 5px 0 0; vertical-align:middle; border:1px solid #dedede}
+fieldset.search a {position:relative; top:1px;}
+
+/* ∫‰∆‰¿Ã¡ˆ */
+.board_view {float:left; width:750px; border-top:2px solid #257276;}
+.board_view table {width:750px;}
+.board_view table th {padding:5px 0 7px 10px; color:#257276; text-align:left; background:#eef2f2; border-bottom:1px solid #aecacc; border-right:1px solid #aecacc; }
+.board_view table td {padding-left:10px; border-bottom:1px solid #aecacc; border-right:1px solid #aecacc;}
+.board_view td.last {border-right:none}
+.board_view .view {padding:15px 10px 15px; line-height:20px;}
+
+/* ¥Ò±€ */
+.reply_wrap {float:left; width:750px}
+.reply_wrap fieldset {width:750px; padding:10px 0; background:#eef2f2; border-bottom:1px solid #aecacc;}
+.reply_wrap fieldset textarea {width:650px; margin:0 10px; border:1px solid #aecacc; vertical-align:middle;}
+.reply_wrap fieldset button {position:relative; top:1px; display:inline-block; width:70px; height:62px; margin:0 0 0 0 10px; color:#fff; font-size:13px; text-align:center; background:#0d9192; border:1px solid #257276;}
+
+.reply_list {float:left; margin:0 0 40px; width:750px}
+.reply_list ul {float:left; width:100%; padding:10px 0; border-bottom:1px solid #aecacc;}
+.reply_list li {float:left; line-height:17px;}
+.reply_list li.name {position:relative; padding:0 0 5px 10px; width:730px; font-weight:bold; color:#257276;}
+.reply_list li.name span.date {display:inline-block; padding:0 0 0 15px; color:#888}
+.reply_list li.name span.btn {position:absolute; right:0; font-weight:normal;}
+.reply_list li.name span.btn a:hover {color:#000;}
+.reply_list li.comment {width:730px; padding:0 10px;}
+
+/* ¥Ò±€_¥‰¥Ò±€ √ﬂ∞°_¡§πÃ∑ _130313 */
+.reply_list ul.depth {width:735px; padding-left:15px; padding-bottom:20px; margin-top:-23px;}
+.reply_list ul.depth li.name,
+.reply_list ul.depth li.comment {width:98%;}
+.reply_list .icon_enter {margin-top:3px;}
+
+/* æ≤±‚ */
+.board_write {float:left; width:750px; border-top:2px solid #257276;}
+.board_write table {width:750px;}
+.board_write table th {padding:5px 0 7px 10px; color:#257276; text-align:left; background:#eef2f2; border-bottom:1px solid #aecacc; border-right:1px solid #aecacc; }
+.board_write table td {padding-left:10px; background:#fff; border-bottom:1px solid #aecacc;}
+.board_write table td.textarea {padding:0; height:476px;}
+.board_write input.title {width:630px;}
+.board_write .btn_write {width:100%; margin:30px 0; text-align:center;}
+
+/*±‚≈∏*/
+.s_info {border-top:1px #dedede dotted;margin-top:4px;padding-top:5px;font-size:8pt;font-family:verdana;letter-spacing:-1px;}
+.info {font-size:8pt;font-family:verdana;letter-spacing:-1px;}

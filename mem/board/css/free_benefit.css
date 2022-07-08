@@ -1,0 +1,92 @@
+.free_benefit{clear:both;width:750px;background:#f9f9f9;position:relative;}
+.free_benefit img{border:0;border:none;}
+.free_benefit area{cursor:pointer;}
+.free_benefit a{text-decoration:none;cursor:pointer;}
+.free_benefit a:hover{text-decoration:none;}
+.free_benefit .fb_top{clear:both;width:100%;height:185px;border-top:4px solid #404040;border-bottom:1px solid #b5b5b5;}
+.free_benefit .fb_center{clear:both;width:100%;height:1638px;border-top:2px solid #f9f9f9;background:url('http://land.pass.com/images/free_benefit/benefit_land02.png') no-repeat;}
+.free_benefit .fb_center .land_class{clear:both;width:100%;position:relative;padding-top:60px;padding-left:13px;}
+.free_benefit .fb_center .land_class .class_list li{float:left;width:231px;height:172px;margin:13px 6px;}
+.free_benefit .fb_center .land_class .class_list li a{display:block;width:231px;height:172px;}
+.free_benefit .fb_center .land_class .class_list .item01 a{background:url('http://land.pass.com/images/free_benefit/benefit_land03_01.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item02 a{background:url('http://land.pass.com/images/free_benefit/benefit_land03_02.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item03 a{background:url('http://land.pass.com/images/free_benefit/benefit_land03_03.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item04 a{background:url('http://land.pass.com/images/free_benefit/benefit_land03_04.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item05 a{background:url('http://land.pass.com/images/free_benefit/benefit_land03_05.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item06 a{background:url('http://land.pass.com/images/free_benefit/benefit_land03_06.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item01 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land03_01_over.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item02 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land03_02_over.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item03 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land03_03_over.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item04 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land03_04_over.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item05 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land03_05_over.png') no-repeat;}
+.free_benefit .fb_center .land_class .class_list .item06 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land03_06_over.png') no-repeat;}
+.free_benefit .fb_center .land_material{clear:both;width:100%;position:relative;padding-top:88px;padding-left:13px;}
+.free_benefit .fb_center .land_material .material_list li{float:left;width:231px;height:172px;margin:13px 6px;}
+.free_benefit .fb_center .land_material .material_list li a{display:block;width:231px;height:172px;}
+.free_benefit .fb_center .land_material .material_list .item01 a{background:url('http://land.pass.com/images/free_benefit/benefit_land04_01.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item02 a{background:url('http://land.pass.com/images/free_benefit/benefit_land04_02.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item03 a{background:url('http://land.pass.com/images/free_benefit/benefit_land04_03.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item04 a{background:url('http://land.pass.com/images/free_benefit/benefit_land04_04.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item05 a{background:url('http://land.pass.com/images/free_benefit/benefit_land04_05.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item06 a{background:url('http://land.pass.com/images/free_benefit/benefit_land04_06.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item07 a{background:url('http://land.pass.com/images/free_benefit/benefit_land04_07.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item08 a{background:url('http://land.pass.com/images/free_benefit/benefit_land04_08.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item01 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land04_01_over.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item02 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land04_02_over.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item03 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land04_03_over.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item04 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land04_04_over.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item05 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land04_05_over.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item06 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land04_06_over.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item07 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land04_07_over.png') no-repeat;}
+.free_benefit .fb_center .land_material .material_list .item08 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land04_08_over.png') no-repeat;}
+.free_benefit .fb_center .land_counsel{clear:both;width:100%;position:relative;padding-top:88px;padding-left:13px;}
+.free_benefit .fb_center .land_counsel .counsel_list li{float:left;width:231px;height:247px;margin:13px 6px;}
+.free_benefit .fb_center .land_counsel .counsel_list li a{display:block;width:231px;height:247px;}
+.free_benefit .fb_center .land_counsel .counsel_list .visit_counsel a{background:url('http://land.pass.com/images/free_benefit/benefit_land05_01.png') no-repeat;}
+.free_benefit .fb_center .land_counsel .counsel_list .call_counsel a{background:url('http://land.pass.com/images/free_benefit/benefit_land05_02.png') no-repeat;}
+.free_benefit .fb_center .land_counsel .counsel_list .online_counsel a{background:url('http://land.pass.com/images/free_benefit/benefit_land05_03.png') no-repeat;}
+.free_benefit .fb_center .land_counsel .counsel_list .visit_counsel a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land05_01_over.png') no-repeat;}
+.free_benefit .fb_center .land_counsel .counsel_list .call_counsel a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land05_02_over.png') no-repeat;}
+.free_benefit .fb_center .land_counsel .counsel_list .online_counsel a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_land05_03_over.png') no-repeat;}
+.free_benefit .fb_bottom{clear:both;width:100%;position:absolute;left:0px;bottom:52px;z-index:10;text-align:center;}
+.free_benefit .fb_bottom a.join_btn{display:inline-block;width:321px;height:70px;background:url('http://land.pass.com/images/free_benefit/benefit_land06_btn.png') no-repeat;}
+.free_benefit .clear{clear:both !important;float:none !important;font-size:0px;line-height:0px;}
+
+.free_benefit#fb_admin .fb_center{background:url('http://land.pass.com/images/free_benefit/benefit_admin05.png') no-repeat;}
+.free_benefit .fb_center .admin_class{clear:both;width:100%;position:relative;padding-top:60px;padding-left:13px;}
+.free_benefit .fb_center .admin_class .class_list li{float:left;width:231px;height:172px;margin:13px 6px;}
+.free_benefit .fb_center .admin_class .class_list li a{display:block;width:231px;height:172px;}
+.free_benefit .fb_center .admin_class .class_list .item01 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin01_01.png') no-repeat;}
+.free_benefit .fb_center .admin_class .class_list .item02 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin01_02.png') no-repeat;}
+.free_benefit .fb_center .admin_class .class_list .item03 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin01_03.png') no-repeat;}
+.free_benefit .fb_center .admin_class .class_list .item04 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin01_04.png') no-repeat;}
+.free_benefit .fb_center .admin_class .class_list .item01 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin01_01_over.png') no-repeat;}
+.free_benefit .fb_center .admin_class .class_list .item02 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin01_02_over.png') no-repeat;}
+.free_benefit .fb_center .admin_class .class_list .item03 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin01_03_over.png') no-repeat;}
+.free_benefit .fb_center .admin_class .class_list .item04 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin01_04_over.png') no-repeat;}
+.free_benefit .fb_center .admin_material{clear:both;width:100%;position:relative;padding-top:88px;padding-left:13px;}
+.free_benefit .fb_center .admin_material .material_list li{float:left;width:231px;height:172px;margin:13px 6px;}
+.free_benefit .fb_center .admin_material .material_list li a{display:block;width:231px;height:172px;}
+.free_benefit .fb_center .admin_material .material_list .item01 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_01.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item02 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_02.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item03 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_03.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item04 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_04.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item05 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_05.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item06 a{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_06.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item01 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_01_over.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item02 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_02_over.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item03 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_03_over.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item04 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_04_over.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item05 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_05_over.png') no-repeat;}
+.free_benefit .fb_center .admin_material .material_list .item06 a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin02_06_over.png') no-repeat;}
+.free_benefit .fb_center .admin_counsel{clear:both;width:100%;position:relative;padding-top:88px;padding-left:13px;}
+.free_benefit .fb_center .admin_counsel .counsel_list li{float:left;width:231px;height:247px;margin:13px 6px;}
+.free_benefit .fb_center .admin_counsel .counsel_list li a{display:block;width:231px;height:247px;}
+.free_benefit .fb_center .admin_counsel .counsel_list .visit_counsel a{background:url('http://land.pass.com/images/free_benefit/benefit_admin03_01.png') no-repeat;}
+.free_benefit .fb_center .admin_counsel .counsel_list .call_counsel a{background:url('http://land.pass.com/images/free_benefit/benefit_admin03_02.png') no-repeat;}
+.free_benefit .fb_center .admin_counsel .counsel_list .online_counsel a{background:url('http://land.pass.com/images/free_benefit/benefit_admin03_03.png') no-repeat;}
+.free_benefit .fb_center .admin_counsel .counsel_list .visit_counsel a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin03_01_over.png') no-repeat;}
+.free_benefit .fb_center .admin_counsel .counsel_list .call_counsel a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin03_02_over.png') no-repeat;}
+.free_benefit .fb_center .admin_counsel .counsel_list .online_counsel a:hover{background:url('http://land.pass.com/images/free_benefit/benefit_admin03_03_over.png') no-repeat;}
+.free_benefit#fb_admin .fb_bottom{clear:both;width:100%;position:absolute;left:0px;bottom:245px;z-index:10;text-align:center;}
+.free_benefit#fb_admin .fb_bottom a.join_btn{display:inline-block;width:321px;height:70px;background:url('http://land.pass.com/images/free_benefit/benefit_admin04_btn.png') no-repeat;}

@@ -122,7 +122,7 @@
 						</li>
 						<li>
 							<!--중개사학원-->
-							<a href="http://land.pass.com/" target="_blank">
+							<a href="/board/gateway.php?menu=list" target="_blank">
 								<img src="/img/main/mainbanner/main_icon_off_05.png" alt="" class="passicon" />
 								<img src="/img/main/mainbanner/main_menu_off_05.gif" alt="" class="passimg" />
 							</a>

@@ -1,0 +1,34 @@
+/* ·Î±×ÀÎ */
+div.contents_login {height:477px;}
+
+div.login_warp {width:690px; margin:0 auto; border-bottom:1px #257276 solid;}
+
+div.login_warp .toplink {text-align:right; margin:55px 0 7px;}
+div.login_warp .toplink a {background:url('../images/login/bg_bar.gif') right center no-repeat; padding:0 9px;}
+div.login_warp .toplink a.last {background:none; padding-right:0;}
+
+div.login_warp .loginbox {border:1px #97bfc1 solid; border-top:none; background:#fff url('../images/login/bg_box.gif') repeat-x; padding:34px 33px 29px}
+div.login_warp .loginbox .login {float:left; width:269px; height:250px; margin-right:20px; overflow:hidden;}
+div.login_warp .loginbox .login .login_input {background:#f6f6f6; padding:0 34px; height:166px; margin-bottom:19px;}
+div.login_warp .loginbox .login .login_input .input_id {float:left; border:1px #cacbcc solid; width:135px; padding:3px 0; margin-bottom:6px; background:#fff url('../images/login/bg_id.gif') 4px center no-repeat;}
+div.login_warp .loginbox .login .login_input .input_idnot {float:left; border:1px #cacbcc solid; width:135px; padding:3px 0; margin-bottom:6px; background:#fff;}
+div.login_warp .loginbox .login .login_input .input_pw {float:left; border:1px #cacbcc solid; width:135px; padding:3px 0; margin-bottom:6px;  background:#fff url('../images/login/bg_pw.gif') 4px center no-repeat;}
+div.login_warp .loginbox .login .login_input .input_pwnot {float:left; border:1px #cacbcc solid; width:135px; padding:3px 0; margin-bottom:6px; background:#fff;}
+div.login_warp .loginbox .login .login_input .btn_login {display:inline-block; margin-left:9px;  border:1px #0b5357 solid; background:#257276; color:#fff; width:53px; padding:17px 0; overflow:hidden; text-align:center;}
+div.login_warp .loginbox .login .login_input label {color:#494746; font-weight:bold; margin-left:5px; *margin-left:0;}
+div.login_warp .loginbox .login .login_input li.top {padding-top:26px;}
+div.login_warp .loginbox .login .login_input li.save_id {clear:both; padding:4px 0 20px;}
+div.login_warp .loginbox .login .login_input li.bot_line {border-top:1px #cacbcc solid; padding-top:12px; text-align:center;}
+div.login_warp .loginbox .login .login_input li.bot_line a {margin:0 10px; color:#494746; font-weight:bold;}
+
+div.login_warp .loginbox .login .cs_btn {position:relative; background:#f6f6f6; padding:0 34px; height:66px;}
+div.login_warp .loginbox .login .cs_btn span {display:inline-block; margin-top:20px; color:#7c7c7c;}
+div.login_warp .loginbox .login .cs_btn .btn {position:absolute; right:34px; bottom:20px; border:1px #41413f solid; background:#575a61; padding:4px 5px; color:#fff;}
+
+div.login_warp .loginbox .banner_img {background:#a1a1a1; width:331px; height:250px; overflow:hidden;}
+
+div.login_warp .loginbox #slides {position:relative; background:#a1a1a1; width:331px; height:250px; overflow:hidden;}
+div.login_warp #slides .slides_container {position:relative; width:331px; display:none; overflow:hidden;}
+div.login_warp #slides  div.slide {position:absolute; top:0; left:0px; width:331px; height:250px; overflow:hidden; text-align:center;}
+div.login_warp .pagination {display:none}
+

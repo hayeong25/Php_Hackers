@@ -1,0 +1,90 @@
+body {margin:0; padding:0; font:12px dotum; color:#666;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,menu,section,article, a, select, input{margin:0; padding:0; font-size:12px; font-family:dotum; color:#666}
+table {border-collapse: collapse}
+img,fieldset {border:0;}
+img {margin-bottom:0;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ img {margin-bottom:-3px;}}
+@-moz-document url-prefix() {img {margin-bottom:-3px}}
+li,dt,dd {list-style:none;}
+a {color:#666; text-decoration:none; cursor:pointer;}
+button {cursor:pointer; border:none;}
+button span {display:none;}
+strong{ font-weight:bold;}
+em,address,var {font-style:normal;}
+var {padding:0 3px;}
+legend, caption {display:none;}
+input, select {vertical-align:middle;}
+
+/* 응시창 인트로 */
+
+.examTest_wrap .introbox{background:url('/images/mock_test/bg_test_intro.gif') repeat-x; height:720px;}
+.examTest_wrap .introbox h1 {width:1200px; margin:0 auto;}
+.examTest_wrap .introbox h3 {margin-bottom:8px}
+.examTest_wrap .introbox .con {width:860px; height:415px; margin:60px auto;}
+.examTest_wrap .introbox .con table.tbl_exam {width:100%; border-top:2px solid #259c9d; float:left; margin-bottom:45px}
+.examTest_wrap .introbox .con table.tbl_exam th, table.tbl_exam td {text-align:center}
+.examTest_wrap .introbox .con table.tbl_exam th {padding:14px 0; background-color:#e3eaea; border-left:1px solid #e3eaea; border-right:1px solid #a0bbbb;  border-bottom:1px solid #d5d5d5;}
+.examTest_wrap .introbox .con table.tbl_exam th.last {border-right:0;}
+.examTest_wrap .introbox .con table.tbl_exam td {padding:11px 0 12px; font-size:14px; font-weight:bold; color:#192121; border:1px solid #d5d5d5}
+.examTest_wrap .introbox .con table.tbl_exam td img.mgb6 {margin-bottom:6px}
+
+
+/* 모의고사창 */
+.examTest_wrap .test_box {position:relative;background:url('/images/mock_test/bg_test.gif') repeat-x;}
+.examTest_wrap .test_content {padding:13px 34px 0;width:1134px; margin:0 auto}
+.examTest_wrap .btn_closed {position: absolute;right: 14px;top: 11px;}
+.examTest_wrap .left_wrap h2, .examTest_wrap .right_wrap h2{margin-bottom:13px}
+
+
+.examTest_wrap .left_wrap {position:relative; float:left; width:862px;}
+.examTest_wrap .left_wrap .time {position:absolute; top:0; right:0; font-weight:bold; width:316px; height:19px; background:url('/images/mock_test/bg_time.gif') no-repeat}
+.examTest_wrap .left_wrap .time span {width:75px; height:19px; overflow:hidden; line-height:21px; *line-height:28px; margin-left:100px; margin-bottom:1px;}
+*:first-child+html .examTest_wrap .left_wrap .time span { line-height:20px;}
+.examTest_wrap .left_wrap .time span.all_time {color:#626262}
+.examTest_wrap .left_wrap .time span.rest_time {color:#f73d00;}
+.examTest_wrap .left_wrap .test_paper{float:left; width:100%; text-align:center; height:644px; overflow-x:hidden; overflow-y:auto;}
+
+
+.examTest_wrap .right_wrap {float:right; position:relative; width:256px;}
+.examTest_wrap .right_wrap .test_omr {float:right;height:603px;  border:1px solid #dbdbdb;}
+.examTest_wrap .right_wrap .btnSave {width:100%; text-align:center; margin-top:10px; float:left}
+.examTest_wrap .right_wrap .btnSave img {margin:0 2px}
+
+
+/* question_tab */
+.question_tab2 {display: inline-block; width:253px;}
+.question_tab2 li {width:126px; float: left;}
+.question_tab2 li a {width:126px; border-left:1px solid #e5e5e5; font-weight:bold; background-color:#fff; color:#626262; display: block; float: left; font-size: 12px; height: 28px; line-height: 28px; text-align: center; border-bottom:1px solid #e5e5e5;  border-bottom:1px solid #e5e5e5; border-top:3px solid #fff;}
+.question_tab2 li a.first {border-left:0}
+.question_tab2 li a:hover, .question_tab2 li.on a {border-top:3px solid #129394; color:#129394}
+
+
+.question_tab3 {display: inline-block; width:253px;}
+.question_tab3 li {width:84px; float: left;}
+.question_tab3 li a {width:84px; border-left:1px solid #e5e5e5; font-weight:bold; background-color:#fff; color:#626262; display: block; float: left; font-size: 12px; height: 28px; line-height: 28px; text-align: center; border-bottom:1px solid #e5e5e5;  border-bottom:1px solid #e5e5e5; border-top:3px solid #fff;}
+.question_tab3 li a.first {border-left:0}
+.question_tab3 li a:hover, .question_tab3 li.on a {border-top:3px solid #129394; color:#129394}
+
+
+/* question_layer */
+div.question_layer {width:231px; height:536px ;overflow-x:hidden; overflow-y:auto; margin:17px 11px}
+div.question_layer table {width:211px;}
+div.question_layer th {width:37px; padding:5.58px 0 4.7PX; border-bottom:1px solid #dbdbdb;text-align:center; font-weight:bold; font-size:12px; color:#129394; vertical-align:top;}
+div.question_layer th.bgG {background-color:#e8eaeb; text-align:center; width:33px;}
+div.question_layer th.bgG ul {width:170px}
+div.question_layer th.bgG ul li {padding:0; height:26px}
+div.question_layer th.bgG  img {margin:4px 0 5px}
+div.question_layer td {border-bottom:1px solid #dbdbdb; font-weight:bold; text-align:center; color:#010101}
+div.question_layer td.fred {color:#ea3f31}
+div.question_layer ul {width:170px}
+div.question_layer ul li {float:left; width:33px;padding:4px 0 3px; height:16px; cursor:pointer; color:#778187; text-align:center; font-size:12px; color:#555555; background:url('/images/mock_test/answer_off.gif') no-repeat center 7px;}
+div.question_layer ul li.on {background:url('/images/mock_test/answer_on.gif') no-repeat center 7px;}
+
+
+/* 성적 결과 분석 */
+
+
+
+
+
+

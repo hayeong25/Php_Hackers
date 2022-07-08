@@ -1,0 +1,34 @@
+/* 1:1 상담 */
+.consult {}
+.consult .tab_menu {margin-bottom:20px;}
+.consult h1.top {margin-bottom:50px;}
+
+.consult .con_info_bg1 {height:80px; background:url('/images/customer/con_info_bg_01.jpg') no-repeat 20px 20px;}
+.consult .con_info_bg2 {height:80px; background:url('/images/customer/con_info_bg_02.jpg') no-repeat 20px 22px;}
+.consult .con_info_bg1 ul {margin:15px 0 10px 100px;}
+.consult .con_info_bg2 ul {margin:5px 0 0 100px;}
+
+.consult .con_info_txt ul li {font-size:13px;}
+
+.consult .c_day {position:relative;}
+.consult .guide_time {margin:10px 0 5px; line-height:18px; font-size:11px; color:#666;}
+.consult .c_script {line-height:22px; padding:15px;}
+.consult .c_script .btn_go_land {margin-left:5px; padding:0px 8px 0px; line-height:18px; font-size:11px; color:#fff; text-align:center; border:1px solid #d1d1d1; background-color:#666; display:inline-block; cursor:pointer;}
+
+.consult .pri_agree {line-height:18px; padding:15px; color:#666; text-align:left;}
+.consult .pri_agree p {margin:0 0 10px; color:#333; }
+.consult .btn_write .green {width:auto; padding:7px 20px;}
+
+
+/* 달력 */
+div.calenderW {position:absolute; top:26px; left:0px; width:558px; z-index:999;}
+div.calenderW .top {height:34px; padding:10px 0 0; background:#257276; text-align:center;}
+div.calenderW .top img {vertical-align:middle;}
+div.calenderW .top a {display:inline-block; padding:3px 6px; margin:-2px 0 0; vertical-align:middle;}
+div.calenderW .top .month {display:inline-block; width:150px; color:#fff; font-size:19px; text-align:center; vertical-align:middle;}
+div.calenderW .con {background:#dddddd; padding-bottom:10px;}
+div.calenderW .con table {width:538px; margin:0 auto; background:#dddddd;}
+div.calenderW .con table th {height:34px; text-align:center; color:#1b1e23; font-size:14px;}
+div.calenderW .con table td {width:68px; height:48px; padding:5px 0 0 7px; background:#fff; border:1px solid #d5d5d5; color:#1b1e23; font-size:12px; vertical-align:top;}
+div.calenderW .con table td a {display:block; width:56px; height:15px; padding-top:2px; margin:5px 0 0 3px; background:url("/images/customer/con_bg_ing.gif") no-repeat; text-align:center; color:#fff; font-size:11px; }
+div.calenderW .con table td span {display:block; width:56px; height:15px; padding-top:2px; margin:5px 0 0 3px; background:url("/images/customer/con_bg_end.gif") no-repeat; text-align:center; color:#fff; font-size:11px; }

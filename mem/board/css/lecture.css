@@ -1,0 +1,275 @@
+/* ¼ö°­½ÅÃ» */
+.txt_none {display:none;}/* ´ëÃ¼ÅØ½ºÆ® */
+
+h3.stit {padding-bottom:7px; font-size:17px; color:#333333;}
+h3.stit .orang {color:#ff8a00;}
+h3.stit .green {color:#257276;}
+
+.b_lecture {width:100%; font-weight:normal;}
+.b_lecture th {border:1px solid #0d474a; background:#257276; text-align:center; font-size:14px; color:#fff;}
+.b_lecture td {padding:8px 0 8px 20px; border:1px solid #b2b2b2; background:#fff; font-family:dotum,µ¸¿ò;}
+.b_lecture td p.row {padding-top:3px; line-height:18px;}
+.b_lecture td ul.col li {float:left; padding-right:15px; font-family:dotum,µ¸¿ò;}
+.b_lecture td ul.row li {padding-bottom:5px; font-family:dotum,µ¸¿ò;}
+.b_lecture td input {border:0;}
+.b_lecture td input.txt {border: 1px solid #dedede;}
+.b_lecture td select,.b_lecture td input {font-family:dotum,µ¸¿ò; font-weight:normal;}
+
+.b_lecture2 {width:100%; font-weight:normal;}
+.b_lecture2 th {padding:14px 0 15px; border:1px solid #0d474a; background:#257276; text-align:center; font-size:14px; color:#fff;}
+.b_lecture2 td {padding:8px 0 8px 0; border:1px solid #b2b2b2; background:#fff; font-family:dotum,µ¸¿ò; text-align:center;}
+.b_lecture2 td a {font-family:dotum,µ¸¿ò; font-weight:normal;}
+.b_lecture2 td.left {padding:8px 0 8px 20px; border:1px solid #b2b2b2; background:#fff; font-family:dotum,µ¸¿ò; text-align:left;}
+.b_lecture2 a.apply {display:inline-block; width:75px; height:21px; padding-top:3px; background:url("/images/lecture/bg_btn_apply.gif") no-repeat; color:#fff; font-size:13px; text-align:center; font-family:³ª´®°íµñ, NanumGothic, ng;}
+.b_lecture2 a.apply2 {display:inline-block; width:94px; height:21px; padding-top:3px; background:url("/images/lecture/bg_btn_apply2.gif") no-repeat; color:#fff; font-size:13px; text-align:center; font-family:³ª´®°íµñ, NanumGothic, ng;}
+.b_lecture2 a.cancel {display:inline-block; width:49px; height:17px; padding-top:4px; background:url("/images/lecture/bg_btn_gray.gif") no-repeat; color:#4b4b4b; text-align:center;}
+
+.info_txt_red {padding:15px 0 43px 0; font-size:13px; color:#cc0000; letter-spacing:-1px;}
+.lecture_total {padding:16px 17px 10px 0; border-bottom:1px solid #9d9d9d; background:#f9f9f9; font-family:dotum,µ¸¿ò; font-weight:normal; font-size:15px; color:#333; text-align:right;}
+.lecture_total .red {color:#ff0000;}
+.lecture_btm {padding:13px 0 0 0; font-family:dotum,µ¸¿ò; font-weight:normal;}
+
+.lecture_agree {padding:19px; border:1px solid #eaeaea; background:#f7f7f7; font-family:dotum,µ¸¿ò; font-weight:normal; color:#666;}
+.lecture_agree .txt {padding-bottom:18px; font-family:dotum,µ¸¿ò; font-weight:normal;}
+.lecture_agree .box {width:647px; height:62px; padding:10px; border:1px solid #dedede; background:#fff; overflow:auto; line-height:18px; font-family:dotum,µ¸¿ò; font-weight:normal;}
+.lecture_agree .chk {padding:19px 0 0 0; text-align:center; font-family:dotum,µ¸¿ò; font-weight:normal;}
+.lecture_agree .chk input {border:0; margin-top:-2px;}
+
+h4.etc {margin:54px 0 12px; padding-left:16px; font-size:16px; color:#cc0000; background:url("/images/lecture/bul01.gif") no-repeat 0 7px;}
+p.etc_txt {padding-bottom:18px; font-size:14px;}
+.btn_c {text-align:center;}
+
+h4.cash_tit {margin:54px 0 12px; font-size:17px; color:#cc0000;}
+div.cash_info {position:relative; padding:16px 20px 3px; background:#f6f6f6; line-height:18px;}
+div.cash_info b {color:#636363; font-size:13px;}
+div.cash_info b.red {color:#cc0000;}
+div.cash_info .img {position:absolute; top:18px; right:16px;}
+div.cash_info p {padding-bottom:14px; color:#7b7b7b; font-size:13px;}
+
+/* ¼ö°­½ÅÃ» Á¾ÇÕ¹Ý */
+div.lecture_info {width:709px; padding:0 21px 68px 18px; border:1px solid #e9e9e9; border-top:0;}
+div.lecture_info h3.stit {padding:35px 0 7px;}
+div.lecture_info h3.stit .orang {color:#ff8a00;}
+div.lecture_info h3.stit .redf {color:#ff0000;}
+div.lecture_info .btn_c {padding:38px 0 42px; margin-bottom:37px; text-align:center; background:url("/images/lecture/line_dot.gif") repeat-x 0 bottom;}
+
+.b_lecture3 {width:100%;}
+.b_lecture3 th {padding:14px 0 15px; border:1px solid #0d474a; background:#257276; text-align:center; font-size:14px; color:#fff;}
+.b_lecture3 td {padding:8px 0 8px 0; border:1px solid #b2b2b2; background:#fff; font-family:dotum,µ¸¿ò; text-align:center; line-height:20px;}
+.b_lecture3 tr.bg td {background:#f2f2f2;}
+.b_lecture3 tr td.bg {background:#f2f2f2;}
+.b_lecture3 tr td.bgnone {background:#fff;}
+.b_lecture3 td a {font-family:dotum,µ¸¿ò;}
+.b_lecture3 td.left {padding:8px 6px; border:1px solid #b2b2b2; background:#fff; font-family:dotum,µ¸¿ò; text-align:left;}
+.b_lecture3 a.apply_s {display:inline-block; width:75px; height:21px; padding-top:3px; background:url("/images/lecture/bg_btn_apply.gif") no-repeat; color:#fff; font-size:11px; text-align:center; font-family:³ª´®°íµñ, NanumGothic, ng; font-weight:bold;}
+.b_lecture3 a.apply_e {display:inline-block; width:75px; height:21px; padding-top:3px; background:url("/images/lecture/bg_btn_apply_end.gif") no-repeat; color:#fff; font-size:11px; text-align:center; font-family:³ª´®°íµñ, NanumGothic, ng; font-weight:bold;cursor:default;}
+.b_lecture3 a.apply_e2 {display:inline-block; width:75px; height:21px; padding-top:3px; background:url("/images/lecture/close_btn.gif") no-repeat; color:#fff; font-size:11px; text-align:center; font-family:³ª´®°íµñ, NanumGothic, ng; font-weight:bold;cursor:default;}
+.b_lecture3 a.apply_f {display:inline-block; width:75px; height:21px; padding-top:3px; background:url("/images/lecture/last_btn.gif") no-repeat; color:#fff; font-size:11px; text-align:center; font-family:³ª´®°íµñ, NanumGothic, ng; font-weight:bold;}
+
+.b_lecture3 a.gray {display:inline-block;  width:57px; height:19px; padding-top:2px; background:url("/images/lecture/bg_btn_gray2.gif") no-repeat; color:#666; text-align:center; font-family:³ª´®°íµñ, NanumGothic, ng; font-weight:bold;}
+
+.b_lecture3Font{font-size: 12px;color: red;}
+
+a.green_apply {display:inline-block; width:232px; margin:0 7px 0 0; padding:14px 0 15px; color:#fff; text-align:center; background:#0d9192; border:1px solid #257276; font-size:18px;}
+a.green_apply .yellow {color:#fff600;}
+
+/* ¼ö°­½ÅÃ» »ó¼¼º¸±â ÆË¾÷ */
+body.pop {background:none;}
+div.pop_detail {width:750px;}
+div.pop_detail .top {position:relative; width:750px; height:60px; background:#257276;}
+div.pop_detail .top h2 {padding:16px 0 0 16px; color:#fff; font-size:26px;}
+div.pop_detail .top a {position:absolute; top:17px; right:18px; width:117px; height:21px; padding:4px 0 0 11px; background:url("/images/lecture/bg_btn_apply_pop.gif") no-repeat; color:#de0000;}
+div.pop_detail .pop_body {width:710px; margin:20px 0 30px 20px;}
+div.pop_detail .b_lecture3 td {font-size:14px;}
+div.pop_detail .mgb30 {margin-bottom:30px;}
+div.pop_detail .teacher_wrap {float:left; width:710px; background:url("/images/lecture/line_dot2.gif") repeat-y 354px 0;}
+div.pop_detail .teacher_wrap li {float:left; width:340px; padding-top:18px; padding-right:30px; background:url("/images/lecture/line_dot.gif") repeat-x;}
+div.pop_detail .teacher_wrap li.even {padding-right:0;}
+div.pop_detail .teacher_wrap li.fst {background:none; padding-top:0;}
+div.pop_detail .teacher_wrap li.last a.btn {margin:8px 0 0 1px;}
+div.pop_detail .teacher_wrap .left {float:left; width:123px;}
+div.pop_detail .teacher_wrap .right {float:left; width:217px;}
+div.pop_detail .photo img {width:106px; height:131px; border:1px solid #d3d3d3;}
+div.pop_detail .left a.btn {display:block; width:106px; height:30px; padding:5px 0 0 13px; margin:8px 0 20px 1px; background:url("/images/lecture/bg_btn_apply3.gif") no-repeat; color:#fff;}
+div.pop_detail .name {position:relative; width:217px; height:26px; margin:-2px 0 6px; border-bottom:1px solid #d3d3d3; font-size:14px; color:#333;}
+div.pop_detail .name b {font-size:17px;}
+div.pop_detail .name a {position:absolute; top:0; right:0; width:101px; height:17px; padding-top:4px; background:url("/images/lecture/bg_btn_gray3.gif") no-repeat; color:#666; text-align:center;}
+div.pop_detail .current {font-size:14px; line-height:18px; color:#494746;}
+div.pop_detail .right dl {padding-top:10px;}
+div.pop_detail .right dt {padding-bottom:2px; font-size:13px; color:#2b2b2b;}
+div.pop_detail .right dd {padding-left:7px; background:url("/images/lecture/bul02.gif") no-repeat 0 8px; font-size:12px; color:#717171; line-height:20px;}
+div.pop_detail .class_info {clear:both; display:block; padding:30px 0 37px;}
+div.pop_detail .class_info dt {padding:14px 0 0 0;font-size:17px; color:#333}
+div.pop_detail .class_info dd {padding:10px 0 16px; border-bottom:1px solid #d3d3d3; font-size:14px; color:#666; line-height:26px;}
+
+div.payEnd {width:377px; margin:0 auto; padding:32px 0 32px 0;}
+div.payEnd .b_lecture th {font-size:16px;}
+div.payEnd .b_lecture td {padding:8px 0 8px 20px; border:1px solid #b2b2b2; background:#fff; font-family:³ª´®°íµñ, NanumGothic, ng; font-size:16px; font-weight:600; color:#666;}
+div.payEnd_info {margin-bottom:18px; border-bottom:1px solid #d3d3d3; line-height:26px; text-align:center;}
+div.payEnd_info p {font-size:16px; color:#333;}
+div.payEnd_info p .red {color:#b81c22;}
+div.payEnd_info .price {padding:31px 0 33px;}
+div.payEnd_txt {padding:14px 17px; border:1px solid #dcdcdc; background:#f7f7f7; line-height:24px; font-size:14px;}
+div.payEnd_txt b {color:#444;}
+div.payEnd_txt2 {padding:15px 0 50px; font-size:13px;}
+div.payEnd_btn {text-align:center; margin-bottom:20px;}
+div.payEnd_btn a {display:inline-block; width:201px; height:36px; padding:13px 0 0 25px; border:1px solid #257276; background:#0d9192 url("/images/free/bg_btn_go.gif") no-repeat right 0; color:#fff; font-size:18px; text-align:left;}
+
+
+
+
+
+/* ´Ü°ú¹Ý ÅÇ Ãß°¡ ÀÛ¾÷ */
+.Point_tab {width:750px; margin:25px 0 20px; display:inline-block;}
+.Point_tab li {float:left; margin-right:22px;}
+.Point_tab li.last {margin-right:0}
+.Point_tab li a {float:left; padding:0 0px; height:43px; width:88px; padding-top:20px;  font-size:14px; color:#9e9e9e; text-align:center;  background:url("/images/lecture/bg_innerTab.gif") no-repeat right 0; display:block;}
+.Point_tab li a:hover,.Point_tab li.on a { background:url("/images/lecture/bg_innerTab.gif") no-repeat 0 -63px; color:#257276}
+
+p.T_info {margin-bottom:20px}
+p.T_info img{float:left}
+p.T_info span.T_txt {width:278px; height:104px; display:inline-block;  background:url("/images/lecture/bg_info.gif") no-repeat; padding:46px 0 0 28px; line-height:18px; color:#605e5b; font-weight:normal}
+
+
+/* ¹öÆ° ½ºÅ¸ÀÏ_130311_Á¤¹Ì·Ê */
+a.apply_01 {display:inline-block; width:75px; height:24px;line-height:24px; background:url("/images/lecture/bg_btn_apply.gif") no-repeat; color:#fff; font-size:11px; text-align:center; font-family:³ª´®°íµñ, NanumGothic, ng; font-weight:bold;}
+a.apply_01:hover {color:#fff !important;}
+
+
+/* ¼ö°­½ÅÃ»_130419_Á¤¹Ì·Ê */
+.apply_lecture {}
+.apply_lecture .tab_menu {margin-bottom:10px;}
+.apply_lecture .tab_menu li a {height:32px; line-height:15px; padding:5px 0 4px;}
+.apply_lecture .tab_menu li a.line1 {line-height:30px;}
+
+.apply_lecture .btn {width:100%; margin:20px 0 30px; text-align:center;}
+.apply_lecture .btn a {width:300px; height:40px; line-height:40px; font-weight:bold; font-size:18px; color:#fff; background-color:#068f91; text-align:center; border:1px solid #257276;display:inline-block;}
+.apply_lecture .btn a em {margin-left:7px; font-size:12px; vertical-align:top;}
+
+.apply_lecture .b_lecture3 {}
+.apply_lecture .b_lecture3 th em {font-size:12px; color:#fffc01;}
+.apply_lecture .b_lecture3 .time_title {font-size:18px; color:#fffc01;}
+
+.apply_lecture .b_lecture3 tr.bg_b th {background:#32363f; border:1px solid #fff;}
+.apply_lecture .b_lecture3 tr.bg_b th.first {border-left:1px solid #32363f;}
+.apply_lecture .b_lecture3 tr.bg_b th.last {border-right:1px solid #32363f;}
+
+.apply_lecture .b_lecture3 tr.bg_g td {background:#c2c2c2; border:1px solid #fff;}
+.apply_lecture .b_lecture3 tr.bg_g td.first {border-left:1px solid #c2c2c2;}
+.apply_lecture .b_lecture3 tr.bg_g td.last {border-right:1px solid #c2c2c2;}
+.apply_lecture .t_info2 {margin:0 0 20px 0;}
+
+.apply_lecture .rolling {position:relative; width:100%; height:232px; overflow:hidden;}
+.apply_lecture .rolling .btn_left {position:absolute; top:5px; left:0; cursor:pointer;}
+.apply_lecture .rolling .btn_right {position:absolute; top:5px; right:0; cursor:pointer;}
+
+/* ¼ö°­½ÅÃ»_°øÁ¤ÇàÁ¤»çÃß°¡_130506_Á¤¹Ì·Ê */
+.section1 .b_lecture3 th {padding:4px 0 4px 0;}
+.section1 .b_lecture3 td {padding:6px 0 6px 0;}
+.topBanner_lec {padding-bottom:20px;}
+
+/* ·Ñ¸µ¹è³Ê */
+div.slidesWrap {position:relative; width:750px; height:227px; margin-bottom:10px;}
+div.slidesWrap .prev {position:absolute; top:2px; left:2px; z-index:8; cursor:pointer;}
+div.slidesWrap .next {position:absolute; top:2px; right:2px; z-index:8; cursor:pointer;}
+div.slidesWrap .slides_container {width:748px; height:225px; border:1px solid #32859c; overflow: hidden; position: relative; display: block;}
+div.slidesWrap .slides_container.haengS {border:1px solid #dadada;}
+div.slidesWrap .slides_control {position: relative; width: 2244px; height: 225px; left: -748px;}
+div.slidesWrap .slides_control img {width:748px; height:225px;}
+div.slidesWrap .slides_control a {position: absolute; top: 0px; left: 748px; z-index: 5; display:none;}
+div.slidesWrap .slides_control a.noLink {cursor:default;}
+
+div.slidesWrap2 {position:relative; width:750px; height:200px; margin-bottom:10px;}
+div.slidesWrap2 .prev {position:absolute; top:2px; left:2px; z-index:8; cursor:pointer;}
+div.slidesWrap2 .next {position:absolute; top:2px; right:2px; z-index:8; cursor:pointer;}
+div.slidesWrap2 .slides_container {width:748px; height:198px; border:1px solid #32859c; overflow: hidden; position: relative; display: block;}
+div.slidesWrap2 .slides_container.haengS {border:1px solid #dadada;}
+div.slidesWrap2 .slides_control {position: relative; width: 2244px; height: 198px; left: -748px;}
+div.slidesWrap2 .slides_control img {width:748px; height:198px;}
+div.slidesWrap2 .slides_control a {position: absolute; top: 0px; left: 748px; z-index: 5; display:none;}
+div.slidesWrap2 .slides_control a.noLink {cursor:default;}
+
+.slidesMenu {width:750px; overflow:hidden; text-align:center;}
+.slidesMenu span {display:inline-block; width:147px; background:url("/images/lecture/menu_bar.gif") no-repeat left 10px;}
+.slidesMenu span.fst {background:none;}
+.slidesMenu span a {width:100%; color:#555; display:block; padding:10px 0 10px; outline:none;}
+.slidesMenu span.on a,
+.slidesMenu span a:hover {color:#257276;}
+.slidesMenu.haengS span.on a,
+.slidesMenu.haengS span a:hover {color:#034ea2;}
+
+p.lectureTB {width:748px; height:225px; border:1px solid #adadad; margin-bottom:10px;}
+p.lectureInfo {margin:0 0 10px;}
+div.lectureBenefit {margin-top:10px;}
+
+
+/* ÄíÆùÀû¿ëÇÏ±â */
+
+#coupon {position:relative; padding:20px; border:5px solid #257376;}
+#coupon .btn_close {position:absolute; top:15px; right:20px; width:28px; height:26px; font-size:22px; background-color:#333; text-align:center; display:inline-block;}
+#coupon .btn_close a {width:100%; color:#fff; display:block;}
+#coupon h1 {margin:5px 0 10px; padding-bottom:5px; font-size:20px; color:#111; border-bottom:2px solid #dae0e4;}
+#coupon table {table-layout:fixed;}
+
+#coupon .pay_coupon {width:100%; border:1px solid #dae0e4;}
+#coupon .pay_coupon th {padding:8px 0 6px; font-size:14px; color:#333; border-right:1px solid #cdcdcd; background-color:#eceff1;}
+#coupon .pay_coupon th.sum {color:#fff; border:1px solid #257376; background-color:#257376;}
+#coupon .pay_coupon td {padding:14px 0 12px 0; font-size:13px; color:#333; background:url('http://land.pass.com/images/lecture/coupon/sum_bg.gif') no-repeat;}
+#coupon .pay_coupon td span {float:left; width:243px; text-align:center; display:inline-block;}
+#coupon .pay_coupon td em {font-size:22px; color:#111;}
+#coupon .pay_coupon td .sum {width:210px;}
+#coupon .pay_coupon td .sum em {color:#cc0000;}
+
+#coupon .btn a {position:relative; width:auto; height:auto; line-height:40px; margin:0 20px; padding:0 55px 0 40px; background-color:#;}
+#coupon .btn a.gray {background-color:#b3b3b3; border-color:#797979;}
+#coupon .btn a em {position:absolute; top:0px; right:15px; font-size:16px;}
+#coupon .apos{position:relative;text-align:center;padding: 10px 0 0 0;right:-36px;}
+
+
+#coupon .board_list td input {border:0;}
+#coupon .board_list {width:700px;}
+#coupon .board_list table {width:700px;}
+
+#coupon .regi_coupon {margin:0 0 10px;}
+#coupon .regi_coupon .script{margin:8px 0 10px; color:#cc0000;}
+#coupon .regi_coupon label {margin:0 5px 0 0px; font-size:14px;}
+#coupon .regi_coupon input {height:30px; line-height:30px; margin-right:5px;}
+#coupon .regi_coupon input {height:30px; line-height:30px; margin-right:5px; padding:0 5px; font-size:16px;}
+#coupon .regi_coupon .btn {vertical-align:-12px;}
+
+#coupon .btn_wrap {width:100%; margin:15px 0 0; text-align:center;}
+
+
+/* ÄíÆù ¹Ú½º ºÐ¸® dev - ÃÖ¸¸¼ø */
+#coupon2 {position:relative;background-color:#fff;left:1px;margin-left:-1px;padding: 10px 0;}
+#coupon2 .btn_close {position:absolute; top:15px; right:20px; width:28px; height:26px; font-size:22px; background-color:#333; text-align:center; display:inline-block;}
+#coupon2 .btn_close a {width:100%; color:#fff; display:block;}
+#coupon2 h1 {margin:5px 0 10px; padding-bottom:5px; font-size:20px; color:#111; border-bottom:2px solid #dae0e4;}
+#coupon2 table {table-layout:fixed;}
+
+#coupon2 .pay_coupon {width:100%; border:1px solid #dae0e4;}
+#coupon2 .pay_coupon th {padding:8px 0 6px; font-size:14px; color:#333; border-right:1px solid #cdcdcd; background-color:#eceff1;}
+#coupon2 .pay_coupon th.sum {color:#fff; border:1px solid #257376; background-color:#257376;}
+#coupon2 .pay_coupon td {padding:14px 0 12px 0; font-size:13px; color:#333; background:url('http://land.pass.com/images/lecture/coupon/sum_bg.gif') no-repeat;}
+#coupon2 .pay_coupon td span {float:left; width:243px; text-align:center; display:inline-block;}
+#coupon2 .pay_coupon td em {font-size:22px; color:#111;}
+#coupon2 .pay_coupon td .sum {width:210px;}
+#coupon2 .pay_coupon td .sum em {color:#cc0000;}
+
+#coupon2 .btn a {position:relative; width:auto; height:auto; line-height:40px; margin:0 20px; padding:0 55px 0 40px; background-color:#;}
+#coupon2 .btn a.gray {background-color:#b3b3b3; border-color:#797979;}
+#coupon2 .btn a em {position:absolute; top:0px; right:15px; font-size:16px;}
+
+
+#coupon2 .board_list td input {border:0;}
+#coupon2 .board_list {width:700px;}
+#coupon2 .board_list table {width:700px;}
+
+#coupon2 .regi_coupon {margin:0 0 10px;}
+#coupon2 .regi_coupon .script{margin:8px 0 10px; color:#cc0000;}
+#coupon2 .regi_coupon label {margin:0 5px 0 0px; font-size:14px;}
+#coupon2 .regi_coupon input {height:30px; line-height:30px; margin-right:5px;}
+#coupon2 .regi_coupon input {height:30px; line-height:30px; margin-right:5px; padding:0 5px; font-size:16px;}
+#coupon2 .regi_coupon .btn {vertical-align:-12px;}
+
+#coupon2 .btn_wrap {width:100%; margin:15px 0 0; text-align:center;}

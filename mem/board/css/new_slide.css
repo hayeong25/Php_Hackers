@@ -1,0 +1,278 @@
+		/* CSS for jQuery Orbit Plugin 1.2
+		 * www.ZURB.com/playground
+		 * Copyright 2010, ZURB
+		 * Free to use under the MIT license.
+		 * http://www.opensource.org/licenses/mit-license.php
+		/* Place all stylesheet code here */
+		
+		/* CONTAINER
+		   ================================================== */
+
+		div.orbit-wrapper {
+			width: 1px;
+			height: 1px;
+			position: relative; 
+		}
+
+		div.orbit {
+			width: 1px;
+			height: 1px;
+			position: relative;
+			overflow: hidden }
+
+		div.orbit img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none; }
+
+		div.orbit a img {
+			border: none }
+
+		.orbit div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%; }
+
+
+		/* TIMER
+		   ================================================== */
+		
+		div.timer {
+			width: 40px;
+			height: 40px;
+			overflow: hidden;
+			position: absolute;
+			top: 20px;
+			right: 5px;
+			opacity: .6;
+			cursor: pointer;
+			z-index: 1001; 
+		}
+
+		span.rotator {
+			display: block;
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 0;
+			left: -20px;
+			background: url(/images/new_slide/rotator-black_n2.png) no-repeat;
+			z-index: 3; }
+
+		span.mask {
+			display: block;
+			width: 20px;
+			height: 40px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 2;
+			overflow: hidden; }
+
+		span.rotator.move {
+			left: 0 }
+
+		span.mask.move {
+			width: 40px;
+			left: 0;
+			background: url(/images/new_slide/timer-black_n2.png) repeat 0 0; }
+
+		span.pause {
+			display: block;
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			/* background: url(http://gosi.pass.com/images/new_slide/pause-black_n2.png) no-repeat; */
+			z-index: 4;
+			opacity: 0; }
+
+		span.pause.active {
+			/*background: url(http://gosi.pass.com/images/new_slide/pause-black_n2.png) no-repeat 0 -40px */}
+
+		div.timer:hover span.pause,
+		span.pause.active {
+			opacity: 1 }
+
+
+		/* CAPTIONS
+		   ================================================== */
+		/*
+		.orbit-caption {
+			display: none }
+
+		.orbit-wrapper .orbit-caption {
+			background: #000;
+			background: rgba(0,0,0,.6);
+			z-index: 1000;
+			color: #fff;
+			padding: 7px 10px;
+			font-size: 13px;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 920px;
+			text-align: center }
+
+		*/
+		/* DIRECTIONAL NAV
+		   ================================================== */
+
+		div.slider-nav {
+			display: block }
+
+		div.slider-nav span {
+			width: 40px;
+			height: 80px;
+			text-indent: -9999px;
+			position: absolute;
+			z-index: 1000;
+			top: 50%;
+			margin-top: -50px;
+			cursor: pointer; }
+
+		div.slider-nav span.right {
+			background: url(/images/new_slide/slide_next.png);
+			right: 5px; }
+
+		div.slider-nav span.left {
+			background: url(/images/new_slide/slide_prev.png);
+			left: 5px; }
+
+		/* BULLET NAV board_list list_2
+		   ================================================== */
+
+		.tbl_lecture_app .orbit-bullets {
+			position: absolute;
+			z-index: 1000;
+			list-style: none;
+			top: 8px;
+			/* bottom: 60px; */
+			right: 1%;
+			margin-left: -5px;
+			padding: 0; 
+			margin: 0 auto;
+			text-align: right;
+		}
+
+		.tbl_lecture_app .orbit-bullets li {
+			float: left;
+			margin-left: 0px;
+			padding:0;
+			cursor: pointer;
+			
+			/*text-indent: -19px; */
+			background: url(/images/new_slide/bullets_n3.png) no-repeat 3px 0;
+			width: 12px;
+			height: 12px;
+			overflow: hidden; 
+			text-align: right;
+			font-size: 0;
+			color: #e2dfd8;
+			margin-left: -2px;
+		}
+
+
+		.board_list .orbit-bullets {
+			position: absolute;
+			z-index: 1000;
+			list-style: none;
+			top: 8px;
+			/* bottom: 60px; */
+			right: 1%;
+			margin-left: -5px;
+			padding: 0; 
+			margin: 0 auto;
+			text-align: right;
+		}
+
+		.board_list .orbit-bullets li {
+			float: left;
+			margin-left: 0px;
+			padding:0;
+			cursor: pointer;
+			
+			/*text-indent: -19px; */
+			background: url(/images/new_slide/bullets_n3.png) no-repeat 3px 0;
+			width: 12px;
+			height: 12px;
+			overflow: hidden; 
+			text-align: right;
+			font-size: 0;
+			color: #e2dfd8;
+			margin-left: -2px;
+		}
+
+
+
+		.orbit-bullets li.has-thumb {
+			background: none;
+			width: 100px;
+			height: 75px; }
+
+		.orbit-bullets li.active {
+			color: #222;
+			background-position: -8px 0;
+			margin-left: 2px;
+			font-size: 0;
+			color: #e2dfd8;}
+
+		.orbit-bullets li.active.has-thumb {
+			background-position: 0 0;
+			border-top: 2px solid #000; }
+
+		/* stuff for ZURB demo but not needed at all for orbit */
+		#featured {
+			width: 800px;
+			height: 264px;
+			background: #000 url('/images/new_slide/loading.gif') no-repeat center center;
+			overflow: hidden;
+			z-index: 10;
+		}
+		#featured img,
+		#featured div { display: none; }
+
+		.sixteen{margin-top: -10px;}
+		/*
+		#featured .content {
+			background: url(http://www.zurb.com/playground/playground/jquery-image-slider-plugin/coffee.jpg);
+		}
+		*/
+		/*
+		#featured .content h1 {
+			font-family: 'ChunkFiveRegular', 'Georgia', serif;
+			font-size: 40px;
+			color: #2f260f;
+			font-weight: normal !important;
+			text-transform: uppercase;
+			text-shadow:
+				1px 1px 0 #f8f0d1,
+				2px 2px 0 #f8f0d1,
+				3px 3px 0 #1a5774;
+			text-align: center;
+			margin-top: 190px;
+		}
+		#featured .content h3 {
+			font-family: 'ChunkFiveRegular', 'Georgia', serif;
+			font-size: 20px;
+			color: #7f6b37;
+			text-transform: uppercase;
+			font-weight: normal !important;
+			text-align: center;
+		}
+
+		.slider-background {
+			background: url(http://gosi.pass.com/images/new_slide/slider-background.jpg) repeat-x;
+			height: 366px;
+			width: 5000px;
+			position: absolute;
+			top: 40px;
+			left: -2300px;
+			z-index: -1;
+		}
+		*/
+		body { overflow-x: hidden; }

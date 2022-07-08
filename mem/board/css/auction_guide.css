@@ -1,0 +1,33 @@
+
+/* 경매가이드 */
+.auction_guide {}
+.auction_guide div,
+.auction_guide a,
+.auction_guide img {vertical-align:top;}
+
+.auction_guide .tab_menu5 {margin:10px 0 0;}
+.auction_guide .tab_menu5 a {}
+.auction_guide .tab_menu5 .last a {margin:0;}
+
+
+.auction_guide h3 {margin:30px 0 15px;}
+.auction_guide .g_box {width:748px; border:1px solid #e7e8e9; background-color:#fff;}
+.auction_guide .g_contents {position:relative; line-height:22px; margin:25px 30px; color:#5e5e5e; }
+
+.auction_guide h4 {margin-bottom:10px; font-size:17px; color:#333;}
+.auction_guide p.script {line-height:18px; margin-bottom:40px;}
+.auction_guide .g_list {margin-bottom:50px;}
+.auction_guide .g_list li {margin-bottom:20px;}
+.auction_guide .mb5 li {margin-bottom:5px}
+
+
+.auction_guide .g_table {width:675px;}
+.auction_guide .g_table th,
+.auction_guide .g_table td {padding:15px 0; font-size:13px; color:#666;  text-align:center; border:1px solid #d1d3d4;}
+.auction_guide .g_table th {color:#fff; background-color:#928165;}
+.auction_guide .g_table td.first {color:#555; background-color:#f9f9f9;}
+
+.auction_guide .purpose {}
+.auction_guide .purpose .g_list {position:absolute; top:25px; z-index:2;}
+.auction_guide .purpose .btn_01 {position:absolute; top:215px; right:110px; z-index:3;}
+.auction_guide .purpose .img_teacher {position:absolute; top:0px; right:15px; z-index:1;}

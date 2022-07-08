@@ -1,0 +1,93 @@
+/**************************************************해커스 공무원 설명회 신청**************************************************/
+.briefing_warp {float:left; width:750px; background:#fff;}
+.briefing_warp .briefing_bg {width:750px; height:129px; text-align:center; }
+.briefing_warp .briefing_bg img {margin-top:10px; border:0;}
+
+.briefing_warp .apply_form {position:relative; clear:both; width:750px; height:382px; background:#fff; margin:0; padding:0; overflow:hidden;}
+.briefing_warp .apply_form table {margin:10px auto; width:632px; }
+.briefing_warp .apply_form th {width:150px; padding:19px 0 17px; text-align:center; color:#fff; background-color:#31859c; border:1px solid #fff;}
+.briefing_warp .apply_form .username {padding:10px 0 8px;}
+.briefing_warp .apply_form td {padding:8px 0 6px 12px; line-height:20px; text-align:left; border-top:1px solid #efefef; border-right:1px solid #efefef;  border-bottom:1px solid #efefef;}
+.briefing_warp .apply_form td label {font-size:13px; color:#000;}
+.briefing_warp .apply_form td input {height:18px; line-height:18px; border:1px solid #dedede;}
+.briefing_warp .apply_form td input.radio,
+.briefing_warp .apply_form td input.checkbox {border:0;}
+.briefing_warp .apply_form td input.phone {width:60px;}
+.briefing_warp .apply_form td input.email {width:100px;}
+.briefing_warp .apply_form td input.add1 {width:60px;}
+.briefing_warp .apply_form td input.add2 {width:300px; margin-top:3px;}
+.briefing_warp .apply_form td .receive {margin-top:5px;}
+.briefing_warp .apply_form td .receive label {font-size:12px; color:#757575;}
+.briefing_warp .apply_form td .receive .sms {font-weight:bold;}
+
+.briefing_warp .apply_form td.phone {padding:7px 0 5px 12px;}
+.briefing_warp .apply_form td .address {position:relative;}
+.briefing_warp .apply_form td .address .search_add {position:absolute; top:0px; left: 155px; cursor:pointer;}
+.briefing_warp .apply_form td.choice input {border:0;}
+.briefing_warp .apply_form td.choice label {width:120px; display:inline-block;}
+.briefing_warp .apply_form td.choice label.offline {width:220px; letter-spacing:-1px}
+
+
+.briefing_warp .apply_form td .smalltxt {line-height:16px; margin-top:2px; font-size:11px; color:#7d7d7d; display:block;}
+.briefing_warp .apply_form td .smalltxt1 {margin-left:20px;}
+
+.briefing_warp .checkbox {position:absolute; top:352px; left:173px; z-index:2; margin:0; padding:0;}
+
+.briefing_warp img {float:left; border:none;}
+.briefing_warp img.address_btn {}
+
+.briefing_warp .privacy {position:relative; float:left;}
+.briefing_warp .privacy .checkbox {position:absolute; top:12px; left:220px; z-index:2; margin:0; padding:0;}
+
+.briefing_warp .btm {clear:both; width:750px; overflow:hidden; background:#231f20;}
+.briefing_warp .btm .l {float:left; width: 450px;height: 30px;color:#fff;padding: 20px; 0 0 0;line-height: 20px;}
+.briefing_warp .btm .r {float:right;}
+.briefing_warp .wrapApply {}
+.briefing_warp .wrapApply .privacy2,
+.briefing_warp .wrapApply .apply_form{background:none;}
+.briefing_warp .wrapApply .privacy3 {position:relative; width:612px; margin:10px auto 0; padding:10px; background:#f2f2f2;}
+.briefing_warp .wrapApply .privacy3 .privacy_in {padding-left:140px;line-height:18px; font-size:11px; color:#666;}
+.briefing_warp .wrapApply .privacy3 .privacy_in label {margin-bottom:5px; font-weight:bold; color:#333; display:block;}
+.briefing_warp .wrapApply .privacy3 .checkbox {position:relative; top:-1px; left:-2px; margin:0; padding:0;}
+.briefing_warp .wrapApply .privacy3 .btnP {position:absolute; top:10px; left:10px;}
+
+/* 2차 */
+.briefing2 .apply_form {background:none; background-color:#f3f3f3;}
+.briefing2 .apply_form table {margin:0px 0 0 70px;}
+.briefing2 .apply_form th {width:135px; padding:19px 0 17px; text-align:center; color:#fff; background-color:#31859d; border:1px solid #fff;}
+.briefing2 .apply_form td {width:482px; background-color:#e7e7e7;}
+.briefing2 .privacy {position:relative; float:left;}
+.briefing2 .privacy .checkbox {position:absolute; top:12px; left:220px; z-index:2; margin:0; padding:0;}
+
+/* 4차 이후 */
+.briefing4 {background-color:#f3f3f3;}
+.briefing4 .apply_form {/*height:350px;*/}
+.briefing4 table td {background-color:#e7e7e7;}
+.briefing4 .privacy .checkbox {position:absolute; top:12px; left:216px; z-index:2; margin:0; padding:0;}
+.briefing4 {background-color:#f3f3f3;}
+.briefing4 .btn_apply {width:100%; text-align:center; display:inline-block;}
+.briefing4 .btn_apply a {width:400px; padding-right:12px; height:56px; line-height:56px; margin:30px auto 0; font-size:20px; color:#fff; background:url('http://land.pass.com/images/briefing/btn_apply_bg.jpg') no-repeat; text-align:center; display:inline-block;}
+.briefing4 .btn_apply a em {color:#ffff00;}
+
+
+/* 개인정보 처리방침 수정_130225_정미례 */
+.briefing_warp .privacy2 {position:relative; float:left;}
+.briefing_warp .privacy2 .privacy_in {position:absolute; top:8px; left:220px; line-height:18px; font-size:11px; color:#666;}
+.briefing_warp .privacy2 .privacy_in label {margin-bottom:5px; font-weight:bold; color:#333; display:block;}
+.briefing_warp .privacy2 .checkbox {position:relative; top:-1px; left:-2px; margin:0; padding:0;}
+
+
+/* 행정사_130625_정미례 */
+.briefing_warp .btn_apply {width:100%; text-align:center; display:inline-block;}
+.briefing_warp .btn_apply a em {color:#ffff00;}
+
+.briefing5 {background-color:#f3f3f3;}
+.briefing5 .apply_form table {margin-top:0; margin-bottom:15px;}
+.briefing5 .apply_form th {background-color:#2e3b4e;}
+.briefing5 .apply_form td {background-color:#e7e7e7;}
+.briefing5 .btn_apply a {width:400px; padding-right:12px; height:56px; line-height:56px; margin:20px auto 30px; font-size:20px; color:#fff;  background:url('http://land.pass.com/images/briefing/btn_apply_bg2.jpg') no-repeat;; text-align:center; display:inline-block;}
+
+div.freeEndWrap {width:726px; padding:19px 11px; border:1px solid #a9abae; background:url('/images/free/free_end_bg.gif') repeat-y;}
+div.freeEndWrap .banNer {width:100%; overflow:hidden; padding-top:20px}
+div.freeEndWrap .banNer .l {float:left;}
+div.freeEndWrap .banNer .r {float:right;}

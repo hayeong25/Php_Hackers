@@ -1,0 +1,136 @@
+.lnb {float:left; width:161px; margin:0 35px 0 0;}
+.lnb h2 {padding:3px 0 7px; font-size:18px; color:#257276; font-weight:600; border-bottom:1px solid #4d4d4d;}
+.lnb ul.menu {margin:10px 0 30px;}
+.lnb ul.menu li {width:161px; margin:0 0 0px; *margin:0 0 -5px; border-bottom:0px solid #d6d6d6;}
+:root .lnb ul.menu li {margin:0;}
+.lnb ul.menu li a, .lnb ul.menu dt a {font-size:13px;}
+.lnb ul.menu dd {position:relative;}
+.lnb ul.menu dd span {position:absolute; right:22px;}
+.lnb ul.menu dl {margin:.0px 0 15px;}
+.lnb ul.menu dd {border-top:1px solid #fff;}
+.lnb ul.menu a {display:block; padding:7px 0 6px 10px; color:#383d45; border-top:1px solid #fff;}
+.lnb ul.menu dd a {color:#888; padding:4px 0 5px 15px;  font-size:12px; border:none;}
+.lnb ul.menu li a:hover, .lnb ul.menu li.on a,
+.lnb ul.menu dt a:hover, .lnb ul.menu dt.on a {color:#fff; background:url(http://land.pass.com/images/common/lnb_bg.gif) no-repeat;}
+.lnb ul.menu dd a:hover, .lnb ul.menu dd.on a {color:#fff; background:url(http://eland.pass.com/img/common/lnb_bg02.gif) no-repeat;}
+.lnb ul.menu span a {color:#585858;}
+.lnb ul.menu dd strong.class_name {display:inline-block; width:75px;}
+.lnb ul.menu dd strong.name {color:#444;}
+
+.lnb_banner {border-top:1px solid #bec0c3;}
+.lnb_banner li {color:#383d45; font-size:14px; border-bottom:1px solid #bec0c3;}
+.lnb_banner li em {display:block; margin:6px 0 11px; font-size:16px; color:#257276;}
+.lnb_banner li span {display:block; color:#999; font-size:12px;}
+.lnb_banner a {display:block; padding:18px 0 17px 9px;}
+
+.contents {float:right; width:750px;}
+.contents h2.title {position:relative; padding:0 0 8px; font-size:20px; color:#000; border-bottom:1px solid #dadada;}
+.contents h2.title span.navi {position:absolute; top:11px; right:0; font-size:12px; font-weight:normal; color:#7e7e7e; text-align:right;}
+.contents h2.title em {color:#257276;}
+
+.content_wrap {width:750px; padding:10px 0 0;}
+.content_wrap:after {clear:both; content:""; display:block;}
+.content_wrap2 {padding:10px 0 0;}
+.content_wrap2:after {clear:both; content:""; display:block;}
+.content_wrap3 {width:710px; min-height:350px; margin-top:18px; padding:27px 19px 22px 19px; background:#fff; border:1px solid #e9e9e9;}
+.content_wrap3:after {clear:both; content:""; display:block;}
+
+.tab_menu {width:750px; margin:0 0 35px; overflow:hidden;}
+.tab_menu li {float:left;}
+.tab_menu a {display:inline-block; width:184px; margin:0 5px 0 0; padding:9px 0 7px; color:#fff; background:#7d7d7d; text-align:center;}
+.tab_menu a:hover, .tab_menu li.on a {background:#31363f;}
+.tab_menu a.last {width:183px; margin:0;}
+.tab_menu li.last a {width:183px; margin:0;}
+
+.tab_menu12 {width:750px; margin:0 0 10px; overflow:hidden;}
+.tab_menu12 li {float:left;}
+.tab_menu12 a {display:inline-block; width:184px; margin:0 5px 0 0; padding:9px 0 7px; color:#fff; background:#7d7d7d; text-align:center;}
+.tab_menu12 a:hover, .tab_menu12 li.on a {background:#31363f;}
+.tab_menu12 a.last {width:183px; margin:0;}
+.tab_menu12 li.last a {width:183px; margin:0;}
+
+.tab_menu5 {width:750px; margin:0 0 35px; overflow:hidden;}
+.tab_menu5:after {display:block; content:""; clear:both;}
+.tab_menu5 li {float:left;}
+.tab_menu5 a {display:inline-block; width:146px; margin:0 4px 0 0; padding:9px 0 8px; color:#fff; background:#7d7d7d; text-align:center;}
+.tab_menu5 a:hover, .tab_menu5 li.on a {background:#31363f;}
+.tab_menu5 a.last {width:146px; margin:0;}
+
+.tab_menu6 {width:750px; margin:0 0 35px; overflow:hidden;}
+.tab_menu6:after {display:block; content:""; clear:both;}
+.tab_menu6 li {float:left;}
+.tab_menu6 a {display:inline-block; width:122px; margin:0 4px 0 0; padding:9px 0 7px; color:#fff; background:#7d7d7d; text-align:center;}
+.tab_menu6 a:hover, .tab_menu6 li.on a {background:#31363f;}
+.tab_menu6 a.last {width:120px; margin:0;}
+
+.tab_menu7 {width:750px; margin:0 0 35px; overflow:hidden;}
+.tab_menu7:after {display:block; content:""; clear:both;}
+.tab_menu7 li {float:left;}
+.tab_menu7 a {display:inline-block; width:104px; margin:0 4px 0 0; padding:9px 0 7px; color:#fff; background:#7d7d7d; text-align:center;}
+.tab_menu7 a:hover, .tab_menu7 li.on a {background:#31363f;}
+.tab_menu7 a.last {width:102px; margin:0;}
+
+.tab_menu9 {width:750px; margin:10px 0 10px; overflow:hidden;}
+.tab_menu9:after {display:block; content:""; clear:both;}
+.tab_menu9 li {float:left;}
+.tab_menu9 a {display:inline-block; width:100px; margin:0 4px 0 0; padding:9px 0 7px; color:#fff; background:#7d7d7d; text-align:center;}
+.tab_menu9 a:hover, .tab_menu9 li.on a {background:#31363f;}
+.tab_menu9 a.last {width:98px; margin:0;}
+
+ /* 교재문의게시판 */
+.tab_menu9_2 a {width:103px; margin:0 0 0 4px;}
+.tab_menu9_2 li.wfirst a {width:107px; margin-left:0;}
+
+
+/* 버튼들 */
+a.green {display:inline-block; margin:0 7px 0 0; padding:3px 0 4px; color:#fff; text-align:center; background:#0d9192; border:1px solid #257276;}
+a.black {display:inline-block; margin:0 5px 0 0; color:#fff; text-align:center; background:url(../images/button/black_bg_l.gif) left top no-repeat;}
+a.black span {display:inline-block; margin:0 0 0 2px; padding:2px 10px 5px 8px; background:url(../images/button/black_bg_r.gif) right top no-repeat;}
+a.grey {display:inline-block; width:54px; font-size:11px; margin:0 0 0 6px; padding:4px 0 4px; color:#666; text-align:center; background:url(../images/button/grey.png) no-repeat; vertical-align:middle}
+a.grey2 {display:inline-block; margin:0 5px 0 0; color:#666; text-align:center; background:url(../images/button/grey_bg_l.gif) left top no-repeat;}
+a.grey2 span {display:inline-block; margin:0 0 0 6px; padding:3px 10px 5px 4px; background:url(../images/button/grey_bg_r.gif) right top no-repeat;}
+
+a.green_big {display:inline-block; width:162px; margin:0 7px 0 0; padding:14px 0 15px; color:#fff; text-align:center; background:#0d9192; border:1px solid #257276; font-size:18px;}
+a.grey_big {display:inline-block; width:162px; margin:0 7px 0 0; padding:14px 0 15px; color:#fff; text-align:center; background:#b3b3b3; border:1px solid #737373; font-size:18px;}
+
+
+/* LNB 고객센터 */
+.lnb_customer {line-height:18px; margin:-15px 0 0; padding:0 0 15px; border-bottom:1px solid #ccc; display:inline-block;}
+.lnb_customer h3 {position:relative;width:152px; margin:20px 0 8px; padding:20px 0 0 9px; font-size:17px; color:#257276; display:inline-block; }
+.lnb_customer h3.line {border-top:1px solid #ccc; }
+
+.lnb_customer .link_go {position:absolute; top:22px; right:0;}
+.lnb_customer .link_go a {font-size:11px; color:#696f78; }
+.lnb_customer .link_go a span {font-size:11px; color:#696f78; }
+
+.lnb_customer span {padding-left:9px;}
+.lnb_customer span.cc {width:150px; margin-top:10px; font-size:14px; color:#222;display:inline-block;}
+.lnb_customer span.time {margin-top:3px; font-size:12px; color:#696f78; font-size:12px;}
+.lnb_customer span.num {margin:5px 0 8px; font-weight:bold; font-size:18px; color:#257276; display:inline-block;}
+
+
+/*고객센터 동영상 이정미 */
+div.m_customer {float:left; width:160px;}
+div.m_customer h3 {height:23px; padding-top:7px; border-bottom:1px solid #4d4d4d; color:#257276; font-size:15px; font-weight:bold;}
+div.m_customer .phone {width:161px; padding:12px 0 0 0; overflow:hidden; color:#33383f;}
+div.m_customer .phone dt {float:left; width:40%; height:20px; font-size:13px; color:#33383f;}
+div.m_customer .phone dd {float:right; text-align:right; width:60%; height:20px; font-size:14px; color:#33383f;}
+div.m_customer .phone dd.b {color:#257276;}
+div.m_customer .time {width:161px; padding:0 0 9px; overflow:hidden; color:#696f78;}
+div.m_customer .time dt {float:left; height:20px;}
+div.m_customer .time dd {float:right; }
+div.m_customer .link_go span{text-decoration:underline;}
+
+/* 공지사항 */
+.lnb_notice {float:left; width:161px; margin:37px 0 0; padding:24px 0 0; background:none; border-top:1px solid #b9b9b9}
+.lnb_notice h3 {position:relative; height:23px; padding-top:7px; border-bottom:1px solid #4d4d4d; color:#257276; font-size:15px; font-weight:bold;}
+.lnb_notice h3 a {display:inline-block; position:absolute; top:14px; right:0; font-size:10px; color:#b9b9b9;}
+.lnb_notice h3 a span {color:#888a8f;}
+.lnb_notice ul {margin:11px 0 0;}
+.lnb_notice li {margin:0 0 5px; line-height:15px}
+.lnb_notice li a {color:#5e5e5e;}
+.lnb_notice li a em {color:#a51c30;}
+
+/* 교수사진, 이름 */
+td p.teacher_pic {width:100px; height:90px; margin:0 0 5px 5px; overflow:hidden;}
+td span.teacher_name {width:100px; padding-right:5px; font-size:11px; color:#666;}

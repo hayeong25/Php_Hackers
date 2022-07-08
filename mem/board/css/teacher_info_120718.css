@@ -1,0 +1,74 @@
+/*****************************
+제목 : 교수소개 CSS
+작성일 : 2012.07.18
+작성자 : 정미례
+*****************************/
+
+/* 교수소개 */
+.teacher_info_wrap {width:750px; overflow:hidden; padding:20px 0}
+.teacher_info_wrap h1 {margin:10px 0 0;}
+
+/* 교수_전체보기 */
+.teacher_info_wrap .select_box {position:relative; right:0; margin:20px 0 7px 648px;  z-index:10;}
+.teacher_info_wrap .select_box a {margin:0;}
+.teacher_info_wrap .select_box a.s_btn{}
+.teacher_info_wrap #select_list {position:absolute; top:23px; left:0px; width:150px; border:1px solid #ccc; background:url('http://gosi.hackerspass.com/images/teacher_info/select_bg.png') repeat; _background:#fff;}
+.teacher_info_wrap #select_list li {float:left; width:150px;}
+.teacher_info_wrap #select_list li a {width:140px; padding:4px 0 3px 11px; font-size:11px; color:#757575; display:inline-block; text-align:left;}
+.teacher_info_wrap #select_list li a:hover {color:#fff; background-color:#757575;}
+.teacher_info_wrap #select_list li a:hover * {color:#fff;}
+.teacher_info_wrap #select_list li a span {width:45px; color:#a5a5a5; display:inline-block;}
+.teacher_info_wrap #select_list li a span.wide {letter-spacing:10px;}
+.teacher_info_wrap #select_list li a em {color:#a5a5a5; margin-right:10px;}
+
+/* 탭_기본 */
+.teacher_info_wrap .tab_wrap {position:relative; width:749px; height:177px; overflow:hidden; background:url('http://land.pass.com/images/teacher_info/tab_bg.gif') left top repeat-x;}
+.teacher_info_wrap .tab_wrap li {float:left;}
+.teacher_info_wrap .tab_wrap li a span {display:none;}
+
+/* 탭_상단오른쪽박스 */
+.teacher_info_wrap .tab_b {position:absolute; top:10px; right:10px; z-index:5;}
+.teacher_info_wrap .tab_b li {float:left; margin-right:4px; display:inline-block;}
+.teacher_info_wrap .tab_b li a {width:9px; height:9px; display:block; background:url('http://land.pass.com/images/teacher_info/pageTab.gif') no-repeat -14px 0;}
+.teacher_info_wrap .tab_b li a:hover,
+.teacher_info_wrap .tab_b li.on a {width:9px; height:9px; display:block; background:url('http://land.pass.com/images/teacher_info/pageTab.gif') no-repeat;}
+
+/* 탭_교수 */
+.teacher_info_wrap .tab_s li {float:left; margin:0 1px}
+/* .teacher_info_wrap .tab_s li a {width:175px; height:177px; display:inline-block;}*/
+.teacher_info_wrap .tab_s li a {width:116px; height:177px; display:inline-block;}
+.teacher_info_wrap .tab_s li a:hover,
+.teacher_info_wrap .tab_s li.on a {background-position:left top;}
+
+.teacher_info_wrap .tab_s li .tab01 {background:url('http://land.pass.com/images/teacher_info/tab_01.jpg') left -177px no-repeat;}
+.teacher_info_wrap .tab_s li .tab02 {background:url('http://land.pass.com/images/teacher_info/tab_02.jpg') left -177px no-repeat;}
+.teacher_info_wrap .tab_s li .tab03 {background:url('http://land.pass.com/images/teacher_info/tab_03.jpg') left -177px no-repeat;}
+.teacher_info_wrap .tab_s li .tab04 {background:url('http://land.pass.com/images/teacher_info/tab_04.jpg') left -177px no-repeat;}
+.teacher_info_wrap .tab_s li .tab05 {background:url('http://land.pass.com/images/teacher_info/tab_05.jpg') left -177px no-repeat;}
+.teacher_info_wrap .tab_s li .tab06 {background:url('http://land.pass.com/images/teacher_info/tab_06.jpg') left -177px no-repeat;}
+
+
+/* 탭_교수_좌우버튼 */
+.teacher_info_wrap .tab_wrap .tab_btn {float:left; width:19px; height:31px; margin:146px 0 0 0 !important; display:inline-block;}
+.teacher_info_wrap .tab_wrap a.btn_left  {background:url('http://land.pass.com/images/teacher_info/tab_btn.gif') left -31px no-repeat;}
+.teacher_info_wrap .tab_wrap a.btn_right {background:url('http://land.pass.com/images/teacher_info/tab_btn.gif') -19px -31px no-repeat;}
+.teacher_info_wrap .tab_wrap .btn_left:hover {background-position:left top;}
+.teacher_info_wrap .tab_wrap .btn_right:hover {background-position:-19px top;}
+
+
+.book_list {width:750px; height:auto; display:inline-block; background:url('http://land.pass.com/images/teacher_info/bg_lecture_list.gif') repeat-y;}
+.book_list h3.tit {font-size:18px; color:#383d45; padding:30px 30px 0 30px}
+.left_line {border-left:1px solid #ddddde; padding-left:16px; margin:16px 0 30px 0 !important}
+.book_list ul{width:340px; float:left; margin:16px 0 30px 30px}
+.book_list ul li {line-height:20px; letter-spacing:-0.2px}
+
+.teacher_info {padding-top:10px; background:url('http://land.pass.com/images/teacher_info/bg_line.gif') no-repeat;}
+.teacher_info div {position:relative;}
+.teacher_info div p.fla {position:absolute; left:64px; bottom:40px;}
+
+.teacher_movie {position: relative !important; width:750px; height:625px}
+.teacher_movie .movie_position {height: 152px;left: 72px;overflow: hidden;position: absolute; top: 406px; width: 361px;}
+.movie_control { left: 72px;position: absolute; top: 564px;width: 361px;}
+.movie_control #btn01 {display: inline-block;float: left;}
+.movie_control #btn02 {display: inline-block; float: left;margin-left: 315px;}
+.movie_control #btn03 {display: inline-block; float: left;margin-left: 13px;}

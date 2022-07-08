@@ -1,0 +1,21 @@
+.lecture_app {}
+.lecture_app .tab_menu, .year_member .tab_menu {width:378px; margin:0 auto 25px; text-align:center;}
+.lecture_app p.img {margin:0 0 68px;}
+.lecture_app table {}
+.lecture_app table th {padding:5px 0 7px 10px; color:#fff; background:#257276; border-bottom:1px solid #0d474a; border-right:1px solid #0d474a; border-left:1px solid #0d474a; }
+.lecture_app table td {padding-left:10px; border-bottom:1px solid #b2b2b2; border-right:1px solid #b2b2b2;}
+.lecture_app table th.top {border-top:1px solid #0d474a}
+.lecture_app table td.top {border-top:1px solid #b2b2b2}
+.lecture_app td img {vertical-align:middle}
+.lecture_app .btn_write a {width:216px; height:60px; font-size:16px; line-height:20px; background:url(/images/class/btn_freeView.png) no-repeat;}
+.lecture_app .btn_write a em {color:#fffc00;}
+
+.year_member {position:relative; left:-3px; width:756px; padding:0 0 83px; background:url(../images/class/box_btmBg.gif) left bottom no-repeat;}
+.year_member table {width:668px; margin:3px 0 0 43px;}
+.year_member table th {padding:5px 0 7px 10px; color:#fff; background:#257276; border-bottom:1px solid #0d474a; border-right:1px solid #0d474a; border-left:1px solid #0d474a; }
+.year_member table td {padding-left:10px; border-bottom:1px solid #b2b2b2; border-right:1px solid #b2b2b2;}
+.year_member table th.top {border-top:1px solid #0d474a}
+.year_member table td.top {border-top:1px solid #b2b2b2}
+.year_member td img {vertical-align:middle}
+.year_member .btn_write a {width:305px; height:45px; font-size:16px; line-height:20px; background:url(../images/class/btn_year.png) no-repeat;}
+.year_member .btn_write a em {color:#fffc00;}

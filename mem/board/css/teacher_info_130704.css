@@ -1,0 +1,46 @@
+.teacherInfo {width:750px; padding-top:19px;}
+.teacherInfo div.tit {border-bottom:1px solid #fff; margin-bottom:22px; }
+.teacherInfo div.tit .inner {padding-bottom:4px; border-bottom:1px solid #e8e8e8; font-size:13px; color:#707070;}
+.teacherInfo div.tit .inner strong {padding-right:16px; margin-right:10px; font-size:15px; color:#005baa; background:url("http://land.pass.com/images/teacher_info/tit_dot.gif") no-repeat right 6px;}
+.teacherInfo div.tit .inner span.bar {padding:0 16px;}
+.teacherInfo .tGroup {margin-bottom:45px;}
+
+.teacherInfo .teachList {width:100%; overflow:hidden;}
+.teacherInfo .teachList li {float:left; width:200px; margin-right:74px; padding-bottom:53px;}
+.teacherInfo .teachList li.last {margin-right:0;}
+.teacherInfo .teachList .subject {color:#005baa;}
+.teacherInfo .teachList .careerTit {color:#005baa;}
+
+.teacherInfo .teachList2 {width:100%; overflow:hidden;}
+.teacherInfo .teachList2 li {float:left; width:200px; margin-right:74px; padding-bottom:130px;}
+.teacherInfo .teachList2 li.last {margin-right:0;}
+.teacherInfo .teachList2 .subject {color:#247276;}
+.teacherInfo .teachList2 .careerTit {color:#247276;}
+
+.teacherInfo .teachList3 .subject {color:#908164;}
+.teacherInfo .teachList3 .careerTit {color:#908164;}
+
+.teacherInfo .teachList.two li.last {margin-right:250px;}
+.teacherInfo .photo {height:234px;}
+.teacherInfo .photo a {display:block; width:188px; height:216px; border:1px solid #a7a9ac;}
+.teacherInfo .photo a:hover {display:block; border:1px solid #000; }
+.teacherInfo .photo img {width:188px; height:216px;}
+.teacherInfo .subject {height:28px; text-decoration:underline; color:#005baa; font-size:15px;}
+.teacherInfo .name {height:33px; color:#707070; font-size:14px;}
+.teacherInfo .name b {font-size:18px; color:#363636;}
+.teacherInfo .careerTit {height:19px; color:#005baa; font-size:12px;}
+.teacherInfo .career {width:100%; height:59px; color:#707070; font-size:12px; line-height:17px; overflow:hidden;}
+.teacherInfo .btn {height:23px;}
+.teacherInfo .btn a {float:left; display:block; width:81px; height:20px; padding-right:11px; padding-top:3px; margin-right:4px; text-align:center; color:#fff; border:0;}
+.teacherInfo .btn a.blue {background:url("http://land.pass.com/images/teacher_info/bgn_bg_blue.gif") no-repeat -1px 0;}
+.teacherInfo .btn a.brown {background:url("http://land.pass.com/images/teacher_info/bgn_bg_brown.gif") no-repeat -1px 0;}
+.teacherInfo .btn a.green2 {background:url("http://land.pass.com/images/teacher_info/bgn_bg_green.gif") no-repeat -1px 0;}
+.teacherInfo .btn a.gray {background:url("http://land.pass.com/images/teacher_info/bgn_bg_gray.gif") no-repeat -1px 0;}
+.tearchImg {position:relative;}
+.tearchImg .btnW {position:absolute; top:419px; left:62px;}
+
+.btn_goW {width: 750px;padding: 24px 0;background-color: #E5E5E5;text-align: center;}
+.btn_goW a {margin: 0 5px;}
+
+/* dev choi */
+.textShort{letter-spacing: -1px;}

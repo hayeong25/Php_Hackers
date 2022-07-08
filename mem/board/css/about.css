@@ -1,0 +1,134 @@
+
+/* 커리큘럼 */
+.curiculum {}
+.intro_wrap .tab_menu, .curiculum .tab_menu {width:378px; margin:0 0 25px; text-align:center;}
+.curiculum p.img {margin:0 0 44px;}
+.curiculum h3 {margin:0 0 18px; font-size:20px; letter-spacing:-1px;}
+.curiculum h3 em {color:#257276;}
+.curiculum table {width:100%; margin:0 0 62px; border-top:1px solid #0d474a;}
+.curiculum th {padding:6px 0 7px; font-size:14px; line-height:20px; color:#fff; background:#257276; border-bottom:1px solid #0d474a; border-right:1px solid #0d474a;}
+.curiculum th.step_1 {background:#dfeaeb; color:#001d1e;}
+.curiculum th.step_2 {background:#bdd4d6; color:#001d1e;}
+.curiculum th.step_3 {background:#9dbfc1; color:#001d1e;}
+.curiculum th.step_4 {background:#7caaad; color:#001d1e;}
+.curiculum th.step_5 {background:#5c9598;}
+.curiculum th.step_6 {background:#3a8083;}
+.curiculum th.step_7 {background:#257276;}
+.curiculum td {height:58px; padding-top:10px; padding-bottom:10px; font-size:13px; line-height:18px; text-align:center;  border-bottom:1px solid #0d474a; border-right:1px solid #b2b2b2;}
+.curiculum .last {border-right:none;}
+.curiculum td.part {padding-left:13px; padding-right:10px; text-align:left;}
+.curiculum td strong {display:inline-block; margin:0 0 3px; padding-left:7px; color:#484848; font-size:15px; background:url(../images/bullet/square.gif) left 7px no-repeat;}
+.curiculum td em {color:#ed5f01;}
+
+/* 해커스 패스닷컴 공인중개사 */
+.intro_wrap {}
+.intro_wrap em {color:#1b6165;}
+.intro_wrap h3 {margin:47px 0 0; padding:0 0 16px 27px; font-size:24px; color:#333; font-weight:normal; border-bottom:1px solid #b9d0d1;}
+.intro_wrap h3 em {font-weight:600;}
+.intro_wrap dl.pass_stat01 {float:left; margin:30px 0 0; padding:0 0 29px; border-bottom:1px solid #e6e6e6;}
+.intro_wrap dl.pass_stat01 dt, .intro_wrap dl.pass_stat01 dd {float:left; color:#333;}
+.intro_wrap dl.pass_stat01 dt {width:350px; margin:0 0 0 26px;}
+.intro_wrap dl.pass_stat01 dl {width:373px;}
+.intro_wrap dl.pass_stat01 dl dt {width:373px; margin:0; padding:0 0 21px; font-size:18px; border-bottom:1px solid #e6e6e6;}
+.intro_wrap dl.pass_stat01 dl dd {padding:16px 0 0; font-size:14px; font-weight:normal; line-height:24px; letter-spacing:-1px;}
+.intro_wrap dl.pass_stat01 strong {color:#222;}
+.intro_wrap dl.pass_stat01 dd.arrow {width:373px; padding:16px 0 0;} 
+.intro_wrap dl.pass_stat01 dd.arrow img {margin:0 0 0 143px;}
+.intro_wrap dl.pass_stat02 {float:left; padding:30px 0 0 26px;}
+.intro_wrap dl.pass_stat02 dl dt {margin:26px 0 25px; padding:0 0 19px; color:#333; font-size:18px; border-bottom:1px solid #e6e6e6;}
+.intro_wrap dl.pass_stat02 dl dd {font-size:14px; line-height:24px; color:#333; font-weight:normal;}
+.intro_wrap dl.pass_stat02 dl dd.arrow {margin:12px 0 12px 272px;}
+.intro_wrap h4 {float:left; margin:50px 0 0;}
+.intro_wrap .program {float:left; height:700px;}
+.intro_wrap .program dt.img, .intro_wrap .program dd {float:left;}
+.intro_wrap .program dt.img {width:377px; margin:90px 0 0;}
+.intro_wrap .program dd {color:#333;}
+.intro_wrap .program dl {float:right; width:353px; padding:0 0 0 20px; border-bottom:1px solid #bed4d5;}
+.intro_wrap .program dl dt {padding:17px 0 9px 12px; font-size:14px; border-bottom:1px solid #e6e6e6; background:url(../images/bullet/square_org.gif) 0 26px no-repeat;}
+.intro_wrap .program dl dt em {font-size:18px;}
+.intro_wrap .program dl dd {padding:10px 0 13px; line-height:22px; }
+.intro_wrap .program dd a {display:block; width:179px; height:31px; margin:14px 0 0; padding:2px 0 0; font-size:14px; color:#fff; text-align:center; background:url(../images/about/btn_introBg.png) no-repeat;}
+.intro_wrap .program dd a img {position:relative; top:-1px; margin:0 0 0 8px; vertical-align:middle;}
+.intro_wrap .program dd.last {float:right; padding:0 0 50px}
+.intro_wrap .program dd.last dl {border-bottom:none;}
+
+/* 할인업체 */
+.discount .discount_top {margin:25px 0 30px;}
+.discount .discount_map {float:left; padding:70px 0 20px;}
+.discount .b {font-weight:bold;}
+dl.discount_list {float:left; width:100%;  padding:20px 0 17px; border-bottom:1px solid #d7e4e1;}
+dl.discount_list dt {float:left; width:195px;}
+dl.discount_list dt img {}
+dl.discount_list dd {float:left; width:555px; color:#797979; line-height:19px;}
+dl.discount_list h3.name {padding:0 0 7px; line-height:20px; font-weight:bold; font-size:15px; color:#666; letter-spacing:-1px;}
+dl.discount_list h3.name span.phone {font-size:12px; color:#aaa}
+dl.discount_list dd span.sort {float:left; width:70px; display:inline-block; vertical-align:top; margin-right:3px;}
+dl.discount_list dd p.text {float:left; width:475px; display:inline-block;}
+
+/* 수정 0705 이정미 */
+div.discount_layer dl.discount_list {float:left; width:100%;  padding:20px 0 17px; border-bottom:1px solid #d7e4e1;}
+div.discount_layer dl.discount_list dt {float:left; width:195px;}
+div.discount_layer dl.discount_list dt img {}
+div.discount_layer dl.discount_list dd {float:left; width:555px; color:#797979; line-height:19px;}
+div.discount_layer dl.discount_list h3.name {padding:0 0 7px; line-height:20px; font-weight:bold; font-size:15px; color:#666; letter-spacing:-1px;}
+div.discount_layer dl.discount_list h3.name span.phone {font-size:12px; color:#aaa}
+div.discount_layer dl.discount_list dd span.sortt {float:none; display:inline-block; vertical-align:top; margin-right:3px; color:#444;}
+div.discount_layer dl.discount_list dd p.text {float:none; width:470px; display:inline-block;}
+div.discount_layer dl.discount_list dd p.text b {color:#444;}
+div.discount_layer dl.discount_list h3.name img {vertical-align:middle}
+
+/* 해커스 패스닷컴 행정사 */
+.intro_wrap2 {}
+.intro_wrap2 em {color:#1b6165;}
+.intro_wrap2 h3 {display:inline-block; margin:47px 0 16px 0; padding:0 0 0px 0; font-size:24px; color:#0054a6; font-weight:normal; border-bottom:1px solid #0054a6;}
+.intro_wrap2 h3 em {font-weight:600;}
+.intro_wrap2 dl.pass_stat01 {float:left; margin:30px 0 0; padding:0 0 29px; border-bottom:1px solid #e6e6e6;}
+.intro_wrap2 dl.pass_stat01 dt, .intro_wrap2 dl.pass_stat01 dd {float:left; color:#333;}
+.intro_wrap2 dl.pass_stat01 dt {width:312px; margin:0 0 0 0;}
+.intro_wrap2 dl.pass_stat01 dl {width:373px;}
+.intro_wrap2 dl.pass_stat01 dl dt {width:357px; margin:0; padding:0 0 21px; font-size:22px; border-bottom:1px solid #e6e6e6; color:#003663; line-height:24px;}
+.intro_wrap2 dl.pass_stat01 dl dd {padding:16px 0 0; font-size:14px; font-weight:normal; line-height:24px; letter-spacing:-1px; color:#898989;}
+.intro_wrap2 dl.pass_stat01 strong {color:#8c6239;}
+.intro_wrap2 dl.pass_stat01 dd.arrow {width:357px; padding:16px 0 0;} 
+.intro_wrap2 dl.pass_stat01 dd.arrow img {margin:0 0 0 143px;}
+.intro_wrap2 .intro_inner {width:700px; margin:0 auto;}
+.intro_wrap2 h4 {float:left; margin:50px 0 0;}
+.intro_wrap2 .program {float:left; width:100%; border-top:1px solid #e1e1e1;}
+.intro_wrap2 .program td {border-bottom:1px solid #e1e1e1; text-align:center;}
+.intro_wrap2 .program dd {color:#333;}
+.intro_wrap2 .program dl {width:400px; padding:30px 0 35px 27px; text-align:left;}
+.intro_wrap2 .program dl dt {padding:14px 0 4px 0; font-size:19px; background:url('/images/about/intro_2_10.gif') no-repeat; color:#003663;}
+.intro_wrap2 .program dl dd {padding:10px 0 13px; line-height:24px; color:#898989; font-size:13px; line-height:18px; }
+.intro_wrap2 .program dd strong {color:#8c6239;}
+.intro_wrap2 .program a.btn {display:inline-block; width:163px; height:32px; padding-top:14px; background:#45515f; text-align:center; color:#fff; font-size:15px;}
+.intro_wrap2 .program a.btn img {vertical-align:middle; margin:0 0 4px 4px;}
+
+.curiculum2 h3 {position:relative; font-size:26px; margin:33px 0 23px 30px; padding-left:35px; color:#003663;}
+.curiculum2 h3 span {position:absolute; top:-1px; left:3px; display:inline-block; padding-top:4px; background:url('/images/about/number_line.gif') no-repeat 50% -1px; color:#898989; font-size:23px; letter-spacing:-3px;}
+.curiculum2 .curi_inner {width:590px; margin:0 0 0 66px; text-align:left;}
+.curiculum2 .curi_inner .img {margin-bottom:40px;}
+.curiculum2 .curi_inner table {width:100%; margin-bottom:60px;}
+.curiculum2 .curi_inner th {padding:18px 0; border:1px solid #e1e1e1; background:#b4d5e3; color:#003663; text-align:center; line-height:20px; font-size:17px; }
+.curiculum2 .curi_inner td {padding:18px 0; border:1px solid #e1e1e1; background:#fff; color:#7d7d7d; text-align:center; line-height:20px; font-size:15px; }
+.curiculum2 .curi_inner td.bg1 {background:#0ba0b6; color:#fff;}
+.curiculum2 .curi_inner td.bg2 {background:#95cfd7; color:#515151;}
+.curiculum2 .curi_inner td.bg3 {background:#ccf0f5; color:#7d7d7d;}
+.curiculum2 .curi_inner td.bg4 {background:#cbe7eb; color:#616161;}
+
+/*해커스 부동산경매20131118*/
+#intro_wrap1118 .tab_menu, .curiculum .tab_menu{width:570px;}
+#intro_wrap1118 .program dl{border:none;}
+#intro_wrap1118 .program dl dt{border:none;}
+#intro_wrap1118 dl.pass_stat01 dd{width:389px;}
+#intro_wrap1118 .tab_menu, .curiculum .tab_menu{width:570px;}
+#intro_wrap1118 h3{color:#594e3b; border:none; margin-top:60px; text-decoration:underline;}
+#intro_wrap03 dl dt{color:#ac7c47;}
+#intro_wrap03 td strong{color:#ac7c47; }
+#intro_wrap1118 dt.page03{margin-top:45px;}
+#intro_wrap1118 dl.pass_stat01 dd{margin-left:-15px; margin-bottom:5px;}
+#intro_wrap1118 dl.page03 strong{font-size:17px; color:#504638; }
+#intro_wrap1118 dl.page03 dl dd{color:#898989; }
+#intro_wrap1118 dl.page03 dl dt{font-size:22px; color:#928165; margin-left:-15px;}
+#intro_wrap1118 dl.page03 dl dd{margin-top:13px; padding-top:2px; background:url(text_bg.gif) no-repeat;}
+#intro_wrap03 .program dl dt{font-size:22px;}
+#intro_wrap03 .program dl dd{font-size:14px; line-height:20px;}

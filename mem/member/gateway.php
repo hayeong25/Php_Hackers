@@ -1,6 +1,4 @@
 <?php
-    session_start();
-    
     include ("./include/header.php");
 
     // 사이드바 영역
@@ -75,5 +73,4 @@
     }
 
     include ("./include/footer.php");
-    exit();
 ?>

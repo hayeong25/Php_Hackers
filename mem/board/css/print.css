@@ -1,0 +1,11 @@
+#header, #lnb, #footer, #quickmenu {display:none;}
+#container {border:1px solid #red}
+.app_contents {width:100% !important; margin:0; padding:0}
+.contents h2.title {display:none}
+body {margin:0; padding:0;}
+.box {border:none; padding:0; margin:0;}
+.contents {padding:0; margin:0;}
+.kuet {margin:0; padding:0; border:none;}
+
+.kuet .header {display:none;}
+.kuet .tab_menu {display:none;}

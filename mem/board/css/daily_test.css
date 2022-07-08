@@ -1,0 +1,119 @@
+/*@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");*/
+
+/* 팝업_매일문제풀이 */
+.daily_test {width:720px; padding:0 10px 20px;}
+/*.daily_test * {font-family: 'Nanum Gothic', sans-serif !important;}(*/
+.daily_test .daily_title {width:696px; height:62px; color:#fff; background:url('http://land.pass.com/images/free/daily_test/title_bg.jpg') repeat-y;}
+.daily_test .daily_title .today_date {float:left; margin:23px 0 0 20px; font-weight:bold; font-size:16px; display:inline-block;}
+.daily_test .daily_title .count {float:right; width:150px; margin:27px 21px 0 0; font-weight:bold; font-size:12px; color:#121212; text-align:center; display:inline-block;}
+
+.test_wrap {width:696px; line-height:22px; padding:10px 0 0; background:url('http://land.pass.com/images/free/daily_test/bg_01.jpg') repeat-y;}
+.test_wrap .btn_movie {width:100%; text-align:right; display:block;}
+.test_wrap .btn_movie img {margin-right:15px;}
+
+.test_wrap ol {margin:25px 20px 0 45px; font-weight:400;}
+.test_wrap ol li {margin:0 0 50px 0;  *margin:0 0 25px 0; list-style-type:decimal; font-size:14px;}
+.test_wrap h4 {position:relative; left:-5px; margin-bottom:15px; font-weight:400; font-size:14px; line-height:28px; }
+.test_wrap label {margin:3px 0 5px -4px; font-size:13px; display:block;}
+.test_wrap label input {border:0; margin-right:5px;}
+.test_wrap .btn_submit {width:100%; text-align:center;}
+.test_wrap .btn_submit input {border:0;}
+.test_wrap .copyright {width:636px; margin:20px 0 0 30px; padding:10px 0 5px; font-weight:400; font-size:13px; color:#7f7f7f; text-align:center; border-top:1px solid #e0e0e0;}
+
+.daily_test .board_list {width:696px; margin:20px 0;}
+.daily_test .board_list table {width:100%;}
+
+
+
+/* 팝업_매일문제풀이_정답 */
+.daily_test .test_wrap .test_answer {width:658px; margin:10px 0 0 20px; padding:5px 0; background-color:#f5ffff; border:1px solid #b8e5e5; display:inline-block;}
+.daily_test .test_wrap .test_answer dt,
+.daily_test .test_wrap .test_answer dd {float:left; line-height:30px; font-weight:400; display:inline-block; text-align:center;}
+.daily_test .test_wrap .test_answer dt {width:90px; margin-left:10px;}
+.daily_test .test_wrap .test_answer dt p span {}
+.daily_test .test_wrap .test_answer dd {width:550px;}
+.daily_test .test_wrap .test_answer dd.red {color:#ff0000}
+.daily_test .test_wrap .test_answer dd span {float:left; width: 54px;}
+
+.daily_test .test_wrap .test_answer dt table td p {width:auto;}
+
+.daily_test .test_wrap .question {margin:5px 0 0 20px; background-color:#fff;}
+.daily_test .test_wrap .question dt {width:630px; text-align:left; padding:5px 0 0 12px;}
+.daily_test .test_wrap .question dd {width:580px; text-align:left; padding-left:40px; font-weight:600; font-size:14px; color:#247276;}
+.daily_test .test_wrap .question dt .qnum {float:left; width:18px; line-height:26px; font-size:14px; text-align:right; padding-right:5px;}
+.daily_test .test_wrap .question dt p {float:; width:592px;}
+.daily_test .test_wrap .question dt p span {font-size:14px !important; line-height:26px;}
+
+.daily_test .test_wrap .explain {float:left; width:650px; margin:25px 0 0 30px; padding:5px 0 40px;}
+.daily_test .test_wrap .explain dt {float:left; width:45px; padding-top:2px; text-align:left; display:inline-block;}
+.daily_test .test_wrap .explain dd {float:left; width:590px; margin-bottom:40px; font-size:13px; text-align:left; display:inline-block;}
+
+.daily_test .test_wrap .statistics {clear:both; width:100%;}
+.daily_test .test_wrap .statistics span {float:left; }
+.daily_test .test_wrap .graph {float:left; width:490px; margin:3px 0 0 5px; text-align:center;}
+.daily_test .test_wrap .graph td {height:15px; padding:3px 0;}
+
+
+/* 데일리테스트_121204_정미례 */
+.daily_page {width:750px; padding:0 0px 20px;}
+.daily_page .tab_menu6 {margin:0px 0px 10px}
+.daily_page h1 {position:relative; line-height:25px; margin:15px 0; font-size:22px;}
+.daily_page h1 .today_date {float:left; margin:-3px 15px 0 0; font-weight:400; font-family:'verdana'; letter-spacing:-1px;}
+.daily_page h1 .today_date em {font-weight:600; color:#247276;}
+.daily_page h1 .daily_title {float:left; margin-bottom:10px; padding-left:15px; font-weight:400; font-size:20px; color:#000; border-left:1px solid #c7c7c7;}
+.daily_page h1 .daily_title em {color:#247276;}
+.daily_page h1 .daily_btn {position:absolute; top:-2px; right:0px;}
+.daily_page h1 .daily_btn img {margin-left:3px;}
+.daily_page .info {margin:15px 0;}
+
+.daily_page table.daily_list {width:100%; margin-top:10px;}
+.daily_page table.daily_list table * {font-family:'NanumGothicboldWeb', 나눔고딕, NanumGothic, ng; font-size:14px; }
+.daily_page table.daily_list th {padding:8px 0; color:#fff; text-align:center; border:1px solid #fff; background-color:#247276;}
+.daily_page table.daily_list td {padding:10px 0; color:#000; text-align:center; border:1px solid #d6d6d6;  font-size:14px;}
+.daily_page table.daily_list .first {border-left:0;}
+.daily_page table.daily_list .last {border-right:0;}
+
+.daily_page table.daily_list td span.title_bold {font-weight:400;}
+.daily_page table.daily_list td span.title_bold_color {font-weight:400; color:#247276;}
+
+.daily_page .board_list {width:100%; margin:0px 0 20px;}
+.daily_page .board_list table {width:100%;}
+
+
+ /*데일리테스트_퍼가기_130118_정미례_공무원꺼
+.daily_page .movie {position:relative;}*/
+.daily_page .movie .btn_spoon {float:right; margin-top:2px;}
+.daily_page .movie .pop_spoon {position:absolute; width:480px; height:225px; background:#000 url('http://gosi.pass.com/images/event/daily_test/spoon/bg_01.png') repeat; border:1px solid #565656;}
+.daily_page .movie .pop_spoon h3 {float:left; height:30px; line-height:30px; margin:12px 0 10px 17px; padding:0 15px; font-size:13px; color:#fff; background:#171717 url('http://gosi.pass.com/images/event/daily_test/spoon/bg_02.png') repeat; border:1px solid #565656; display:inline-block;}
+.daily_page .movie .pop_spoon .btn_close {float:right; margin:12px 10px 0 0; cursor:pointer;}
+
+.daily_page .movie .pop_spoon dl {clear:both; width:415px; margin:0 0 0 30px; border-bottom:1px solid #565656; display:inline-block;}
+.daily_page .movie .pop_spoon dt {float:left; width:85px; line-height:24px; padding:10px 0; color:#fff;}
+.daily_page .movie .pop_spoon dd {float:left; width:330px; line-height:24px; padding:10px 0; font-weight:normal; color:#b2b2b2;}
+
+.daily_page .movie .pop_spoon dd label {margin-left:5px;}
+.daily_page .movie .pop_spoon dd input.text {width:230px; padding-left:5px; height:22px; line-height:22px; margin-right:5px; color:#fff; background:#000 url('http://gosi.pass.com/images/event/daily_test/spoon/bg_03.png') repeat; border:1px solid #565656;}
+.daily_page .movie .pop_spoon dd .btn {width:85px; height:22px; line-height:22px; font-weight:bold; color:#fff; background-color:#257276; border:1px solid #257276; text-align:center; position:relative;  top:1px; display:inline-block; cursor:pointer;}
+
+.daily_page .movie .pop_spoon dl.last {border:0;}
+.daily_page .movie .pop_spoon dl.last dd img {cursor:pointer;}
+
+/*
+.daily_page .daily_intro {position:relative;}
+.daily_page .daily_intro .btn_spoon {float:right; margin-top:2px;}
+.daily_page .daily_intro .pop_spoon {position:absolute; width:480px; height:225px; background:#000 url('http://gosi.pass.com/images/event/daily_test/spoon/bg_01.png') repeat; border:1px solid #565656;}
+.daily_page .daily_intro .pop_spoon h3 {float:left; height:30px; line-height:30px; margin:12px 0 10px 17px; padding:0 15px; font-size:13px; color:#fff; background:#171717 url('http://gosi.pass.com/images/event/daily_test/spoon/bg_02.png') repeat; border:1px solid #565656; display:inline-block;}
+.daily_page .daily_intro .pop_spoon .btn_close {float:right; margin:12px 10px 0 0; cursor:pointer;}
+
+.daily_page .daily_intro .pop_spoon dl {clear:both; width:415px; margin:0 0 0 30px; border-bottom:1px solid #565656; display:inline-block;}
+.daily_page .daily_intro .pop_spoon dt {float:left; width:85px; line-height:24px; padding:10px 0; color:#fff;}
+.daily_page .daily_intro .pop_spoon dd {float:left; width:330px; line-height:24px; padding:10px 0; font-weight:normal; color:#b2b2b2;}
+
+.daily_page .daily_intro .pop_spoon dd label {margin-left:5px;}
+.daily_page .daily_intro .pop_spoon dd input.text {width:230px; padding-left:5px; height:22px; line-height:22px; margin-right:5px; color:#fff; background:#000 url('http://gosi.pass.com/images/event/daily_test/spoon/bg_03.png') repeat; border:1px solid #565656;}
+.daily_page .daily_intro .pop_spoon dd .btn {width:85px; height:22px; line-height:22px; font-weight:bold; color:#fff; background-color:#cd1c3b; border:1px solid #69363f; text-align:center; position:relative;  top:1px; display:inline-block; cursor:pointer;}
+
+.daily_page .daily_intro .pop_spoon dl.last {border:0;}
+.daily_page .daily_intro .pop_spoon dl.last dd img {cursor:pointer;}
+ */
+
