@@ -79,6 +79,11 @@
 						$(this).focus();
 					}
 
+					if($(".tx-content-container").val() == "") {
+						alert('내용을 입력하세요.');
+						$(this).focus();
+					}
+
 					var notice;
 					if($("[name='notice']").is(":checked")) {
 						notice == 'Y';
@@ -97,20 +102,15 @@
 							title:$("[name='title']").val(),
 							content:$(".tx-content-container").val(),
 							file:$("[name='file']").val(),
+							mode:'register'
 						},
 						success: function(data) {
-							localStorage.setItem('phone', data.phone);
-							localStorage.setItem('email', data.email);
-							alert("email : " + data.email + "\nphone : " + data.phone);
-							
-							if(data != null) {
-								Editor.save();
-								$("form").submit();
-								location.href = "/member/gateway.php?menu=find&page=pw1";
+							if(data == "1") {
+								location.href = "/board/gateway.php?menu=list";
 							}else {
-								alert('등록되지 않은 회원입니다.');
-								return;
+								alert('게시글 등록 실패! 메인으로 돌아갑니다.');
 							}
+							location.href = "/board/gateway.php?menu=list";
 						},
 					});
 				})
